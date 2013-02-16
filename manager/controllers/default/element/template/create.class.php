@@ -121,4 +121,12 @@ class ElementTemplateCreateManagerController extends modManagerController {
     public function getLanguageTopics() {
         return array('template','category','propertyset','element');
     }
+
+    /**
+     * Get the Help URL
+     * @return string
+     */
+    public function getHelpUrl() {
+        return 'Templates';
+    }
 }

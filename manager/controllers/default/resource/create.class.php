@@ -181,7 +181,7 @@ class ResourceCreateManagerController extends ResourceManagerController {
         $c->leftJoin('modFormCustomizationProfileUserGroup','ProfileUserGroup','Profile.id = ProfileUserGroup.profile');
         $c->leftJoin('modFormCustomizationProfile','UGProfile','UGProfile.id = ProfileUserGroup.profile');
         $c->where(array(
-            'modActionDom.action' => $this->config['id'],
+            'modActionDom.action' => 'resource/create',
             'modActionDom.name' => 'template',
             'modActionDom.container' => 'modx-panel-resource',
             'modActionDom.rule' => 'fieldDefault',
@@ -239,7 +239,6 @@ class ResourceCreateManagerController extends ResourceManagerController {
     public function getTemplateFile() {
         return 'resource/create.tpl';
     }
-
 }
 
 class DocumentCreateManagerController extends ResourceCreateManagerController {}

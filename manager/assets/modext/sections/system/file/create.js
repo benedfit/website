@@ -22,7 +22,7 @@ MODx.page.CreateFile = function(config) {
     btns.push({
         process: 'cancel'
         ,text: _('cancel')
-        ,params: {a:MODx.action['welcome']}
+        ,params: {a:'welcome'}
     });
 
     Ext.applyIf(config,{
@@ -131,7 +131,8 @@ Ext.extend(MODx.panel.CreateFile,MODx.FormPanel,{
         return true;
     }
     ,success: function(r) {
-        location.href = 'index.php?a='+MODx.action['system/file/edit']+'&file='+r.result.object.file+'&source='+MODx.request.source;
+        console.log(r);
+        location.href = 'index.php?a=system/file/edit&file='+r.result.object.file+'&source='+MODx.request.source;
     }
     ,beforeSubmit: function(o) {
         this.cleanupEditor();

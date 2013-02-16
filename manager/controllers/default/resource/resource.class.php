@@ -476,4 +476,11 @@ abstract class ResourceManagerController extends modManagerController {
         return $this->resourceArray['resourceGroups'];
     }
 
+    /**
+     * Get the Help URL
+     * @return string
+     */
+    public function getHelpUrl() {
+        return 'Resources';
+    }
 }
