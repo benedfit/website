@@ -1,0 +1,17 @@
+User-agent: *
+Sitemap: http://{HTTP_HOST}/xmlsitemap
+Disallow: /App_Browsers/
+Disallow: /App_Code/
+Disallow: /App_Data/
+Disallow: /aspnet_client/
+Disallow: /bin/
+Disallow: /config/
+Disallow: /css/
+Disallow: /macroScripts/
+Disallow: /masterpages/
+Disallow: /scripts/
+Disallow: /umbraco/
+Disallow: /umbraco_client/
+Disallow: /usercontrols/
+Disallow: /xslt/
+# WebMatrix 1.0
