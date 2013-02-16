@@ -5,9 +5,6 @@
 # ignore all IIS files
 web.config
 
-# ignore all config.core.php
-config.core.php
-
 # ignore all compressed js and css
 *-min.css
 *-min.js
