@@ -1,0 +1,91 @@
+@import "compass";
+@import "normalize";
+@import "breakpoint";
+
+$breakpoint-first:640px;
+$breakpoint-second:720px;
+$breakpoint-third:960px;
+$breakpoint-to-ems:true;
+
+@include normalize;
+
+body{
+  @include background(#222 image-url("background.jpg") no-repeat 50% 0);
+  border-top:4px solid #191919;
+  font:100%/1.5 "Arial",sans-serif;
+  text-align:center;
+}
+
+#header{
+  text-align:center;
+}
+
+#logo{
+  background:#000;
+  color:#fff;
+  display:inline-block;
+  margin:1em 0;
+  padding:.25em .5em .25em .75em;
+  font-family:Slate;
+  font-size:2em;
+  font-weight:bold;
+  letter-spacing:.5em;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+#master{
+  border-top:1px solid #111;
+  margin:auto;
+  max-width:$breakpoint-third;
+  text-align:left;
+}
+
+@font-face {
+    font-family: "Slate";
+    font-style: normal;
+    font-weight: 200;
+    src: url("/fonts/slate/light.eot");
+}
+@font-face {
+    font-family: "Slate";
+    font-style: normal;
+    font-weight: 200;
+    src: local("☺"), url("http://:/") format("No-IE-404"), url("/fonts/slate/light.woff") format("woff"), url("/fonts/slate/light.ttf") format("truetype"), url("/fonts/slate/light.svg#slate-light") format("svg");
+}
+@font-face {
+    font-family: "Slate";
+    font-style: italic;
+    font-weight: 200;
+    src: url("/fonts/slate/light-italic.eot");
+}
+@font-face {
+    font-family: "Slate";
+    font-style: italic;
+    font-weight: 200;
+    src: local("☺"), url("http://:/") format("No-IE-404"), url("/fonts/slate/light-italic.woff") format("woff"), url("/fonts/slate/light-italic.ttf") format("truetype"), url("/fonts/slate/light-italic.svg#slate-light-italic") format("svg");
+}
+@font-face {
+    font-family: "Slate";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/slate/normal.eot");
+}
+@font-face {
+    font-family: "Slate";
+    font-style: normal;
+    font-weight: normal;
+    src: local("☺"), url("http://:/") format("No-IE-404"), url("/fonts/slate/normal.woff") format("woff"), url("/fonts/slate/normal.ttf") format("truetype"), url("/fonts/slate/normal.svg#slate") format("svg");
+}
+@font-face {
+    font-family: "Slate";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/fonts/slate/medium.eot");
+}
+@font-face {
+    font-family: "Slate";
+    font-style: normal;
+    font-weight: bold;
+    src: local("☺"), url("http://:/") format("No-IE-404"), url("/fonts/slate/medium.woff") format("woff"), url("/fonts/slate/medium.ttf") format("truetype"), url("/fonts/slate/medium.svg#slate-bold") format("svg");
+}
