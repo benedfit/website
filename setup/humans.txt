@@ -1,0 +1,11 @@
+/* TEAM */
+Designer: Ben Edwards
+Site: http://benedfit.com
+Twitter: benedfit
+Location: Leighton Buzzard, UK
+
+/* SITE */
+Last update: 2013/03/06 
+Standards: HTML5, CSS3
+Components: @font-face
+Software: Aptana Studio 3, GitHub, SASS, Compass, IcoMoon
