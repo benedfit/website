@@ -1,4 +1,6 @@
-Woop
+Personal site
 ===============
 
-http://woopdanceparty.com/
+http://benedfit.com/
+
+I'm redeveloping my personal site slowly but surely.
