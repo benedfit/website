@@ -71,7 +71,8 @@ $offwhite:#e1e1e1;
 }
 
 a{
-  text-decoration:none;
+  color:$offwhite;
+  text-decoration:underline;
 }
 
 body{
@@ -85,6 +86,10 @@ body{
 
 #content{
   color:$grey;
+  
+  a{
+    color:$grey;
+  }
 }
 
 #footer{
@@ -133,6 +138,7 @@ body{
     font-size:1.75em;
     margin:0 .25em;
     padding:.3em .5em .25em;
+    text-decoration:none;
     @include text-shadow(0 -1px 0 $black, .4);
     @include text-shadow(0 -1px 0 rgba($black, .4));
     width:1em;
@@ -140,5 +146,9 @@ body{
     &:hover,&:focus,&:active{
       background:darken($orange, 4%);
     }
+  }
+  
+  span{
+    display:none;
   }
 }
