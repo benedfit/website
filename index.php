@@ -1,73 +1,107 @@
 <?php
-/*
- * MODX Revolution
+/**
+ * Index
  *
- * Copyright 2006-2012 by MODX, LLC.
- * All rights reserved.
+ * Where it all starts	
  *
- * This program is free software; you can redistribute it and/or modify it under
- * the terms of the GNU General Public License as published by the Free Software
- * Foundation; either version 2 of the License, or (at your option) any later
- * version.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
- * details.
- *
- * You should have received a copy of the GNU General Public License along with
- * this program; if not, write to the Free Software Foundation, Inc., 59 Temple
- * Place, Suite 330, Boston, MA 02111-1307 USA
- *
+ * @package GetSimple
+ * @subpackage FrontEnd
  */
-$mtime= microtime();
-$mtime= explode(" ", $mtime);
-$mtime= $mtime[1] + $mtime[0];
-$tstart= $mtime;
 
-/* define this as true in another entry file, then include this file to simply access the API
- * without executing the MODX request handler */
-if (!defined('MODX_API_MODE')) {
-    define('MODX_API_MODE', false);
+/**
+ *  GSCONFIG definitions
+ */
+
+if(!defined('GSSTYLEWIDE')) define('GSSTYLEWIDE','wide'); // wide style sheet
+
+# Setup inclusions
+$load['plugin'] = true;
+if (file_exists('gsconfig.php')) {
+	require_once('gsconfig.php');
 }
 
-/* this can be used to disable caching in MODX absolutely */
-$modx_cache_disabled= false;
+# Relative
+if (defined('GSADMIN')) {
+	$GSADMIN = GSADMIN;
+} else {
+	$GSADMIN = 'admin';
+}
+$admin_relative = $GSADMIN.'/inc/';
+$lang_relative = $GSADMIN.'/';
+$base = true;
 
-/* include custom core config and define core path */
-@include(dirname(__FILE__) . '/config.core.php');
-if (!defined('MODX_CORE_PATH')) define('MODX_CORE_PATH', dirname(__FILE__) . '/core/');
+# Include common.php
+include($GSADMIN.'/inc/common.php');
 
-/* include the modX class */
-if (!@include_once (MODX_CORE_PATH . "model/modx/modx.class.php")) {
-    $errorMessage = 'Site temporarily unavailable';
-    @include(MODX_CORE_PATH . 'error/unavailable.include.php');
-    header('HTTP/1.1 503 Service Unavailable');
-    echo "<html><title>Error 503: Site temporarily unavailable</title><body><h1>Error 503</h1><p>{$errorMessage}</p></body></html>";
-    exit();
+# get page id (url slug) that is being passed via .htaccess mod_rewrite
+if (isset($_GET['id'])){ 
+	$id = str_replace ('..','',$_GET['id']);
+	$id = str_replace ('/','',$id);
+	$id = lowercase($id);
+} else {
+	$id = "index";
 }
 
-/* start output buffering */
-ob_start();
-
-/* Create an instance of the modX class */
-$modx= new modX();
-if (!is_object($modx) || !($modx instanceof modX)) {
-    @ob_end_flush();
-    $errorMessage = '<a href="setup/">MODX not installed. Install now?</a>';
-    @include(MODX_CORE_PATH . 'error/unavailable.include.php');
-    header('HTTP/1.1 503 Service Unavailable');
-    echo "<html><title>Error 503: Site temporarily unavailable</title><body><h1>Error 503</h1><p>{$errorMessage}</p></body></html>";
-    exit();
+# define page, spit out 404 if it doesn't exist
+$file = GSDATAPAGESPATH . $id .'.xml';
+$file_404 = GSDATAOTHERPATH . '404.xml';
+$user_created_404 = GSDATAPAGESPATH . '404.xml';
+if (! file_exists($file)) {
+	if (file_exists($user_created_404)) {
+		//user created their own 404 page, which overrides the default 404 message
+		$file = $user_created_404;
+	} elseif (file_exists($file_404))	{
+		$file = $file_404;
+	}
+	exec_action('error-404');
 }
 
-/* Set the actual start time */
-$modx->startTime= $tstart;
+# get data from page
+$data_index = getXML($file);
+$title = $data_index->title;
+$date = $data_index->pubDate;
+$metak = $data_index->meta;
+$metad = $data_index->metad;
+$url = $data_index->url;
+$content = $data_index->content;
+$parent = $data_index->parent;
+$template_file = $data_index->template;
+$private = $data_index->private;
 
-/* Initialize the default 'web' context */
-$modx->initialize('web');
-
-/* execute the request handler */
-if (!MODX_API_MODE) {
-    $modx->handleRequest();
+# if page is private, check user
+if ($private == 'Y') {
+	if (isset($USR) && $USR == get_cookie('GS_ADMIN_USERNAME')) {
+		//ok, allow the person to see it then
+	} else {
+		redirect('404');
+	}
 }
+
+# if page does not exist, throw 404 error
+if ($url == '404') {
+	header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
+}
+
+# check for correctly formed url
+if (defined('GSCANONICAL')) {
+	if ($_SERVER['REQUEST_URI'] != find_url($url, $parent, 'relative')) {
+		redirect(find_url($url, $parent));
+	}
+}
+
+# include the functions.php page if it exists within the theme
+if ( file_exists(GSTHEMESPATH .$TEMPLATE."/functions.php") ) {
+	include(GSTHEMESPATH .$TEMPLATE."/functions.php");	
+}
+
+# call pretemplate Hook
+exec_action('index-pretemplate');
+
+# include the template and template file set within theme.php and each page
+if ( (!file_exists(GSTHEMESPATH .$TEMPLATE."/".$template_file)) || ($template_file == '') ) { $template_file = "template.php"; }
+include(GSTHEMESPATH .$TEMPLATE."/".$template_file);
+
+# call posttemplate Hook
+exec_action('index-posttemplate');
+
+?>
