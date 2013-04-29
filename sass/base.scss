@@ -1,69 +1,15 @@
-@import "compass";
-@import "normalize";
-@import "breakpoint";
+@import "variables";
 
-$breakpoint-to-ems:true;
-
-@include normalize;
-
-@font-face{
-  font:{
-    family:"icons";
-    style:normal;
-    weight:normal;
-  }
-  src:url("/fonts/icons/icons.eot");
-  src:url("/fonts/icons/icons.eot?#iefix") format("embedded-opentype"),url("/fonts/icons/icons.woff") format("woff"),url("/fonts/icons/icons.ttf") format("truetype"),url("/fonts/icons/icons.svg#icons") format("svg");
+*{
+  border:0;
+  margin:0;
+  padding:0;
 }
-
-@font-face {
-    font:{
-      family:"Slate";
-      style:normal;
-      weight:200;
-    }
-    src:url("/fonts/slate/light.eot");
-    src:local("/fonts/slate/light.eot?#iefix") format("embedded-opentype"),url("/fonts/slate/light.woff") format("woff"),url("/fonts/slate/light.ttf") format("truetype"),url("/fonts/slate/light.svg#slate-light") format("svg");
-}
-@font-face {
-    font:{
-      family:"Slate";
-      style:italic;
-      weight:200;
-    }
-    src:url("/fonts/slate/light-italic.eot");
-    src:url("/fonts/slate/light-italic.eot?#iefix") format("embedded-opentype"),url("/fonts/slate/light-italic.woff") format("woff"),url("/fonts/slate/light-italic.ttf") format("truetype"),url("/fonts/slate/light-italic.svg#slate-light-italic") format("svg");
-}
-@font-face {
-    font:{
-      family:"Slate";
-      style:normal;
-      weight:normal;
-    }
-    src:url("/fonts/slate/normal.eot");
-    src:url("/fonts/slate/normal.eot?#iefix") format("embedded-opentype"),url("/fonts/slate/normal.woff") format("woff"),url("/fonts/slate/normal.ttf") format("truetype"),url("/fonts/slate/normal.svg#slate") format("svg");
-}
-@font-face {
-  font:{
-    family:"Slate";
-    style:normal;
-    weight:bold;
-  }
-  src:url("/fonts/slate/medium.eot");
-  src:url("/fonts/slate/medium.eot?#iefix") format("embedded-opentype"),url("/fonts/slate/medium.woff") format("woff"),url("/fonts/slate/medium.ttf") format("truetype"),url("/fonts/slate/medium.svg#slate-bold") format("svg");
-}
-
-$black:#000;
-$offblack:#222;
-$grey:#333;
-$orange:#f05c35;
-$white:#fff;
-$offwhite:#e1e1e1;
 
 [data-icon]:before{
   content:attr(data-icon);
   font:{
-    family:"icons";
+    family:$font-icon;
     weight:normal;
   }
   line-height:1em;
@@ -79,7 +25,7 @@ body{
   background:$offblack;
   border-top:4px solid $offblack;
   color:$offwhite;
-  font:100%/1.5 "Slate",Arial,sans-serif;
+  font:100%/1.5 $font-base;
   -webkit-font-smoothing:antialiased;
   text-align:center;
 }
@@ -99,7 +45,7 @@ body{
 }
 
 #header{
-  @include background(image-url("header.jpg") no-repeat 60%);
+  @include background(image-url("header.jpg") no-repeat);
 }
 
 #logo{
