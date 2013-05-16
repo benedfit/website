@@ -1,19 +1,13 @@
-# ignore all .htaccess
-.htaccess
-
-# ignore all IIS files
-web.config
-
-# ignore various IDE project files and folders
-.idea/
-.buildpath
-.project
-.settings/
-nbproject/
-
-# ignore OS files
+.bundle
 .DS_Store
-Thumbs.db
-
-# ignore SASS cache files
 .sass-cache
+.gist-cache
+.pygments-cache
+_deploy
+public
+sass.old
+source.old
+source/_stash
+source/stylesheets/screen.css
+vendor
+node_modules

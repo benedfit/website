@@ -1,0 +1,19 @@
+# ignore all .htaccess
+.htaccess
+
+# ignore all IIS files
+web.config
+
+# ignore various IDE project files and folders
+.idea/
+.buildpath
+.project
+.settings/
+nbproject/
+
+# ignore OS files
+.DS_Store
+Thumbs.db
+
+# ignore SASS cache files
+.sass-cache

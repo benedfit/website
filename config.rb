@@ -1,12 +1,18 @@
-require 'breakpoint'
+require 'sass-globbing'
 
+# Require any additional compass plugins here.
+project_type = :stand_alone
+
+# Publishing paths
 http_path = "/"
-css_dir = "_deploy/css"
-fonts_dir = "_deploy/fonts"
-http_fonts_path = "../fonts"
-images_dir = "_deploy/img"
-http_images_path = "../img"
+http_images_path = "/images"
+http_fonts_path = "/fonts"
+css_dir = "public/stylesheets"
+
+# Local development paths
 sass_dir = "sass"
-output_style = :compressed
+images_dir = "source/images"
+fonts_dir = "source/fonts"
+
 line_comments = false
-asset_cache_buster :none
+output_style = :compressed
