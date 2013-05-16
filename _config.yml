@@ -2,11 +2,11 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://benedfit.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: http://google.com/search
+url: http://benedfit.com
+title: Benedfit
+subtitle:
+author: Ben Edwards
+simple_search:
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -70,7 +70,7 @@ github_skip_forks: true
 
 # Twitter
 twitter_user:
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false
@@ -94,7 +94,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-34470231-1
 
 # Facebook Like
 facebook_like: false
