@@ -1,2 +1,2 @@
-User-agent: *
-Disallow: /admin/
+Sitemap:http://benedfit.com/sitemap.xml
+User-agent:*
