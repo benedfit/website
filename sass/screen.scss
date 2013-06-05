@@ -115,7 +115,7 @@ button,input,select,textarea{
 #navigation{
   border-top:1px solid $grey;
   display:block;
-  padding:3em 1em 0;
+  padding:3em .25em 0;
   text-align:center;
   
   a{
@@ -127,7 +127,7 @@ button,input,select,textarea{
     display:inline-block;
     font-size:1.75em;
     line-height:1;
-    margin:0 .25em pxtoem(16, 28);
+    margin:0 .125em pxtoem(16, 28);
     padding:.5em;
     text-decoration:none;
     @include text-shadow(0 -1px 0 $black, .4);
@@ -140,6 +140,15 @@ button,input,select,textarea{
   
   span{
     display:none;
+  }
+  
+  @include breakpoint($breakpoint-first){
+    a{
+      margin:{
+        left:.25em;
+        right:.25em;
+      }
+    }
   }
 }
 
