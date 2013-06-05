@@ -119,6 +119,10 @@ em,i{
     transform:uppercase;
   }
   
+  &.logo-solo{
+    margin-bottom:3em;
+  }
+  
   @include breakpoint($breakpoint-first){
     display:inline-block;
   }
