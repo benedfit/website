@@ -16,10 +16,8 @@
 
 a{
   color:$offwhite;
-  text-decoration:none;
   
   &:hover,&:active,&:focus{
-    text-decoration:underline;
     @include transition(all .2s ease-out);
   }
 }
@@ -60,10 +58,7 @@ button,input,select,textarea{
     line-height:1;
     margin:0 0 .5em;
     padding:0 0 .5em;
-    
-    a:hover,&:active,&:focus{
-      text-decoration:none;
-    }
+    text-decoration:none;
   }
   
   .post-outer{
@@ -75,10 +70,6 @@ button,input,select,textarea{
 #footer{
   margin:0 1em 2em;
   padding:.5em 0;
-  
-  a{
-    text-decoration:underline;
-  }
 }
 
 #header{
