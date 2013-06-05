@@ -1,5 +1,7 @@
 @include font-face("Slate", font-files("slate/regular.woff", "slate/regular.ttf", "slate/regular.svg#SlatePro"), "slate/regular.eot", normal, normal);
+@include font-face("Slate", inline-font-files("slate/regular.woff", woff, "slate/regular.ttf", truetype), "slate/regular.eot", normal, normal);
 @include font-face("icons", font-files("icons/icons.woff", "icons/icons.ttf", "icons/icons.svg#icons"), "icons/icons.eot", normal, normal);
+@include font-face("icons", inline-font-files("icons/icons.woff", woff, "icons/icons.ttf", truetype), "icons/icons.eot", normal, normal);
 
 $font-base:"Slate",Arial,sans-serif;
 $font-icon:"icons";
