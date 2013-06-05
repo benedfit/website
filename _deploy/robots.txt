@@ -1,2 +1,3 @@
-Sitemap:http://benedfit.com/sitemap.xml
+Sitemap:http://cdn.benedfit.com/sitemap.xml
 User-agent:*
+Disallow:/
