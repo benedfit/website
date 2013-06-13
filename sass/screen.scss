@@ -64,6 +64,11 @@ em,i{
     margin:0 0 1em;
   }
   
+  ul{
+    list-style:circle;
+    margin:0 0 1em 1em;
+  }
+  
   .blog-feeds,.blog-pager,.date-header,.post-footer,.status-msg-wrap{
     display:none;
   }
