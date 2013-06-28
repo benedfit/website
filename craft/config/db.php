@@ -6,6 +6,13 @@
  * All of your system's database configuration settings go in here.
  * You can see a list of the default settings in craft/app/etc/config/defaults/db.php
  */
+ 
+/**
+ * $mysql_host = "mysql2.000webhost.com";
+ * $mysql_database = "a7708405_bndf";
+ * $mysql_user = "a7708405_bndf";
+ * $mysql_password = "Qvsau6v1983";
+ */
 
 return array(
 
