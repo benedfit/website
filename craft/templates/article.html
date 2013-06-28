@@ -1,0 +1,9 @@
+{% extends "_layout" %}
+{% block content %}
+<article>
+	<div class="container">
+		<h1><a href="{{ entry.url }}">{{ entry.title }}</a></h1>
+		{{ entry.body }}
+	</div>
+</article>
+{% endblock %}

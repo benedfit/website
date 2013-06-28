@@ -1,10 +1,10 @@
 require 'breakpoint'
 
 http_path = "/"
-css_dir = "_deploy/css"
-fonts_dir = "_deploy/fonts"
+css_dir = "public/css"
+fonts_dir = "public/fonts"
 http_fonts_path = "../fonts"
-images_dir = "_deploy/img"
+images_dir = "public/img"
 http_images_path = "../img"
 sass_dir = "sass"
 output_style = :compressed

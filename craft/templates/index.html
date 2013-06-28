@@ -1,0 +1,12 @@
+{% extends "_layout" %}
+{% set entries = craft.entries.section('articles').find() %}
+{% block content %}
+	{% for entry in entries %}
+	<article>
+		<div class="container">
+			<h1><a href="{{ entry.url }}">{{ entry.title }}</a></h1>
+			{{ entry.body }}
+		</div>
+	</article>
+	{% endfor %}
+{% endblock %}

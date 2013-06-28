@@ -46,6 +46,35 @@ em,i{
 #content{
   color:$offwhite;
   
+  h1{
+    border-bottom:1px solid $grey;
+    font-size:3em;
+    line-height:1;
+    margin:0 0 .5em;
+    padding:0 0 .5em;
+        
+    a{
+      text-decoration:none;
+    }
+  }
+  
+  h2{
+    font-size:1.5em;
+    margin:1em 0 .5em;
+  }
+  
+  article{
+    border-top:1px solid $black;
+    padding:0 0 1em;
+    
+    .container{
+      margin:auto;
+      max-width:pxtoem($breakpoint-max);
+      padding:3em 1em 1em;
+      text-align:left;
+    }
+  }
+  
   code{
     background:$offwhite;
     @include border-radius(.125em);
@@ -55,11 +84,6 @@ em,i{
     white-space: nowrap;
   }
   
-  h4{
-    font-size:1.5em;
-    margin:1em 0 .5em;
-  }
-  
   p{
     margin:0 0 1em;
   }
@@ -67,34 +91,6 @@ em,i{
   ul{
     list-style:circle;
     margin:0 0 1em 1em;
-  }
-  
-  .blog-feeds,.blog-pager,.date-header,.post-footer,.status-msg-wrap{
-    display:none;
-  }
-  
-  .post{
-    margin:auto;
-    max-width:pxtoem($breakpoint-max);
-    padding:3em 1em 1em;
-    text-align:left;
-  }
-  
-  .post-title{
-    border-bottom:1px solid $grey;
-    font-size:3em;
-    line-height:1;
-    margin:0 0 .5em;
-    padding:0 0 .5em;
-    
-    a{
-      text-decoration:none;
-    }
-  }
-  
-  .post-outer{
-    border-top:1px solid $black;
-    padding:0 0 1em;
   }
 }
 

@@ -1,0 +1,13 @@
+{% extends "_layout" %}
+{% set searchTerm = craft.request.getParam('q') %}
+{% set entries = craft.entries.section('articles').search(searchTerm).find() %}
+{% block content %}
+	{% for entry in entries %}
+	<article>
+		<div class="container">
+			<h1><a href="{{ entry.url }}">{{ entry.title }}</a></h1>
+			{{ entry.body }}
+		</div>
+	</article>
+	{% endfor %}
+{% endblock %}
