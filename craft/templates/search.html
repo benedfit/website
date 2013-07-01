@@ -1,4 +1,5 @@
 {% extends "_layout" %}
+{% set title = "Search" %}
 {% set searchTerm = craft.request.getParam('q') %}
 {% set entries = craft.entries.section('articles').search(searchTerm).find() %}
 {% block content %}
