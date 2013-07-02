@@ -1,0 +1,7 @@
+source: source
+destination: _deploy
+permalink: /:year/:month/:title.html
+
+url: http://benedfit.com
+title: Ben Edwards, a web designer and developer
+logo: Benedfit
