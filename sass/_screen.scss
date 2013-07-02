@@ -46,7 +46,7 @@ em,i{
   
   h1{
     border-bottom:1px solid $grey;
-    font-size:3em;
+    font-size:2.5em;
     line-height:1;
     margin:0 0 .5em;
     padding:0 0 .5em;
@@ -107,11 +107,12 @@ em,i{
   color:$white;
   display:block;
   font:{
-    size:2em;
+    size:1.75em;
     weight:bold;
   }
   margin:3em 0 1em;
-  padding:.2em .35em .25em .7em;
+  padding:.65em .4em .65em .75em;
+  line-height:1;
   letter-spacing:.5em;
   text:{
     decoration:none;
