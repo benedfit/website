@@ -8,6 +8,6 @@ images_dir = "source/img"
 http_images_path = "/img"
 sass_dir = "sass"
 
-output_style = :compressed
+output_style = :expanded
 line_comments = false
 asset_cache_buster :none

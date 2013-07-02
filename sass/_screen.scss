@@ -1,4 +1,4 @@
-*,*:after,*:before{
+*{
   @include box-sizing(border-box);
 }
 
@@ -70,6 +70,10 @@ em,i{
       max-width:pxtoem($breakpoint-max);
       padding:3em 1em 1em;
       text-align:left;
+      width:pxtoem($breakpoint-max);
+    }
+    div[class=container]{
+      width:auto;
     }
   }
   
