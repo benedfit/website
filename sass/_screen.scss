@@ -105,7 +105,7 @@ em,i{
 #logo{
   background:$black;
   color:$white;
-  display:block;
+  display:inline-block;
   font:{
     size:1.75em;
     weight:bold;
@@ -121,10 +121,6 @@ em,i{
   
   &.logo-solo{
     margin-bottom:3em;
-  }
-  
-  @include breakpoint($breakpoint-first){
-    display:inline-block;
   }
 }
 
