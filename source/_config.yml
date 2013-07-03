@@ -1,5 +1,4 @@
-source: source
-destination: _deploy
+destination: ../_deploy
 permalink: /:year/:month/:title.html
 
 url: http://benedfit.com

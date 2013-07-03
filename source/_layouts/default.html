@@ -19,7 +19,10 @@
 		<div id="master">
 			<header id="header">
 				<a id="logo"{% if page.hideSearch %} class="logo-solo"{% endif %} href="/">{% if page.logo %}{{ page.logo }}{% else %}{{ site.logo }}{% endif %}</a>
-				{% if page.hideSearch == null %}<form action="/search" id="search" method="get"><fieldset><label for="search-query">Search</label><input id="search-query" name="q" value="{{ searchTerm }}" type="search"><button>Search</button></fieldset></form>{% endif %}
+				{% if page.hideSearch == null %}<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+				<script src="/js/libs/lunr.min.js"></script>
+				<script src="/js/search.js"></script>
+				<form id="search"><fieldset><label for="search-query">Search</label><input id="search-query" name="q" value="{{ searchTerm }}" type="search"><button>Search</button></fieldset></form>{% endif %}
 			</header>
 			<div id="content">
 				{{ content }}
