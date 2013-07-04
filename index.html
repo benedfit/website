@@ -17,53 +17,30 @@
 	</head>
 	<body>
 		<div id="master">
-			<header id="header">
-				<a id="logo" class="logo-solo" href="/">Benedfit</a>
-				
+			<header id="header" class="hide-search">
+				<a id="logo" href="/">Benedfit</a>
+				<script src="/js/libs/jquery.min.js"></script>
+				<script src="/js/libs/lunr.min.js"></script>
+				<script src="/js/search.js"></script>
+				<form id="search"><fieldset><label for="q"><input type="search" id="q" name="q" value="" autocomplete="off"></label><button>Search</button></fieldset></form>
 			</header>
 			<div id="content">
-				
-<article>
+				<article>
 	<div class="container">
-		<h1><a href="/2013/06/phases-and-atomic-design-phase-one.html">Phases and Atomic Design: Phase One</a></h1>
-		<p>As a follow up to my recent post on <a href="/2013/06/atomic-design-phases-and-mesophases.html">Phases (and Mesophases) - a possible addendum to Atomic Design</a> I recently released the first addition to <a href="https://github.com/bradfrost/patternlab" target="_blank">Brad Frost's Pattern Lab</a> to allow quick switching between defined breakpoints.</p>
-<h2>The first release includes:</h2>
-<ul>
-	<li>Basic feature to traverse /css/scss folder structure  and find SASS variables prefixed <code>$bp-</code>, then render as a 'Phases' tab  in the menu bar, using remainder of variable name and value for control  e.g. <code>$bp-small</code> becomes 'SMALL &gt;'; 24em.</li>
-	<li>Basic support provided for detecting whether <code>px</code> or <code>em</code> value has been specified.</li>
-</ul>
-<h2>To-do:</h2>
-<ul>
-	<li>Provide configuration to allow user to set pattern to match variable name on.</li>
-	<li>Possibly order the options based on size rather than order of declaration</li>
-	<li>Confirm this works with .sass as well as .scss</li>
-	<li>Deal with other browser units of measure</li>
-</ul>
-<p><a href="https://github.com/benedfit/patternlab" target="_blank">Check out the release on GitHub</a> and <a href="https://twitter.com/benedfit" target="_blank">let me know what you think via Twitter</a>.</p>
-<h2>UPDATE</h2>
-<p>Brad's updated <a href="http://patternlab.bradfrostweb.com/" target="_blank">patternlab.bradfrostweb.com</a> with my first release. So try it out!</p>
-	</div>
-</article>
+		<h1><a href="/2013/06/phases-and-atomic-design-phase-one">Phases and Atomic Design: Phase One</a><time datetime="2013-06-28">2013-06-28</time></h1>
+		<p>As a follow up to my recent post on <a href="/2013/06/atomic-design-phases-and-mesophases">Phases (and Mesophases) - a possible addendum to Atomic Design</a> I recently released the first addition to <a href="https://github.com/bradfrost/patternlab" target="_blank">Brad Frost's Pattern Lab</a> to allow quick switching between defined breakpoints.</p>
 
-<article>
+
+	</div>
+</article><article>
 	<div class="container">
-		<h1><a href="/2013/06/atomic-design-phases-and-mesophases.html">Phases (and Mesophases) - a possible addendum to Atomic Design</a></h1>
+		<h1><a href="/2013/06/atomic-design-phases-and-mesophases">Phases (and Mesophases) - a possible addendum to Atomic Design</a><time datetime="2013-06-05">2013-06-05</time></h1>
 		<p>This Monday I had the absolute pleasure of attending <a href="http://bradfrostweb.com/" target="_blank">Brad Frost</a>'s <em>Reasons to be Responsive</em> workshop (<a href="http://www.jrayson.co.uk/blog/130603-reasons-to-be-awesome" target="_blank">Recap by Jake Ryan</a>). Among the 8 'awesome' hours of RWD gold, Brad introduced us to <a href="http://bradfrostweb.com/blog/link/atomic-design/" target="_blank">Atomic Design</a>, a modular approach to responsive design and development, and his brand new tool <a href="http://patternlab.bradfrostweb.com/" target="_blank">Pattern Lab</a> for forging websites using the Atomic Design approach.</p>
 <p>One of the other topics during the day was inevitably the art of selecting breakpoints, and more importantly for this post, the naming of the SASS variables for these breakpoints, and how said names could be tied into Atomic Design.</p>
-<h2>Introducing... Phases</h2>
-<p>I love a good science analogy, so following along the matter-based naming convention of Atomic Design, I settled upon <a href="http://en.wikipedia.org/wiki/Phase_(matter)" target="_blank">Phases</a> as a suitable term. In physics the term phase is sometimes used as a synonym for states of matter (<em>this being another term that I considered using, until I learned of <a href="http://en.wikipedia.org/wiki/Mesophase" target="_blank">mesophases</a>, but I'll get onto that shortly</em>), which you may remember from GSCE physics being: solid, liquid, gas, and a new one to me, plasma.</p>
-<p>So I started experimenting with using Phases as a way to name my SASS variables, which lead to such examples as <code>$bp-small: 24em;</code> becoming <code>$phase-first: 24em;</code> and <code>$bp-med: 46.8em;</code> becoming <code>$phase-second: 46.8em;</code>.</p>
-<h2>"That's all very well and good Ben, by what about <a href="http://adactio.com/journal/6044/" target="_blank">tweakpoints</a>" - Someone, somewhere</h2>
-<p>I hear you... That's where <a href="http://en.wikipedia.org/wiki/Mesophase" target="_blank">Mesophases</a> come along. In physics, a mesophase is a state of matter intermediate between liquid and solid.</p>
-<p>I envisage Phases as a way to describe when the layout of a page changes significantly, for example, if it changes from a one column to multi-column layout. Mesophases, on the other hand, would be the changes between those significant changes, for example, tweaking the font-size of the nav to make it fit more comfortablly.</p>
-<p>As these  are changes affecting Atomic Design organisms, molecules, or even atoms, I feel it's best to name the associated SASS variables accordingly. So what once might have been <code>$bp-small-2: 29.75em;</code> could become <code>$mesophase-nav-first: 29.75em;</code></p>
-<h2> What next?</h2>
-<p>One of Brad's key aims for Pattern Lab is that he doesn't want to dictate naming conventions and development styles, and I'm keen to stick to that plan. So if you don't like the idea of Phases and Mesophases, please do ignore these musing. However, my plan is to take <a href="https://github.com/benedfit/patternlab" target="_blank">my fork of Pattern Lab</a>, and work out how Phases and Mesophases can be automatically added to the UI directly by looking for them in .scss files, and provide users with the means to scale the display to the necessary dimensions to view them.</p>
-<p>Please feel free to share your thoughts with me on <a href="https://twitter.com/benedfit" target="_blank">Twitter @benedfit</a></p>
-<p>P.S. I do plan on opening my blog for comments in the near future, but the Blogger comments module looks terrible out-of-the-box, and my OCD can't handle having it live in it's current state :)</p>
+
+
 	</div>
 </article>
-
 				<nav id="navigation">
 					<a href="mailto:hello@benedfit.com" data-icon="&#x65;"><span>Email me at hello@benedfit.com</span></a>
 					<a href="tel:+447043311285" data-icon="&#x6d;"><span>Call me on +44 7043 311285</span></a>

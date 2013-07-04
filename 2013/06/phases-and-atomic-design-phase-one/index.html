@@ -17,15 +17,19 @@
 	</head>
 	<body>
 		<div id="master">
-			<header id="header">
-				<a id="logo" class="logo-solo" href="/">Benedfit</a>
-				
+			<header id="header" class="hide-search">
+				<a id="logo" href="/">Benedfit</a>
+				<script src="/js/libs/jquery.min.js"></script>
+				<script src="/js/libs/lunr.min.js"></script>
+				<script src="/js/search.js"></script>
+				<form id="search"><fieldset><label for="q"><input type="search" id="q" name="q" value="" autocomplete="off"></label><button>Search</button></fieldset></form>
 			</header>
 			<div id="content">
 				<article>
 	<div class="container">
-		<h1><a href="/2013/06/phases-and-atomic-design-phase-one.html">Phases and Atomic Design: Phase One</a></h1>
-		<p>As a follow up to my recent post on <a href="/2013/06/atomic-design-phases-and-mesophases.html">Phases (and Mesophases) - a possible addendum to Atomic Design</a> I recently released the first addition to <a href="https://github.com/bradfrost/patternlab" target="_blank">Brad Frost's Pattern Lab</a> to allow quick switching between defined breakpoints.</p>
+		<h1><a href="/2013/06/phases-and-atomic-design-phase-one">Phases and Atomic Design: Phase One</a><time datetime="">2013-06-28</time></h1>
+		<p>As a follow up to my recent post on <a href="/2013/06/atomic-design-phases-and-mesophases">Phases (and Mesophases) - a possible addendum to Atomic Design</a> I recently released the first addition to <a href="https://github.com/bradfrost/patternlab" target="_blank">Brad Frost's Pattern Lab</a> to allow quick switching between defined breakpoints.</p>
+
 <h2>The first release includes:</h2>
 <ul>
 	<li>Basic feature to traverse /css/scss folder structure  and find SASS variables prefixed <code>$bp-</code>, then render as a 'Phases' tab  in the menu bar, using remainder of variable name and value for control  e.g. <code>$bp-small</code> becomes 'SMALL &gt;'; 24em.</li>
