@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>Phases and Atomic Design: Phase One | Ben Edwards, a web designer and developer</title>
+		<title>Ben Edwards, a web designer and developer</title>
 		<link rel="author" href="http://atypicalmass.com/">
 		<!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="/css/no-mq.css" media="screen"><![endif]-->
 		<!--[if (gte IE 9)|(IEMobile)]><!--><link rel="stylesheet" href="/css/mq.css" media="screen"><!--<![endif]-->
@@ -21,28 +21,7 @@
 				<a id="logo" href="/">Benedfit</a>
 				<form id="search"><fieldset><label for="q"><input type="search" id="q" value="" autocomplete="off"></label><button>Search</button></fieldset></form>
 			</header>
-			<div id="content"><article>
-	<div class="container">
-		<h1><a href="/2013/06/phases-and-atomic-design-phase-one">Phases and Atomic Design: Phase One</a><time datetime="">2013-06-28</time></h1>
-		<p>As a follow up to my recent post on <a href="/2013/06/atomic-design-phases-and-mesophases">Phases (and Mesophases) - a possible addendum to Atomic Design</a> I recently released the first addition to <a href="https://github.com/bradfrost/patternlab" target="_blank">Brad Frost's Pattern Lab</a> to allow quick switching between defined breakpoints.</p>
-
-<h2>The first release includes:</h2>
-<ul>
-	<li>Basic feature to traverse /css/scss folder structure  and find SASS variables prefixed <code>$bp-</code>, then render as a 'Phases' tab  in the menu bar, using remainder of variable name and value for control  e.g. <code>$bp-small</code> becomes 'SMALL &gt;'; 24em.</li>
-	<li>Basic support provided for detecting whether <code>px</code> or <code>em</code> value has been specified.</li>
-</ul>
-<h2>To-do:</h2>
-<ul>
-	<li>Provide configuration to allow user to set pattern to match variable name on.</li>
-	<li>Possibly order the options based on size rather than order of declaration</li>
-	<li>Confirm this works with .sass as well as .scss</li>
-	<li>Deal with other browser units of measure</li>
-</ul>
-<p><a href="https://github.com/benedfit/patternlab" target="_blank">Check out the release on GitHub</a> and <a href="https://twitter.com/benedfit" target="_blank">let me know what you think via Twitter</a>.</p>
-<h2>UPDATE</h2>
-<p>Brad's updated <a href="http://patternlab.bradfrostweb.com/" target="_blank">patternlab.bradfrostweb.com</a> with my first release. So try it out!</p>
-	</div>
-</article></div>
+			<div id="content"><section id="search-results"></section></div>
 			<nav id="navigation">
 				<a href="mailto:hello@benedfit.com" data-icon="&#x65;"><span>Email me at hello@benedfit.com</span></a>
 				<a href="tel:+447043311285" data-icon="&#x6d;"><span>Call me on +44 7043 311285</span></a>
