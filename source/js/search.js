@@ -1,13 +1,13 @@
 ---
 ---
-var docs = [{% for post in site.posts %}{% include post.json %},{% endfor %}],
-idx = lunr(function () {
+var posts = [{% for post in site.posts %}{% include post.json %},{% endfor %}],
+index = lunr(function () {
 	this.field('title', 10);
 	this.field('content');
-});
+}), entries;
 
-for (var index in docs) {
-	idx.add(docs[index]);
+for (var post in posts) {
+	index.add(posts[post]);
 }
 
 $(function () {
@@ -27,8 +27,17 @@ $(function () {
 })
 
 function search () {
-  var result = idx.search($("#search input").val());
-  if (result && result.length > 0) {
-    window.location.replace(result[0].ref);
+  var results = $.map(index.search($("#search input").val()), function (result) {
+  	return $.grep(posts, function (entry) { 
+  		return entry.id === result.ref 
+  	})[0];
+  }),
+  $container = $('#content'),
+  template = Mustache.compile($('#search-results-template').html());
+  
+  $container.empty();
+  
+  if (results && results.length > 0) {
+  	$container.append(template({ posts: results }));
   }
 }

@@ -19,22 +19,31 @@
 		<div id="master">
 			<header id="header" class="hide-search">
 				<a id="logo" href="/">{% if page.logo %}{{ page.logo }}{% else %}{{ site.logo }}{% endif %}</a>
-				{% if page.hideSearch == null %}<script src="/js/libs/jquery.min.js"></script>
-				<script src="/js/libs/lunr.min.js"></script>
-				<script src="/js/search.js"></script>
-				<form id="search"><fieldset><label for="q"><input type="search" id="q" name="q" value="{{ searchTerm }}" autocomplete="off"></label><button>Search</button></fieldset></form>{% endif %}
+				{% if page.hideSearch == null %}<form id="search"><fieldset><label for="q"><input type="search" id="q" value="{{ searchTerm }}" autocomplete="off"></label><button>Search</button></fieldset></form>{% endif %}
 			</header>
-			<div id="content">
-				{{ content }}
-				<nav id="navigation">
-					<a href="mailto:hello@benedfit.com" data-icon="&#x65;"><span>Email me at hello@benedfit.com</span></a>
-					<a href="tel:+447043311285" data-icon="&#x6d;"><span>Call me on +44 7043 311285</span></a>
-					<a href="https://twitter.com/benedfit" data-icon="&#x21;"><span>Follow me on Twitter</span></a>
-					<a href="https://github.com/benedfit/" data-icon="&#x22;"><span>Find me on Github</span></a>
-				</nav>	
-			</div>
+			<div id="content">{{ content }}</div>
+			<nav id="navigation">
+				<a href="mailto:hello@benedfit.com" data-icon="&#x65;"><span>Email me at hello@benedfit.com</span></a>
+				<a href="tel:+447043311285" data-icon="&#x6d;"><span>Call me on +44 7043 311285</span></a>
+				<a href="https://twitter.com/benedfit" data-icon="&#x21;"><span>Follow me on Twitter</span></a>
+				<a href="https://github.com/benedfit/" data-icon="&#x22;"><span>Find me on Github</span></a>
+			</nav>
 			<footer id="footer">&copy; <a href="/">Ben Edwards</a>. All rights reserved.</footer>
 		</div>
 		<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-34470231-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s)})()</script>
+		{% if page.hideSearch == null %}{% raw %}<script id="search-results-template" type="text/mustache">
+			{{#posts}}
+			<article>
+				<div class="container">
+					<h1><a href="{{id}}">{{title}}</a><time datetime="{{date}}">{{displayDate}}</time></h1>
+					{{&excerpt}}
+				</div>
+			</article>
+			{{/posts}}
+		</script>{% endraw %}
+		<script src="/js/libs/jquery.min.js"></script>
+		<script src="/js/libs/lunr.min.js"></script>
+		<script src="/js/libs/mustache.js"></script>
+		<script src="/js/search.js"></script>{% endif %}
 	</body>
 </html>
