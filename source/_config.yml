@@ -1,5 +1,5 @@
 destination: ../_deploy
-permalink: /:year/:month/:title.html
+permalink: /:year/:month/:title
 
 url: http://benedfit.com
 title: Ben Edwards, a web designer and developer

@@ -1,5 +1,1 @@
-{
-"id" : "{{site.url}}{{ post.url }}",
-"title" : "{{ post.title }}",
-"content" : "{{ post.content | strip_html | strip_newlines | remove:'"' }}"
-}
+{"id":"{{ post.url }}","title":"{{ post.title }}","content":"{{ post.content | strip_html | strip_newlines | remove:'"' }}"}
