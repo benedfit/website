@@ -1,6 +1,16 @@
 destination: ../_deploy
 permalink: /:year/:month/:title
 
+assets:
+  dirname: js
+  sources:
+    - _js
+  cachebust: none
+  compress:
+    js: uglifier
+    css: sass
+  gzip: false
+
 url: http://benedfit.com
 title: Ben Edwards, a web designer and developer
 logo: Benedfit

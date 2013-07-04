@@ -1,0 +1,3 @@
+---
+---
+{"posts":[{% for post in site.posts %}{% if forloop.index > 1 %},{% endif %}{"id":"{{ post.url }}","title":"{{ post.title }}","date":"{{ post.date | date: '%Y-%m-%d' }}","excerpt":"{{ post.excerpt | strip_newlines | remove:'"' }}","content":"{{ post.content | strip_html | strip_newlines | remove:'"' | remove:'	' }}"}{% endfor %}]}

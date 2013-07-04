@@ -5,5 +5,7 @@ layout: default
 	<div class="container">
 		<h1><a href="{{ page.url }}">{{ page.title }}</a><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time></h1>
 		{{ content }}
+		<div id="disqus_thread" class="comments"></div>
+		<script type="text/javascript">var b="benedfit";(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="//"+b+".disqus.com/embed.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)})()</script>
 	</div>
 </article>
