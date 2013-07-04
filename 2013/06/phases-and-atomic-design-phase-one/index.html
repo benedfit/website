@@ -13,13 +13,13 @@
 		<meta name="msapplication-TileColor" content="#000000">
 		<meta name="msapplication-TileImage" content="/tileicon.png">
 		
-		<!--[if lte IE 9]><script src="/js/libs/html5.js"></script><![endif]-->
+		<!--[if lte IE 9]><script type="text/javascript" src="/js/libs/html5.js"></script><![endif]-->
 	</head>
 	<body>
 		<div id="master">
 			<header id="header" class="hide-search">
 				<a id="logo" href="/">Benedfit</a>
-				<form id="search"><fieldset><label for="q"><input type="search" id="q" value="" autocomplete="off"></label><button>Search</button></fieldset></form>
+				<form id="search"><fieldset><label for="search-input"><input type="search" id="search-input" autocomplete="off"></label><button id="search-button">Search</button></fieldset></form>
 			</header>
 			<div id="content"><article>
 	<div class="container">
@@ -41,6 +41,8 @@
 <p><a href="https://github.com/benedfit/patternlab" target="_blank">Check out the release on GitHub</a> and <a href="https://twitter.com/benedfit" target="_blank">let me know what you think via Twitter</a>.</p>
 <h2>UPDATE</h2>
 <p>Brad's updated <a href="http://patternlab.bradfrostweb.com/" target="_blank">patternlab.bradfrostweb.com</a> with my first release. So try it out!</p>
+		<div id="disqus_thread" class="comments"></div>
+		<script type="text/javascript">var b="benedfit";(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="//"+b+".disqus.com/embed.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)})()</script>
 	</div>
 </article></div>
 			<nav id="navigation">
@@ -62,9 +64,6 @@
 			</article>
 			{{/posts}}
 		</script>
-		<script src="/js/libs/jquery.min.js"></script>
-		<script src="/js/libs/lunr.min.js"></script>
-		<script src="/js/libs/mustache.js"></script>
-		<script src="/js/search.js"></script>
+		<script type="text/javascript" src="/js/search.js"></script>
 	</body>
 </html>
