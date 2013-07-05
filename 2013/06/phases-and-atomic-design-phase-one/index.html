@@ -17,13 +17,13 @@
 	</head>
 	<body>
 		<div id="master">
-			<header id="header" class="hide-search">
+			<header id="header" class="hide-search" role="banner">
 				<a id="logo" href="/">Benedfit</a>
-				<form id="search"><fieldset><label for="search-input"><input type="search" id="search-input" autocomplete="off"></label><button id="search-button">Search</button></fieldset></form>
+				<form id="search" role="search"><fieldset><label for="search-input"><input type="search" id="search-input" autocomplete="off"></label><button id="search-button">Search</button></fieldset></form>
 			</header>
-			<div id="content"><article>
+			<main id="content" role="main"><article>
 	<div class="container">
-		<h1><a href="/2013/06/phases-and-atomic-design-phase-one">Phases and Atomic Design: Phase One</a><time datetime="">2013-06-28</time></h1>
+		<h1><a href="/2013/06/phases-and-atomic-design-phase-one" rel="bookmark">Phases and Atomic Design: Phase One</a><time datetime="">2013-06-28</time></h1>
 		<p>As a follow up to my recent post on <a href="/2013/06/atomic-design-phases-and-mesophases">Phases (and Mesophases) - a possible addendum to Atomic Design</a> I recently released the first addition to <a href="https://github.com/bradfrost/patternlab" target="_blank">Brad Frost's Pattern Lab</a> to allow quick switching between defined breakpoints.</p>
 
 <h2>The first release includes:</h2>
@@ -44,26 +44,17 @@
 		<div id="disqus_thread" class="comments"></div>
 		<script type="text/javascript">var b="benedfit";(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="//"+b+".disqus.com/embed.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)})()</script>
 	</div>
-</article></div>
-			<nav id="navigation">
+</article></main>
+			<nav id="navigation" role="navigation">
 				<a href="mailto:hello@benedfit.com" data-icon="&#x65;"><span>Email me at hello@benedfit.com</span></a>
-				<a href="tel:+447043311285" data-icon="&#x6d;"><span>Call me on +44 7043 311285</span></a>
+				<a href="tel:+447563167652" data-icon="&#x6d;"><span>Call me on +44 7563 167652</span></a>
 				<a href="https://twitter.com/benedfit" data-icon="&#x21;"><span>Follow me on Twitter</span></a>
 				<a href="https://github.com/benedfit/" data-icon="&#x22;"><span>Find me on Github</span></a>
 			</nav>
-			<footer id="footer">&copy; <a href="/">Ben Edwards</a>. All rights reserved.</footer>
+			<footer id="footer" role="contentinfo">&copy; <a href="/">Ben Edwards</a>. All rights reserved.</footer>
 		</div>
-		<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-34470231-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s)})()</script>
-		<script id="search-results-template" type="text/mustache">
-			{{#posts}}
-			<article>
-				<div class="container">
-					<h1><a href="{{id}}">{{title}}</a><time datetime="{{date}}">{{date}}</time></h1>
-					{{&excerpt}}
-				</div>
-			</article>
-			{{/posts}}
-		</script>
+		<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-34470231-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s)})()</script>
+		<script id="search-results-template" type="text/mustache">{{#posts}}<article><div class="container"><h1><a href="{{id}}" rel="bookmark">{{title}}</a><time datetime="{{date}}">{{date}}</time></h1>{{&excerpt}}</div></article>{{/posts}}</script>
 		<script type="text/javascript" src="/js/search.js"></script>
 	</body>
 </html>
