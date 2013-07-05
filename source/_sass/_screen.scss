@@ -43,6 +43,7 @@ em,i{
 
 #content{
   color:$white2;
+  display:block;
   
   h1{
     border-bottom:1px solid $grey;
@@ -134,7 +135,7 @@ em,i{
 }
 
 #header{
-  @include background(image-url("header.jpg") no-repeat);
+  @include background(image-url("header.jpg") no-repeat 50% 0);
   overflow:hidden;
   padding:5em 0 0;
   

@@ -1,5 +1,8 @@
 destination: ../_deploy
 permalink: /:year/:month/:title
+exclude:
+  - config.rb
+  - Procfile
 
 assets:
   dirname: js
