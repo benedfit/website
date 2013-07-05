@@ -14,6 +14,7 @@ $(function () {
 		if (e.which == 13) {
 			e.preventDefault();
 			search();
+			$(this).blur();
 		}
 	});
 })
@@ -44,5 +45,7 @@ function search () {
   		if (results && results.length > 0) {
    			$container.append(template({ posts: results }));
   		}
+  		
+  		$container.focus();
 	});
 }
