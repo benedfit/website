@@ -3,9 +3,13 @@ layout: default
 ---
 <article>
 	<div class="container">
-		<h1><a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time></h1>
+		<header>
+			<h1><a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time></h1>
+		</header>
 		{{ content }}
-		<div id="disqus_thread" class="comments"></div>
+		<section id="comments">
+			<div id="disqus_thread"></div>
+		</section>
 		<script type="text/javascript">var b="benedfit";(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="//"+b+".disqus.com/embed.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)})()</script>
 	</div>
 </article>
