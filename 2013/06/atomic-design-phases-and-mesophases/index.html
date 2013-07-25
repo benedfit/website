@@ -14,7 +14,7 @@
 		<meta name="msapplication-TileColor" content="#000000">
 		<meta name="msapplication-TileImage" content="/tileicon.png">
 		
-		<!--[if lte IE 9]><script type="text/javascript" src="/js/libs/html5.js"></script><![endif]-->
+		<!--[if lte IE 9]><script src="/js/libs/html5.js"></script><![endif]-->
 	</head>
 	<body>
 		<div id="master">
@@ -29,7 +29,7 @@
 		</header>
 		<p>This Monday I had the absolute pleasure of attending <a href="http://bradfrostweb.com/" target="_blank">Brad Frost</a>'s <em>Reasons to be Responsive</em> workshop (<a href="http://www.jrayson.co.uk/blog/130603-reasons-to-be-awesome" target="_blank">Recap by Jake Ryan</a>). Among the 8 'awesome' hours of RWD gold, Brad introduced us to <a href="http://bradfrostweb.com/blog/link/atomic-design/" target="_blank">Atomic Design</a>, a modular approach to responsive design and development, and his brand new tool <a href="http://patternlab.bradfrostweb.com/" target="_blank">Pattern Lab</a> for forging websites using the Atomic Design approach.</p>
 <p>One of the other topics during the day was inevitably the art of selecting breakpoints, and more importantly for this post, the naming of the SASS variables for these breakpoints, and how said names could be tied into Atomic Design.</p>
-
+<!--/excerpt-->
 <h2>Introducing... Phases</h2>
 <p>I love a good science analogy, so following along the matter-based naming convention of Atomic Design, I settled upon <a href="http://en.wikipedia.org/wiki/Phase_(matter)" target="_blank">Phases</a> as a suitable term. In physics the term phase is sometimes used as a synonym for states of matter (<em>this being another term that I considered using, until I learned of <a href="http://en.wikipedia.org/wiki/Mesophase" target="_blank">mesophases</a>, but I'll get onto that shortly</em>), which you may remember from GSCE physics being: solid, liquid, gas, and a new one to me, plasma.</p>
 <p>So I started experimenting with using Phases as a way to name my SASS variables, which lead to such examples as <code>$bp-small: 24em;</code> becoming <code>$phase-first: 24em;</code> and <code>$bp-med: 46.8em;</code> becoming <code>$phase-second: 46.8em;</code>.</p>
@@ -59,6 +59,6 @@
 		</div>
 		<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-34470231-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s)})()</script>
 		<script id="search-results-template" type="text/mustache">{{#posts}}<article><div class="container"><h1><a href="{{id}}" rel="bookmark">{{title}}</a><time datetime="{{date}}">{{date}}</time></h1>{{&excerpt}}</div></article>{{/posts}}</script>
-		<script type="text/javascript" src="/js/search.js"></script>
+		<script src="/js/search.js"></script>
 	</body>
 </html>
