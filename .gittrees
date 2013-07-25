@@ -1,0 +1,4 @@
+[subtree "_deploy"]
+    url = https://benedfit@github.com/benedfit/benedfit.github.io.git
+    path = _deploy
+    branch = master
