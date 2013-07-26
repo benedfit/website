@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
- 
+
+gem "breakpoint"
+gem "compass"
 gem "foreman"
 gem "jekyll"
 gem "jekyll-assets"
