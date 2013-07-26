@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 				options: {
 		            stdout: true
 		       	},
-				command: 'bundle exec jekyll build --trace --config _config.yml,_config.deploy.yml'
+				command: 'bundle exec jekyll build --trace --config _config.yml,_config-deploy.yml'
 			}
 		},
 		watch: {
