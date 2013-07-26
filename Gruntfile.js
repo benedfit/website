@@ -65,5 +65,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jekyll');
 	
 	grunt.registerTask('default', ['compass:dev', 'jekyll:dev']);
-	grunt.registerTask('deploy', ['compass:deploy', 'jekyll:deploy', 'imagemin:deploy']);
+	grunt.registerTask('deploy', ['jekyll:deploy', 'imagemin:deploy']);
 };
