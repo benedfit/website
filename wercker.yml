@@ -1,4 +1,4 @@
-box: wercker/nodejs
+box: wercker/default
 build:
   steps:
     - bundle-install
