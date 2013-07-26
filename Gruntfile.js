@@ -2,24 +2,15 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		compass: {
-			options: {
-				config: 'config.rb',
-				force: true
-			},
-			dev: {
+			dev:{
 				options: {
-					environment: 'development'
-				}
-			},
-			deploy: {
-				options: {
-					debugInfo: true,
-					environment: 'production',
+					config: 'config.rb',
+					force: true
 				}
 			}
 		},
 		imagemin: {
-           	deploy: {
+			deploy: {
 				options: {
 					optimizationLevel: 7,
 				},
@@ -29,22 +20,27 @@ module.exports = function(grunt) {
 	                src: ['**/*.jpg','**/*.png'],
 	                dest: '_deploy'
 	            }]
-			}
+           	}
 		},
 		jekyll: {
-			options: {
-				force: true
-			},
 			dev: {
 				options: {
-					config: '_config.yml',
+					force: true
 				}
-			},
-			deploy: {
+			}
+		},
+		shell: {
+			compass: {
 				options: {
-					config: '_config.yml,_config.deploy.yml',
-					trace: true
-				}
+		            stdout: true
+		       	},
+				command: 'bundle exec compass compile -e production --force --debug-info',
+			},
+			jekyll: {
+				options: {
+		            stdout: true
+		       	},
+				command: 'bundle exec jekyll build --config _config.yml,_config.deploy.yml --trace',
 			}
 		},
 		watch: {
@@ -63,7 +59,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-jekyll');
+	grunt.loadNpmTasks('grunt-shell');
 	
-	grunt.registerTask('default', ['compass:dev', 'jekyll:dev']);
-	grunt.registerTask('deploy', ['jekyll:deploy', 'imagemin:deploy']);
+	grunt.registerTask('default', ['compass', 'jekyll']);
+	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
 };

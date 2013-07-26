@@ -3,7 +3,7 @@ require "breakpoint"
 sass_dir = "source/_sass"
 css_dir = "source/_assets/css"
 fonts_dir = "source/fonts"
-images_dir = "source/_assets/img"
+images_dir = "source/img"
 
 http_css_path = "/css"
 http_fonts_path = "/fonts"
