@@ -1,5 +1,6 @@
 source: ./source
 destination: ./_deploy
+keep_files: [css]
 permalink: /:year/:month/:title
 excerpt_separator: "<!--/excerpt-->"
 

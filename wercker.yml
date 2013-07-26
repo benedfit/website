@@ -3,20 +3,23 @@ build:
   steps:
     - bundle-install
     - script:
-        name: Build
+        name: Compass compile
+        name: bundle exec compass compile -e production --debug-info
+    - script:
+        name: Jekyll build
         code: bundle exec jekyll build --trace
 deploy:
   steps:
     - script:
-        name: Configuration
+        name: Configure git
         code: |-
           git config --global user.email "pleasemailus@wercker.com"
           git config --global user.name "wercker"
-          rm -rf .git
     - script:
-        name: Deploy
+        name: Deploy to Github Pages
         code: |-
+          cd _deploy
           git init
           git add .
           git commit -m "deploy commit from $WERCKER_STARTED_BY"
-          git subtree push _deploy $GIT_REMOTE $GIT_BRANCH
+          git push -f $GIT_REMOTE $GIT_BRANCH
