@@ -4,7 +4,7 @@ build:
     - bundle-install
     - script:
         name: Compass compile
-        name: bundle exec compass compile -e production --debug-info
+        name: bundle exec compass compile -e production --force --debug-info
     - script:
         name: Jekyll build
         code: bundle exec jekyll build --trace
