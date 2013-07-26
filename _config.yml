@@ -11,8 +11,8 @@ assets:
     - _assets/css
     - _assets/js
   cachebust: none
-  js_compressor: none
-  css_compressor: none
+  js_compressor: uglifier
+  css_compressor: sass
   gzip: false
 
 url: http://benedfit.com

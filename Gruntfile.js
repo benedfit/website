@@ -25,6 +25,7 @@ module.exports = function(grunt) {
 		jekyll: {
 			dev: {
 				options: {
+					config: ['_config.yml','_config-dev.yml'],
 					force: true
 				}
 			}
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
 				options: {
 		            stdout: true
 		       	},
-				command: 'bundle exec jekyll build --trace --config _config.yml,_config-deploy.yml'
+				command: 'bundle exec jekyll build --trace'
 			}
 		},
 		watch: {
