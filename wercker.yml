@@ -19,4 +19,4 @@ deploy:
           git init
           git add .
           git commit -m "deploy commit from $WERCKER_STARTED_BY"
-          git push -f $GIT_REMOTE master:master
+          git subtree push _deploy $GIT_REMOTE $GIT_BRANCH
