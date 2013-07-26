@@ -2,7 +2,7 @@ box: wercker/nodejs
 build:
   steps:
     - grunt:
-      tasks: deploy
+        tasks: deploy
 deploy:
   steps:
     - script:
