@@ -1,6 +1,8 @@
-//= require libs/jquery
-//= require libs/lunr
-//= require libs/mustache
+//= require js/libs/jquery
+
+//= require js/libs/lunr
+
+//= require js/libs/mustache
 
 $(function () {
 	$('#header').removeClass('hide-search');

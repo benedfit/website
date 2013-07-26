@@ -1,25 +1,17 @@
-box: wercker/ruby
+box: wercker/nodejs
 build:
   steps:
-    - bundle-install
-    - script:
-        name: Compass compile
-        code: bundle exec compass compile -e production --force --debug-info
-    - script:
-        name: Jekyll build
-        code: bundle exec jekyll build --trace
+    - grunt:
+      tasks: deploy
 deploy:
   steps:
     - script:
-        name: Configure git
-        code: |-
-          git config --global user.email "pleasemailus@wercker.com"
-          git config --global user.name "wercker"
-    - script:
-        name: Deploy to Github Pages
+        name: deploy to github pages
         code: |-
           cd _deploy
+          git config --global user.email "pleasemailus@wercker.com"
+          git config --global user.name "wercker"
           git init
           git add .
-          git commit -m "deploy commit from $WERCKER_STARTED_BY"
+          git commit -m "deploy commit from $WERCKER_STARTED_BY via Wercker"
           git push -f $GIT_REMOTE $GIT_BRANCH

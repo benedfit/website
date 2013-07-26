@@ -1,17 +1,16 @@
 source: ./source
 destination: ./_deploy
-keep_files: [css]
 permalink: /:year/:month/:title
 excerpt_separator: "<!--/excerpt-->"
 
 assets:
-  dirname: js
+  dirname: .
+  baseurl: /
   sources:
-    - _js
+    - _assets
+    - _assets/css
+    - _assets/js
   cachebust: none
-  compress:
-    js: uglifier
-    css: sass
   gzip: false
 
 url: http://benedfit.com

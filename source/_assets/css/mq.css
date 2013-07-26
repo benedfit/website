@@ -1,5 +1,4 @@
 /* line 17, ../../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -302,10 +301,12 @@ em, i {
 #navigation span {
   display: none;
 }
-/* line 199, ../../_sass/_screen.scss */
-#navigation a {
-  margin-left: .25em;
-  margin-right: .25em;
+@media (min-width: 21.25em) {
+  /* line 199, ../../_sass/_screen.scss */
+  #navigation a {
+    margin-left: .25em;
+    margin-right: .25em;
+  }
 }
 
 /* line 208, ../../_sass/_screen.scss */

@@ -1,0 +1,11 @@
+{
+  "name": "benedfit.com",
+  "version": "2.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-jekyll": "~0.3.8"
+  }
+}
