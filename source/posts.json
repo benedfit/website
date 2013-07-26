@@ -1,3 +1,14 @@
 ---
 ---
-{"posts":[{% for post in site.posts %}{% if forloop.index > 1 %},{% endif %}{"id":"{{ post.url }}","title":"{{ post.title }}","date":"{{ post.date | date: '%Y-%m-%d' }}","excerpt":"{% if post.content contains site.excerpt_separator %}{{ post.content | split:site.excerpt_separator | first | strip_newlines | remove:'"' }}{% else %}{{ post.content | strip_newlines | remove:'"' }}{% endif %}","content":"{{ post.content | strip_html | strip_newlines | remove:'"' | remove:'	' }}"}{% endfor %}]}
+{"posts":[
+	{% for post in site.posts %}
+	{% if forloop.index > 1 %},{% endif %}
+	{
+		"id":"{{ post.url }}",
+		"title":"{{ post.title }}",
+		"date":"{{ post.date | date: '%Y-%m-%d' }}",
+		"excerpt":"{% if post.content contains site.excerpt_separator %}{{ post.content | split:site.excerpt_separator | first | strip_newlines | remove:'"' }}{% else %}{{ post.content | strip_newlines | remove:'"' }}{% endif %}",
+		"content":"{{ post.content | strip_html | strip_newlines | remove:'"' | remove:'	' }}"
+	}
+	{% endfor %}
+]}

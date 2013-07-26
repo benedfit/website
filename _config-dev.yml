@@ -1,3 +1,5 @@
 assets:
   js_compressor: none
   css_compressor: none
+jekyll-press:
+  exclude: '*'

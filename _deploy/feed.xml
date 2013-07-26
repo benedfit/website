@@ -5,6 +5,7 @@
 		<description>Ben Edwards, a web designer and developer</description>
 		<link>http://benedfit.com</link>
 		<atom:link href="http://benedfit.com/feed.xml" rel="self" type="application/rss+xml" />
+			
 			<item>
 				<title>Phases and Atomic Design: Phase One</title>
 				<description>&lt;p&gt;As a follow up to my recent post on &lt;a href=&quot;/2013/06/atomic-design-phases-and-mesophases&quot;&gt;Phases (and Mesophases) - a possible addendum to Atomic Design&lt;/a&gt; I recently released the first addition to &lt;a href=&quot;https://github.com/bradfrost/patternlab&quot; target=&quot;_blank&quot;&gt;Brad Frost's Pattern Lab&lt;/a&gt; to allow quick switching between defined breakpoints.&lt;/p&gt;
@@ -13,7 +14,9 @@
 				<link>http://benedfit.com/2013/06/phases-and-atomic-design-phase-one</link>
 				<comments>http://benedfit.com/2013/06/phases-and-atomic-design-phase-one#comments</comments>
 				<guid isPermaLink="true">http://benedfit.com/2013/06/phases-and-atomic-design-phase-one</guid>
-			</item><item>
+			</item>
+			
+			<item>
 				<title>Phases (and Mesophases) - a possible addendum to Atomic Design</title>
 				<description>&lt;p&gt;This Monday I had the absolute pleasure of attending &lt;a href=&quot;http://bradfrostweb.com/&quot; target=&quot;_blank&quot;&gt;Brad Frost&lt;/a&gt;'s &lt;em&gt;Reasons to be Responsive&lt;/em&gt; workshop (&lt;a href=&quot;http://www.jrayson.co.uk/blog/130603-reasons-to-be-awesome&quot; target=&quot;_blank&quot;&gt;Recap by Jake Ryan&lt;/a&gt;). Among the 8 'awesome' hours of RWD gold, Brad introduced us to &lt;a href=&quot;http://bradfrostweb.com/blog/link/atomic-design/&quot; target=&quot;_blank&quot;&gt;Atomic Design&lt;/a&gt;, a modular approach to responsive design and development, and his brand new tool &lt;a href=&quot;http://patternlab.bradfrostweb.com/&quot; target=&quot;_blank&quot;&gt;Pattern Lab&lt;/a&gt; for forging websites using the Atomic Design approach.&lt;/p&gt;
 &lt;p&gt;One of the other topics during the day was inevitably the art of selecting breakpoints, and more importantly for this post, the naming of the SASS variables for these breakpoints, and how said names could be tied into Atomic Design.&lt;/p&gt;
@@ -23,5 +26,6 @@
 				<comments>http://benedfit.com/2013/06/atomic-design-phases-and-mesophases#comments</comments>
 				<guid isPermaLink="true">http://benedfit.com/2013/06/atomic-design-phases-and-mesophases</guid>
 			</item>
+			
 	</channel>
 </rss>

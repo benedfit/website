@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-{% for post in site.posts %}<article>
+{% for post in site.posts %}
+<article>
 	<div class="container">
 		<h1><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%Y-%m-%d" }}</time></h1>		
 		{% if post.content contains site.excerpt_separator %}{{ post.content | split:site.excerpt_separator | first }}{% else %}{{ post.content }}{% endif %}
 	</div>
-</article>{% endfor %}
+</article>
+{% endfor %}
