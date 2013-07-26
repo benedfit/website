@@ -34,13 +34,13 @@ module.exports = function(grunt) {
 				options: {
 		            stdout: true
 		       	},
-				command: 'bundle exec compass compile -e production --force --debug-info',
+				command: 'bundle exec compass compile -e production --force --debug-info'
 			},
 			jekyll: {
 				options: {
 		            stdout: true
 		       	},
-				command: 'bundle exec jekyll build --config _config.yml,_config.deploy.yml --trace',
+				command: 'bundle exec jekyll build --trace --config _config.yml,_config.deploy.yml'
 			}
 		},
 		watch: {
