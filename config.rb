@@ -1,7 +1,7 @@
 require 'breakpoint'
 
 http_path = "/"
-css_dir = "_deploy/css"
+css_dir = "source/css"
 http_css_path = "/css"
 fonts_dir = "source/fonts"
 http_fonts_path = "/fonts"
