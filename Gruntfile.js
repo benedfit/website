@@ -69,5 +69,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-shell');
 	
 	grunt.registerTask('default', ['grunticon', 'compass', 'jekyll']);
-	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
+	grunt.registerTask('deploy', ['grunticon', 'shell:compass', 'shell:jekyll', 'imagemin']);
 };
