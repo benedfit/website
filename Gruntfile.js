@@ -45,13 +45,9 @@ module.exports = function(grunt) {
 			}
 		},
 		watch: {
-			images: {
-				files: 'source/_img/**',
-				tasks: ['imagemin:dev']
-			},
-			sass: {
-				files: 'source/_sass/**',
-				tasks: ['compass:dev']
+			dev: {
+				files: 'source/**',
+				tasks: ['compass', 'jekyll']
 			}
 		}
 	});
@@ -62,6 +58,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
 	
-	grunt.registerTask('default', ['compass', 'jekyll']);
+	grunt.registerTask('default', ['compass', 'jekyll', 'watch']);
 	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
 };
