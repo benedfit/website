@@ -2,11 +2,20 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		compass: {
-			dev:{
+			dev: {
 				options: {
 					config: 'config.rb',
 					force: true
 				}
+			}
+		},
+		grunticon: {
+			dev: {
+				options: {
+			    	src: "source/_assets/icons/",
+			        dest: "source/_assets/css",
+			        pngfolder: '../../img/icons'
+			    }
 			}
 		},
 		imagemin: {
@@ -55,9 +64,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-grunticon');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
 	
-	grunt.registerTask('default', ['compass', 'jekyll', 'watch']);
+	grunt.registerTask('default', ['grunticon', 'compass', 'jekyll']);
 	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
 };
