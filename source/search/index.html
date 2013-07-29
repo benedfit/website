@@ -1,0 +1,15 @@
+---
+layout: default
+title: 'Search results'
+---
+<section>
+	<div class="container">
+		<h1>No search results found ;(</h1>
+		<p>It might be that you've search for something obscure, but it's more likely that it's because I haven't written much yet.</p>
+		<p>Please give it another shot.</p>
+	</div>
+</section>
+{% raw %}
+<script id="search-results-template" type="text/mustache">{{#posts}}<article><div class="container"><h1><a href="{{id}}" rel="bookmark">{{title}}</a><time datetime="{{date}}"><a href="{{id}}">{{date}}</a></time></h1>{{&excerpt}}</div></article>{{/posts}}</script>
+{% endraw %}
+{% javascript js/search %}

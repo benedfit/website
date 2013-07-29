@@ -10,10 +10,8 @@ assets:
     - _assets
     - _assets/css
     - _assets/js
-  cachebust: none
   js_compressor: uglifier
   css_compressor: sass
-  gzip: false
 jekyll-press:
   exclude: ['robots.txt']
 

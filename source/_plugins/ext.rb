@@ -1,2 +1,4 @@
 require "jekyll-assets"
-require "jekyll-press"
+if ENV['WERCKER_ENV'] == 'production'
+  require "jekyll-press"
+end

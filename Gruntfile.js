@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 		watch: {
 			dev: {
 				files: 'source/**',
-				tasks: ['compass', 'jekyll']
+				tasks: ['grunticon', 'compass', 'jekyll']
 			}
 		}
 	});
@@ -68,6 +68,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
 	
-	grunt.registerTask('default', ['grunticon', 'compass', 'jekyll']);
+	grunt.registerTask('default', ['grunticon', 'compass', 'jekyll', 'watch']);
 	grunt.registerTask('deploy', ['grunticon', 'shell:compass', 'shell:jekyll', 'imagemin']);
 };

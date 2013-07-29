@@ -46,7 +46,7 @@ em,i{
       text-decoration:none;
     }
     
-    time{
+    time a{
       background:$orange;
       @include border-bottom-radius(.125em);
       bottom:pxtoem(-32);
@@ -57,8 +57,12 @@ em,i{
       font-size:.4em;
       right:1em;
       line-height:1em;
-      position:absolute;
       padding:.5em;
+      position:absolute;
+      
+      &:hover,&:focus,&:active{
+        background:$orange2;
+      }
     }
   }
   
@@ -108,6 +112,37 @@ em,i{
   
   p{
     margin:0 0 1em;
+    
+    &.lead{
+      font-size:1.5em;
+    }
+  }
+  
+  section{
+    border:{
+      bottom:1px solid $black;
+      top:1px solid $grey;
+    }
+    padding:2em 0;
+    
+    h1{
+      border:0;
+      font-size:2em;
+      line-height:1;
+      margin:0 0 1em;
+      padding:0;
+      position:relative;
+    }
+    
+    .container{
+      margin:auto;
+      max-width:pxtoem($breakpoint-max);
+      padding:0 1em;
+      width:pxtoem($breakpoint-max);
+    }
+    div[class=container]{
+      width:auto;
+    }
   }
   
   ul{
@@ -125,10 +160,6 @@ em,i{
   @include background(image-url("header.jpg") no-repeat 50% 0);
   overflow:hidden;
   padding:5em 0 0;
-  
-  &.hide-search{
-    padding-bottom:5em;
-  }
 }
 
 #logo{
@@ -145,6 +176,10 @@ em,i{
   text:{
     decoration:none;
     transform:uppercase;
+  }
+  
+  .blink{
+    text-decoration:blink;
   }
 }
 
@@ -197,11 +232,12 @@ em,i{
 }
 
 #search{
+  display:none;
   margin:2em auto;
   max-width:pxtoem($breakpoint-max);
   
-  #header.hide-search &{
-    display:none;
+  html.js &{
+    display:block;
   }
   
   button{
@@ -223,6 +259,11 @@ em,i{
     vertical-align:middle;
     width:auto;
     z-index:2;
+    
+    &:hover,&:active,&:focus{
+      color:$white;
+      @include transition(all .2s ease-out);
+    }
   }
   
   fieldset{
