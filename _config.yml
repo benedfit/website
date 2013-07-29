@@ -12,6 +12,7 @@ assets:
     - _assets/js
   js_compressor: uglifier
   css_compressor: sass
+  cachebust: none
 jekyll-press:
   exclude: ['robots.txt']
 

@@ -1,7 +1,6 @@
 assets:
   js_compressor: none
   css_compressor: none
-  cachebust: none
   gzip: false
 jekyll-press:
   exclude: ['*', '*/*']
