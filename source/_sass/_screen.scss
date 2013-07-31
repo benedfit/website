@@ -11,11 +11,13 @@
     variant:normal;
     weight:normal;
   }
-  -moz-font-feature-settings:"liga=1";
-  -moz-font-feature-settings:"liga";
-  -ms-font-feature-settings:"liga" 1;
-  -o-font-feature-settings:"liga";
-  font-feature-settings:"liga";
+  -webkit-font-feature-settings:"liga","dlig";
+  -moz-font-feature-settings:"liga=1, dlig=1";
+  -moz-font-feature-settings:"liga","dlig";
+  -ms-font-feature-settings:"liga","dlig";
+  -o-font-feature-settings:"liga","dlig";
+  font-feature-settings:"liga","dlig";
+  text-rendering:optimizeLegibility;
   -webkit-font-smoothing:antialiased;
   line-height:1;
   speak:none;
@@ -23,7 +25,7 @@
     align:center;
     transform:none;
   }
-  text-rendering: optimizeLegibility;
+  text-rendering:optimizeLegibility;
   vertical-align:middle;
   white-space:nowrap;
 }
