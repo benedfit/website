@@ -287,7 +287,7 @@ em, i {
 #header {
   background: url('/img/header.jpg') no-repeat 50% 0;
   overflow: hidden;
-  padding: 5em 0 0;
+  padding: 5em 0 2em;
 }
 
 /* line 197, ../../_sass/_screen.scss */
@@ -355,14 +355,15 @@ em, i {
 /* line 260, ../../_sass/_screen.scss */
 #search {
   display: none;
-  margin: 2em auto;
+  margin: 2em auto 0;
   max-width: 60em;
+  width: 60em;
 }
-/* line 265, ../../_sass/_screen.scss */
+/* line 266, ../../_sass/_screen.scss */
 html.js #search {
   display: block;
 }
-/* line 269, ../../_sass/_screen.scss */
+/* line 270, ../../_sass/_screen.scss */
 #search button {
   background: none;
   border: 0;
@@ -381,7 +382,7 @@ html.js #search {
   width: auto;
   z-index: 2;
 }
-/* line 289, ../../_sass/_screen.scss */
+/* line 290, ../../_sass/_screen.scss */
 #search button:hover, #search button:active, #search button:focus {
   color: white;
   -webkit-transition: all 0.2s ease-out;
@@ -389,7 +390,7 @@ html.js #search {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 295, ../../_sass/_screen.scss */
+/* line 296, ../../_sass/_screen.scss */
 #search fieldset {
   border: 1px solid black;
   display: block;
@@ -398,7 +399,7 @@ html.js #search {
   padding: 0;
   position: relative;
 }
-/* line 304, ../../_sass/_screen.scss */
+/* line 305, ../../_sass/_screen.scss */
 #search input {
   background: none;
   border: 0;
@@ -411,14 +412,19 @@ html.js #search {
   width: 75%;
   -webkit-appearance: none;
 }
-/* line 316, ../../_sass/_screen.scss */
+/* line 317, ../../_sass/_screen.scss */
 #search input::-webkit-search-cancel-button, #search input::-webkit-search-results-button {
   -webkit-appearance: none;
 }
-/* line 321, ../../_sass/_screen.scss */
+/* line 322, ../../_sass/_screen.scss */
 #search label {
   cursor: text;
   display: block;
   position: relative;
   z-index: 1;
+}
+
+/* line 329, ../../_sass/_screen.scss */
+div[id=search] {
+  width: auto !important;
 }

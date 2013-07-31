@@ -191,7 +191,7 @@ em,i{
 #header{
   @include background(image-url("header.jpg") no-repeat 50% 0);
   overflow:hidden;
-  padding:5em 0 0;
+  padding:5em 0 2em;
 }
 
 #logo{
@@ -259,8 +259,9 @@ em,i{
 
 #search{
   display:none;
-  margin:2em auto;
+  margin:2em auto 0;
   max-width:pxtoem($breakpoint-max);
+  width:pxtoem($breakpoint-max);
   
   html.js &{
     display:block;
@@ -324,4 +325,7 @@ em,i{
     position:relative;
     z-index:1;
   }
+}
+div[id=search]{
+  width:auto !important;
 }
