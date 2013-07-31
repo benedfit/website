@@ -7,7 +7,6 @@
     "grunt-contrib-watch": "~0.5.1",
     "grunt-contrib-imagemin": "~0.1.4",
     "grunt-jekyll": "~0.3.8",
-    "grunt-shell": "~0.3.1",
-    "grunt-grunticon": "~0.5.2"
+    "grunt-shell": "~0.3.1"
   }
 }

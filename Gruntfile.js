@@ -9,15 +9,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		grunticon: {
-			dev: {
-				options: {
-			    	src: "source/_assets/icons/",
-			        dest: "source/_assets/css",
-			        pngfolder: '../../img/icons'
-			    }
-			}
-		},
 		imagemin: {
 			deploy: {
 				options: {
@@ -56,7 +47,7 @@ module.exports = function(grunt) {
 		watch: {
 			dev: {
 				files: 'source/**',
-				tasks: ['grunticon', 'compass', 'jekyll']
+				tasks: ['compass', 'jekyll']
 			}
 		}
 	});
@@ -64,10 +55,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-grunticon');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
 	
-	grunt.registerTask('default', ['grunticon', 'compass', 'jekyll', 'watch']);
-	grunt.registerTask('deploy', ['grunticon', 'shell:compass', 'shell:jekyll', 'imagemin']);
+	grunt.registerTask('default', ['compass', 'jekyll', 'watch']);
+	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
 };

@@ -2,6 +2,32 @@
   @include box-sizing(border-box);
 }
 
+[data-icon]:before{
+  content: attr(data-icon);
+  display:block;
+  font:{
+    family:$font-icon;
+    style:normal;
+    variant:normal;
+    weight:normal;
+  }
+  -moz-font-feature-settings:"liga=1";
+  -moz-font-feature-settings:"liga";
+  -ms-font-feature-settings:"liga" 1;
+  -o-font-feature-settings:"liga";
+  font-feature-settings:"liga";
+  -webkit-font-smoothing:antialiased;
+  line-height:1;
+  speak:none;
+  text:{
+    align:center;
+    transform:none;
+  }
+  text-rendering: optimizeLegibility;
+  vertical-align:middle;
+  white-space:nowrap;
+}
+
 a{
   color:$white2;
   
@@ -205,12 +231,10 @@ em,i{
     color:$white;
     display:inline-block;
     font-size:1.75em;
-    height:2em;
     line-height:1;
     margin:0 .125em pxtoem(16, 28);
-    padding:1em;
+    padding:.5em;
     text-decoration:none;
-    width:2em;
     
     &:hover,&:focus,&:active{
       background-color:$orange2;
