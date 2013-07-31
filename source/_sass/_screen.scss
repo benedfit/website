@@ -1,37 +1,23 @@
-*{
-  @include box-sizing(border-box);
-}
-
 .data-icon [data-icon]{
-  &:before{
-    content:attr(data-icon);
-    display:block;
-    font:{
-      family:$font-icon;
-      style:normal;
-      variant:normal;
-      weight:normal;
-    }
-    -moz-font-feature-settings:"liga=1";
-    -moz-font-feature-settings:"liga";
-    -ms-font-feature-settings:"liga" 1;
-    -o-font-feature-settings:"liga";
-    font-feature-settings:"liga";
-    -webkit-font-smoothing:antialiased;
-    line-height:1;
-    speak:none;
-    text:{
-      align:center;
-      transform:none;
-    }
-    text-rendering:optimizeLegibility;
-    vertical-align:middle;
-    white-space:nowrap;
+  content:attr(data-icon);
+  display:block;
+  font:{
+    family:$font-icon;
+    style:normal;
+    variant:normal;
+    weight:normal;
   }
-  
-  span{
-    display:none;
+  @include enable-ligatures;
+  -webkit-font-smoothing:antialiased;
+  line-height:1;
+  speak:none;
+  text:{
+    align:center;
+    transform:lowercase;
   }
+  text-rendering:optimizeLegibility;
+  vertical-align:middle;
+  white-space:nowrap;
 }
 
 a{
