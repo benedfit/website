@@ -2,32 +2,36 @@
   @include box-sizing(border-box);
 }
 
-[data-icon]:before{
-  content: attr(data-icon);
-  display:block;
-  font:{
-    family:$font-icon;
-    style:normal;
-    variant:normal;
-    weight:normal;
+.data-icon [data-icon]{
+  &:before{
+    content:attr(data-icon);
+    display:block;
+    font:{
+      family:$font-icon;
+      style:normal;
+      variant:normal;
+      weight:normal;
+    }
+    -moz-font-feature-settings:"liga=1";
+    -moz-font-feature-settings:"liga";
+    -ms-font-feature-settings:"liga" 1;
+    -o-font-feature-settings:"liga";
+    font-feature-settings:"liga";
+    -webkit-font-smoothing:antialiased;
+    line-height:1;
+    speak:none;
+    text:{
+      align:center;
+      transform:none;
+    }
+    text-rendering:optimizeLegibility;
+    vertical-align:middle;
+    white-space:nowrap;
   }
-  -webkit-font-feature-settings:"liga","dlig";
-  -moz-font-feature-settings:"liga=1, dlig=1";
-  -moz-font-feature-settings:"liga","dlig";
-  -ms-font-feature-settings:"liga","dlig";
-  -o-font-feature-settings:"liga","dlig";
-  font-feature-settings:"liga","dlig";
-  text-rendering:optimizeLegibility;
-  -webkit-font-smoothing:antialiased;
-  line-height:1;
-  speak:none;
-  text:{
-    align:center;
-    transform:none;
+  
+  span{
+    display:none;
   }
-  text-rendering:optimizeLegibility;
-  vertical-align:middle;
-  white-space:nowrap;
 }
 
 a{
@@ -241,10 +245,6 @@ em,i{
     &:hover,&:focus,&:active{
       background-color:$orange2;
     }
-  }
-  
-  span{
-    display:none;
   }
   
   @include breakpoint($breakpoint-first){
