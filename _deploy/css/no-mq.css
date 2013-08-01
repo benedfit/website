@@ -441,6 +441,6 @@ html.js #search {
 }
 
 /* line 307, ../../_sass/_screen.scss */
-div[id=search] {
+form[id=search] {
   width: auto !important;
 }
