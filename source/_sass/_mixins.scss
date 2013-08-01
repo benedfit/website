@@ -1,3 +1,30 @@
 @function pxtoem($px,$basepx:16){
   @return (($px/($px*0+1))/$basepx)+0em;
 }
+
+%icon{  
+  &:before{
+    content:attr(data-icon);
+    display:inline-block;
+    font:{
+      family:$font-icon;
+      style:normal;
+      variant:normal;
+      weight:normal;
+    }
+    line-height:1;
+    speak:none;
+    text:{
+      align:center;
+      decoration:none;
+      transform:lowercase;
+    }
+    vertical-align:middle;
+    white-space:nowrap;
+  }
+  
+  span{
+    font:0/0 a;
+    color:transparent;
+  }
+}
