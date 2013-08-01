@@ -98,7 +98,7 @@ img, video {
 #navigation a:before {
   content: attr(data-icon);
   display: inline-block;
-  font-family: "icons", "Muli", Arial, sans-serif;
+  font-family: "icons", Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
