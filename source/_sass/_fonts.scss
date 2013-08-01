@@ -1,7 +1,6 @@
 @include font-face("Muli", font-files("muli/regular.woff", "muli/regular.ttf", "muli/regular.svg#MuliRegular"), "muli/regular.eot", normal, normal);
 @include font-face("icons", font-files("icons/icons.woff", "icons/icons.ttf", "icons/icons.svg#icons"), "icons/icons.eot", normal, normal);
 
-$font-sans-serif:Arial,sans-serif;
-$font-base:"Muli",$font-sans-serif;
-$font-icon:"icons",$font-sans-serif;
+$font-base:"Muli",Arial,sans-serif;
+$font-icon:"icons";
 $font-monospace:Consolas,"Courier New",monospace;

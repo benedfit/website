@@ -204,6 +204,7 @@ em,i{
       font-size:2.5em;
       margin:0 .1em .5em;
       padding:.35em;
+      width:1.75em;
     }
     
     &:hover,&:focus,&:active{
@@ -213,7 +214,7 @@ em,i{
     }
     
     &.email:before{
-      content:"\2709";
+      content:"\270e";
     }
     
     &.github:before{
@@ -221,7 +222,7 @@ em,i{
     }
     
     &.twitter:before{
-      content:"\0040";
+      content:"\40";
     }
   }
   
