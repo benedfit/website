@@ -229,7 +229,7 @@ button,input,select,textarea{
     }
     
     &.email:before{
-      content:"\2709";
+      content:"\40";
     }
     
     &.github:before{
@@ -237,7 +237,7 @@ button,input,select,textarea{
     }
     
     &.twitter:before{
-      content:"\40";
+      content:"\74";
     }
   }
 }

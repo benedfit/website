@@ -393,7 +393,7 @@ button, input, select, textarea {
 }
 /* line 231, ../../_sass/_screen.scss */
 #navigation a.email:before {
-  content: "\2709";
+  content: "\40";
 }
 /* line 235, ../../_sass/_screen.scss */
 #navigation a.github:before {
@@ -401,7 +401,7 @@ button, input, select, textarea {
 }
 /* line 239, ../../_sass/_screen.scss */
 #navigation a.twitter:before {
-  content: "\40";
+  content: "\74";
 }
 
 /* line 245, ../../_sass/_screen.scss */
