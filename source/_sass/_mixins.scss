@@ -30,11 +30,19 @@
     }
   }
   
-  * html & span{
-    font:1em/1 $font-base;
+  * html &{
+    width:auto;
+    
+    span{
+      font:1em/1 $font-base;
+    }
   }
   
-  * + html & span{
-    font:1em/1 $font-base;
+  * + html &{
+    width:auto;
+    
+    span{
+      font:1em/1 $font-base;
+    }
   }
 }
