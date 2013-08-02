@@ -1,7 +1,6 @@
 source: ./source
 destination: ./_deploy
 permalink: /:year/:month/:title
-excerpt_separator: "<!--/excerpt-->"
 
 assets:
   dirname: .
