@@ -2,7 +2,8 @@
   @return (($px/($px*0+1))/$basepx)+0em;
 }
 
-%icon{  
+%icon{
+  @include box-sizing(content-box);
   display:inline-block;
   line-height:1;
   text-decoration:none;
