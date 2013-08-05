@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "atypical-sass"
 gem "breakpoint"
 gem "compass"
 gem "jekyll"
