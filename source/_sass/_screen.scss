@@ -27,8 +27,9 @@ button,input,select,textarea{
   display:block;
   
   del{
-    color:$grey;
+    color:$black;
     text-decoration:line-through;
+    @include text-shadow($grey 1px 1px 0);
   }
   
   em{
@@ -63,8 +64,8 @@ button,input,select,textarea{
         background:$orange;
         border:0;
         @include border-bottom-radius(.125em);
-        @include box-shadow(inset 0 1px 0 $white, 0 1px 1px $maroon);
-        @include box-shadow(inset 0 1px 0 rgba($white, .4), 0 1px 1px rgba($maroon, .2));
+        @include box-shadow(inset 0 1px 0 $white);
+        @include box-shadow(inset 0 1px 0 rgba($white, .4));
         color:$white;
         display:inline-block;
         padding:.5em;
@@ -109,6 +110,27 @@ button,input,select,textarea{
     div[class=container]{
       width:auto;
     }
+    
+    .excerpt{
+      p{
+        display:inline;
+      }
+      
+      .more{
+        display:inline;
+        text-decoration:none;
+      }
+    }
+  }
+  
+  blockquote{
+    border-left:2px solid $orange;
+    margin:0 .75em;
+    padding:0 1em;
+    
+    p{
+      font-size:1.5em;
+    }
   }
   
   code{
@@ -117,7 +139,7 @@ button,input,select,textarea{
     color:$black;
     font-family:$font-monospace;
     padding:.125em .25em;
-    white-space: nowrap;
+    white-space:nowrap;
   }
   
   p{
@@ -126,6 +148,16 @@ button,input,select,textarea{
     &.lead{
       font-size:1.5em;
     }
+  }
+  
+  pre code{
+    display:block;
+    margin:0 0 1em;
+    padding:.75em;
+    -moz-tab-size:2;
+    -o-tab-size:2;
+    tab-size:2;
+    white-space:pre;
   }
   
   section{
@@ -184,7 +216,7 @@ button,input,select,textarea{
     size:1.75em;
     weight:bold;
   }
-  padding:.65em .25em .65em .55em;
+  padding:.65em .25em .65em .65em;
   line-height:1;
   letter-spacing:.5em;
   text:{
@@ -212,8 +244,8 @@ button,input,select,textarea{
     @extend %icon;  
     background:$orange;
     @include border-radius(.25em);
-    @include box-shadow(inset 0 1px 0 $white, 0 1px 1px $maroon);
-    @include box-shadow(inset 0 1px 0 rgba($white, .4), 0 1px 1px rgba($maroon, .2));
+    @include box-shadow(inset 0 1px 0 $white);
+    @include box-shadow(inset 0 1px 0 rgba($white, .4));
     color:$white;
     margin:0 .35em 1em;
     padding:.75em;

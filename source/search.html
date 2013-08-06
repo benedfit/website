@@ -11,6 +11,15 @@ permalink: /search/
 	</div>
 </section>
 {% raw %}
-<script id="search-results-template" type="text/mustache">{{#posts}}<article><div class="container"><h1><a href="{{id}}" rel="bookmark">{{title}}</a><time datetime="{{date}}"><a href="{{id}}">{{date}}</a></time></h1>{{&excerpt}}</div></article>{{/posts}}</script>
+<script id="search-results-template" type="text/mustache">
+	{{#posts}}
+	<article>
+		<div class="container">
+			<h1><a href="{{id}}" rel="bookmark">{{title}}</a><time datetime="{{date}}"><a href="{{id}}">{{date}}</a></time></h1>
+			<div class="excerpt">{{&excerpt}} <a href="{{id}}" class="more" title="Read more">[...]</a>
+		</div>
+	</article>
+	{{/posts}}
+</script>
 {% endraw %}
 {% javascript js/search %}

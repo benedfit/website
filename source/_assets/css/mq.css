@@ -180,38 +180,39 @@ button, input, select, textarea {
 }
 /* line 29, ../../_sass/_screen.scss */
 #content del {
-  color: #333333;
+  color: black;
   text-decoration: line-through;
+  text-shadow: #333333 1px 1px 0;
 }
-/* line 34, ../../_sass/_screen.scss */
+/* line 35, ../../_sass/_screen.scss */
 #content em {
   font-style: italic;
   font-weight: bold;
 }
-/* line 41, ../../_sass/_screen.scss */
+/* line 42, ../../_sass/_screen.scss */
 #content ins {
   text-decoration: none;
 }
-/* line 45, ../../_sass/_screen.scss */
+/* line 46, ../../_sass/_screen.scss */
 #content h1 {
   font-size: 2.5em;
   line-height: 1;
   margin: 0 0 1em;
 }
-/* line 50, ../../_sass/_screen.scss */
+/* line 51, ../../_sass/_screen.scss */
 #content h1 a {
   border-bottom: 1px solid #333333;
   display: block;
   padding: 0 0 .5em;
   text-decoration: none;
 }
-/* line 57, ../../_sass/_screen.scss */
+/* line 58, ../../_sass/_screen.scss */
 #content h1 time {
   display: block;
   font-size: .4em;
   text-align: center;
 }
-/* line 62, ../../_sass/_screen.scss */
+/* line 63, ../../_sass/_screen.scss */
 #content h1 time a {
   background: #ee6600;
   border: 0;
@@ -221,43 +222,43 @@ button, input, select, textarea {
   -moz-border-radius-bottomright: 0.125em;
   -webkit-border-bottom-right-radius: 0.125em;
   border-bottom-right-radius: 0.125em;
-  -webkit-box-shadow: inset 0 1px 0 white, 0 1px 1px #552222;
-  -moz-box-shadow: inset 0 1px 0 white, 0 1px 1px #552222;
-  box-shadow: inset 0 1px 0 white, 0 1px 1px #552222;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(85, 34, 34, 0.2);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(85, 34, 34, 0.2);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(85, 34, 34, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
   color: white;
   display: inline-block;
   padding: .5em;
 }
-/* line 72, ../../_sass/_screen.scss */
+/* line 73, ../../_sass/_screen.scss */
 #content h1 time a:hover, #content h1 time a:focus, #content h1 time a:active {
   background: #ff8800;
 }
-/* line 79, ../../_sass/_screen.scss */
+/* line 80, ../../_sass/_screen.scss */
 #content h2 {
   font-size: 1.5em;
   margin: 1.5em 0 .5em;
 }
-/* line 84, ../../_sass/_screen.scss */
+/* line 85, ../../_sass/_screen.scss */
 #content article {
   border-bottom: 1px solid black;
   border-top: 1px solid #333333;
   padding: 0 0 1em;
 }
-/* line 91, ../../_sass/_screen.scss */
+/* line 92, ../../_sass/_screen.scss */
 #content article:last-of-type {
   border-bottom: 0;
 }
-/* line 95, ../../_sass/_screen.scss */
+/* line 96, ../../_sass/_screen.scss */
 #content article #comments {
   border-top: 1px solid #333333;
   clear: both;
   margin: 2em 0 0;
   padding: 2em 0 0;
 }
-/* line 102, ../../_sass/_screen.scss */
+/* line 103, ../../_sass/_screen.scss */
 #content article .container {
   margin: auto;
   max-width: 60em;
@@ -265,11 +266,30 @@ button, input, select, textarea {
   text-align: left;
   width: 60em;
 }
-/* line 109, ../../_sass/_screen.scss */
+/* line 110, ../../_sass/_screen.scss */
 #content article div[class=container] {
   width: auto;
 }
-/* line 114, ../../_sass/_screen.scss */
+/* line 115, ../../_sass/_screen.scss */
+#content article .excerpt p {
+  display: inline;
+}
+/* line 119, ../../_sass/_screen.scss */
+#content article .excerpt .more {
+  display: inline;
+  text-decoration: none;
+}
+/* line 126, ../../_sass/_screen.scss */
+#content blockquote {
+  border-left: 2px solid #ee6600;
+  margin: 0 .75em;
+  padding: 0 1em;
+}
+/* line 131, ../../_sass/_screen.scss */
+#content blockquote p {
+  font-size: 1.5em;
+}
+/* line 136, ../../_sass/_screen.scss */
 #content code {
   background: #e1e1e1;
   -webkit-border-radius: 0.125em;
@@ -280,21 +300,31 @@ button, input, select, textarea {
   padding: .125em .25em;
   white-space: nowrap;
 }
-/* line 123, ../../_sass/_screen.scss */
+/* line 145, ../../_sass/_screen.scss */
 #content p {
   margin: 0 0 1em;
 }
-/* line 126, ../../_sass/_screen.scss */
+/* line 148, ../../_sass/_screen.scss */
 #content p.lead {
   font-size: 1.5em;
 }
-/* line 131, ../../_sass/_screen.scss */
+/* line 153, ../../_sass/_screen.scss */
+#content pre code {
+  display: block;
+  margin: 0 0 1em;
+  padding: .75em;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  white-space: pre;
+}
+/* line 163, ../../_sass/_screen.scss */
 #content section {
   border-bottom: 1px solid black;
   border-top: 1px solid #333333;
   padding: 2em 0;
 }
-/* line 138, ../../_sass/_screen.scss */
+/* line 170, ../../_sass/_screen.scss */
 #content section h1 {
   border: 0;
   font-size: 2em;
@@ -303,123 +333,123 @@ button, input, select, textarea {
   padding: 0;
   position: relative;
 }
-/* line 147, ../../_sass/_screen.scss */
+/* line 179, ../../_sass/_screen.scss */
 #content section .container {
   margin: auto;
   max-width: 60em;
   padding: 0 1em;
   width: 60em;
 }
-/* line 153, ../../_sass/_screen.scss */
+/* line 185, ../../_sass/_screen.scss */
 #content section div[class=container] {
   width: auto;
 }
-/* line 158, ../../_sass/_screen.scss */
+/* line 190, ../../_sass/_screen.scss */
 #content ul {
   list-style: circle;
   margin: 0 0 1em 1em;
 }
 
-/* line 164, ../../_sass/_screen.scss */
+/* line 196, ../../_sass/_screen.scss */
 #footer {
   margin: 0 1em 2em;
   padding: .5em 0;
 }
 
-/* line 169, ../../_sass/_screen.scss */
+/* line 201, ../../_sass/_screen.scss */
 #header {
   background: url('/img/header.jpg') no-repeat 50% 0;
   overflow: hidden;
   padding: 3em 0 2em;
 }
 @media (min-width: 21.25em) {
-  /* line 169, ../../_sass/_screen.scss */
+  /* line 201, ../../_sass/_screen.scss */
   #header {
     padding-top: 5em;
   }
 }
 
-/* line 179, ../../_sass/_screen.scss */
+/* line 211, ../../_sass/_screen.scss */
 #logo {
   background: black;
   color: white;
   display: inline-block;
   font-size: 1.75em;
   font-weight: bold;
-  padding: .65em .25em .65em .55em;
+  padding: .65em .25em .65em .65em;
   line-height: 1;
   letter-spacing: .5em;
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 195, ../../_sass/_screen.scss */
+/* line 227, ../../_sass/_screen.scss */
 #logo .blink {
   text-decoration: blink;
 }
 
-/* line 200, ../../_sass/_screen.scss */
+/* line 232, ../../_sass/_screen.scss */
 #master {
   border-top: 1px solid black;
   margin: auto;
 }
 
-/* line 205, ../../_sass/_screen.scss */
+/* line 237, ../../_sass/_screen.scss */
 #navigation {
   border-top: 1px solid #333333;
   display: block;
   padding: 3em .25em 0;
   text-align: center;
 }
-/* line 211, ../../_sass/_screen.scss */
+/* line 243, ../../_sass/_screen.scss */
 #navigation a {
   background: #ee6600;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
-  -webkit-box-shadow: inset 0 1px 0 white, 0 1px 1px #552222;
-  -moz-box-shadow: inset 0 1px 0 white, 0 1px 1px #552222;
-  box-shadow: inset 0 1px 0 white, 0 1px 1px #552222;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(85, 34, 34, 0.2);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(85, 34, 34, 0.2);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(85, 34, 34, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
   color: white;
   margin: 0 .35em 1em;
   padding: .75em;
   width: 2.5em;
 }
-/* line 222, ../../_sass/_screen.scss */
+/* line 254, ../../_sass/_screen.scss */
 #navigation a:hover, #navigation a:focus, #navigation a:active {
   background: #ff8800;
 }
-/* line 226, ../../_sass/_screen.scss */
+/* line 258, ../../_sass/_screen.scss */
 #navigation a:before {
   font-size: 2.5em;
 }
-/* line 230, ../../_sass/_screen.scss */
+/* line 262, ../../_sass/_screen.scss */
 #navigation a.email:before {
   content: "\40";
 }
-/* line 234, ../../_sass/_screen.scss */
+/* line 266, ../../_sass/_screen.scss */
 #navigation a.github:before {
   content: "\2443";
 }
-/* line 238, ../../_sass/_screen.scss */
+/* line 270, ../../_sass/_screen.scss */
 #navigation a.twitter:before {
   content: "\74";
 }
 
-/* line 244, ../../_sass/_screen.scss */
+/* line 276, ../../_sass/_screen.scss */
 #search {
   display: none;
   margin: 2em auto 0;
   max-width: 60em;
   width: 60em;
 }
-/* line 250, ../../_sass/_screen.scss */
+/* line 282, ../../_sass/_screen.scss */
 html.js #search {
   display: block;
 }
-/* line 254, ../../_sass/_screen.scss */
+/* line 286, ../../_sass/_screen.scss */
 #search button {
   background: none;
   border: 0;
@@ -438,7 +468,7 @@ html.js #search {
   width: auto;
   z-index: 2;
 }
-/* line 274, ../../_sass/_screen.scss */
+/* line 306, ../../_sass/_screen.scss */
 #search button:hover, #search button:active, #search button:focus {
   color: white;
   -webkit-transition: all 0.2s ease-out;
@@ -446,7 +476,7 @@ html.js #search {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 280, ../../_sass/_screen.scss */
+/* line 312, ../../_sass/_screen.scss */
 #search fieldset {
   border: 1px solid black;
   display: block;
@@ -455,7 +485,7 @@ html.js #search {
   padding: 0;
   position: relative;
 }
-/* line 289, ../../_sass/_screen.scss */
+/* line 321, ../../_sass/_screen.scss */
 #search input {
   background: none;
   border: 0;
@@ -468,11 +498,11 @@ html.js #search {
   width: 75%;
   -webkit-appearance: none;
 }
-/* line 301, ../../_sass/_screen.scss */
+/* line 333, ../../_sass/_screen.scss */
 #search input::-webkit-search-cancel-button, #search input::-webkit-search-results-button {
   -webkit-appearance: none;
 }
-/* line 306, ../../_sass/_screen.scss */
+/* line 338, ../../_sass/_screen.scss */
 #search label {
   cursor: text;
   display: block;
@@ -480,7 +510,7 @@ html.js #search {
   z-index: 1;
 }
 
-/* line 313, ../../_sass/_screen.scss */
+/* line 345, ../../_sass/_screen.scss */
 form[id=search] {
   width: auto !important;
 }
