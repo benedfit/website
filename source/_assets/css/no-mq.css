@@ -270,26 +270,27 @@ button, input, select, textarea {
 #content article div[class=container] {
   width: auto;
 }
-/* line 115, ../../_sass/_screen.scss */
-#content article .excerpt p {
-  display: inline;
-}
-/* line 119, ../../_sass/_screen.scss */
-#content article .excerpt .more {
-  display: inline;
+/* line 114, ../../_sass/_screen.scss */
+#content article .ellipsis {
+  color: black;
+  display: block;
+  font-size: 2.25em;
+  line-height: 1;
+  text-align: center;
   text-decoration: none;
+  text-shadow: #333333 1px 1px 0;
 }
-/* line 126, ../../_sass/_screen.scss */
+/* line 127, ../../_sass/_screen.scss */
 #content blockquote {
   border-left: 2px solid #ee6600;
   margin: 0 .75em;
   padding: 0 1em;
 }
-/* line 131, ../../_sass/_screen.scss */
+/* line 132, ../../_sass/_screen.scss */
 #content blockquote p {
   font-size: 1.5em;
 }
-/* line 136, ../../_sass/_screen.scss */
+/* line 137, ../../_sass/_screen.scss */
 #content code {
   background: #e1e1e1;
   -webkit-border-radius: 0.125em;
@@ -300,15 +301,15 @@ button, input, select, textarea {
   padding: .125em .25em;
   white-space: nowrap;
 }
-/* line 145, ../../_sass/_screen.scss */
+/* line 146, ../../_sass/_screen.scss */
 #content p {
   margin: 0 0 1em;
 }
-/* line 148, ../../_sass/_screen.scss */
+/* line 149, ../../_sass/_screen.scss */
 #content p.lead {
   font-size: 1.5em;
 }
-/* line 153, ../../_sass/_screen.scss */
+/* line 154, ../../_sass/_screen.scss */
 #content pre code {
   display: block;
   margin: 0 0 1em;
@@ -318,13 +319,13 @@ button, input, select, textarea {
   tab-size: 2;
   white-space: pre;
 }
-/* line 163, ../../_sass/_screen.scss */
+/* line 164, ../../_sass/_screen.scss */
 #content section {
   border-bottom: 1px solid black;
   border-top: 1px solid #333333;
   padding: 2em 0;
 }
-/* line 170, ../../_sass/_screen.scss */
+/* line 171, ../../_sass/_screen.scss */
 #content section h1 {
   border: 0;
   font-size: 2em;
@@ -333,30 +334,30 @@ button, input, select, textarea {
   padding: 0;
   position: relative;
 }
-/* line 179, ../../_sass/_screen.scss */
+/* line 180, ../../_sass/_screen.scss */
 #content section .container {
   margin: auto;
   max-width: 60em;
   padding: 0 1em;
   width: 60em;
 }
-/* line 185, ../../_sass/_screen.scss */
+/* line 186, ../../_sass/_screen.scss */
 #content section div[class=container] {
   width: auto;
 }
-/* line 190, ../../_sass/_screen.scss */
+/* line 191, ../../_sass/_screen.scss */
 #content ul {
   list-style: circle;
   margin: 0 0 1em 1em;
 }
 
-/* line 196, ../../_sass/_screen.scss */
+/* line 197, ../../_sass/_screen.scss */
 #footer {
   margin: 0 1em 2em;
   padding: .5em 0;
 }
 
-/* line 201, ../../_sass/_screen.scss */
+/* line 202, ../../_sass/_screen.scss */
 #header {
   background: url('/img/header.jpg') no-repeat 50% 0;
   overflow: hidden;
@@ -364,7 +365,7 @@ button, input, select, textarea {
   padding-top: 5em;
 }
 
-/* line 211, ../../_sass/_screen.scss */
+/* line 212, ../../_sass/_screen.scss */
 #logo {
   background: black;
   color: white;
@@ -377,25 +378,25 @@ button, input, select, textarea {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 227, ../../_sass/_screen.scss */
+/* line 228, ../../_sass/_screen.scss */
 #logo .blink {
   text-decoration: blink;
 }
 
-/* line 232, ../../_sass/_screen.scss */
+/* line 233, ../../_sass/_screen.scss */
 #master {
   border-top: 1px solid black;
   margin: auto;
 }
 
-/* line 237, ../../_sass/_screen.scss */
+/* line 238, ../../_sass/_screen.scss */
 #navigation {
   border-top: 1px solid #333333;
   display: block;
   padding: 3em .25em 0;
   text-align: center;
 }
-/* line 243, ../../_sass/_screen.scss */
+/* line 244, ../../_sass/_screen.scss */
 #navigation a {
   background: #ee6600;
   -webkit-border-radius: 0.25em;
@@ -412,39 +413,39 @@ button, input, select, textarea {
   padding: .75em;
   width: 2.5em;
 }
-/* line 254, ../../_sass/_screen.scss */
+/* line 255, ../../_sass/_screen.scss */
 #navigation a:hover, #navigation a:focus, #navigation a:active {
   background: #ff8800;
 }
-/* line 258, ../../_sass/_screen.scss */
+/* line 259, ../../_sass/_screen.scss */
 #navigation a:before {
   font-size: 2.5em;
 }
-/* line 262, ../../_sass/_screen.scss */
+/* line 263, ../../_sass/_screen.scss */
 #navigation a.email:before {
   content: "\40";
 }
-/* line 266, ../../_sass/_screen.scss */
+/* line 267, ../../_sass/_screen.scss */
 #navigation a.github:before {
   content: "\2443";
 }
-/* line 270, ../../_sass/_screen.scss */
+/* line 271, ../../_sass/_screen.scss */
 #navigation a.twitter:before {
   content: "\74";
 }
 
-/* line 276, ../../_sass/_screen.scss */
+/* line 277, ../../_sass/_screen.scss */
 #search {
   display: none;
   margin: 2em auto 0;
   max-width: 60em;
   width: 60em;
 }
-/* line 282, ../../_sass/_screen.scss */
+/* line 283, ../../_sass/_screen.scss */
 html.js #search {
   display: block;
 }
-/* line 286, ../../_sass/_screen.scss */
+/* line 287, ../../_sass/_screen.scss */
 #search button {
   background: none;
   border: 0;
@@ -463,7 +464,7 @@ html.js #search {
   width: auto;
   z-index: 2;
 }
-/* line 306, ../../_sass/_screen.scss */
+/* line 307, ../../_sass/_screen.scss */
 #search button:hover, #search button:active, #search button:focus {
   color: white;
   -webkit-transition: all 0.2s ease-out;
@@ -471,7 +472,7 @@ html.js #search {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 312, ../../_sass/_screen.scss */
+/* line 313, ../../_sass/_screen.scss */
 #search fieldset {
   border: 1px solid black;
   display: block;
@@ -480,7 +481,7 @@ html.js #search {
   padding: 0;
   position: relative;
 }
-/* line 321, ../../_sass/_screen.scss */
+/* line 322, ../../_sass/_screen.scss */
 #search input {
   background: none;
   border: 0;
@@ -493,11 +494,11 @@ html.js #search {
   width: 75%;
   -webkit-appearance: none;
 }
-/* line 333, ../../_sass/_screen.scss */
+/* line 334, ../../_sass/_screen.scss */
 #search input::-webkit-search-cancel-button, #search input::-webkit-search-results-button {
   -webkit-appearance: none;
 }
-/* line 338, ../../_sass/_screen.scss */
+/* line 339, ../../_sass/_screen.scss */
 #search label {
   cursor: text;
   display: block;
@@ -505,7 +506,7 @@ html.js #search {
   z-index: 1;
 }
 
-/* line 345, ../../_sass/_screen.scss */
+/* line 346, ../../_sass/_screen.scss */
 form[id=search] {
   width: auto !important;
 }
