@@ -103,7 +103,7 @@ button,input,select,textarea{
     .container{
       margin:auto;
       max-width:pxtoem($breakpoint-max);
-      padding:3em 1em 1em;
+      padding:3em 2em 1em;
       text-align:left;
       width:pxtoem($breakpoint-max);
     }
@@ -113,14 +113,28 @@ button,input,select,textarea{
     
     .ellipsis{
       color:$black;
-      display:block;
-      font-size:2.25em;
+      display:inline-block;
+      font-size:1.5em;
       line-height:1;
       text:{
         align:center;
         decoration:none;
       }
       @include text-shadow($grey 1px 1px 0);
+      
+      &:hover,&:active,&:focus{
+        color:$white;
+        @include text-shadow(none);
+      }
+    }
+    
+    .excerpt{
+      text-align:center;
+      
+      p{
+        margin:0 0 .5em;
+        text-align:left;
+      }
     }
   }
   
@@ -180,7 +194,7 @@ button,input,select,textarea{
     .container{
       margin:auto;
       max-width:pxtoem($breakpoint-max);
-      padding:0 1em;
+      padding:0 2em;
       width:pxtoem($breakpoint-max);
     }
     div[class=container]{
@@ -190,7 +204,28 @@ button,input,select,textarea{
   
   ul{
     list-style:circle;
-    margin:0 0 1em 1em;
+    margin:0 0 1em;
+    padding:0 0 0 1em;
+    
+    & > li{
+      list-style:none;
+      
+      &:before{
+        color:$orange2;
+        content:"\25cb";
+        display:block;
+        left:-1em;
+        max:{
+          height:0;
+          width:0;
+        }
+        position:relative;
+      }
+    }
+    
+    * + html & li{
+      list-style:circle;
+    }
   }
 }
 
@@ -314,7 +349,7 @@ button,input,select,textarea{
     border:1px solid $black;
     display:block;
     line-height:1;
-    margin:0 1em;
+    margin:0 2em;
     padding:0;
     position:relative;
   }

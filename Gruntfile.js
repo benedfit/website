@@ -9,6 +9,14 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		connect: {
+			deploy: {
+				options: {
+					port: 6277,
+					base: '_deploy'
+				}
+			}
+		},
 		imagemin: {
 			deploy: {
 				options: {
@@ -53,11 +61,12 @@ module.exports = function(grunt) {
 	});
 	
 	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
 	
-	grunt.registerTask('default', ['compass', 'jekyll', 'watch']);
+	grunt.registerTask('default', ['compass', 'jekyll', 'connect', 'watch']);
 	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
 };
