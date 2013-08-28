@@ -21,3 +21,7 @@ As a follow up to my recent post on [Phases (and Mesophases) - a possible addend
 ## UPDATE
 
 Brad's updated [patternlab.bradfrostweb.com](http://patternlab.bradfrostweb.com/) with my first release. So try it out!
+
+## UPDATE #2 ##
+
+[Dave Olsen has given Pattern Lab an overhaul](http://dmolsen.com/) and a new version of 'Phases' is waiting in the wings. [Check it out on GitHub](http://github.com/pattern-lab/).
