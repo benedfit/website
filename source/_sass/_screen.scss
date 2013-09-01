@@ -103,7 +103,7 @@ button,input,select,textarea{
     .container{
       margin:auto;
       max-width:pxtoem($breakpoint-max);
-      padding:3em 2em 1em;
+      padding:3em 1em 1em;
       text-align:left;
       width:pxtoem($breakpoint-max);
     }
@@ -283,7 +283,7 @@ button,input,select,textarea{
     @include box-shadow(inset 0 1px 0 $white);
     @include box-shadow(inset 0 1px 0 rgba($white, .4));
     color:$white;
-    margin:0 .35em 1em;
+    margin:0 .25em 1em;
     padding:.75em;
     width:2.5em;
     
@@ -301,6 +301,10 @@ button,input,select,textarea{
     
     &.github:before{
       content:"\2443";
+    }
+    
+    &.phone:before{
+      content:"\2706";
     }
     
     &.twitter:before{
@@ -349,7 +353,7 @@ button,input,select,textarea{
     border:1px solid $black;
     display:block;
     line-height:1;
-    margin:0 2em;
+    margin:0 1em;
     padding:0;
     position:relative;
   }
