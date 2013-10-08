@@ -9,19 +9,11 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		connect: {
-			deploy: {
-				options: {
-					port: 6277,
-					base: '_deploy'
-				}
-			}
-		},
 		imagemin: {
 			deploy: {
 				files: [{
 	                expand: true,
-	                cwd: 'source/',
+	                cwd: '_deploy',
 	                src: ['**/*.{gif,jpg,png}'],
 	                dest: '_deploy'
 	            }]
@@ -49,6 +41,16 @@ module.exports = function(grunt) {
 				command: 'bundle exec jekyll build --trace'
 			}
 		},
+		svgmin: {
+			deploy: {
+				files: [{
+	                expand: true,
+	                cwd: '_deploy',
+	                src: ['**/*.svg'],
+	                dest: '_deploy'
+	            }]
+           	}
+		},
 		watch: {
 			dev: {
 				files: 'source/**',
@@ -58,12 +60,12 @@ module.exports = function(grunt) {
 	});
 	
 	grunt.loadNpmTasks('grunt-contrib-compass');
-	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
+	grunt.loadNpmTasks('grunt-svgmin');
 	
-	grunt.registerTask('default', ['compass', 'jekyll', 'connect', 'watch']);
-	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
+	grunt.registerTask('default', ['compass', 'jekyll', 'watch']);
+	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin', 'svgmin']);
 };
