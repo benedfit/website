@@ -67,5 +67,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-svgmin');
 	
 	grunt.registerTask('default', ['compass', 'jekyll', 'watch']);
-	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin', 'svgmin']);
+	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
 };
