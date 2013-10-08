@@ -19,13 +19,10 @@ module.exports = function(grunt) {
 		},
 		imagemin: {
 			deploy: {
-				options: {
-					optimizationLevel: 7,
-				},
 				files: [{
 	                expand: true,
 	                cwd: 'source/',
-	                src: ['**/*.jpg','**/*.png'],
+	                src: ['**/*.{gif,jpg,png}'],
 	                dest: '_deploy'
 	            }]
            	}
