@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+	'use strict';
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		compass: {
@@ -27,6 +28,11 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		jshint: {
+			dev: {
+				src: ['source/**/*.js','!**/libs/*.js']
+			}
+		},
 		shell: {
 			compass: {
 				options: {
@@ -44,12 +50,12 @@ module.exports = function(grunt) {
 		svgmin: {
 			deploy: {
 				files: [{
-	                expand: true,
-	                cwd: '_deploy',
-	                src: ['**/*.svg'],
-	                dest: '_deploy'
-	            }]
-           	}
+					expand: true,
+					cwd: '_deploy/img',
+					src: ['**/*.svg','!**/fonts/**/*.svg'],
+					dest: '_deploy/img'
+				}]
+			}
 		},
 		watch: {
 			dev: {
@@ -61,11 +67,12 @@ module.exports = function(grunt) {
 	
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-svgmin');
 	
 	grunt.registerTask('default', ['compass', 'jekyll', 'watch']);
-	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin']);
+	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll', 'imagemin', 'svgmin']);
 };
