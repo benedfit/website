@@ -15,10 +15,10 @@ permalink: /search/
 	{{#posts}}
 	<article>
 		<div class="container">
-			<h1><a href="{{id}}" rel="bookmark">{{title}}</a><time datetime="{{date}}"><a href="{{id}}">{{date}}</a></time></h1>
+			<h1><a href="{{id}}" rel="bookmark"><span>{{title}}</span> <time datetime="{{datetime}}">{{date}}</time></a></h1>
 			<div class="excerpt">
 			{{&excerpt}}
-			<a href="{{ post.url }}" class="ellipsis">&#9675;&#9675;&#9675;</a>
+			<a href="{{id}}" class="ellipsis"><span>Read more</span></a>
 			</div>
 		</div>
 	</article>

@@ -7,6 +7,7 @@
 		"id":"{{ post.url }}",
 		"title":"{{ post.title }}",
 		"date":"{{ post.date | date: '%d/%m/%Y' }}",
+		"datetime":"{{ post.date | date: '%Y-%m-%d' }}",
 		"excerpt":"{{ post.excerpt | strip_newlines | remove:'"' }}",
 		"content":"{{ post.content | strip_html | strip_newlines | remove:'"' | remove:'	' }}"
 	}
