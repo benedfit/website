@@ -243,6 +243,22 @@ button,input,select,textarea{
       list-style:circle;
     }
   }
+  
+  .video{
+    height:0;
+    overflow:hidden;
+    margin:0 0 1em;
+    padding:0 0 56.25%;
+    position:relative;
+ 
+    embed,iframe,object{
+      height:100%;
+      left:0;
+      position:absolute;
+      top:0;
+      width:100%;
+    }
+  }
 }
 
 #footer{

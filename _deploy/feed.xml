@@ -9,7 +9,7 @@
 			<item>
 				<title>Pattern library annotations, documentation, and more</title>
 				<description>&lt;p&gt;What started out as a simple chat at &lt;a href='http://www.netcel.com/'&gt;Netcel&lt;/a&gt; this afternoon between myself and our designer &lt;a href='https://twitter.com/cheryl_lis'&gt;Cheryl&lt;/a&gt; on the ways in which we could integrate functional specifications into pattern libraries spawned into a great discussion on the topic via an impromptu Google Hangout.&lt;/p&gt;
-&lt;iframe src='http://www.youtube.com/embed/ROaXVB-bbek?rel=0' /&gt;
+&lt;div class='video'&gt;&lt;iframe src='http://www.youtube.com/embed/ROaXVB-bbek?rel=0'&gt;iframe&lt;/iframe&gt;&lt;/div&gt;
 &lt;p&gt;Thank you &lt;a href='https://twitter.com/davatron5000'&gt;Dave Rupert&lt;/a&gt;, &lt;a href='https://twitter.com/brad_frost'&gt;Brad Frost&lt;/a&gt;, &lt;a href='https://twitter.com/texburgher'&gt;Geoff Barnes&lt;/a&gt;, &lt;a href='https://twitter.com/AaronGustafson'&gt;Aaron Gustafson&lt;/a&gt; and &lt;a href='https://twitter.com/patrickfulton'&gt;Patrick Fulton&lt;/a&gt; for coming online and sharing how they do it. And apologies to all of you that I didn&amp;#8217;t make into the Hangout, but a two prong attack from a failed internet connection and a sick child had me beat!&lt;/p&gt;</description>
 				<pubDate>Thu, 21 Nov 2013 00:00:00 +0000</pubDate>
 				<link>http://benedfit.com/2013/11/pattern-library-annotations-documentation-and-more</link>
