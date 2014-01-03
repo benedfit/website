@@ -5,6 +5,14 @@ build:
     - npm-install
     - grunt:
         tasks: deploy
+  after-steps:
+    - email-notify:
+        on: failed
+        from: alerts@wercker.com
+        to: hello@benedfit.com
+        host: smtp.gmail.com:587
+        username: hello@benedfit.com
+        password: $EMAIL_PASSWORD
 deploy:
   steps:
     - script:
@@ -17,3 +25,10 @@ deploy:
           git add .
           git commit -m "deploy commit from $WERCKER_STARTED_BY via Wercker"
           git push -f $GIT_REMOTE $GIT_BRANCH
+  after-steps:
+    - email-notify:
+        from: alerts@wercker.com
+        to: hello@benedfit.com
+        host: smtp.gmail.com:587
+        username: hello@benedfit.com
+        password: $EMAIL_PASSWORD
