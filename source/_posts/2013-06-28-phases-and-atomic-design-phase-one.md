@@ -2,7 +2,7 @@
 layout: post
 title: 'Phases and Atomic Design: Phase One'
 ---
-As a follow up to my recent post on [Phases (and Mesophases) - a possible addendum to Atomic Design](/2013/06/atomic-design-phases-and-mesophases) I recently released the first addition to [Brad Frost's Pattern Lab](https://github.com/bradfrost/patternlab) to allow quick switching between defined breakpoints.
+As a follow up to my recent post on [Phases (and Mesophases) - a possible addendum to Atomic Design]({% post_url 2013-06-05-atomic-design-phases-and-mesophases %}) I recently released the first addition to [Brad Frost's Pattern Lab](https://github.com/bradfrost/patternlab) to allow quick switching between defined breakpoints.
 
 ## The first release includes:
 
