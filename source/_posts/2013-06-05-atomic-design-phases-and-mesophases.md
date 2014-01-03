@@ -18,12 +18,12 @@ I hear you... That's where [Mesophases](http://en.wikipedia.org/wiki/Mesophase) 
 
 I envisage Phases as a way to describe when the layout of a page changes significantly, for example, if it changes from a one column to multi-column layout. Mesophases, on the other hand, would be the changes between those significant changes, for example, tweaking the font-size of the nav to make it fit more comfortablly.
 
-As these  are changes affecting Atomic Design organisms, molecules, or even atoms, I feel it's best to name the associated SASS variables accordingly. So what once might have been `$bp-small-2: 29.75em;` could become `$mesophase-nav-first: 29.75em;`
+As these  are changes affecting Atomic Design organisms, molecules, or even atoms, I feel it's best to name the associated SASS variables accordingly. So what once might have been `$bp-small-2: 29.75em;` could become `$mesophase-nav-first: 29.75em;`.
 
 ##  What next?
 
 One of Brad's key aims for Pattern Lab is that he doesn't want to dictate naming conventions and development styles, and I'm keen to stick to that plan. So if you don't like the idea of Phases and Mesophases, please do ignore these musing. However, my plan is to take [my fork of Pattern Lab](https://github.com/benedfit/patternlab), and work out how Phases and Mesophases can be automatically added to the UI directly by looking for them in .scss files, and provide users with the means to scale the display to the necessary dimensions to view them.
 
-Please feel free to share your thoughts with me on [Twitter @benedfit](https://twitter.com/benedfit)
+Please feel free to share your thoughts with me on [Twitter @benedfit](https://twitter.com/benedfit).
 
-P.S. I do plan on opening my blog for comments in the near future, but <del>the Blogger comments module looks terrible out-of-the-box, and my OCD can't handle having it live in it's current state :)</del> <ins>I'm still trying to find a suitable Jekyll plugin</ins>
+P.S. I do plan on opening my blog for comments in the near future, but <del>the Blogger comments module looks terrible out-of-the-box, and my OCD can't handle having it live in it's current state :)</del> <ins>I'm still trying to find a suitable Jekyll plugin</ins>.

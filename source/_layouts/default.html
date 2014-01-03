@@ -19,7 +19,7 @@
 	<body>
 		<div id="master">
 			<header id="header" role="banner">
-				<a id="logo" href="/">{% if page.logo %}{{ page.logo }}{% else %}{{ site.logo }}{% endif %}</a>
+				<h1><a id="logo" href="/">{% if page.logo %}{{ page.logo }}{% else %}{{ site.logo }}{% endif %}</a></h1>
 				<form id="search" role="search" action="/search" method="get"><fieldset><label for="search-input"><input type="search" name="q" id="search-input" autocomplete="off"></label><button id="search-button">Search</button></fieldset></form>
 			</header>
 			<main id="content" role="main">
