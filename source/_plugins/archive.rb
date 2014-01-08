@@ -16,7 +16,6 @@ module Jekyll
         archive_title = archive_title.sub('%m', period["month"].to_s.rjust(2, '0')).sub('%s', self.data['title_separator'] || ' ')
       end
       self.data['title'] = "#{archive_title}"
-      self.data['logo'] = "#{archive_title}"
     end
   end
   class ArchiveGenerator < Generator

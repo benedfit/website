@@ -2,25 +2,49 @@
 layout: default
 title: 'Search results'
 permalink: /search/
-logo: 'Search'
 ---
-<section>
+<section data-yesscript>
 	<div class="container">
 		<h1>No search results found :*(</h1>
 		<p>It might be that you've search for something obscure, but it's more likely that it's because I haven't written much yet.</p>
 		<p>Please give it another shot.</p>
 	</div>
 </section>
+<noscript>
+	{% for post in site.posts %}
+	<article class="h-entry">
+		<div class="container">
+			<header>
+				<h1>
+					<a href="{{ post.url }}" class="p-name u-url" rel="bookmark">{{ post.title }}</a>
+					<time class="dt-published" datetime="{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}">{{ post.date | date: "%d" }}/<a href="{{ post.date | date: "/%Y/%m/" }}" rel="directory">{{ post.date | date: "%m" }}</a>/<a href="{{ post.date | date: "/%Y/" }}" rel="directory">{{ post.date | date: "%Y" }}</a></time>
+				</h1>
+			</header>
+			<div class="excerpt">
+				<div class="p-summary">{{ post.excerpt }}</div>
+				<a href="{{ post.url }}" class="icon ellipsis"><span>Read more</span></a>
+			</div>
+			<footer class="p-author h-card p-name">{{ site.title }}</footer>
+		</div>
+	</article>
+	{% endfor %}
+</noscript>
 {% raw %}
 <script id="search-results-template" type="text/mustache">
 	{{#posts}}
-	<article>
+	<article class="h-entry">
 		<div class="container">
-			<h1><a href="{{id}}" rel="bookmark"><span>{{title}}</span> <time datetime="{{datetime}}">{{date}}</time></a></h1>
+			<header>
+				<h1>
+					<a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a>
+					<time class="dt-published" datetime="{{published}}">{{day}}/<a href="/{{year}}/{{month}}/" rel="directory">{{month}}</a>/<a href="/{{year}}/" rel="directory">{{year}}</a></time>
+				</h1>
+			</header>
 			<div class="excerpt">
-				{{&excerpt}}
+				<div class="p-summary">{{&excerpt}}</div>
 				<a href="{{id}}" class="icon ellipsis"><span>Read more</span></a>
 			</div>
+			<footer class="p-author h-card p-name">{{author}}</footer>
 		</div>
 	</article>
 	{{/posts}}

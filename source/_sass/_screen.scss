@@ -22,6 +22,14 @@ button,input,select,textarea{
   }
 }
 
+[data-yesscript]{
+  display:none;
+  
+  html.js &{
+    display:block;
+  }
+}
+
 #content{
   color:$white2;
   display:block;
@@ -47,25 +55,21 @@ button,input,select,textarea{
     font-size:2.5em;
     line-height:1;
     margin:0 0 2em;
+    position:relative;
     text-align:center;
     
-    a{
-      display:block;
-      position:relative;
-      text-decoration:none;
-      
-      &:hover,&:active,&:focus{
-        time{
-          bottom:-2.25em;
-          padding-top:.75em;
-        }
+    &:hover,&:active,&:focus{
+      time{
+        bottom:-2.25em;
+        padding-top:.75em;
       }
     }
     
-    span{
+    a{
       border-bottom:1px solid $grey;
       display:block;
       padding:0 0 .5em;
+      text-decoration:none;
     }
     
     time{
@@ -82,9 +86,17 @@ button,input,select,textarea{
       margin-left:-3.25em;
       padding:.5em;
       position:absolute;
-      @include text-shadow($orange2 1px 1px 0);
       @include transition(all .2s ease-out);
       width:6.5em;
+      
+      a{
+        display:inline;
+        color:$grey;
+        
+        &:hover,&:active,&:focus{
+          color:$black;
+        }
+      }
     }
   }
   
@@ -102,6 +114,10 @@ button,input,select,textarea{
     
     &:last-of-type{
       border-bottom:0;
+    }
+    
+    footer{
+      display:none;
     }
     
     .container{
@@ -263,10 +279,14 @@ button,input,select,textarea{
   @include background(image-url("header.jpg") 50% 50%);
   @include background-size(cover);
   overflow:hidden;
-  padding:3em 0 2em;
+  padding:3em 0;
   
   @include breakpoint($breakpoint-first){
-    padding-top:5em;
+    padding:5em 0;
+  }
+  
+  html.js &{
+    padding-bottom:2em;
   }
 }
 

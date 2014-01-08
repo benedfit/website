@@ -4,13 +4,19 @@ title: Archive %m%s%Y
 title_separator: /
 ---
 {% for post in page.period_posts %}
-<article>
+<article class="h-entry">
 	<div class="container">
-		<h1><a href="{{ post.url }}" rel="bookmark"><span>{{ post.title }}</span> <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d/%m/%Y" }}</time></a></h1>
+		<header>
+			<h1>
+				<a href="{{ post.url }}" class="p-name u-url" rel="bookmark">{{ post.title }}</a>
+				<time class="dt-published" datetime="{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}">{{ post.date | date: "%d" }}/<a href="{{ post.date | date: "/%Y/%m/" }}" rel="directory">{{ post.date | date: "%m" }}</a>/<a href="{{ post.date | date: "/%Y/" }}" rel="directory">{{ post.date | date: "%Y" }}</a></time>
+			</h1>
+		</header>
 		<div class="excerpt">
-			{{ post.excerpt | markdownify }}
+			<div class="p-summary">{{ post.excerpt | markdownify }}</div>
 			<a href="{{ post.url }}" class="icon ellipsis"><span>Read more</span></a>
 		</div>
+		<footer class="p-author h-card p-name">{{ site.title }}</footer>
 	</div>
 </article>
 {% endfor %}
