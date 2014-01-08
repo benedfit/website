@@ -20,7 +20,7 @@
 		<div id="master">
 			<header id="header" role="banner">
 				<h1><a id="logo" href="/" rel="home">{% if page.logo %}{{ page.logo }}{% else %}{{ site.logo }}{% endif %}</a></h1>
-				<form id="search" role="search" action="/search" method="get"><fieldset><label for="search-input"><input type="search" name="q" id="search-input" autocomplete="off"></label><button id="search-button">Search</button></fieldset></form>
+				<form id="search" role="search" action="/search/" method="get"><fieldset><label for="search-input"><input type="search" name="q" id="search-input" autocomplete="off"></label><button id="search-button">Search</button></fieldset></form>
 			</header>
 			<main id="content" role="main">
 				{{ content }}
@@ -31,7 +31,7 @@
 					<a href="https://twitter.com/benedfit" class="icon twitter" rel="me"><span>Follow me on Twitter @<em class="p-nickname">benedfit</em></span></a>
 					<a href="https://github.com/benedfit/" class="icon github"><span>Fork me on Github</span></a>
 				</nav>
-				<footer id="footer" role="contentinfo">&copy; <a href="http://benedfit.com" class="p-name u-url">Ben Edwards</a>. All rights reserved.</footer>
+				<footer id="footer" role="contentinfo">&copy; <a href="http://benedfit.com/" class="p-name u-url">Ben Edwards</a>. All rights reserved.</footer>
 			</section>
 		</div>
 		<script>document.getElementsByTagName('html')[0].className+='js'</script>

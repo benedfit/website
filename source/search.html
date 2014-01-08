@@ -12,21 +12,7 @@ permalink: /search/
 </section>
 <noscript>
 	{% for post in site.posts %}
-	<article class="h-entry">
-		<div class="container">
-			<header>
-				<h1>
-					<a href="{{ post.url }}" class="p-name u-url" rel="bookmark">{{ post.title }}</a>
-					<time class="dt-published" datetime="{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}">{{ post.date | date: "%d" }}/<a href="{{ post.date | date: "/%Y/%m/" }}" rel="directory">{{ post.date | date: "%m" }}</a>/<a href="{{ post.date | date: "/%Y/" }}" rel="directory">{{ post.date | date: "%Y" }}</a></time>
-				</h1>
-			</header>
-			<div class="excerpt">
-				<div class="p-summary">{{ post.excerpt }}</div>
-				<a href="{{ post.url }}" class="icon ellipsis"><span>Read more</span></a>
-			</div>
-			<footer class="p-author h-card p-name">{{ site.title }}</footer>
-		</div>
-	</article>
+		{% include post.html %}
 	{% endfor %}
 </noscript>
 {% raw %}
