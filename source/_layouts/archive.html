@@ -3,6 +3,6 @@ layout: default
 title: Archive %m%s%Y
 title_separator: /
 ---
-{% for post in page.period_posts %}
-	{% include post.html %}
+{% for page in page.period_posts %}
+{% include post.html %}
 {% endfor %}

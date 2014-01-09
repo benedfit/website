@@ -1,6 +1,6 @@
 source: ./source
 destination: ./_deploy
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
 
 assets:
   dirname: .
@@ -19,3 +19,4 @@ url: http://benedfit.com
 title: Ben Edwards
 description: Ben Edwards, a web designer and developer
 logo: Benedfit
+author: Ben Edwards
