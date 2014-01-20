@@ -11,8 +11,12 @@ body{
   background:$black2;
   border-top:4px solid $black2;
   color:$white2;
-  font:100%/1.55 $font-base;
+  font:100%/1.25em $font-base;
   text-align:center;
+  
+  @include breakpoint($breakpoint-first){
+    line-height:1.375em;
+  }
 }
 
 button,input,select,textarea{
@@ -52,9 +56,9 @@ button,input,select,textarea{
   }
   
   h1{
-    font-size:2.5em;
-    line-height:1;
-    margin:0 0 2em;
+    font-size:2em;
+    line-height:1.25em;
+    margin:0 0 1.5em;
     position:relative;
     text-align:center;
     
@@ -81,7 +85,8 @@ button,input,select,textarea{
       @include box-shadow(inset 0 1px 0 rgba($white, .4));
       color:$grey;
       display:block;
-      font-size:.4em;
+      font-size:.333em;
+      line-height:1;
       left:50%;
       margin-left:-3.25em;
       padding:.5em;
@@ -209,7 +214,6 @@ button,input,select,textarea{
     h1{
       border:0;
       color:$white;
-      font-size:2em;
       margin:0 0 1em;
       padding:0;
       position:relative;
@@ -266,6 +270,13 @@ button,input,select,textarea{
       position:absolute;
       top:0;
       width:100%;
+    }
+  }
+  
+  @include breakpoint($breakpoint-first){
+    h1{
+      font-size:3em;
+      line-height:1.05em;
     }
   }
 }
