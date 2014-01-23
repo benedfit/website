@@ -17,7 +17,34 @@
 		<!--[if lte IE 9]>{% javascript js/libs/html5 %}<![endif]-->
 	</head>
 	<body>
-		<div id="master">
+		<div class="master">
+			<header class="header" role="banner">
+				<div class="container">
+					<a class="logo" href="/" rel="home">{{ site.logo }}</a>
+					<input id="menu-toggle-checkbox" class="menu-toggle-checkbox" type="checkbox" aria-hidden="true">
+					<label for="menu-toggle-checkbox" class="menu-toggle"><span>Open menu</span><i aria-hidden="true">&equiv;&equiv;</i></label>
+					<nav class="menu" role="navigation">
+						<ul>
+							<li>Search</li>
+							<li><a href="/archive/">Archive</a></li>
+							<li><a href="/about/">About</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main class="content" role="main">
+				<div class="container">
+					{{ content }}
+				</div>
+			</main>
+			<footer class="footer" role="contentinfo">
+				<div class="container">
+					Footer
+				</div>
+			</footer>
+		</div>
+		
+		<!--<div id="master">
 			<header id="header" role="banner">
 				<h1><a id="logo" href="/" rel="home">{% if page.logo %}{{ page.logo }}{% else %}{{ site.logo }}{% endif %}</a></h1>
 				<form id="search" role="search" action="/search/" method="get"><fieldset><label for="search-input"><input type="search" name="q" id="search-input" autocomplete="off"></label><button id="search-button">Search</button></fieldset></form>
@@ -34,6 +61,6 @@
 				<footer id="footer" role="contentinfo">&copy; <a href="http://benedfit.com/" class="p-name u-url">Ben Edwards</a>. All rights reserved.</footer>
 			</section>
 		</div>
-		<script>document.getElementsByTagName('html')[0].className+='js'</script>
+		<script>document.getElementsByTagName('html')[0].className+='js'</script>-->
 	</body>
 </html>

@@ -1,16 +1,6 @@
-a{
-  color:$white2;
-  @include transition(all .2s ease-out);
-  
-  &:hover,&:active,&:focus{
-    color:$white; 
-  }
-}
-
 body{
-  background:$black2;
-  border-top:4px solid $black2;
-  color:$white2;
+  background:$black-light;
+  color:$white;
   font:100%/1.25em $font-base;
   text-align:center;
   
@@ -19,417 +9,82 @@ body{
   }
 }
 
-button,input,select,textarea{
-  font:{
-    family:$font-base;
-    size:1em;
-  }
+.container{
+  margin:auto;
+  max-width:pxtoem($breakpoint-max);
+  padding:0 1em;
+  width:pxtoem($breakpoint-max);
+}
+div[class=container]{
+  width:auto;
 }
 
-[data-yesscript]{
-  display:none;
-  
-  html.js &{
-    display:block;
-  }
+.content{
+  background:image-url("header.jpg") no-repeat;
+  padding:5em 0;
 }
 
-#content{
-  color:$white2;
-  display:block;
-  
-  del{
-    color:$black;
-    text-decoration:line-through;
-    @include text-shadow($grey 1px 1px 0);
-  }
-  
-  em{
-    font:{
-      style:italic;
-      weight:bold;
-    }
-  }
-  
-  ins{
-    text-decoration:none;
-  }
-  
-  h1{
-    font-size:2em;
-    line-height:1.25em;
-    margin:0 0 1.5em;
-    position:relative;
-    text-align:center;
-    
-    &:hover,&:active,&:focus{
-      time{
-        bottom:-2.25em;
-        padding-top:.75em;
-      }
-    }
-    
-    a{
-      border-bottom:1px solid $grey;
-      display:block;
-      padding:0 0 .5em;
-      text-decoration:none;
-    }
-    
-    time{
-      background:$orange;
-      border:0;
-      bottom:-2em;
-      @include border-bottom-radius(25%);
-      @include box-shadow(inset 0 1px 0 $white);
-      @include box-shadow(inset 0 1px 0 rgba($white, .4));
-      color:$grey;
-      display:block;
-      font-size:.333em;
-      line-height:1;
-      left:50%;
-      margin-left:-3.25em;
-      padding:.5em;
-      position:absolute;
-      @include transition(all .2s ease-out);
-      width:6.5em;
-      
-      a{
-        display:inline;
-        color:$grey;
-        
-        &:hover,&:active,&:focus{
-          color:$black;
-        }
-      }
-    }
-  }
-  
-  h2{
-    font-size:1.5em;
-    margin:1.5em 0 .5em;
-  }
-  
-  article{
-    border:{
-      bottom:1px solid $black;
-      top:1px solid $grey;
-    }
-    padding:0 0 1em;
-    
-    &:last-of-type{
-      border-bottom:0;
-    }
-    
-    footer{
-      display:none;
-    }
-    
-    .container{
-      margin:auto;
-      max-width:pxtoem($breakpoint-max);
-      padding:3em 1em 1em;
-      text-align:left;
-      width:pxtoem($breakpoint-max);
-    }
-    div[class=container]{
-      width:auto;
-    }
-    
-    .ellipsis{
-      display:inline-block;
-      font-size:1.5em;
-      line-height:1;
-      text:{
-        align:center;
-        decoration:none;
-      }
-      @include text-shadow($grey 1px 1px 0);
-      
-      &:before{
-        color:$black;
-        content:'\25cb\25cb\25cb';
-      }
-      
-      &:hover,&:active,&:focus{
-        color:$white;
-        @include text-shadow(none);
-      }
-    }
-    
-    .excerpt{
-      text-align:center;
-      
-      p{
-        margin:0 0 .5em;
-      }
-    }
-  }
-  
-  blockquote{
-    border-left:2px solid $orange;
-    margin:0 .75em;
-    padding:0 1em;
-    
-    p{
-      font-size:1.5em;
-    }
-  }
-  
-  code{
-    background:$white2;
-    @include border-radius(.125em);
-    color:$black;
-    font-family:$font-monospace;
-    padding:.125em .25em;
-    white-space:nowrap;
-  }
-  
-  p{
-    margin:0 0 1em;
-    text-align:justify;
-    
-    &.lead{
-      font-size:1.5em;
-    }
-  }
-  
-  pre code{
-    display:block;
-    margin:0 0 1em;
-    padding:.75em;
-    -moz-tab-size:2;
-    -o-tab-size:2;
-    tab-size:2;
-    white-space:pre;
-  }
-  
-  section{
-    border:{
-      bottom:1px solid $black;
-      top:1px solid $grey;
-    }
-    padding:2em 0;
-    
-    h1{
-      border:0;
-      color:$white;
-      margin:0 0 1em;
-      padding:0;
-      position:relative;
-    }
-    
-    .container{
-      margin:auto;
-      max-width:pxtoem($breakpoint-max);
-      padding:0 2em;
-      width:pxtoem($breakpoint-max);
-    }
-    div[class=container]{
-      width:auto;
-    }
-  }
-  
-  ul{
-    list-style:circle;
-    margin:0 0 1em;
-    padding:0 0 0 1em;
-    text-align:justify;
-    
-    & > li{
-      list-style:none;
-      
-      &:before{
-        color:$orange;
-        content:"\25cb";
-        display:block;
-        left:-1em;
-        max:{
-          height:0;
-          width:0;
-        }
-        position:relative;
-      }
-    }
-    
-    * + html & li{
-      list-style:circle;
-    }
-  }
-  
-  .video{
-    height:0;
-    overflow:hidden;
-    margin:0 0 1em;
-    padding:0 0 56.25%;
-    position:relative;
- 
-    embed,iframe,object{
-      height:100%;
-      left:0;
-      position:absolute;
-      top:0;
-      width:100%;
-    }
-  }
-  
-  @include breakpoint($breakpoint-first){
-    h1{
-      font-size:3em;
-      line-height:1.05em;
-    }
-  }
+.footer{
+  padding:4em 0;
 }
 
-#footer{
-  margin:0 1em 2em;
-  padding:.5em 0;
+.header{
+  padding:1em 0;
 }
 
-#header{
-  @include background(image-url("header.jpg") 50% 50%);
-  @include background-size(cover);
-  overflow:hidden;
-  padding:3em 0;
-  
-  @include breakpoint($breakpoint-first){
-    padding:5em 0;
-  }
-  
-  html.js &{
-    padding-bottom:2em;
-  }
-}
-
-.icon{
-  @extend %icon;
-}
-
-#logo{
+.logo{
   background:$black;
   color:$white;
   display:inline-block;
-  font:{
-    size:1.75em;
-    weight:bold;
-  }
-  padding:.65em .25em .65em .65em;
-  line-height:1;
+  font-weight:bold;
   letter-spacing:.5em;
+  line-height:1;
+  padding:.5em 0 .5em .5em;
   text:{
     decoration:none;
     transform:uppercase;
   }
 }
 
-#master{
-  border-top:1px solid $black;
-  margin:auto;
+.menu{
+  $height:2em;
+  
+  max-height:$height;
+  overflow:hidden;
+  text-align:right;
+  @include transition(max-height 250ms ease-in-out);
+  
+  .menu-toggle-checkbox:not(:checked) ~ &{
+    max-height:0;
+  }
+    
+  .menu-toggle-checkbox:checked ~ &{
+    max-height:$height;
+  }
 }
-
-#navigation{
-  border-top:1px solid $grey;
+.menu-toggle{
+  cursor:pointer;
   display:block;
-  padding:2em .25em 0;
-  text-align:center;
+  float:right;
+  line-height:1;
   
-  a{
-    background:$orange;
-    border:.5em solid $black2;
-    @include border-radius(25%);
-    color:$black;
-    margin:0 0 .5em;
-    overflow:hidden;
-    padding:1em;
-    width:2.5em;
-    
-    &:hover,&:focus,&:active{
-      border-color:$grey;
+  i{
+    font:{
+      size:2em;
+      style:normal;
     }
-    
-    &:before{
-      color:$white;
-      font-size:2.5em;
-    }
-    
-    &.email:before{
-      content:"\40";
-    }
-    
-    &.github:before{
-      content:"\2443";
-    }
-    
-    &.twitter:before{
-      content:"\74";
-    }
+    letter-spacing:-.25em;
+    padding:0 .25em 0 0;
   }
+  
+  span{
+    display:none;
+  }
+}
+.menu-toggle-checkbox{
+  display:none;
 }
 
-#search{
-  display:none;
-  margin:2em auto 0;
-  max-width:pxtoem($breakpoint-max);
-  width:pxtoem($breakpoint-max);
-  
-  html.js &{
-    display:block;
-  }
-  
-  button{
-    background:none;
-    border:0;
-    color:$white;
-    cursor:pointer;
-    display:block;
-    height:100%;
-    margin:0;
-    padding:.5em;
-    position:absolute;
-    right:0;
-    text:{
-      align:right;
-      transform:uppercase;
-    }
-    top:0;
-    vertical-align:middle;
-    width:auto;
-    z-index:2;
-  }
-  
-  fieldset{
-    border:1px solid $black;
-    display:block;
-    line-height:1;
-    margin:0 1em;
-    padding:0;
-    position:relative;
-  }
-  
-  input{
-    background:none;
-    border:0;
-    color:$black2;
-    display:block;
-    outline:none;
-    margin:0;
-    padding:.5em;
-    vertical-align:middle;
-    width:75%;
-    -webkit-appearance:none;
-    
-    &::-webkit-search-cancel-button,&::-webkit-search-results-button{ 
-      -webkit-appearance: none; 
-    }
-  }
-  
-  label{
-    cursor:text;
-    display:block;
-    position:relative;
-    z-index:1;
-  }
-}
-form[id=search]{
-  width:auto !important;
+.master{
+  text-align:left;
 }
