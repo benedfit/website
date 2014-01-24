@@ -7,12 +7,12 @@
 			</h1>
 		</header>
 		{% if include.full %}
-		<div class="e-content">{{ content }}</div>
+			<div class="e-content">{{ content }}</div>
 		{% else %}
-		<div class="excerpt">
-			<div class="p-summary">{{ page.excerpt | markdownify }}</div>
-			<a href="{{ page.url }}" class="icon ellipsis"><span>Read more</span></a>
-		</div>
+			<div class="excerpt">
+				<div class="p-summary">{{ page.excerpt | markdownify }}</div>
+				<a href="{{ page.url }}" class="icon ellipsis"><span>Read more</span></a>
+			</div>
 		{% endif %}
 		<footer class="p-author h-card p-name">{{ site.author }}</footer>
 	</div>

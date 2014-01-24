@@ -1,5 +1,5 @@
 @include font-face("Muli", font-files("muli/regular.woff", "muli/regular.ttf", "muli/regular.svg#muliregular"), "muli/regular.eot", normal, normal);
-@include font-face("Muli", font-files("muli/italic.woff", "muli/italic.ttf", "muli/italic.svg#muliitalic"), "muli/italic.eot", normal, italic);
+@include font-face("Muli", font-files("muli/regular-italic.woff", "muli/regular-italic.ttf", "muli/regular-italic.svg#muliitalic"), "muli/regular-italic.eot", normal, italic);
 @include font-face("Muli", font-files("muli/bold.woff", "muli/bold.ttf", "muli/bold.svg#muli_boldbold"), "muli/bold.eot", bold, normal);
 @include font-face("Muli", font-files("muli/bold-italic.woff", "muli/bold-italic.ttf", "muli/bold-italic.svg#mulibold_italic"), "muli/bold-italic.eot", bold, italic);
 @include font-face("Muli", font-files("muli/light.woff", "muli/light.ttf", "muli/light.svg#mulilight"), "muli/light.eot", lighter, normal);

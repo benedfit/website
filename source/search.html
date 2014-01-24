@@ -2,6 +2,7 @@
 layout: default
 title: 'Search results'
 permalink: /search/
+hidden: true
 ---
 <section data-yesscript>
 	<div class="container">
@@ -12,7 +13,7 @@ permalink: /search/
 </section>
 <noscript>
 	{% for page in site.posts %}
-	{% include post.html %}
+		{% include post.html %}
 	{% endfor %}
 </noscript>
 {% raw %}

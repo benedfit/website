@@ -24,9 +24,14 @@ div[class=container]{
   padding:2em 0;
   text-align:left;
   
+  a{
+    border-bottom:1px solid $white;
+    color:$white;
+    text-decoration:none;
+  }
+  
   blockquote{
     font-size:1.25em;
-    margin:2em 0;
     
     @include breakpoint($breakpoint-first){
       font-size:1.5em;
@@ -49,7 +54,6 @@ div[class=container]{
   
   h1{
     font-size:2em;
-    margin:0 0 1em;
     
     @include breakpoint($breakpoint-first){
       font-size:2.5em;
@@ -65,7 +69,6 @@ div[class=container]{
   h2{
     font-size:1.625em;
     line-height:1.15;
-    margin:0 0 1em;
     
     @include breakpoint($breakpoint-first){
       font-size:2em;
@@ -80,7 +83,6 @@ div[class=container]{
   h3{
     font-size:1.375em;
     line-height:1.15;
-    margin:0 0 1em;
     
     @include breakpoint($breakpoint-first){
       font-size:1.5em;
@@ -95,7 +97,6 @@ div[class=container]{
   h4{
     font-size:1.125em;
     line-height:1.1;
-    margin:0 0 1em;
     
     @include breakpoint($breakpoint-first){
       line-height:1.2;
@@ -171,6 +172,7 @@ div[class=container]{
   background:$black;
   color:$white;
   display:inline-block;
+  float:left;
   font-weight:bold;
   letter-spacing:.5em;
   line-height:1;
@@ -182,39 +184,48 @@ div[class=container]{
 }
 
 .menu{
-  $height:5em; 
-  max-height:$height;
-  overflow:hidden;
+  $height:5em;
+  
   text-align:right;
-  @include transition(max-height 250ms ease-in-out);
   
-  .menu-toggle-checkbox:not(:checked) ~ &{
-    max-height:0;
-  }
-    
-  .menu-toggle-checkbox:checked ~ &{
-    max-height:$height;
-  }
-}
-.menu-toggle{
-  cursor:pointer;
-  display:block;
-  float:right;
-  line-height:1;
-  
-  i{
-    font:{
-      size:2em;
-      style:normal;
-    }
-    letter-spacing:-.25em;
-    padding:0 .25em 0 0;
+  a{
+    color:$white;
   }
   
-  span{
+  input{
     display:none;
+    
+    &:not(:checked) ~ ul{
+      max-height:0;
+    }
+      
+    &:checked ~ ul{
+      max-height:$height;
+    }
   }
-}
-.menu-toggle-checkbox{
-  display:none;
+  
+  label{
+    cursor:pointer;
+    display:inline-block;
+    line-height:1;
+    
+    i{
+      font:{
+        size:2em;
+        style:normal;
+      }
+      letter-spacing:-.25em;
+      padding:0 .25em 0 0;
+    }
+    
+    span{
+      display:none;
+    }
+  }
+
+  ul{
+    max-height:$height;
+    overflow:hidden;
+    @include transition(max-height 250ms ease-in-out);
+  }
 }
