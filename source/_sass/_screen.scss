@@ -1,11 +1,11 @@
 body{
   background:$black-light;
   color:$white;
-  font:100%/1.25em $font-base;
+  font:100%/1.25 $font-base;
   text-align:center;
   
   @include breakpoint($breakpoint-first){
-    line-height:1.375em;
+    line-height:1.375;
   }
 }
 
@@ -20,16 +20,151 @@ div[class=container]{
 }
 
 .content{
-  background:image-url("header.jpg") no-repeat;
-  padding:5em 0;
+  background:$grey;
+  padding:2em 0;
+  text-align:left;
+  
+  blockquote{
+    font-size:1.25em;
+    margin:2em 0;
+    
+    @include breakpoint($breakpoint-first){
+      font-size:1.5em;
+      line-height:1.45;
+    }
+  }
+
+  
+  blockquote,li,p{
+    a{
+      border-bottom:1px solid $orange;
+      color:$grey-light;
+      text-decoration:none;
+      
+      &:hover,&:active,&:focus{
+        color:$orange;
+      }
+    }
+  }
+  
+  h1{
+    font-size:2em;
+    margin:0 0 1em;
+    
+    @include breakpoint($breakpoint-first){
+      font-size:2.5em;
+      line-height:1.125;
+    }
+    
+    @include breakpoint($breakpoint-second){
+      font-size:3em;
+      line-height:1.05;
+    }
+  }
+  
+  h2{
+    font-size:1.625em;
+    line-height:1.15;
+    margin:0 0 1em;
+    
+    @include breakpoint($breakpoint-first){
+      font-size:2em;
+      line-height:1.25;
+    }
+    
+    @include breakpoint($breakpoint-second){
+      font-size:2.25em;
+    }
+  }
+  
+  h3{
+    font-size:1.375em;
+    line-height:1.15;
+    margin:0 0 1em;
+    
+    @include breakpoint($breakpoint-first){
+      font-size:1.5em;
+      line-height:1.25;
+    }
+    
+    @include breakpoint($breakpoint-second){
+      font-size:1.75em;
+    }
+  }
+  
+  h4{
+    font-size:1.125em;
+    line-height:1.1;
+    margin:0 0 1em;
+    
+    @include breakpoint($breakpoint-first){
+      line-height:1.2;
+    }
+  }
+  
+  li{
+    margin:.5em;
+  }
+  
+  ol{
+    list-style:decimal;
+    margin:0 0 1em;
+    padding:0 0 0 1em;
+  }
+  
+  p{
+    margin:0 0 1em;
+  }
+  
+  ul{
+    list-style:circle;
+    margin:0 0 1em;
+    padding:0 0 0 1em;
+    
+    & > li{
+      list-style:none;
+      
+      &:before{
+        color:$orange;
+        content:"\25cb";
+        display:block;
+        left:-1em;
+        max:{
+          height:0;
+          width:0;
+        }
+        position:relative;
+      }
+    }
+    
+    * + html & li{
+      list-style:circle;
+    }
+  }
 }
 
 .footer{
-  padding:4em 0;
+  padding:2em 0;
+  
+  .est{
+    border:1px solid $white;
+    @include border-radius(100%);
+    display:inline-block;
+    line-height:1.15;
+    padding:1em;
+    text-transform:uppercase;
+    
+    abbr{
+      display:block;
+    }
+  }
 }
 
 .header{
+  background:image-url("header.jpg") 50% 0;
+  @include background-size(cover);
   padding:1em 0;
+  text-align:left;
 }
 
 .logo{
@@ -47,8 +182,7 @@ div[class=container]{
 }
 
 .menu{
-  $height:2em;
-  
+  $height:5em; 
   max-height:$height;
   overflow:hidden;
   text-align:right;
@@ -83,8 +217,4 @@ div[class=container]{
 }
 .menu-toggle-checkbox{
   display:none;
-}
-
-.master{
-  text-align:left;
 }
