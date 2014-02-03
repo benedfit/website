@@ -1,2 +1,0 @@
-Sitemap:http://dev.benedfit.com/sitemap.xml
-User-agent:*

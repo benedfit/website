@@ -54,6 +54,7 @@ div[class=container]{
   
   h1{
     font-size:2em;
+    margin:1em;
     
     @include breakpoint($breakpoint-first){
       font-size:2.5em;
