@@ -1,19 +1,13 @@
-<article class="h-entry">
-	<div class="container">
-		<header>
-			<h1>
-				<a href="{{ page.url }}" class="p-name u-url" rel="bookmark">{{ page.title }}</a>
-				<time class="dt-published" datetime="{{ page.date | date_to_xmlschema  }}">{{ page.date | date: "%d" }}/<a href="{{ page.date | date: "/%Y/%m/" }}" rel="directory">{{ page.date | date: "%m" }}</a>/<a href="{{ page.date | date: "/%Y/" }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>
-			</h1>
-		</header>
-		{% if include.full %}
-			<div class="e-content">{{ content }}</div>
-		{% else %}
-			<div class="excerpt">
-				<div class="p-summary">{{ page.excerpt | markdownify }}</div>
-				<a href="{{ page.url }}" class="icon ellipsis"><span>Read more</span></a>
-			</div>
-		{% endif %}
-		<footer class="p-author h-card p-name">{{ site.author }}</footer>
-	</div>
+<article class="post h-entry">
+	<header>
+		<h1><a href="{{ page.url }}" class="p-name u-url" rel="bookmark">{{ page.title }}</a></h1>
+		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema  }}">{{ page.date | date: "%d" }}/<a href="{{ page.date | date: "/%Y/%m/" }}" rel="directory">{{ page.date | date: "%m" }}</a>/<a href="{{ page.date | date: "/%Y/" }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>
+	</header>
+	{% if include.full %}
+		<div class="e-content">{{ content }}</div>
+	{% else %}
+		<div class="p-summary">{{ page.excerpt | markdownify }}</div>
+		<a href="{{ page.url }}" class="ellipsis"><span>Read more</span></a>
+	{% endif %}
+	<footer class="p-author h-card p-name">{{ site.author }}</footer>
 </article>

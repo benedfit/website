@@ -2,4 +2,6 @@
 layout: default
 hidden: true
 ---
-<a href="/styleguide/">View styleguide</a>.
+{% for page in site.posts %}
+{% include post.html %}
+{% endfor %}

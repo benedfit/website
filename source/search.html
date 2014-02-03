@@ -5,11 +5,9 @@ permalink: /search/
 hidden: true
 ---
 <section data-yesscript>
-	<div class="container">
-		<h1>No search results found :*(</h1>
-		<p>It might be that you've search for something obscure, but it's more likely that it's because I haven't written much yet.</p>
-		<p>Please give it another shot.</p>
-	</div>
+	<h1>No search results found :*(</h1>
+	<p>It might be that you've search for something obscure, but it's more likely that it's because I haven't written much yet.</p>
+	<p>Please give it another shot.</p>
 </section>
 <noscript>
 	{% for page in site.posts %}
@@ -20,19 +18,13 @@ hidden: true
 <script id="search-results-template" type="text/mustache">
 	{{#posts}}
 	<article class="h-entry">
-		<div class="container">
-			<header>
-				<h1>
-					<a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a>
-					<time class="dt-published" datetime="{{published}}">{{day}}/<a href="/{{year}}/{{month}}/" rel="directory">{{month}}</a>/<a href="/{{year}}/" rel="directory">{{year}}</a></time>
-				</h1>
-			</header>
-			<div class="excerpt">
-				<div class="p-summary">{{&excerpt}}</div>
-				<a href="{{id}}" class="icon ellipsis"><span>Read more</span></a>
-			</div>
-			<footer class="p-author h-card p-name">{{author}}</footer>
-		</div>
+		<header>
+			<h1><a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a></h1>
+			<time class="dt-published" datetime="{{published}}">{{day}}/<a href="/{{year}}/{{month}}/" rel="directory">{{month}}</a>/<a href="/{{year}}/" rel="directory">{{year}}</a></time>
+		</header>
+		<div class="p-summary">{{&excerpt}}</div>
+		<a href="{{id}}" class="icon ellipsis"><span>Read more</span></a>
+		<footer class="p-author h-card p-name">{{author}}</footer>
 	</article>
 	{{/posts}}
 </script>

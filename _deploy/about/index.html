@@ -24,7 +24,14 @@
 					<input id="menu-toggle" type="checkbox" aria-hidden="true">
 					<label for="menu-toggle"><span aria-hidden="false">Open menu</span><i aria-hidden="true">&equiv;&equiv;</i></label>
 					<ul>
-						<li>Search</li>
+						<li>
+							<form class="search" role="search" action="/search/" method="get">
+								<fieldset>
+									<label for="search-input"><input type="search" name="q" id="search-input" autocomplete="off"></label>
+									<button id="search-button">Search</button>
+								</fieldset>
+							</form>
+						</li>
 						
 						
 							
