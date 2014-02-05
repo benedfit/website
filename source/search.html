@@ -8,27 +8,28 @@ noindex: true
 <section data-yesscript>
 	<h1>No search results found :*(</h1>
 	<p>It might be that you've search for something obscure, but it's more likely that it's because I haven't written much yet.</p>
-	<p>Please give it another shot.</p>
+	<p>Please give it another shot, <a href="/archive/">or check out the archive</a>.</p>
 </section>
 <noscript>
+	<h1>{{ page.title }}</h1>
 	{% for page in site.posts %}
 		{% include post.html %}
 	{% endfor %}
 </noscript>
-{% raw %}
 <script id="search-results-template" type="text/mustache">
-	<h1>Search results</h1>
+	<h1>{{ page.title }}</h1>
+	{% raw %}
 	{{#posts}}
 	<article class="post h-entry">
 		<header>
 			<h2><a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a></h2>
-			<time class="dt-published" datetime="{{published}}">{{day}}/<a href="/{{year}}/{{month}}/" rel="directory">{{month}}</a>/<a href="/{{year}}/" rel="directory">{{year}}</a></time>
+			<time class="dt-published" datetime="{{published}}"><a href="/{{year}}/{{month}}/" rel="directory">{{month}}</a>&nbsp;{{day}},&nbsp;<a href="/{{year}}/" rel="directory">{{year}}</a></time>
 		</header>
-		<div class="p-summary">{{&excerpt}}</div>
+		<div class="excerpt p-summary">{{&excerpt}}</div>
 		<a href="{{id}}" class="ellipsis"><span>Read more</span></a>
 		<footer class="p-author h-card p-name">{{author}}</footer>
 	</article>
 	{{/posts}}
+	{% endraw %}
 </script>
-{% endraw %}
 {% javascript js/search %}

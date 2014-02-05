@@ -1,11 +1,11 @@
 body{
   background:$black-light;
   color:$white;
-  font:100%/1.25 $font-base;
+  font:100%/1.5 $font-base;
   text-align:center;
   
   @include breakpoint($breakpoint-first){
-    line-height:1.375;
+    line-height:1.75;
   }
 }
 
@@ -38,9 +38,18 @@ div[class=container]{
     text-decoration:none;
   }
   
+  blockquote,li,p{
+    a{
+      border-color:$orange;
+    }
+  }
+  
   blockquote{
     border-left:2px solid $orange;
-    font-size:1.25em;
+    font:{
+      size:1.25em;
+      weight:300;
+    }
     margin:0 .75em;
     padding:0 1em;
     
@@ -58,11 +67,16 @@ div[class=container]{
     padding:.1em .25em;
     white-space:nowrap;
   }
+  
+  del{
+    color:$grey-light;
+  }
  
   h1{
     background:image-url("hr.jpg") repeat-x 0 100%;
     @include background-size(100% 1px);
     font-size:2em;
+    line-height:1.25;
     margin:0 0 .75em;
     padding:0 0 .333333em;
     
@@ -120,14 +134,47 @@ div[class=container]{
     margin:0 0 .25em;
   }
   
+  ins{
+    color:$grey-light;
+    font-weight:300;
+    text-decoration:none;
+  }
+  
   li{
+    line-height:1;
     margin:.5em;
   }
   
   ol{
+    counter-reset:li;
     list-style:decimal;
     margin:0 0 1em;
     padding:0 0 0 1em;
+    
+    & > li{
+      list-style:none;
+      
+      &:before{
+        color:$grey-light;
+        content:counter(li)".";
+        counter-increment:li;
+        display:block;
+        font:{
+          style:italic;
+          weight:300;
+        }
+        left:-1em;
+        max:{
+          height:0;
+          width:0;
+        }
+        position:relative;
+      }
+    }
+    
+    * + html & li{
+      list-style:decimal;
+    }
   }
   
   p{
@@ -172,10 +219,25 @@ div[class=container]{
 }
 
 .footer{
-  padding:2em 0;
+  color:$grey-light;
+  overflow:hidden;
+  padding:3em 0;
   
-  .est{
-    border:1px solid $white;
+  a{
+    border-bottom:1px solid $grey-light;
+    color:$white;
+    display:inline-block;
+    margin:0 1em 0 0;
+    text-decoration:none;
+  }
+  
+  p{
+    font-weight:300;
+    margin:0 0 3em;
+  }
+  
+  .established{
+    border:1px solid $grey-light;
     @include border-radius(100%);
     display:inline-block;
     line-height:1.15;
@@ -222,13 +284,13 @@ div[class=container]{
   input{
     display:none;
     
-    &:not(:checked) ~ ul{
+    /*&:not(:checked) ~ ul{
       max-height:0;
     }
       
     &:checked ~ ul{
       max-height:$height;
-    }
+    }*/
   }
   
   label{
@@ -243,6 +305,7 @@ div[class=container]{
       }
       letter-spacing:-.25em;
       padding:0 .25em 0 0;
+      visibility:hidden;
     }
     
     span{
@@ -251,6 +314,7 @@ div[class=container]{
   }
 
   ul{
+    display:none;
     max-height:$height;
     overflow:hidden;
     @include transition(max-height 250ms ease-in-out);
@@ -345,6 +409,10 @@ div[class=container]{
       display:none;
     }
   }
+  
+  .excerpt a{
+    border:0;
+  }
 }
 
 .search{
@@ -411,7 +479,7 @@ form[class=search]{
 .video{
   height:0;
   overflow:hidden;
-  margin:0 0 1em;
+  margin:0 0 1.5em;
   padding:0 0 56.25%;
   position:relative;
  

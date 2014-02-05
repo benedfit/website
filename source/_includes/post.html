@@ -7,12 +7,12 @@
 <article class="{{ class }} h-entry">
 	<header>
 		<{{ tag }}><a href="{{ page.url }}" class="p-name u-url" rel="bookmark">{{ page.title }}</a></{{ tag }}>
-		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema  }}">{{ page.date | date: "%d" }}/<a href="{{ page.date | date: "/%Y/%m/" }}" rel="directory">{{ page.date | date: "%m" }}</a>/<a href="{{ page.date | date: "/%Y/" }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>
+		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema  }}"><a href="{{ page.date | date: "/%Y/%m/" }}" rel="directory">{{ page.date | date: "%B" }}</a>&nbsp;{{ page.date | date: "%-d" }},&nbsp;<a href="{{ page.date | date: "/%Y/" }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>
 	</header>
 	{% if include.full %}
 		<div class="e-content">{{ content }}</div>
 	{% else %}
-		<div class="p-summary">{{ page.excerpt | markdownify }}</div>
+		<div class="excerpt p-summary">{{ page.excerpt | markdownify }}</div>
 		<a href="{{ page.url }}" class="ellipsis"><span>Read more</span></a>
 	{% endif %}
 	<footer class="p-author h-card p-name">{{ site.author }}</footer>
