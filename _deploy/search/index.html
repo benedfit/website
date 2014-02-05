@@ -25,7 +25,7 @@
 					<label for="menu-toggle"><span aria-hidden="false">Open menu</span><i aria-hidden="true">&equiv;&equiv;</i></label>
 					<ul>
 						<li>
-							<form class="search" role="search" action="/search/" method="get">
+							<form id="search" class="search" role="search" action="/search/" method="get">
 								<fieldset>
 									<label for="search-input"><input type="search" name="q" id="search-input" autocomplete="off"></label>
 									<button id="search-button">Search</button>
@@ -71,7 +71,7 @@
 			</div>
 		</header>
 		<main class="content" role="main">
-			<div class="container">
+			<div id="content-container" class="container">
 				<section data-yesscript>
 	<h1>No search results found :*(</h1>
 	<p>It might be that you've search for something obscure, but it's more likely that it's because I haven't written much yet.</p>
@@ -79,9 +79,12 @@
 </section>
 <noscript>
 	
-		<article class="post h-entry">
+		
+
+
+<article class="post h-entry">
 	<header>
-		<h1><a href="/2013/11/pattern-library-annotations-documentation-and-more/" class="p-name u-url" rel="bookmark">Pattern library annotations, documentation, and more</a></h1>
+		<h2><a href="/2013/11/pattern-library-annotations-documentation-and-more/" class="p-name u-url" rel="bookmark">Pattern library annotations, documentation, and more</a></h2>
 		<time class="dt-published" datetime="2013-11-21T00:00:00+00:00">21/<a href="/2013/11/" rel="directory">11</a>/<a href="/2013/" rel="directory">2013</a></time>
 	</header>
 	
@@ -91,9 +94,12 @@
 	<footer class="p-author h-card p-name">Ben Edwards</footer>
 </article>
 	
-		<article class="post h-entry">
+		
+
+
+<article class="post h-entry">
 	<header>
-		<h1><a href="/2013/06/phases-and-atomic-design-phase-one/" class="p-name u-url" rel="bookmark">Phases and Atomic Design: Phase One</a></h1>
+		<h2><a href="/2013/06/phases-and-atomic-design-phase-one/" class="p-name u-url" rel="bookmark">Phases and Atomic Design: Phase One</a></h2>
 		<time class="dt-published" datetime="2013-06-28T00:00:00+01:00">28/<a href="/2013/06/" rel="directory">06</a>/<a href="/2013/" rel="directory">2013</a></time>
 	</header>
 	
@@ -103,9 +109,12 @@
 	<footer class="p-author h-card p-name">Ben Edwards</footer>
 </article>
 	
-		<article class="post h-entry">
+		
+
+
+<article class="post h-entry">
 	<header>
-		<h1><a href="/2013/06/atomic-design-phases-and-mesophases/" class="p-name u-url" rel="bookmark">Phases (and Mesophases) - a possible addendum to Atomic Design</a></h1>
+		<h2><a href="/2013/06/atomic-design-phases-and-mesophases/" class="p-name u-url" rel="bookmark">Phases (and Mesophases) - a possible addendum to Atomic Design</a></h2>
 		<time class="dt-published" datetime="2013-06-05T00:00:00+01:00">05/<a href="/2013/06/" rel="directory">06</a>/<a href="/2013/" rel="directory">2013</a></time>
 	</header>
 	
@@ -118,23 +127,20 @@
 </noscript>
 
 <script id="search-results-template" type="text/mustache">
+	<h1>Search results</h1>
 	{{#posts}}
-	<article class="h-entry">
+	<article class="post h-entry">
 		<header>
-			<h1><a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a></h1>
+			<h2><a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a></h2>
 			<time class="dt-published" datetime="{{published}}">{{day}}/<a href="/{{year}}/{{month}}/" rel="directory">{{month}}</a>/<a href="/{{year}}/" rel="directory">{{year}}</a></time>
 		</header>
 		<div class="p-summary">{{&excerpt}}</div>
-		<a href="{{id}}" class="icon ellipsis"><span>Read more</span></a>
+		<a href="{{id}}" class="ellipsis"><span>Read more</span></a>
 		<footer class="p-author h-card p-name">{{author}}</footer>
 	</article>
 	{{/posts}}
 </script>
 
-<script src="/js/libs/jquery.js"></script>
-<script src="/js/libs/purl.js"></script>
-<script src="/js/libs/lunr.js"></script>
-<script src="/js/libs/mustache.js"></script>
 <script src="/js/search.js"></script>
 			</div>
 		</main>
@@ -156,9 +162,12 @@
 </section>
 <noscript>
 	
-		<article class="post h-entry">
+		
+
+
+<article class="post h-entry">
 	<header>
-		<h1><a href="/2013/11/pattern-library-annotations-documentation-and-more/" class="p-name u-url" rel="bookmark">Pattern library annotations, documentation, and more</a></h1>
+		<h2><a href="/2013/11/pattern-library-annotations-documentation-and-more/" class="p-name u-url" rel="bookmark">Pattern library annotations, documentation, and more</a></h2>
 		<time class="dt-published" datetime="2013-11-21T00:00:00+00:00">21/<a href="/2013/11/" rel="directory">11</a>/<a href="/2013/" rel="directory">2013</a></time>
 	</header>
 	
@@ -168,9 +177,12 @@
 	<footer class="p-author h-card p-name">Ben Edwards</footer>
 </article>
 	
-		<article class="post h-entry">
+		
+
+
+<article class="post h-entry">
 	<header>
-		<h1><a href="/2013/06/phases-and-atomic-design-phase-one/" class="p-name u-url" rel="bookmark">Phases and Atomic Design: Phase One</a></h1>
+		<h2><a href="/2013/06/phases-and-atomic-design-phase-one/" class="p-name u-url" rel="bookmark">Phases and Atomic Design: Phase One</a></h2>
 		<time class="dt-published" datetime="2013-06-28T00:00:00+01:00">28/<a href="/2013/06/" rel="directory">06</a>/<a href="/2013/" rel="directory">2013</a></time>
 	</header>
 	
@@ -180,9 +192,12 @@
 	<footer class="p-author h-card p-name">Ben Edwards</footer>
 </article>
 	
-		<article class="post h-entry">
+		
+
+
+<article class="post h-entry">
 	<header>
-		<h1><a href="/2013/06/atomic-design-phases-and-mesophases/" class="p-name u-url" rel="bookmark">Phases (and Mesophases) - a possible addendum to Atomic Design</a></h1>
+		<h2><a href="/2013/06/atomic-design-phases-and-mesophases/" class="p-name u-url" rel="bookmark">Phases (and Mesophases) - a possible addendum to Atomic Design</a></h2>
 		<time class="dt-published" datetime="2013-06-05T00:00:00+01:00">05/<a href="/2013/06/" rel="directory">06</a>/<a href="/2013/" rel="directory">2013</a></time>
 	</header>
 	
@@ -195,23 +210,20 @@
 </noscript>
 
 <script id="search-results-template" type="text/mustache">
+	<h1>Search results</h1>
 	{{#posts}}
-	<article class="h-entry">
+	<article class="post h-entry">
 		<header>
-			<h1><a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a></h1>
+			<h2><a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a></h2>
 			<time class="dt-published" datetime="{{published}}">{{day}}/<a href="/{{year}}/{{month}}/" rel="directory">{{month}}</a>/<a href="/{{year}}/" rel="directory">{{year}}</a></time>
 		</header>
 		<div class="p-summary">{{&excerpt}}</div>
-		<a href="{{id}}" class="icon ellipsis"><span>Read more</span></a>
+		<a href="{{id}}" class="ellipsis"><span>Read more</span></a>
 		<footer class="p-author h-card p-name">{{author}}</footer>
 	</article>
 	{{/posts}}
 </script>
 
-<script src="/js/libs/jquery.js"></script>
-<script src="/js/libs/purl.js"></script>
-<script src="/js/libs/lunr.js"></script>
-<script src="/js/libs/mustache.js"></script>
 <script src="/js/search.js"></script>
 			</main>
 			<section class="h-card">

@@ -9,11 +9,25 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'archive.html')
       self.data['period'] = period
       self.data['period_posts'] = posts
-      archive_title = self.data['title'].sub('%Y', period["year"].to_s()) 
+      
+      period_year = period["year"].to_s()
+      period_month = period["month"].to_s.rjust(2, '0')
       if period['month'] == nil
-        archive_title = archive_title.sub('%m', '').sub('%s', '')
+        period_month = '01'
+      end
+      period_date = DateTime.parse('%s-%s-01 00:00:00' % [period_year, period_month])
+      period_date_format = period_date.strftime('%B %Y')
+      
+      archive_title = self.data['title'] || self.data['archive_title'] || ''
+      if period['year'] == nil
+        archive_title = archive_title.sub('%Y', '')
       else
-        archive_title = archive_title.sub('%m', period["month"].to_s.rjust(2, '0')).sub('%s', self.data['title_separator'] || ' ')
+        archive_title = archive_title.sub('%Y', period_date.strftime(self.data['year_format'] || '%Y'))
+      end
+      if period['month'] == nil
+        archive_title = archive_title.sub('%m', '')
+      else
+        archive_title = archive_title.sub('%m', period_date.strftime(self.data['month_format'] || '%m'))
       end
       self.data['title'] = "#{archive_title}"
     end

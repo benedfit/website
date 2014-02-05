@@ -1,6 +1,12 @@
-<article class="post h-entry">
+{% assign class = 'post' %}
+{% assign tag = 'h2' %}
+{% if include.full %}
+	{% assign class = 'post post-full' %}
+	{% assign tag = 'h1' %}
+{% endif %}
+<article class="{{ class }} h-entry">
 	<header>
-		<h1><a href="{{ page.url }}" class="p-name u-url" rel="bookmark">{{ page.title }}</a></h1>
+		<{{ tag }}><a href="{{ page.url }}" class="p-name u-url" rel="bookmark">{{ page.title }}</a></{{ tag }}>
 		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema  }}">{{ page.date | date: "%d" }}/<a href="{{ page.date | date: "/%Y/%m/" }}" rel="directory">{{ page.date | date: "%m" }}</a>/<a href="{{ page.date | date: "/%Y/" }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>
 	</header>
 	{% if include.full %}

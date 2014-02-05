@@ -17,7 +17,7 @@ function search() {
 		var index = lunr(function() {
 			this.field('title', 10);
 			this.field('content');
-		}), posts = data.posts, $container = $('#content'), template = Mustache.compile($('#search-results-template').html()), result;
+		}), posts = data.posts, $container = $('#content-container'), template = Mustache.compile($('#search-results-template').html()), result;
 
 		for (var post in posts) {
 			index.add(posts[post]);

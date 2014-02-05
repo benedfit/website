@@ -3,6 +3,7 @@ layout: default
 title: 'Search results'
 permalink: /search/
 hidden: true
+noindex: true
 ---
 <section data-yesscript>
 	<h1>No search results found :*(</h1>
@@ -16,14 +17,15 @@ hidden: true
 </noscript>
 {% raw %}
 <script id="search-results-template" type="text/mustache">
+	<h1>Search results</h1>
 	{{#posts}}
-	<article class="h-entry">
+	<article class="post h-entry">
 		<header>
-			<h1><a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a></h1>
+			<h2><a href="{{id}}" class="p-name u-url" rel="bookmark">{{title}}</a></h2>
 			<time class="dt-published" datetime="{{published}}">{{day}}/<a href="/{{year}}/{{month}}/" rel="directory">{{month}}</a>/<a href="/{{year}}/" rel="directory">{{year}}</a></time>
 		</header>
 		<div class="p-summary">{{&excerpt}}</div>
-		<a href="{{id}}" class="icon ellipsis"><span>Read more</span></a>
+		<a href="{{id}}" class="ellipsis"><span>Read more</span></a>
 		<footer class="p-author h-card p-name">{{author}}</footer>
 	</article>
 	{{/posts}}

@@ -9,6 +9,14 @@ body{
   }
 }
 
+[data-yesscript]{
+  display:none;
+  
+  html.js &{
+    display:block;
+  }
+}
+
 .container{
   margin:auto;
   max-width:pxtoem($breakpoint-max);
@@ -31,7 +39,10 @@ div[class=container]{
   }
   
   blockquote{
+    border-left:2px solid $orange;
     font-size:1.25em;
+    margin:0 .75em;
+    padding:0 1em;
     
     @include breakpoint($breakpoint-first){
       font-size:1.5em;
@@ -49,8 +60,11 @@ div[class=container]{
   }
  
   h1{
+    background:image-url("hr.jpg") repeat-x 0 100%;
+    @include background-size(100% 1px);
     font-size:2em;
-    margin:0 0 1em;
+    margin:0 0 .75em;
+    padding:0 0 .333333em;
     
     @include breakpoint($breakpoint-first){
       font-size:2.5em;
@@ -117,7 +131,7 @@ div[class=container]{
   }
   
   p{
-    margin:0 0 1em;
+    margin:0 0 1.5em;
   }
   
   pre code{
@@ -245,9 +259,9 @@ div[class=container]{
 
 .post{
   clear:both;
-  margin:0 0 2em;
+  margin:0 0 3em;
   
-  &:last-of-type{
+  &:last-of-type,&.post-full{
     margin:0;
     
     footer{
@@ -259,7 +273,28 @@ div[class=container]{
     }
   }
   
-  h1{
+  &.post-full{
+    h1{
+      background:none;
+      border:0;
+      display:inline;
+      margin:0;
+      padding:0;
+      
+      a{
+        border:0;
+      }
+    }
+    
+    header{
+      background:image-url("hr.jpg") repeat-x 0 100%;
+      @include background-size(100% 1px);
+      margin:0 0 2.25em;
+      padding:0 0 1em;
+    }
+  }
+  
+  h2{
     display:inline;
   }
   
@@ -268,8 +303,8 @@ div[class=container]{
   }
   
   footer{
-    background:image-url("header.jpg") 50% 0;
-    @include background-size(cover);
+    background:image-url("hr.jpg") repeat-x 0 100%;
+    @include background-size(100% 1px);
     height:1px;
     overflow:hidden;
     text-indent:100%;
@@ -289,7 +324,7 @@ div[class=container]{
     display:block;
     font-size:1.5em;
     line-height:1;
-    margin:0 0 1em;
+    margin:1em 0 1.5em;
     text:{
       align:center;
       decoration:none;
@@ -371,4 +406,20 @@ div[class=container]{
 }
 form[class=search]{
   width:auto;
+}
+
+.video{
+  height:0;
+  overflow:hidden;
+  margin:0 0 1em;
+  padding:0 0 56.25%;
+  position:relative;
+ 
+  embed,iframe,object{
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%;
+  }
 }
