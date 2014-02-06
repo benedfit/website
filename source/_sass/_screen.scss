@@ -49,23 +49,19 @@ abbr[title]{
   display:inline-block;
   font:{
     family:inherit;
-    size:.8125em;
+    size:1em;
     weight:300;
   }
   height:auto;
   line-height:1;
-  margin:0;
+  margin:0 0 .5em;
   outline:0;
   overflow:visible;
-  padding:1em 3em;
+  padding:.85em 2em;
   @include transition(background .25s ease-in-out);
   vertical-align:middle;
   width:auto;
-  
-  &::-moz-focus-inner{
-    border:0;
-    padding:0;
-  }
+  -webkit-appearance:none;
   
   &:hover,&:active,&:focus{
     background:rgba($white,.25);
