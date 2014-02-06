@@ -4,37 +4,19 @@
 	
 		
 			<url>
-				<loc>http://dev.benedfit.com/2013/06/</loc>
+				<loc>http://benedfit.com/2013/06/</loc>
 			</url>
 		
 	
 		
 			<url>
-				<loc>http://dev.benedfit.com/2013/11/</loc>
+				<loc>http://benedfit.com/2013/11/</loc>
 			</url>
 		
 	
 		
 			<url>
-				<loc>http://dev.benedfit.com/2013/</loc>
-			</url>
-		
-	
-		
-	
-		
-	
-		
-			<url>
-				<loc>http://dev.benedfit.com/archive/</loc>
-			</url>
-		
-	
-		
-	
-		
-			<url>
-				<loc>http://dev.benedfit.com/</loc>
+				<loc>http://benedfit.com/2013/</loc>
 			</url>
 		
 	
@@ -43,26 +25,44 @@
 		
 	
 		
+			<url>
+				<loc>http://benedfit.com/archive/</loc>
+			</url>
+		
 	
 		
 	
 		
 			<url>
-				<loc>http://dev.benedfit.com/styleguide/</loc>
+				<loc>http://benedfit.com/</loc>
+			</url>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<url>
+				<loc>http://benedfit.com/styleguide/</loc>
 			</url>
 		
 	
 	
 		<url>
-			<loc>http://dev.benedfit.com/2013/11/pattern-library-annotations-documentation-and-more/</loc>
+			<loc>http://benedfit.com/2013/11/pattern-library-annotations-documentation-and-more/</loc>
 		</url>
 	
 		<url>
-			<loc>http://dev.benedfit.com/2013/06/phases-and-atomic-design-phase-one/</loc>
+			<loc>http://benedfit.com/2013/06/phases-and-atomic-design-phase-one/</loc>
 		</url>
 	
 		<url>
-			<loc>http://dev.benedfit.com/2013/06/atomic-design-phases-and-mesophases/</loc>
+			<loc>http://benedfit.com/2013/06/atomic-design-phases-and-mesophases/</loc>
 		</url>
 	
 </urlset>
