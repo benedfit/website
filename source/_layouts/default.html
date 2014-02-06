@@ -7,13 +7,14 @@
 		<meta name="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
 		<!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="{% asset_path css/no-mq.css %}"><![endif]-->
 		<!--[if (gte IE 9)|(IEMobile)]><!--><link rel="stylesheet" href="{% asset_path css/mq.css %}"><!--<![endif]-->
-		<link rel="alternate" type="application/rss+xml" title="Feed / {{site.title}}" href="{{ site.url }}/feed.xml" />
+		<link rel="alternate" type="application/rss+xml" title="Feed / {{site.title}}" href="{{ site.url }}/feed.xml">
+		<link rel="author" href="https://plus.google.com/113075712298834271557">
 		<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
 		<link rel="icon" href="/favicon.png">
 		<!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
 		<meta name="msapplication-TileColor" content="#000000">
 		<meta name="msapplication-TileImage" content="/tileicon.png">
-		{% if page.noindex %}<meta name="robots" content="noindex,nofollow">{% elsif site.noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}
+		{% if page.noindex or site.noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}
 		<!--[if lte IE 9]>{% javascript js/libs/html5 %}<![endif]-->
 	</head>
 	<body>
@@ -34,9 +35,9 @@
 						</li>
 						{% assign sorted_pages = site.pages | sort:"path" %}
 						{% for page in sorted_pages %}
-							{% if page.layout != nil %}{% if page.hidden != true %}
+							{% if page.layout != nil and page.hidden != true %}
 								<li><a href="{{ page.url | remove: 'index.html' }}">{{ page.title }}</a></li>
-							{% endif %}{% endif %}
+							{% endif %}
 						{% endfor %}
 					</ul>
 				</nav>
@@ -49,7 +50,15 @@
 		</main>
 		<footer class="footer h-card" role="contentinfo">
 			<div class="container">
-				<p><em>&copy;</em> <a href="{{ site.url }}/" class="p-name u-url">Ben Edwards</a> <a href="/styleguide/">Styleguide</a> <a href="mailto:hello@benedfit.com" class="u-email">Email</a> <a href="https://twitter.com/benedfit">Twitter</a> <a href="https://github.com/benedfit/">Github</a></p>
+				<p>
+					<em>&copy;</em>
+					<a href="{{ site.url }}/" rel="author" class="p-name u-url">Ben Edwards</a>
+					<a href="/styleguide/">Styleguide</a>
+					<a href="mailto:hello@benedfit.com" class="u-email">Email</a>
+					<a href="https://twitter.com/benedfit" rel="me">Twitter</a>
+					<a href="https://github.com/benedfit/">GitHub</a>
+					<a href="http://codepen.io/benedfit/">CodePen</a>
+				</p>
 				<i class="established"><abbr title="Established">Est.</abbr> 2013</i>
 			</div>
 		</footer>

@@ -1,3 +1,8 @@
+%hr{
+  background:image-url("hr.jpg") repeat-x 0 100%;
+  @include background-size(100% 1px);
+}
+
 body{
   background:$black-light;
   color:$white;
@@ -7,6 +12,22 @@ body{
   @include breakpoint($breakpoint-first){
     line-height:1.75;
   }
+}
+
+a{
+  border-bottom:1px dotted $grey-light;
+  border-color:rgba($grey-light,.5);
+  color:$white;
+  text-decoration:none;
+  @include transition(border-color .25s ease-in-out);
+  
+  &:hover,&:active,&:focus{
+    border-color:transparent !important;
+  }
+}
+
+abbr[title]{
+  cursor:help;
 }
 
 [data-yesscript]{
@@ -22,6 +43,10 @@ body{
   max-width:pxtoem($breakpoint-max);
   padding:0 1em;
   width:pxtoem($breakpoint-max);
+  
+  @include breakpoint($breakpoint-first){
+    padding:0 2em;
+  }
 }
 div[class=container]{
   width:auto;
@@ -32,16 +57,12 @@ div[class=container]{
   padding:2em 0;
   text-align:left;
   
-  a{
-    border-bottom:1px solid $black-light;
-    color:$white;
-    text-decoration:none;
+  abbr[title]{
+    border-bottom:1px dotted $black-light;
   }
   
-  blockquote,li,p{
-    a{
-      border-color:$orange;
-    }
+  b,strong{
+    font-weight:bold;
   }
   
   blockquote{
@@ -50,7 +71,7 @@ div[class=container]{
       size:1.25em;
       weight:300;
     }
-    margin:0 .75em;
+    margin:1.5em 0;
     padding:0 1em;
     
     @include breakpoint($breakpoint-first){
@@ -71,14 +92,24 @@ div[class=container]{
   del{
     color:$grey-light;
   }
+  
+  dfn,em,i,var{
+    font-style:italic;
+  }
  
   h1{
-    background:image-url("hr.jpg") repeat-x 0 100%;
-    @include background-size(100% 1px);
-    font-size:2em;
+    @extend %hr;
+    font:{
+      size:2em;
+      weight:300;
+    }
     line-height:1.25;
     margin:0 0 .75em;
     padding:0 0 .333333em;
+    
+    a{
+      border-color:$black-light;
+    }
     
     @include breakpoint($breakpoint-first){
       font-size:2.5em;
@@ -92,7 +123,10 @@ div[class=container]{
   }
   
   h2{
-    font-size:1.625em;
+    font:{
+      size:1.625em;
+      weight:300;
+    }
     line-height:1.15;
     margin:1em 0;
     
@@ -124,6 +158,7 @@ div[class=container]{
   h4{
     font-size:1.125em;
     line-height:1.1;
+    margin:0 0 .5em;
     
     @include breakpoint($breakpoint-first){
       line-height:1.2;
@@ -134,14 +169,29 @@ div[class=container]{
     margin:0 0 .25em;
   }
   
+  hr{
+    @extend %hr;
+    border:0;
+    height:1px;
+    margin:0 0 1.5em;
+    overflow:hidden;
+  }
+  
   ins{
     color:$grey-light;
     font-weight:300;
-    text-decoration:none;
+  }
+  
+  kbd,samp{
+    font-family:$font-monospace;
   }
   
   li{
     margin:.5em;
+  }
+  
+  mark{
+    background:$orange;
   }
   
   ol{
@@ -159,10 +209,12 @@ div[class=container]{
         counter-increment:li;
         display:block;
         font:{
+          size:.85em;
           style:italic;
           weight:300;
         }
-        left:-1em;
+        left:-1.25em;
+        line-height:2;
         max:{
           height:0;
           width:0;
@@ -180,14 +232,48 @@ div[class=container]{
     margin:0 0 1.5em;
   }
   
-  pre code{
-    display:block;
-    margin:0 0 1em;
-    padding:.75em;
-    -moz-tab-size:2;
-    -o-tab-size:2;
-    tab-size:2;
-    white-space:pre;
+  pre{
+    font-family:$font-monospace;
+    margin:2em 0;
+    
+    code{
+      @include border-radius(.25em);
+      display:block;
+      font-size:.85em;
+      line-height:1.25;
+      margin:0 0 1em;
+      padding:.75em 1em;
+      -moz-tab-size:2;
+      -o-tab-size:2;
+      tab-size:2;
+      white-space:pre;
+    }
+  }
+  
+  q{
+    quotes:"“" "”" "‘" "’";
+    
+    &:after{
+      content:close-quote;
+    }
+      
+    &:before{
+      content:open-quote;
+    }
+  }
+  
+  small{
+    font-size:smaller;
+  }
+  
+  sub{
+    font-size:smaller;
+    vertical-align:sub;
+  }
+  
+  sup{
+    font-size:smaller;
+    vertical-align:super;
   }
   
   ul{
@@ -223,11 +309,8 @@ div[class=container]{
   padding:3em 0;
   
   a{
-    border-bottom:1px solid $grey-light;
-    color:$white;
     display:inline-block;
     margin:0 1em 0 0;
-    text-decoration:none;
   }
   
   p{
@@ -252,12 +335,18 @@ div[class=container]{
 .header{
   background:image-url("header.jpg") 50% 0;
   @include background-size(cover);
+  overflow:hidden;
   padding:1em 0;
   text-align:left;
+  
+  @include breakpoint($breakpoint-second){
+    padding:2em 0;
+  }
 }
 
 .logo{
   background:$black;
+  border:0;
   color:$white;
   display:inline-block;
   float:left;
@@ -269,16 +358,16 @@ div[class=container]{
     decoration:none;
     transform:uppercase;
   }
+  
+  @include breakpoint($breakpoint-second){
+    font-size:1.25em;
+  }
 }
 
 .menu{
   $height:5em;
   
   text-align:right;
-  
-  a{
-    color:$white;
-  }
   
   input{
     display:none;
@@ -293,7 +382,7 @@ div[class=container]{
   }
   
   label{
-    cursor:pointer;
+    //cursor:pointer;
     display:inline-block;
     line-height:1;
     
@@ -321,26 +410,21 @@ div[class=container]{
 }
 
 .post{
+  @extend %hr;
   clear:both;
   margin:0 0 3em;
+  padding:0 0 2em;
   
-  &:last-of-type,&.post-full{
+  &:last-of-type{
+    background:none;
     margin:0;
-    
-    footer{
-      display:none;
-    }
-    
-    .ellipsis{
-      margin:0;
-    }
+    padding:0;
   }
   
   &.post-full{
     h1{
       background:none;
       border:0;
-      display:inline;
       margin:0;
       padding:0;
       
@@ -350,27 +434,26 @@ div[class=container]{
     }
     
     header{
-      background:image-url("hr.jpg") repeat-x 0 100%;
-      @include background-size(100% 1px);
+      @extend %hr;
       margin:0 0 2.25em;
       padding:0 0 1em;
     }
   }
   
-  h2{
-    display:inline;
-  }
-  
   header{
     margin:0 0 2em;
+    
+    a{
+      border-color:$black-light;
+    }
+    
+    h1,h2{
+      display:inline;
+    }
   }
   
   footer{
-    background:image-url("hr.jpg") repeat-x 0 100%;
-    @include background-size(100% 1px);
-    height:1px;
-    overflow:hidden;
-    text-indent:100%;
+    display:none;
   }
   
   time{
@@ -386,7 +469,6 @@ div[class=container]{
     display:block;
     font-size:1.5em;
     line-height:1;
-    margin:1em 0 1.5em;
     text:{
       align:center;
       decoration:none;

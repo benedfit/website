@@ -5,5 +5,5 @@
 @include font-face("Muli", font-files("muli/light.woff", "muli/light.ttf", "muli/light.svg#mulilight"), "muli/light.eot", 300, normal);
 @include font-face("Muli", font-files("muli/light-italic.woff", "muli/light-italic.ttf", "muli/light-italic.svg#mulilight_italic"), "muli/light-italic.eot", 300, italic);
 
-$font-base:"Muli","Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-base:"Muli",Arial,sans-serif;
 $font-monospace:Consolas,monaco,monospace;
