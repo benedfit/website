@@ -38,6 +38,40 @@ abbr[title]{
   }
 }
 
+.button{
+  background:transparent;
+  background:rgba($white,.15);
+  border:0;
+  @include border-radius(.25em);
+  @include box-shadow($white 0 0 0 1px inset);
+  color:$white;
+  cursor:pointer;
+  display:inline-block;
+  font:{
+    family:inherit;
+    size:.8125em;
+    weight:300;
+  }
+  height:auto;
+  line-height:1;
+  margin:0;
+  outline:0;
+  overflow:visible;
+  padding:1em 3em;
+  @include transition(background .25s ease-in-out);
+  vertical-align:middle;
+  width:auto;
+  
+  &::-moz-focus-inner{
+    border:0;
+    padding:0;
+  }
+  
+  &:hover,&:active,&:focus{
+    background:rgba($white,.25);
+  }
+}
+
 .container{
   margin:auto;
   max-width:pxtoem($breakpoint-max);
@@ -86,7 +120,6 @@ div[class=container]{
     color:$black;
     font-family:$font-monospace;
     padding:.1em .25em;
-    white-space:nowrap;
   }
   
   del{
@@ -242,6 +275,7 @@ div[class=container]{
       font-size:.85em;
       line-height:1.25;
       margin:0 0 1em;
+      overflow-x:scroll;
       padding:.75em 1em;
       -moz-tab-size:2;
       -o-tab-size:2;
@@ -310,12 +344,12 @@ div[class=container]{
   
   a{
     display:inline-block;
-    margin:0 1em 0 0;
+    margin:0 .5em 1em;
   }
   
   p{
     font-weight:300;
-    margin:0 0 3em;
+    margin:0 0 2em;
   }
   
   .established{
