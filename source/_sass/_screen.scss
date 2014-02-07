@@ -508,11 +508,15 @@ div[class=container]{
     &:before{
       color:$black;
       content:'\25cb\25cb\25cb';
+      @include transition(color .25s ease-in-out);
     }
     
     &:hover,&:active,&:focus{
-      color:$white;
       @include text-shadow(none);
+      
+      &:before{
+        color:$grey-light;
+      }
     }
     
     span{
