@@ -264,6 +264,7 @@ div[class=container]{
   pre{
     font-family:$font-monospace;
     margin:2em 0;
+    overflow-x:scroll;
     
     code{
       @include border-radius(.25em);
