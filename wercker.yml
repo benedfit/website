@@ -4,7 +4,7 @@ build:
     - bundle-install
     - npm-install
     - grunt:
-        tasks: $GRUNT_TASK
+        tasks: grunt $GRUNT_TASK
   after-steps:
     - email-notify:
         on: failed
