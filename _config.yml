@@ -15,8 +15,9 @@ assets:
 jekyll-press:
   exclude: ['robots.txt']
 
-url: http://benedfit.com
+url: http://dev.benedfit.com
 title: Ben Edwards, a web designer and developer
 description: Ben Edwards, a web designer and developer
 logo: Benedfit
 author: Ben Edwards
+noindex: true
