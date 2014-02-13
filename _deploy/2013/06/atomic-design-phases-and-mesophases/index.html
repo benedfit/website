@@ -19,54 +19,54 @@
 	</head>
 	<body>
 		<header class="header" role="banner">
-			<div class="container">
-				<a class="logo" href="/" rel="home">Benedfit</a>
-				<nav class="menu" role="navigation">
-					<input id="menu-toggle" type="checkbox" aria-hidden="true">
-					<label for="menu-toggle"><span aria-hidden="false">Open menu</span><i aria-hidden="true">&equiv;&equiv;</i></label>
-					<ul>
-						<li>
-							<form id="search" class="search" role="search" action="/search/" method="get">
-								<fieldset>
-									<label for="search-input"><input type="search" name="q" id="search-input" autocomplete="off"></label>
-									<button id="search-button">Search</button>
-								</fieldset>
-							</form>
-						</li>
-						
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-								<li><a href="/archive/">Archive</a></li>
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-							
-						
-					</ul>
-				</nav>
-			</div>
-		</header>
+	<div class="container">
+		<a class="logo" href="/" rel="home">Benedfit</a>
+		<label for="menu-toggle" class="toggle-label"><span aria-hidden="false">Open menu</span><i aria-hidden="true">&equiv;&equiv;</i></label>
+		<input id="menu-toggle" class="toggle-input" type="checkbox" aria-hidden="true">
+		<label for="search-toggle" class="toggle-label"><span aria-hidden="false">Open search</span><i aria-hidden="true">&#128269;</i></label>
+		<input id="search-toggle" class="toggle-input" type="checkbox" aria-hidden="true">
+		<nav class="menu" role="navigation">
+			<ul>
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<li><a href="/archive/">Archive</a></li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</ul>
+		</nav>
+		<form id="search" class="search" role="search" action="/search/" method="get">
+			<fieldset>
+				<label for="search-input"><input type="search" name="q" id="search-input" autocomplete="off"></label>
+				<button id="search-button">Search</button>
+			</fieldset>
+		</form>
+	</div>
+</header>
 		<main class="content" role="main">
 			<div id="content-container" class="container">
 				
@@ -112,19 +112,19 @@
 			</div>
 		</main>
 		<footer class="footer h-card" role="contentinfo">
-			<div class="container">
-				<p>
-					&copy; 2014
-					<a href="http://benedfit.com/" rel="author" class="p-name u-url">Ben Edwards</a>
-					<a href="/styleguide/">Styleguide</a>
-					<a href="mailto:hello@benedfit.com" class="u-email">Email</a>
-					<a href="https://twitter.com/benedfit" rel="me">Twitter</a>
-					<a href="https://github.com/benedfit/">GitHub</a>
-					<a href="http://codepen.io/benedfit/">CodePen</a>
-				</p>
-				<i class="established"><abbr title="Established">Est.</abbr> 2013</i>
-			</div>
-		</footer>
+	<div class="container">
+		<p>
+			&copy; 2014
+			<a href="http://benedfit.com/" rel="author" class="p-name u-url">Ben Edwards</a>
+			<a href="/styleguide/">Styleguide</a>
+			<a href="mailto:hello@benedfit.com" class="u-email">Email</a>
+			<a href="https://twitter.com/benedfit" rel="me">Twitter</a>
+			<a href="https://github.com/benedfit/">GitHub</a>
+			<a href="http://codepen.io/benedfit/">CodePen</a>
+		</p>
+		<i class="established"><abbr title="Established">Est.</abbr> 2013</i>
+	</div>
+</footer>
 		<script>document.getElementsByTagName('html')[0].className+='js'</script>
 	</body>
 </html>

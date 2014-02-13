@@ -244,12 +244,16 @@ div[class=container]{
           weight:300;
         }
         left:-1.25em;
-        line-height:2;
+        line-height:1.75;
         max:{
           height:0;
           width:0;
         }
         position:relative;
+        
+        @include breakpoint($breakpoint-first){
+          line-height:2;
+        }
       }
     }
     
@@ -369,10 +373,34 @@ div[class=container]{
   @include background-size(cover);
   overflow:hidden;
   padding:1em 0;
-  text-align:left;
+  text-align:right;
   
   @include breakpoint($breakpoint-second){
     padding:2em 0;
+  }
+  
+  .toggle-input{
+    display:none;
+  }
+  
+  .toggle-label{
+    cursor:pointer;
+    display:inline-block;
+    line-height:1;
+    visibility:hidden;
+    
+    i{
+      font:{
+        size:2em;
+        style:normal;
+      }
+      letter-spacing:-.25em;
+      padding:0 .25em 0 0;
+    }
+    
+    span{
+      display:none;
+    }
   }
 }
 
@@ -398,46 +426,17 @@ div[class=container]{
 
 .menu{
   $height:5em;
+  display:none;
+  max-height:$height;
+  overflow:hidden;
+  @include transition(max-height 250ms ease-in-out);
   
-  text-align:right;
-  
-  input{
-    display:none;
-    
-    /*&:not(:checked) ~ ul{
-      max-height:0;
-    }
-      
-    &:checked ~ ul{
-      max-height:$height;
-    }*/
+  #menu-toggle:not(:checked) ~ &{
+    max-height:0;
   }
   
-  label{
-    //cursor:pointer;
-    display:inline-block;
-    line-height:1;
-    
-    i{
-      font:{
-        size:2em;
-        style:normal;
-      }
-      letter-spacing:-.25em;
-      padding:0 .25em 0 0;
-      visibility:hidden;
-    }
-    
-    span{
-      display:none;
-    }
-  }
-
-  ul{
-    display:none;
+  #menu-toggle:checked ~ &{
     max-height:$height;
-    overflow:hidden;
-    @include transition(max-height 250ms ease-in-out);
   }
 }
 
@@ -523,7 +522,21 @@ div[class=container]{
 }
 
 .search{
-  max-width:pxtoem($breakpoint-max);
+  $height:1em;
+  display:none;
+  max-height:$height;
+  overflow:hidden;
+  @include transition(max-height 250ms ease-in-out);
+  
+  #search-toggle:not(:checked) ~ &{
+    max-height:0;
+  }
+  
+  #search-toggle:checked ~ &{
+    max-height:$height;
+  }
+  
+  /*max-width:pxtoem($breakpoint-max);
   width:pxtoem($breakpoint-max);
   
   button{
@@ -577,11 +590,11 @@ div[class=container]{
     display:block;
     position:relative;
     z-index:1;
-  }
+  }*/
 }
-form[class=search]{
+/*form[class=search]{
   width:auto;
-}
+}*/
 
 .video{
   height:0;
