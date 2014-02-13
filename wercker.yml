@@ -4,7 +4,7 @@ build:
     - bundle-install
     - npm-install
     - grunt:
-        tasks: dev
+        tasks: deploy_$WERCKER_GIT_BRANCH
   after-steps:
     - email-notify:
         on: failed

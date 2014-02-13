@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 		       	},
 		       	command: 'bundle exec compass compile -e production --force --debug-info'
 			},
-			jekyll_deploy: {
+			jekyll: {
 				options: {
 		            stdout: true
 		       	},
@@ -83,7 +83,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-svgmin');
 	
-	grunt.registerTask('default', ['watch']);
-	grunt.registerTask('dev', ['shell:compass', 'shell:jekyll_dev', 'imagemin', 'svgmin']);
-	grunt.registerTask('deploy', ['shell:compass', 'shell:jekyll_deploy', 'imagemin', 'svgmin']);
+	grunt.registerTask('default', ['compass', 'jekyll', 'watch']);
+	grunt.registerTask('deploy_dev', ['shell:compass', 'shell:jekyll_dev', 'imagemin', 'svgmin']);
+	grunt.registerTask('deploy_master', ['shell:compass', 'shell:jekyll', 'imagemin', 'svgmin']);
 };
