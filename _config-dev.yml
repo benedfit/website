@@ -1,3 +1,6 @@
+url: http://dev.benedfit.com
+noindex: true
+
 assets:
   js_compressor: none
   css_compressor: none
