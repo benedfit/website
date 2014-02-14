@@ -4,8 +4,8 @@
 }
 
 body{
-  background:$black-light;
-  color:$white;
+  background:$colour-black-light;
+  color:$colour-white;
   font:100%/1.5 $font-base;
   text-align:center;
   
@@ -15,9 +15,9 @@ body{
 }
 
 a{
-  border-bottom:1px dotted $grey-light;
-  border-color:rgba($grey-light,.5);
-  color:$white;
+  border-bottom:1px dotted $colour-grey-light;
+  border-color:rgba($colour-grey-light,.5);
+  color:$colour-white;
   text-decoration:none;
   @include transition(border-color .25s ease-in-out);
   
@@ -40,11 +40,11 @@ abbr[title]{
 
 .button{
   background:transparent;
-  background:rgba($white,.15);
+  background:rgba($colour-white,.15);
   border:0;
   @include border-radius(.25em);
-  @include box-shadow($white 0 0 0 1px inset);
-  color:$white;
+  @include box-shadow($colour-white 0 0 0 1px inset);
+  color:$colour-white;
   cursor:pointer;
   display:inline-block;
   font:{
@@ -64,7 +64,7 @@ abbr[title]{
   -webkit-appearance:none;
   
   &:hover,&:active,&:focus{
-    background:rgba($white,.25);
+    background:rgba($colour-white,.25);
   }
 }
 
@@ -83,12 +83,12 @@ div[class=container]{
 }
 
 .content{
-  background:$grey;
+  background:$colour-grey;
   padding:2em 0;
   text-align:left;
   
   abbr[title]{
-    border-bottom:1px dotted $black-light;
+    border-bottom:1px dotted $colour-black-light;
   }
   
   b,strong{
@@ -96,7 +96,7 @@ div[class=container]{
   }
   
   blockquote{
-    border-left:2px solid $orange;
+    border-left:2px solid $colour-orange;
     font:{
       size:1.25em;
       weight:300;
@@ -111,15 +111,15 @@ div[class=container]{
   }
   
   code{
-    background:$grey-light;
+    background:$colour-grey-light;
     @include border-radius(.125em);
-    color:$black;
+    color:$colour-black;
     font-family:$font-monospace;
     padding:.1em .25em;
   }
   
   del{
-    color:$grey-light;
+    color:$colour-grey-light;
   }
   
   dfn,em,i,var{
@@ -137,7 +137,7 @@ div[class=container]{
     padding:0 0 .333333em;
     
     a{
-      border-color:$black-light;
+      border-color:$colour-black-light;
     }
     
     @include breakpoint($breakpoint-first){
@@ -207,7 +207,7 @@ div[class=container]{
   }
   
   ins{
-    color:$grey-light;
+    color:$colour-grey-light;
     font-weight:300;
   }
   
@@ -220,7 +220,7 @@ div[class=container]{
   }
   
   mark{
-    background:$orange;
+    background:$colour-orange;
     padding:0 .25em;
   }
   
@@ -234,7 +234,7 @@ div[class=container]{
       list-style:none;
       
       &:before{
-        color:$grey-light;
+        color:$colour-grey-light;
         content:counter(li)".";
         counter-increment:li;
         display:block;
@@ -321,7 +321,7 @@ div[class=container]{
       list-style:none;
       
       &:before{
-        color:$orange;
+        color:$colour-orange;
         content:"\25cb";
         display:block;
         left:-1em;
@@ -340,7 +340,7 @@ div[class=container]{
 }
 
 .footer{
-  color:$grey-light;
+  color:$colour-grey-light;
   overflow:hidden;
   padding:3em 0;
   
@@ -355,7 +355,7 @@ div[class=container]{
   }
   
   .established{
-    border:1px solid $grey-light;
+    border:1px solid $colour-grey-light;
     @include border-radius(100%);
     display:inline-block;
     line-height:1.15;
@@ -370,7 +370,6 @@ div[class=container]{
 
 .header{
   background:image-url("header.jpg") 50% 0;
-  @include background-size(cover);
   overflow:hidden;
   padding:1em 0;
   text-align:right;
@@ -405,9 +404,9 @@ div[class=container]{
 }
 
 .logo{
-  background:$black;
+  background:$colour-black;
   border:0;
-  color:$white;
+  color:$colour-white;
   display:inline-block;
   float:left;
   font-weight:bold;
@@ -470,7 +469,7 @@ div[class=container]{
     margin:0 0 2em;
     
     a{
-      border-color:$black-light;
+      border-color:$colour-black-light;
     }
     
     h1,h2{
@@ -483,10 +482,10 @@ div[class=container]{
   }
   
   time{
-    color:$grey-light;
+    color:$colour-grey-light;
     
     a{
-      color:$grey-light;
+      color:$colour-grey-light;
     }
   }
   
@@ -499,10 +498,10 @@ div[class=container]{
       align:center;
       decoration:none;
     }
-    @include text-shadow($grey 1px 1px 0);
+    @include text-shadow($colour-grey 1px 1px 0);
     
     &:before{
-      color:$black;
+      color:$colour-black;
       content:'\25cb\25cb\25cb';
       @include transition(color .25s ease-in-out);
     }
@@ -511,7 +510,7 @@ div[class=container]{
       @include text-shadow(none);
       
       &:before{
-        color:$grey-light;
+        color:$colour-grey-light;
       }
     }
     
@@ -542,7 +541,7 @@ div[class=container]{
   button{
     background:none;
     border:0;
-    color:$white;
+    color:$colour-white;
     cursor:pointer;
     display:block;
     height:100%;
@@ -561,7 +560,7 @@ div[class=container]{
   }
   
   fieldset{
-    border:1px solid $black;
+    border:1px solid $colour-black;
     display:block;
     line-height:1;
     padding:0;
@@ -571,7 +570,7 @@ div[class=container]{
   input{
     background:none;
     border:0;
-    color:$black-light;
+    color:$colour-black-light;
     display:block;
     outline:none;
     margin:0;
