@@ -269,7 +269,7 @@ div[class=container]{
   pre{
     font-family:$font-monospace;
     margin:2em 0;
-    overflow-x:scroll;
+    overflow:auto;
     
     code{
       @include border-radius(.25em);
@@ -277,12 +277,12 @@ div[class=container]{
       font-size:.85em;
       line-height:1.25;
       margin:0 0 1em;
-      overflow-x:scroll;
+      overflow:auto;
       padding:.75em 1em;
       -moz-tab-size:2;
       -o-tab-size:2;
       tab-size:2;
-      white-space:pre;
+      white-space:pre-wrap;
     }
   }
   
