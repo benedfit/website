@@ -1,0 +1,12 @@
+<label for="menu-toggle" class="toggle-label"><span aria-hidden="false">Open menu</span><i aria-hidden="true">&equiv;&equiv;</i></label>
+<input id="menu-toggle" class="toggle-input" type="checkbox" aria-hidden="true">
+<nav class="menu" role="navigation">
+	<ul>
+		{% assign sorted_pages = site.pages | sort:"path" %}
+		{% for page in sorted_pages %}
+			{% if page.layout != nil and page.hidden != true %}
+				<li><a href="{{ page.url | remove: 'index.html' }}">{{ page.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</nav>

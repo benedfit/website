@@ -1,0 +1,15 @@
+.menu{
+  $height:5em;
+  display:none;
+  max-height:$height;
+  overflow:hidden;
+  @include transition(max-height 250ms ease-in-out);
+  
+  #menu-toggle:not(:checked) ~ &{
+    max-height:0;
+  }
+  
+  #menu-toggle:checked ~ &{
+    max-height:$height;
+  }
+}

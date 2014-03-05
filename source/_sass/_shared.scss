@@ -1,0 +1,39 @@
+%hr{
+  background:image-url("hr.jpg") repeat-x 0 100%;
+  @include background-size(100% 1px);
+}
+
+body{
+  background:$colour-black-light;
+  color:$colour-white;
+  font:100%/1.5 $font-base;
+  text-align:center;
+  
+  @include breakpoint($breakpoint-first){
+    line-height:1.75;
+  }
+}
+
+a{
+  border-bottom:1px dotted $colour-grey-light;
+  border-color:rgba($colour-grey-light,.5);
+  color:$colour-white;
+  text-decoration:none;
+  @include transition(border-color .25s ease-in-out);
+  
+  &:hover,&:active,&:focus{
+    border-color:transparent !important;
+  }
+}
+
+abbr[title]{
+  cursor:help;
+}
+
+[data-yesscript]{
+  display:none;
+  
+  html.js &{
+    display:block;
+  }
+}

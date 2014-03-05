@@ -55,7 +55,7 @@ hidden: true
 <p><cite>This is a citation</cite></p>
 <p>The <dfn>dfn element</dfn> indicates a definition.</p>
 <p>The <mark>mark element</mark> indicates a highlight</p>
-<p><code>This is what inline code looks like.</code></p>
+<p><code>&lt;div class=&quot;example&quot;&gt;This is what inline code looks like.&lt;/div&gt;</code></p>
 <p><samp>This is sample output from a computer program</samp></p>
 <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var></p>
 <p>A timestamp, such as <time datetime="2014-01-01T00:00:00+00:00"><a href="#" rel="directory">January</a> 1, <a href="#" rel="directory">2014</a></time></p>
@@ -66,16 +66,22 @@ hidden: true
 P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
 p q r s t u v w x y z { | } ~</pre>
-<pre><code>&lt;div class=&quot;example&quot;&gt;
-    This is what a block of code looks like.
+<pre><code>&lt;script&gt;
+	// Sample script to show highlighting
+	window.console &amp;&amp; console.log(&#39;foo&#39;);
+	var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
+&lt;/script&gt;
+&lt;style&gt;
+	/* Sample style to show highlighting */
+	.sample{
+		background:url(none);
+		content:"test";
+		margin:0 !important;
+    }
+&lt;/style&gt;
+&lt;div&gt;
+	&lt;!-- Sample HTML to show highlighting --&gt;
+	&lt;p class=&quot;.sample&quot;&gt;This is an sample pattern&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 <h2>Horizontal rule</h2>
 <hr>
-<h2>Buttons</h2>
-<p>
-    <a href="#" class="button" role="button">Link button</a>
-    <button class="button">Button</button>
-    <input type="button" class="button" value="Input button">
-    <input type="submit" class="button" value="Submit button">
-    <input type="reset" class="button" value="Reset button">
-</p>

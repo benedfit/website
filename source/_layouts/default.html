@@ -17,7 +17,7 @@
 		{% if page.noindex or site.noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}
 		<!--[if lte IE 9]>{% javascript js/libs/html5 %}<![endif]-->
 	</head>
-	<body>
+	<body class="language-markup">
 		{% include header.html %}
 		<main class="content" role="main">
 			<div id="content-container" class="container">
@@ -26,5 +26,6 @@
 		</main>
 		{% include footer.html %}
 		<script>document.getElementsByTagName('html')[0].className+='js'</script>
+		{% javascript js/libs/prism %}
 	</body>
 </html>

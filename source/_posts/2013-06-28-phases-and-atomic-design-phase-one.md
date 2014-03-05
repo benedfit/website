@@ -6,7 +6,7 @@ As a follow up to my recent post on [Phases (and Mesophases) - a possible addend
 
 ## The first release includes:
 
-*   Basic feature to traverse /css/scss folder structure  and find SASS variables prefixed `$bp-`, then render as a 'Phases' tab  in the menu bar, using remainder of variable name and value for control  e.g. `$bp-small` becomes 'SMALL &gt;'; 24em.
+*   Basic feature to traverse /css/scss folder structure  and find Sass variables prefixed `$bp-`, then render as a 'Phases' tab  in the menu bar, using remainder of variable name and value for control  e.g. `$bp-small` becomes 'SMALL &gt;'; 24em.
 *   Basic support provided for detecting whether `px` or `em` value has been specified.
 
 ## To-do:
