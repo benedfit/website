@@ -4,61 +4,85 @@ title: 'Style guide'
 permalink: /styleguide/
 hidden: true
 ---
-<h1>Styleguide</h1>
-<h2>Headings</h2>
-<h1>Heading level 1 <a href="#">link</a></h1>
-<h2>Heading level 2 <a href="#">link</a></h2>
-<h3>Heading level 3 <a href="#">link</a></h3>
-<h4>Heading level 4 <a href="#">link</a></h4>
-<h5>Heading level 5 <a href="#">link</a></h5>
-<h6>Heading level 6 <a href="#">link</a></h6>
-<h2>Lists</h2>
-<ul>
-	<li>This is a list item in an unordered list <a href="#">link</a></li>
-	<li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
-	<li>Lists can be nested inside of each other
-		<ul>
-			<li>This is a nested list item</li>
-			<li>This is another nested list item in an unordered list</li>
-		</ul>
-	</li>
-	<li>This is the last list item</li>
-</ul>
-<ol>
-	<li>This is a list item in an ordered list <a href="#">link</a></li>
-	<li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
-	<li>Lists can be nested inside of each other
-		<ol>
-			<li>This is a nested list item</li>
-			<li>This is another nested list item in an ordered list</li>
-		</ol>
-	</li>
-	<li>This is the last list item</li>
-</ol>
-<h2>Text</h2>
-<p>So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.</p>
-<blockquote>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation <a href="#">link</a>.</blockquote>
-<p><a href="#">This is a text link</a></p>
-<p><strong>Strong is used to indicate strong importance</strong></p>
-<p><em>This text has added emphasis</em></p>
-<p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
-<p>The <i>i element</i> is text that is set off from the normal text</p>
-<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
-<p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
-<p><s>This text has a strikethrough</s></p>
-<p>Superscript<sup>&copy;</sup></p>
-<p>Subscript for things like H<sub>2</sub>O</p>
-<p><small>This small text is small for fine print, etc.</small></p>
-<p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-<p>Keybord input: <kbd>Cmd</kbd></p>
-<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
-<p><cite>This is a citation</cite></p>
-<p>The <dfn>dfn element</dfn> indicates a definition.</p>
-<p>The <mark>mark element</mark> indicates a highlight</p>
-<p><code>&lt;div class=&quot;example&quot;&gt;This is what inline code looks like.&lt;/div&gt;</code></p>
-<p><samp>This is sample output from a computer program</samp></p>
-<p>The <var>variable element</var>, such as <var>x</var> = <var>y</var></p>
-<p>A timestamp, such as <time datetime="2014-01-01T00:00:00+00:00"><a href="#" rel="directory">January</a> 1, <a href="#" rel="directory">2014</a></time></p>
+# Styleguide
+
+## Headings
+
+# Heading level 1 [link](#)
+## Heading level 2 [link](#)
+### Heading level 3 [link](#)
+#### Heading level 4 [link](#)
+##### Heading level 5 [link](#)
+###### Heading level 6 [link](#)
+
+## Horizontal rule
+
+---
+
+## Lists
+
+*	This is a list item in an unordered list [link](#)
+*	An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. 
+*	Lists can be nested inside of each other
+	*	This is a nested list item
+	*	This is another nested list item in an unordered list
+*	This is the last list item
+
+1.	This is a list item in an ordered list [link](#)
+2.	An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.
+3.	Lists can be nested inside of each other
+	1.	This is a nested list item
+	2.	This is another nested list item in an ordered list
+4.	This is the last list item
+
+
+## Text
+
+A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
+
+>	A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.
+>	<cite>[link](#)</cite>
+
+[This is a text link](#)
+
+**Strong is used to indicate strong importance**
+
+*This text has added emphasis*
+
+The <b>b element</b> is stylistically different text from normal text, without any special importance
+
+The <i>i element</i> is text that is set off from the normal text
+
+The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation
+
+<del>This text is deleted</del> and <ins>This text is inserted</ins>
+
+<s>This text has a strikethrough</s>
+
+Super<sup>script</sup>
+
+Subscript for things like H<sub>2</sub>O
+
+<small>This small text is small for fine print, etc.</small>
+
+Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
+
+Keybord input: <kbd>Cmd</kbd>
+
+<q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q>
+
+<cite>This is a citation</cite>
+
+The <dfn>dfn element</dfn> indicates a definition.
+
+The <mark>mark element</mark> indicates a highlight
+
+<samp>This is sample output from a computer program</samp>
+
+The <var>variable element</var>, such as <var>x</var> = <var>y</var>
+
+A timestamp, such as <time datetime="2014-01-01T00:00:00+00:00"><a href="#" rel="directory">January</a> 1, <a href="#" rel="directory">2014</a></time>
+
 <pre>P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
@@ -66,22 +90,24 @@ hidden: true
 P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
 p q r s t u v w x y z { | } ~</pre>
-<pre><code>&lt;script&gt;
-	// Sample script to show highlighting
-	window.console &amp;&amp; console.log(&#39;foo&#39;);
-	var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
-&lt;/script&gt;
-&lt;style&gt;
-	/* Sample style to show highlighting */
-	.sample{
-		background:url(none);
-		content:"test";
-		margin:0 !important;
-    }
-&lt;/style&gt;
-&lt;div&gt;
-	&lt;!-- Sample HTML to show highlighting --&gt;
-	&lt;p class=&quot;.sample&quot;&gt;This is an sample pattern&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-<h2>Horizontal rule</h2>
-<hr>
+
+`<div class="example">This is what inline code looks like.</div>`
+
+	<script>
+		// This is what a code block looks like
+		// Sample script
+		window.console && console.log('foo');
+		var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
+	</script>
+	<style>
+		/* Sample style */
+		.sample{
+			background:url(none);
+			content:"test";
+			margin:0 !important;
+    	}
+	</style>
+	<div>
+		<!-- Sample HTML -->
+		<p class=".sample">This is an sample pattern</p>
+	</div>

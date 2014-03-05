@@ -20,6 +20,10 @@
     margin:1.5em 0;
     padding:0 1em;
     
+    a{
+      color:$colour-grey-light;
+    }
+    
     @include breakpoint($breakpoint-first){
       font-size:1.5em;
       line-height:1.45;
