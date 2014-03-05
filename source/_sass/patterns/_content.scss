@@ -225,10 +225,10 @@
     overflow:auto;
     padding:.1em .25em;
     
-    code{
+    /*code{
       @include box-shadow(-.25em 0 0 .25em $colour-black,.25em 0 0 .25em $colour-black);
       padding:0;
-    }
+    }*/
   }
   
   q{
