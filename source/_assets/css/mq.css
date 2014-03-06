@@ -114,7 +114,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, ../../_sass/_shared.scss */
 .content h1, .content hr, .post, .post.post-full header {
-  background: url('/img/hr.jpg') repeat-x 0 100%;
+  background: url('/img/hr.png') repeat-x 0 100%;
   -webkit-background-size: 100% 1px;
   -moz-background-size: 100% 1px;
   -o-background-size: 100% 1px;
@@ -123,7 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 6, ../../_sass/_shared.scss */
 .content blockquote {
-  background: url('/img/vr.jpg') repeat-y;
+  background: url('/img/vr.png') repeat-y;
   -webkit-background-size: 1px 100%;
   -moz-background-size: 1px 100%;
   -o-background-size: 1px 100%;
@@ -440,37 +440,39 @@ div[class=container] {
 }
 /* line 236, ../../_sass/patterns/_content.scss */
 .content q:after {
+  color: #fba266;
   content: close-quote;
 }
-/* line 240, ../../_sass/patterns/_content.scss */
+/* line 241, ../../_sass/patterns/_content.scss */
 .content q:before {
+  color: #fba266;
   content: open-quote;
 }
-/* line 245, ../../_sass/patterns/_content.scss */
+/* line 247, ../../_sass/patterns/_content.scss */
 .content small {
   font-size: smaller;
 }
-/* line 249, ../../_sass/patterns/_content.scss */
+/* line 251, ../../_sass/patterns/_content.scss */
 .content sub {
   font-size: smaller;
   vertical-align: sub;
 }
-/* line 254, ../../_sass/patterns/_content.scss */
+/* line 256, ../../_sass/patterns/_content.scss */
 .content sup {
   font-size: smaller;
   vertical-align: super;
 }
-/* line 259, ../../_sass/patterns/_content.scss */
+/* line 261, ../../_sass/patterns/_content.scss */
 .content ul {
   list-style: circle;
   margin: 0 0 1em;
   padding: 0 0 0 1em;
 }
-/* line 264, ../../_sass/patterns/_content.scss */
+/* line 266, ../../_sass/patterns/_content.scss */
 .content ul > li {
   list-style: none;
 }
-/* line 267, ../../_sass/patterns/_content.scss */
+/* line 269, ../../_sass/patterns/_content.scss */
 .content ul > li:before {
   color: #fba266;
   content: "\25cb";
@@ -480,11 +482,11 @@ div[class=container] {
   max-width: 0;
   position: relative;
 }
-/* line 280, ../../_sass/patterns/_content.scss */
+/* line 282, ../../_sass/patterns/_content.scss */
 * + html .content ul li {
   list-style: circle;
 }
-/* line 285, ../../_sass/patterns/_content.scss */
+/* line 287, ../../_sass/patterns/_content.scss */
 .content .video {
   height: 0;
   overflow: hidden;
@@ -492,7 +494,7 @@ div[class=container] {
   padding: 0 0 56.25%;
   position: relative;
 }
-/* line 292, ../../_sass/patterns/_content.scss */
+/* line 294, ../../_sass/patterns/_content.scss */
 .content .video embed, .content .video iframe, .content .video object {
   height: 100%;
   left: 0;

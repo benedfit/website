@@ -1,10 +1,10 @@
 %hr{
-  background:image-url("hr.jpg") repeat-x 0 100%;
+  background:image-url("hr.png") repeat-x 0 100%;
   @include background-size(100% 1px);
 }
 
 %vr{
-  background:image-url("vr.jpg") repeat-y;
+  background:image-url("vr.png") repeat-y;
   @include background-size(1px 100%);
 }
 
@@ -24,7 +24,7 @@ a{
   @include transition(border-color .25s ease-in-out);
   
   &:hover,&:active,&:focus{
-    border-color:transparent !important;
+    border-color:transparent !important
   }
 }
 

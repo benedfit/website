@@ -234,10 +234,12 @@
     quotes:"“" "”" "‘" "’";
     
     &:after{
+      color:$colour-orange;
       content:close-quote;
     }
       
     &:before{
+      color:$colour-orange;
       content:open-quote;
     }
   }
