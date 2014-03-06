@@ -237,48 +237,46 @@ div[class=container] {
 /* line 37, ../../_sass/patterns/_content.scss */
 .content code {
   background: black;
-  -webkit-box-shadow: -0.25em 0 black, 0.25em 0 black;
-  -moz-box-shadow: -0.25em 0 black, 0.25em 0 black;
-  box-shadow: -0.25em 0 black, 0.25em 0 black;
   color: white;
   font-family: Consolas, monaco, monospace;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  padding: .1em 0;
+  padding: .15em .25em;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
   white-space: pre-wrap;
 }
-/* line 54, ../../_sass/patterns/_content.scss */
+/* line 53, ../../_sass/patterns/_content.scss */
 .content code .token.atrule, .content code .token.attr-value, .content code .token.keyword {
   color: #f786ad;
 }
-/* line 58, ../../_sass/patterns/_content.scss */
+/* line 57, ../../_sass/patterns/_content.scss */
 .content code .token.attr-name, .content code .token.builtin, .content code .token.selector.token.string {
   color: #ffff77;
 }
-/* line 62, ../../_sass/patterns/_content.scss */
+/* line 61, ../../_sass/patterns/_content.scss */
 .content code .token.boolean, .content code .token.constant, .content code .token.number, .content code .token.property, .content code .token.symbol, .content code .token.tag {
   color: #8ea9d7;
 }
-/* line 66, ../../_sass/patterns/_content.scss */
+/* line 65, ../../_sass/patterns/_content.scss */
 .content code .token.cdata, .content code .token.comment, .content code .token.doctype, .content code .token.prolog, .content code .token.punctuation {
   color: #bbbbbb;
 }
-/* line 70, ../../_sass/patterns/_content.scss */
+/* line 69, ../../_sass/patterns/_content.scss */
 .content code .token.important, .content code .token.regex {
   color: #fba266;
 }
-/* line 74, ../../_sass/patterns/_content.scss */
+/* line 73, ../../_sass/patterns/_content.scss */
 .content code .token.entity, .content code .token.operator, .content code .token.url, .content code .token.variable {
   color: #93b082;
 }
-/* line 79, ../../_sass/patterns/_content.scss */
-.content del {
+/* line 78, ../../_sass/patterns/_content.scss */
+.content del, .content s {
   color: #bbbbbb;
+  font-weight: 300;
 }
 /* line 83, ../../_sass/patterns/_content.scss */
 .content dfn, .content em, .content i, .content var {

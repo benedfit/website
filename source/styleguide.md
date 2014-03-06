@@ -61,15 +61,15 @@ The <u>u element</u> is text with an unarticulated, though explicitly rendered, 
 
 Super<sup>script</sup>
 
-Subscript for things like H<sub>2</sub>O
+Sub<sub>script</sub>
 
-<small>This small text is small for fine print, etc.</small>
+<small>This small text is small for fine print, etc. [link](#)</small>
 
 Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
 
 Keybord input: <kbd>Cmd</kbd>
 
-<q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q>
+<q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation. <q>With another quotation inside it.</q></q>
 
 <cite>This is a citation</cite>
 

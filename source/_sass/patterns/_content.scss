@@ -36,7 +36,6 @@
   
   code{
     background:$colour-black;
-    @include box-shadow(-.25em 0 $colour-black,.25em 0 $colour-black);
     color:$colour-white;
     font-family:$font-monospace;
     $hyphens:none;
@@ -44,7 +43,7 @@
     -moz-hyphens:$hyphens;
     -ms-hyphens:$hyphens;
     hyphens:$hyphens;
-    padding:.1em 0;
+    padding:.15em .25em;
     $tab-size:4;
     -moz-tab-size:$tab-size;
     -o-tab-size:$tab-size;
@@ -76,8 +75,9 @@
     }
   }
   
-  del{
+  del,s{
     color:$colour-grey-light;
+    font-weight:300;
   }
   
   dfn,em,i,var{
