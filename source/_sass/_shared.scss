@@ -3,6 +3,11 @@
   @include background-size(100% 1px);
 }
 
+%vr{
+  background:image-url("vr.jpg") repeat-y;
+  @include background-size(1px 100%);
+}
+
 [data-yesscript]{
   display:none;
   

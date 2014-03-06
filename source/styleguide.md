@@ -83,7 +83,7 @@ The <var>variable element</var>, such as <var>x</var> = <var>y</var>
 
 A timestamp, such as <time datetime="2014-01-01T00:00:00+00:00"><a href="#" rel="directory">January</a> 1, <a href="#" rel="directory">2014</a></time>
 
-<pre>P R E F O R M A T T E D T E X T
+<pre>P R E F O R M A T T E D T E X T P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
 @ A B C D E F G H I J K L M N O
