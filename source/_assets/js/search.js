@@ -28,7 +28,6 @@ function search() {
 			return entry.id === result.ref;
 			})[0];
 		});
-
 		if (results && results.length > 0) {
 			$container.empty().append(template({
 				posts : results

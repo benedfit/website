@@ -21,6 +21,18 @@
 		
 	
 		
+			<url>
+				<loc>http://dev.benedfit.com/2014/03/</loc>
+			</url>
+		
+	
+		
+			<url>
+				<loc>http://dev.benedfit.com/2014/</loc>
+			</url>
+		
+	
+		
 	
 		
 	
@@ -52,6 +64,10 @@
 			</url>
 		
 	
+	
+		<url>
+			<loc>http://dev.benedfit.com/2014/03/lazy/</loc>
+		</url>
 	
 		<url>
 			<loc>http://dev.benedfit.com/2013/11/pattern-library-annotations-documentation-and-more/</loc>

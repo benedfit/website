@@ -10,6 +10,10 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-jekyll": "~0.4.1",
     "grunt-shell": "~0.6.1",
-    "grunt-svgmin": "~0.3.0"
+    "grunt-svgmin": "~0.3.0",
+    "load-grunt-tasks": "~0.4.0",
+    "load-grunt-config": "~0.7.1",
+    "grunt-newer": "~0.6.1",
+    "grunt-concurrent": "~0.4.3"
   }
 }
