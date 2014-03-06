@@ -3,14 +3,11 @@
   @include background-size(100% 1px);
 }
 
-body{
-  background:$colour-black-light;
-  color:$colour-white;
-  font:100%/1.5 $font-base;
-  text-align:center;
+[data-yesscript]{
+  display:none;
   
-  @include breakpoint($breakpoint-first){
-    line-height:1.75;
+  html.js &{
+    display:block;
   }
 }
 
@@ -30,10 +27,17 @@ abbr[title]{
   cursor:help;
 }
 
-[data-yesscript]{
-  display:none;
+body{
+  background:$colour-black-light;
+  color:$colour-white;
+  font:100%/1.5 $font-base;
+  text-align:center;
   
-  html.js &{
-    display:block;
+  @include breakpoint($breakpoint-first){
+    line-height:1.75;
   }
+}
+
+html{
+  -webkit-text-size-adjust:100%;
 }
