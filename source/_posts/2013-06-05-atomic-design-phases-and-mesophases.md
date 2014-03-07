@@ -13,7 +13,8 @@ I love a good science analogy, so following along the matter-based naming conven
 
 So I started experimenting with using Phases as a way to name my Sass variables, which lead to such examples as `$bp-small:24em;`{: .language-css} becoming `$phase-first:24em;`{: .language-css} and `$bp-med:46.8em;`{: .language-css} becoming `$phase-second:46.8em;`{: .language-css}.
 
-## "That's all very well and good Ben, by what about [tweakpoints](http://adactio.com/journal/6044/)" - Someone, somewhere
+> <q>That's all very well and good Ben, by what about [tweakpoints](http://adactio.com/journal/6044/)</q>
+> <cite>Someone, somewhere</cite>
 
 I hear you... That's where [Mesophases](http://en.wikipedia.org/wiki/Mesophase) come along. In physics, a mesophase is a state of matter intermediate between liquid and solid.
 

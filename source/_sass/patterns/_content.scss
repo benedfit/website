@@ -26,6 +26,20 @@
     
     cite{
       display:block;
+      
+      &:before{
+        color:$colour-grey-light;
+        content:"\2012";
+        margin:0 .2em 0 -.575em
+      }
+    }
+    
+    p{
+      margin:0;
+    }
+    
+    q:before{
+      margin-left:-.5em;
     }
     
     @include breakpoint($breakpoint-first){
@@ -164,8 +178,7 @@
     overflow:hidden;
   }
   
-  ins{
-    color:$colour-grey-light;
+  ins,u{
     font-weight:300;
   }
   
@@ -178,8 +191,10 @@
   }
   
   mark{
-    background:$colour-orange;
-    padding:0 .25em;
+    background:$colour-black;
+    color:$colour-white;
+    font-weight:300;
+    padding:.15em .25em;
   }
   
   ol{
@@ -234,12 +249,12 @@
     quotes:"“" "”" "‘" "’";
     
     &:after{
-      color:$colour-orange;
+      color:$colour-grey-light;
       content:close-quote;
     }
       
     &:before{
-      color:$colour-orange;
+      color:$colour-grey-light;
       content:open-quote;
     }
   }
@@ -267,7 +282,7 @@
       list-style:none;
       
       &:before{
-        color:$colour-orange;
+        color:$colour-grey-light;
         content:"\25cb";
         display:block;
         left:-1em;
