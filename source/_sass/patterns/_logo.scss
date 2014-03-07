@@ -3,7 +3,6 @@
   border:0;
   color:$colour-white;
   display:inline-block;
-  float:left;
   font-weight:bold;
   letter-spacing:.5em;
   line-height:1;
@@ -12,10 +11,10 @@
     decoration:none;
     transform:uppercase;
   }
-  word-spacing:0;
   
-  span{
-    margin-right:-.5em;
+  &:after{
+    content:"";
+    margin-left:-.5em;
   }
   
   @include breakpoint($breakpoint-second){

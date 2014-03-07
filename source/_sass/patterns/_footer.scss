@@ -14,8 +14,8 @@
   }
   
   .established{
-    border:1px solid $colour-grey-light;
     @include border-radius(100%);
+    @include box-shadow(0 0 0 1px $colour-grey-light inset);
     display:inline-block;
     line-height:1.15;
     padding:1em;

@@ -1,9 +1,9 @@
-@include font-face("Muli", font-files("muli/regular.woff", "muli/regular.ttf", "muli/regular.svg#muliregular"), "muli/regular.eot", normal, normal);
-@include font-face("Muli", font-files("muli/regular-italic.woff", "muli/regular-italic.ttf", "muli/regular-italic.svg#muliitalic"), "muli/regular-italic.eot", normal, italic);
-@include font-face("Muli", font-files("muli/bold.woff", "muli/bold.ttf", "muli/bold.svg#muli_boldbold"), "muli/bold.eot", bold, normal);
-@include font-face("Muli", font-files("muli/bold-italic.woff", "muli/bold-italic.ttf", "muli/bold-italic.svg#mulibold_italic"), "muli/bold-italic.eot", bold, italic);
-@include font-face("Muli", font-files("muli/light.woff", "muli/light.ttf", "muli/light.svg#mulilight"), "muli/light.eot", 300, normal);
-@include font-face("Muli", font-files("muli/light-italic.woff", "muli/light-italic.ttf", "muli/light-italic.svg#mulilight_italic"), "muli/light-italic.eot", 300, italic);
+@include font-face("Muli", inline-font-files("muli/regular.woff", woff, "muli/regular.ttf", truetype, "muli/regular.svg", svg), "muli/regular.eot", normal, normal);
+@include font-face("Muli", inline-font-files("muli/regular-italic.woff", woff, "muli/regular-italic.ttf", truetype, "muli/regular-italic.svg", svg), "muli/regular-italic.eot", normal, italic);
+@include font-face("Muli", inline-font-files("muli/bold.woff", woff, "muli/bold.ttf", truetype, "muli/bold.svg", svg), "muli/bold.eot", bold, normal);
+@include font-face("Muli", inline-font-files("muli/bold-italic.woff", woff, "muli/bold-italic.ttf", truetype, "muli/bold-italic.svg", svg), "muli/bold-italic.eot", bold, italic);
+@include font-face("Muli", inline-font-files("muli/light.woff", woff, "muli/light.ttf", truetype, "muli/light.svg", svg), "muli/light.eot", 300, normal);
+@include font-face("Muli", inline-font-files("muli/light-italic.woff", woff, "muli/light-italic.ttf", truetype, "muli/light-italic.svg", svg), "muli/light-italic.eot", 300, italic);
 
 $font-base:"Muli",Arial,sans-serif;
 $font-monospace:Consolas,monaco,monospace;
