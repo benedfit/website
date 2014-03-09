@@ -6,8 +6,8 @@
   font-weight:bold;
   letter-spacing:.5em;
   line-height:1;
-  overflow:hidden;
   padding:.5em;
+  position:relative;
   text:{
     decoration:none;
     transform:uppercase;
@@ -16,6 +16,8 @@
   &:after{
     content:"";
     margin-left:-.5em;
+    position:absolute;
+    right:0;
   }
   
   @include breakpoint($breakpoint-second){

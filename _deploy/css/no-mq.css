@@ -538,8 +538,8 @@ div[class=container] {
   font-weight: bold;
   letter-spacing: .5em;
   line-height: 1;
-  overflow: hidden;
   padding: .5em;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.25em;
@@ -548,6 +548,8 @@ div[class=container] {
 .logo:after {
   content: "";
   margin-left: -.5em;
+  position: absolute;
+  right: 0;
 }
 
 /* line 1, ../../_sass/patterns/_post.scss */
