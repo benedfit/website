@@ -6,17 +6,14 @@
   font-weight:bold;
   letter-spacing:.5em;
   line-height:1;
-  overflow:hidden;
   padding:.5em;
   text:{
     decoration:none;
     transform:uppercase;
   }
   
-  &:after{
-    content:"";
-    display:inline;
-    margin-left:-.5em;
+  span{
+    margin-right:-.5em;
   }
   
   @include breakpoint($breakpoint-second){
