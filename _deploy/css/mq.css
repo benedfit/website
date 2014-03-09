@@ -598,17 +598,16 @@ div[class=container] {
   font-weight: bold;
   letter-spacing: .5em;
   line-height: 1;
+  overflow: hidden;
   padding: .5em;
-  position: relative;
   text-decoration: none;
   text-transform: uppercase;
 }
 /* line 16, ../../_sass/patterns/_logo.scss */
 .logo:after {
   content: "";
+  display: inline;
   margin-left: -.5em;
-  position: absolute;
-  right: 0;
 }
 @media (min-width: 56.25em) {
   /* line 1, ../../_sass/patterns/_logo.scss */
