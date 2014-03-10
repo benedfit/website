@@ -1,5 +1,5 @@
 @charset "CP850";
-/* line 17, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -114,7 +114,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, ../../_sass/_shared.scss */
 .content h1, .content hr, .post, .post.post-full header {
-  border: 0;
   border-bottom: 1px solid #bbbbbb;
   -moz-border-image: -moz-linear-gradient(left, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 100% 1;
   -webkit-border-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #748d77), color-stop(0.53476%, #748d77), color-stop(1.06952%, #6f8f77), color-stop(1.60428%, #6f8f77), color-stop(2.13904%, #73937b), color-stop(2.6738%, #73937b), color-stop(3.20856%, #739574), color-stop(3.74332%, #739574), color-stop(4.27807%, #769877), color-stop(4.81283%, #769877), color-stop(5.34759%, #7a9c7b), color-stop(5.88235%, #7a9c7b), color-stop(6.41711%, #7d9f7e), color-stop(6.95187%, #7d9f7e), color-stop(7.48663%, #80a37b), color-stop(8.02139%, #80a37b), color-stop(8.55615%, #89a57f), color-stop(9.09091%, #89a57f), color-stop(9.62567%, #8ca97b), color-stop(10.16043%, #8ca97b), color-stop(10.69519%, #8fac7e), color-stop(11.22995%, #8fac7e), color-stop(11.76471%, #93b082), color-stop(12.29947%, #93b082), color-stop(12.83422%, #98ad82), color-stop(13.36898%, #98ad82), color-stop(13.90374%, #9bb085), color-stop(14.4385%, #9bb085), color-stop(14.97326%, #9bb27e), color-stop(15.50802%, #9bb27e), color-stop(16.04278%, #9fb682), color-stop(16.57754%, #9fb682), color-stop(17.1123%, #a3b382), color-stop(17.64706%, #a3b382), color-stop(18.18182%, #a3b47d), color-stop(18.71658%, #a3b47d), color-stop(19.25134%, #a6b780), color-stop(19.7861%, #a6b780), color-stop(20.32086%, #acb580), color-stop(20.85561%, #acb580), color-stop(21.39037%, #b2b280), color-stop(21.92513%, #b2b280), color-stop(22.45989%, #afaf7d), color-stop(22.99465%, #afaf7d), color-stop(23.52941%, #b3ae76), color-stop(24.06417%, #b3ae76), color-stop(24.59893%, #b8ab76), color-stop(25.13369%, #b8ab76), color-stop(25.66845%, #baa472), color-stop(26.20321%, #bea272), color-stop(26.73797%, #c49f72), color-stop(27.27273%, #c49f72), color-stop(27.80749%, #c8a376), color-stop(28.34225%, #c8a376), color-stop(28.87701%, #cca176), color-stop(29.41176%, #cca176), color-stop(29.94652%, #c8a376), color-stop(30.48128%, #c8a376), color-stop(31.01604%, #c49f72), color-stop(31.5508%, #c49f72), color-stop(32.08556%, #bea272), color-stop(32.62032%, #bea272), color-stop(33.15508%, #baa472), color-stop(33.68984%, #baa472), color-stop(34.2246%, #bea876), color-stop(34.75936%, #bea876), color-stop(35.29412%, #b8ab76), color-stop(35.82888%, #b8ab76), color-stop(36.36364%, #b3ad7d), color-stop(36.8984%, #b3ad7d), color-stop(37.43316%, #afa979), color-stop(37.96791%, #afa979), color-stop(38.50267%, #a8a876), color-stop(39.03743%, #a8a876), color-stop(39.57219%, #a8a77b), color-stop(40.10695%, #a8a77b), color-stop(40.64171%, #a4a377), color-stop(41.17647%, #a4a377), color-stop(41.71123%, #9ea677), color-stop(42.24599%, #9ea677), color-stop(42.78075%, #9ba374), color-stop(43.31551%, #9ba374), color-stop(43.85027%, #989e78), color-stop(44.38503%, #989e78), color-stop(44.91979%, #8e9d74), color-stop(45.45455%, #8b9a71), color-stop(45.9893%, #889675), color-stop(46.52406%, #889675), color-stop(47.05882%, #849271), color-stop(47.59358%, #809471), color-stop(48.12834%, #7d916e), color-stop(48.6631%, #7d916e), color-stop(49.19786%, #798c70), color-stop(49.73262%, #76896d), color-stop(50.26738%, #6e8771), color-stop(50.80214%, #6e8771), color-stop(51.3369%, #6a836d), color-stop(51.87166%, #6a836d), color-stop(52.40642%, #67806a), color-stop(52.94118%, #67806a), color-stop(53.47594%, #62816f), color-stop(54.0107%, #62816f), color-stop(54.54545%, #5f7e6c), color-stop(55.08021%, #5f7e6c), color-stop(55.61497%, #5b7a68), color-stop(56.14973%, #5b7a68), color-stop(56.68449%, #5b796f), color-stop(57.21925%, #5b796f), color-stop(57.75401%, #60776f), color-stop(58.28877%, #60776f), color-stop(58.82353%, #65746f), color-stop(59.35829%, #65746f), color-stop(59.89305%, #627073), color-stop(60.42781%, #627073), color-stop(60.96257%, #5e6c6f), color-stop(61.49733%, #5e6c6f), color-stop(62.03209%, #5b696c), color-stop(62.56684%, #5b6871), color-stop(63.1016%, #58656e), color-stop(63.63636%, #58656e), color-stop(64.17112%, #53676e), color-stop(64.70588%, #53676e), color-stop(65.24064%, #4f636a), color-stop(65.7754%, #4f636a), color-stop(66.31016%, #4c6067), color-stop(66.84492%, #4c6067), color-stop(67.37968%, #495c6b), color-stop(67.91444%, #495c6b), color-stop(68.4492%, #455867), color-stop(68.98396%, #455867), color-stop(69.51872%, #425564), color-stop(70.05348%, #425564), color-stop(70.58824%, #3e5160), color-stop(71.12299%, #3e5160), color-stop(71.65775%, #3b4d65), color-stop(72.19251%, #3b4d65), color-stop(72.72727%, #3e5068), color-stop(73.26203%, #3e5068), color-stop(73.79679%, #3e5160), color-stop(74.33155%, #3e5160), color-stop(74.86631%, #475264), color-stop(75.40107%, #4a5567), color-stop(75.93583%, #4e596b), color-stop(76.47059%, #4e596b), color-stop(77.00535%, #515c6e), color-stop(77.54011%, #515c6e), color-stop(78.07487%, #555b67), color-stop(78.60963%, #555b67), color-stop(79.14439%, #5c626e), color-stop(79.67914%, #5c626e), color-stop(80.2139%, #656371), color-stop(80.74866%, #686674), color-stop(81.28342%, #6c6b73), color-stop(81.81818%, #6c6b73), color-stop(82.35294%, #73727a), color-stop(82.8877%, #73727a), color-stop(83.42246%, #7c7376), color-stop(83.95722%, #7f7679), color-stop(84.49198%, #8a7b80), color-stop(85.02674%, #8d7e83), color-stop(85.5615%, #948683), color-stop(86.09626%, #948683), color-stop(86.63102%, #988a87), color-stop(87.16578%, #988a87), color-stop(87.70053%, #a08c85), color-stop(88.23529%, #a08c85), color-stop(88.77005%, #a7938c), color-stop(89.30481%, #a7938c), color-stop(89.83957%, #aa968f), color-stop(90.37433%, #ad9992), color-stop(90.90909%, #b79b8f), color-stop(91.44385%, #b79b8f), color-stop(91.97861%, #ba9e92), color-stop(92.51337%, #ba9e92), color-stop(93.04813%, #bea296), color-stop(93.58289%, #bea296), color-stop(94.11765%, #c1a599), color-stop(94.65241%, #c1a599), color-stop(95.18717%, #bea296), color-stop(95.72193%, #bea296), color-stop(96.25668%, #ba9e92), color-stop(96.79144%, #ba9e92), color-stop(97.3262%, #b79b8f), color-stop(97.86096%, #b79b8f), color-stop(98.39572%, #b3978b), color-stop(98.93048%, #b3978b), color-stop(99.46524%, #b0938f), color-stop(100%, #b0938f)) 100% 1;
@@ -123,9 +122,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-image: linear-gradient(left, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 100% 1;
 }
 
-/* line 7, ../../_sass/_shared.scss */
+/* line 6, ../../_sass/_shared.scss */
 .content blockquote {
-  border: 0;
   border-left: 1px solid #bbbbbb;
   -moz-border-image: -moz-linear-gradient(top, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 1 100%;
   -webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #748d77), color-stop(0.53476%, #748d77), color-stop(1.06952%, #6f8f77), color-stop(1.60428%, #6f8f77), color-stop(2.13904%, #73937b), color-stop(2.6738%, #73937b), color-stop(3.20856%, #739574), color-stop(3.74332%, #739574), color-stop(4.27807%, #769877), color-stop(4.81283%, #769877), color-stop(5.34759%, #7a9c7b), color-stop(5.88235%, #7a9c7b), color-stop(6.41711%, #7d9f7e), color-stop(6.95187%, #7d9f7e), color-stop(7.48663%, #80a37b), color-stop(8.02139%, #80a37b), color-stop(8.55615%, #89a57f), color-stop(9.09091%, #89a57f), color-stop(9.62567%, #8ca97b), color-stop(10.16043%, #8ca97b), color-stop(10.69519%, #8fac7e), color-stop(11.22995%, #8fac7e), color-stop(11.76471%, #93b082), color-stop(12.29947%, #93b082), color-stop(12.83422%, #98ad82), color-stop(13.36898%, #98ad82), color-stop(13.90374%, #9bb085), color-stop(14.4385%, #9bb085), color-stop(14.97326%, #9bb27e), color-stop(15.50802%, #9bb27e), color-stop(16.04278%, #9fb682), color-stop(16.57754%, #9fb682), color-stop(17.1123%, #a3b382), color-stop(17.64706%, #a3b382), color-stop(18.18182%, #a3b47d), color-stop(18.71658%, #a3b47d), color-stop(19.25134%, #a6b780), color-stop(19.7861%, #a6b780), color-stop(20.32086%, #acb580), color-stop(20.85561%, #acb580), color-stop(21.39037%, #b2b280), color-stop(21.92513%, #b2b280), color-stop(22.45989%, #afaf7d), color-stop(22.99465%, #afaf7d), color-stop(23.52941%, #b3ae76), color-stop(24.06417%, #b3ae76), color-stop(24.59893%, #b8ab76), color-stop(25.13369%, #b8ab76), color-stop(25.66845%, #baa472), color-stop(26.20321%, #bea272), color-stop(26.73797%, #c49f72), color-stop(27.27273%, #c49f72), color-stop(27.80749%, #c8a376), color-stop(28.34225%, #c8a376), color-stop(28.87701%, #cca176), color-stop(29.41176%, #cca176), color-stop(29.94652%, #c8a376), color-stop(30.48128%, #c8a376), color-stop(31.01604%, #c49f72), color-stop(31.5508%, #c49f72), color-stop(32.08556%, #bea272), color-stop(32.62032%, #bea272), color-stop(33.15508%, #baa472), color-stop(33.68984%, #baa472), color-stop(34.2246%, #bea876), color-stop(34.75936%, #bea876), color-stop(35.29412%, #b8ab76), color-stop(35.82888%, #b8ab76), color-stop(36.36364%, #b3ad7d), color-stop(36.8984%, #b3ad7d), color-stop(37.43316%, #afa979), color-stop(37.96791%, #afa979), color-stop(38.50267%, #a8a876), color-stop(39.03743%, #a8a876), color-stop(39.57219%, #a8a77b), color-stop(40.10695%, #a8a77b), color-stop(40.64171%, #a4a377), color-stop(41.17647%, #a4a377), color-stop(41.71123%, #9ea677), color-stop(42.24599%, #9ea677), color-stop(42.78075%, #9ba374), color-stop(43.31551%, #9ba374), color-stop(43.85027%, #989e78), color-stop(44.38503%, #989e78), color-stop(44.91979%, #8e9d74), color-stop(45.45455%, #8b9a71), color-stop(45.9893%, #889675), color-stop(46.52406%, #889675), color-stop(47.05882%, #849271), color-stop(47.59358%, #809471), color-stop(48.12834%, #7d916e), color-stop(48.6631%, #7d916e), color-stop(49.19786%, #798c70), color-stop(49.73262%, #76896d), color-stop(50.26738%, #6e8771), color-stop(50.80214%, #6e8771), color-stop(51.3369%, #6a836d), color-stop(51.87166%, #6a836d), color-stop(52.40642%, #67806a), color-stop(52.94118%, #67806a), color-stop(53.47594%, #62816f), color-stop(54.0107%, #62816f), color-stop(54.54545%, #5f7e6c), color-stop(55.08021%, #5f7e6c), color-stop(55.61497%, #5b7a68), color-stop(56.14973%, #5b7a68), color-stop(56.68449%, #5b796f), color-stop(57.21925%, #5b796f), color-stop(57.75401%, #60776f), color-stop(58.28877%, #60776f), color-stop(58.82353%, #65746f), color-stop(59.35829%, #65746f), color-stop(59.89305%, #627073), color-stop(60.42781%, #627073), color-stop(60.96257%, #5e6c6f), color-stop(61.49733%, #5e6c6f), color-stop(62.03209%, #5b696c), color-stop(62.56684%, #5b6871), color-stop(63.1016%, #58656e), color-stop(63.63636%, #58656e), color-stop(64.17112%, #53676e), color-stop(64.70588%, #53676e), color-stop(65.24064%, #4f636a), color-stop(65.7754%, #4f636a), color-stop(66.31016%, #4c6067), color-stop(66.84492%, #4c6067), color-stop(67.37968%, #495c6b), color-stop(67.91444%, #495c6b), color-stop(68.4492%, #455867), color-stop(68.98396%, #455867), color-stop(69.51872%, #425564), color-stop(70.05348%, #425564), color-stop(70.58824%, #3e5160), color-stop(71.12299%, #3e5160), color-stop(71.65775%, #3b4d65), color-stop(72.19251%, #3b4d65), color-stop(72.72727%, #3e5068), color-stop(73.26203%, #3e5068), color-stop(73.79679%, #3e5160), color-stop(74.33155%, #3e5160), color-stop(74.86631%, #475264), color-stop(75.40107%, #4a5567), color-stop(75.93583%, #4e596b), color-stop(76.47059%, #4e596b), color-stop(77.00535%, #515c6e), color-stop(77.54011%, #515c6e), color-stop(78.07487%, #555b67), color-stop(78.60963%, #555b67), color-stop(79.14439%, #5c626e), color-stop(79.67914%, #5c626e), color-stop(80.2139%, #656371), color-stop(80.74866%, #686674), color-stop(81.28342%, #6c6b73), color-stop(81.81818%, #6c6b73), color-stop(82.35294%, #73727a), color-stop(82.8877%, #73727a), color-stop(83.42246%, #7c7376), color-stop(83.95722%, #7f7679), color-stop(84.49198%, #8a7b80), color-stop(85.02674%, #8d7e83), color-stop(85.5615%, #948683), color-stop(86.09626%, #948683), color-stop(86.63102%, #988a87), color-stop(87.16578%, #988a87), color-stop(87.70053%, #a08c85), color-stop(88.23529%, #a08c85), color-stop(88.77005%, #a7938c), color-stop(89.30481%, #a7938c), color-stop(89.83957%, #aa968f), color-stop(90.37433%, #ad9992), color-stop(90.90909%, #b79b8f), color-stop(91.44385%, #b79b8f), color-stop(91.97861%, #ba9e92), color-stop(92.51337%, #ba9e92), color-stop(93.04813%, #bea296), color-stop(93.58289%, #bea296), color-stop(94.11765%, #c1a599), color-stop(94.65241%, #c1a599), color-stop(95.18717%, #bea296), color-stop(95.72193%, #bea296), color-stop(96.25668%, #ba9e92), color-stop(96.79144%, #ba9e92), color-stop(97.3262%, #b79b8f), color-stop(97.86096%, #b79b8f), color-stop(98.39572%, #b3978b), color-stop(98.93048%, #b3978b), color-stop(99.46524%, #b0938f), color-stop(100%, #b0938f)) 1 100%;
@@ -134,16 +132,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-image: linear-gradient(top, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 1 100%;
 }
 
-/* line 13, ../../_sass/_shared.scss */
+/* line 11, ../../_sass/_shared.scss */
 [data-yesscript] {
   display: none;
 }
-/* line 16, ../../_sass/_shared.scss */
+/* line 14, ../../_sass/_shared.scss */
 html.js [data-yesscript] {
   display: block;
 }
 
-/* line 21, ../../_sass/_shared.scss */
+/* line 19, ../../_sass/_shared.scss */
 a {
   border-bottom: 1px dotted #bbbbbb;
   border-color: rgba(187, 187, 187, 0.5);
@@ -154,17 +152,17 @@ a {
   -o-transition: border-color 0.25s ease-in-out;
   transition: border-color 0.25s ease-in-out;
 }
-/* line 28, ../../_sass/_shared.scss */
+/* line 26, ../../_sass/_shared.scss */
 a:hover, a:active, a:focus {
   border-color: transparent !important;
 }
 
-/* line 33, ../../_sass/_shared.scss */
+/* line 31, ../../_sass/_shared.scss */
 abbr[title] {
   cursor: help;
 }
 
-/* line 37, ../../_sass/_shared.scss */
+/* line 35, ../../_sass/_shared.scss */
 body {
   background: #222222;
   color: white;
@@ -172,13 +170,13 @@ body {
   text-align: center;
 }
 @media (min-width: 43.75em) {
-  /* line 37, ../../_sass/_shared.scss */
+  /* line 35, ../../_sass/_shared.scss */
   body {
     line-height: 1.75;
   }
 }
 
-/* line 48, ../../_sass/_shared.scss */
+/* line 46, ../../_sass/_shared.scss */
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -312,6 +310,11 @@ div[class=container] {
 /* line 112, ../../_sass/patterns/_content.scss */
 .content h1 a {
   border-color: #222222;
+  -moz-border-image: none;
+  -webkit-border-image: none;
+  -webkit-border-image: none;
+  -o-border-image: none;
+  border-image: none;
 }
 @media (min-width: 43.75em) {
   /* line 102, ../../_sass/patterns/_content.scss */
@@ -327,7 +330,7 @@ div[class=container] {
     line-height: 1.25;
   }
 }
-/* line 127, ../../_sass/patterns/_content.scss */
+/* line 128, ../../_sass/patterns/_content.scss */
 .content h2 {
   font-size: 1.625em;
   font-weight: 300;
@@ -335,90 +338,91 @@ div[class=container] {
   margin: 1em 0;
 }
 @media (min-width: 43.75em) {
-  /* line 127, ../../_sass/patterns/_content.scss */
+  /* line 128, ../../_sass/patterns/_content.scss */
   .content h2 {
     font-size: 2em;
     line-height: 1.25;
   }
 }
 @media (min-width: 56.25em) {
-  /* line 127, ../../_sass/patterns/_content.scss */
+  /* line 128, ../../_sass/patterns/_content.scss */
   .content h2 {
     font-size: 2.25em;
   }
 }
-/* line 145, ../../_sass/patterns/_content.scss */
+/* line 146, ../../_sass/patterns/_content.scss */
 .content h3 {
   font-size: 1.375em;
   line-height: 1.15;
   margin: 0 0 1em;
 }
 @media (min-width: 43.75em) {
-  /* line 145, ../../_sass/patterns/_content.scss */
+  /* line 146, ../../_sass/patterns/_content.scss */
   .content h3 {
     font-size: 1.5em;
     line-height: 1.25;
   }
 }
 @media (min-width: 56.25em) {
-  /* line 145, ../../_sass/patterns/_content.scss */
+  /* line 146, ../../_sass/patterns/_content.scss */
   .content h3 {
     font-size: 1.75em;
   }
 }
-/* line 160, ../../_sass/patterns/_content.scss */
+/* line 161, ../../_sass/patterns/_content.scss */
 .content h4 {
   font-size: 1.125em;
   line-height: 1.1;
   margin: 0 0 .5em;
 }
 @media (min-width: 43.75em) {
-  /* line 160, ../../_sass/patterns/_content.scss */
+  /* line 161, ../../_sass/patterns/_content.scss */
   .content h4 {
     line-height: 1.2;
   }
 }
-/* line 170, ../../_sass/patterns/_content.scss */
+/* line 171, ../../_sass/patterns/_content.scss */
 .content h5, .content h6 {
   margin: 0 0 .25em;
 }
-/* line 174, ../../_sass/patterns/_content.scss */
+/* line 175, ../../_sass/patterns/_content.scss */
 .content hr {
+  border: 0;
   height: 0;
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 181, ../../_sass/patterns/_content.scss */
+/* line 183, ../../_sass/patterns/_content.scss */
 .content ins, .content u {
   font-weight: 300;
 }
-/* line 185, ../../_sass/patterns/_content.scss */
+/* line 187, ../../_sass/patterns/_content.scss */
 .content kbd, .content samp {
   font-family: Consolas, monaco, monospace;
 }
-/* line 189, ../../_sass/patterns/_content.scss */
+/* line 191, ../../_sass/patterns/_content.scss */
 .content li {
   margin: .5em;
 }
-/* line 193, ../../_sass/patterns/_content.scss */
+/* line 195, ../../_sass/patterns/_content.scss */
 .content mark {
   background: black;
   color: white;
   font-weight: 300;
   padding: .15em .25em;
 }
-/* line 200, ../../_sass/patterns/_content.scss */
+/* line 202, ../../_sass/patterns/_content.scss */
 .content ol {
   counter-reset: li;
   list-style: decimal;
   margin: 0 0 1em;
   padding: 0 0 0 1em;
 }
-/* line 206, ../../_sass/patterns/_content.scss */
+/* line 208, ../../_sass/patterns/_content.scss */
 .content ol > li {
   list-style: none;
 }
-/* line 209, ../../_sass/patterns/_content.scss */
+/* line 211, ../../_sass/patterns/_content.scss */
 .content ol > li:before {
   color: #bbbbbb;
   content: counter(li) ".";
@@ -434,64 +438,64 @@ div[class=container] {
   position: relative;
 }
 @media (min-width: 43.75em) {
-  /* line 209, ../../_sass/patterns/_content.scss */
+  /* line 211, ../../_sass/patterns/_content.scss */
   .content ol > li:before {
     line-height: 2;
   }
 }
-/* line 233, ../../_sass/patterns/_content.scss */
+/* line 235, ../../_sass/patterns/_content.scss */
 * + html .content ol li {
   list-style: decimal;
 }
-/* line 238, ../../_sass/patterns/_content.scss */
+/* line 240, ../../_sass/patterns/_content.scss */
 .content p {
   margin: 0 0 1.5em;
 }
-/* line 242, ../../_sass/patterns/_content.scss */
+/* line 244, ../../_sass/patterns/_content.scss */
 .content pre {
   font-family: Consolas, monaco, monospace;
   margin: 2em 0;
   white-space: pre-wrap;
 }
-/* line 248, ../../_sass/patterns/_content.scss */
+/* line 250, ../../_sass/patterns/_content.scss */
 .content q {
   quotes: "“" "”" "‘" "’";
 }
-/* line 251, ../../_sass/patterns/_content.scss */
+/* line 253, ../../_sass/patterns/_content.scss */
 .content q:after {
   color: #bbbbbb;
   content: close-quote;
 }
-/* line 256, ../../_sass/patterns/_content.scss */
+/* line 258, ../../_sass/patterns/_content.scss */
 .content q:before {
   color: #bbbbbb;
   content: open-quote;
 }
-/* line 262, ../../_sass/patterns/_content.scss */
+/* line 264, ../../_sass/patterns/_content.scss */
 .content small {
   font-size: smaller;
 }
-/* line 266, ../../_sass/patterns/_content.scss */
+/* line 268, ../../_sass/patterns/_content.scss */
 .content sub {
   font-size: smaller;
   vertical-align: sub;
 }
-/* line 271, ../../_sass/patterns/_content.scss */
+/* line 273, ../../_sass/patterns/_content.scss */
 .content sup {
   font-size: smaller;
   vertical-align: super;
 }
-/* line 276, ../../_sass/patterns/_content.scss */
+/* line 278, ../../_sass/patterns/_content.scss */
 .content ul {
   list-style: circle;
   margin: 0 0 1em;
   padding: 0 0 0 1em;
 }
-/* line 281, ../../_sass/patterns/_content.scss */
+/* line 283, ../../_sass/patterns/_content.scss */
 .content ul > li {
   list-style: none;
 }
-/* line 284, ../../_sass/patterns/_content.scss */
+/* line 286, ../../_sass/patterns/_content.scss */
 .content ul > li:before {
   color: #bbbbbb;
   content: "\25cb";
@@ -501,11 +505,11 @@ div[class=container] {
   max-width: 0;
   position: relative;
 }
-/* line 297, ../../_sass/patterns/_content.scss */
+/* line 299, ../../_sass/patterns/_content.scss */
 * + html .content ul li {
   list-style: circle;
 }
-/* line 302, ../../_sass/patterns/_content.scss */
+/* line 304, ../../_sass/patterns/_content.scss */
 .content .video {
   height: 0;
   overflow: hidden;
@@ -513,7 +517,7 @@ div[class=container] {
   padding: 0 0 56.25%;
   position: relative;
 }
-/* line 309, ../../_sass/patterns/_content.scss */
+/* line 311, ../../_sass/patterns/_content.scss */
 .content .video embed, .content .video iframe, .content .video object {
   height: 100%;
   left: 0;
@@ -624,13 +628,13 @@ div[class=container] {
 }
 /* line 7, ../../_sass/patterns/_post.scss */
 .post:last-of-type {
-  background: none;
+  border: 0;
   margin: 0;
   padding: 0;
 }
 /* line 14, ../../_sass/patterns/_post.scss */
 .post.post-full h1 {
-  background: none;
+  border: none;
   margin: 0;
   padding: 0;
 }

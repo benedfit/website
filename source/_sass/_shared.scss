@@ -1,11 +1,9 @@
 %hr{
-  border:0;
   border-bottom:1px solid $colour-grey-light;
   @include border-image(linear-gradient(left, $colours-gradient) 100% 1);
 }
 
 %vr{
-  border:0;
   border-left:1px solid $colour-grey-light;
   @include border-image(linear-gradient(top, $colours-gradient) 1 100%);
 }
