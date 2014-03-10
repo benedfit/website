@@ -4,7 +4,6 @@
   color:$colour-white;
   display:inline-block;
   font-weight:bold;
-  letter-spacing:.5em;
   line-height:1;
   padding:.5em;
   text:{
@@ -13,7 +12,7 @@
   }
   
   span{
-    margin-right:-.5em;
+    letter-spacing:.5em;
   }
   
   @include breakpoint($breakpoint-second){
