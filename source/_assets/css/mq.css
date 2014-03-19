@@ -219,7 +219,7 @@ div[class=container] {
 .content blockquote {
   font-size: 1.25em;
   font-weight: 300;
-  margin: 1.5em 0 1.5em -1em;
+  margin: 1.5em 0;
   padding: 0 1em;
 }
 /* line 24, ../../_sass/patterns/_content.scss */
