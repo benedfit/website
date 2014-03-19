@@ -1,5 +1,5 @@
 @charset "CP850";
-/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -219,7 +219,7 @@ div[class=container] {
 .content blockquote {
   font-size: 1.25em;
   font-weight: 300;
-  margin: 1.5em 0;
+  margin: 1.5em 0 1.5em -1em;
   padding: 0 1em;
 }
 /* line 24, ../../_sass/patterns/_content.scss */
@@ -387,42 +387,44 @@ div[class=container] {
 }
 /* line 175, ../../_sass/patterns/_content.scss */
 .content hr {
-  border: 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
   height: 0;
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 183, ../../_sass/patterns/_content.scss */
+/* line 187, ../../_sass/patterns/_content.scss */
 .content ins, .content u {
   font-weight: 300;
 }
-/* line 187, ../../_sass/patterns/_content.scss */
+/* line 191, ../../_sass/patterns/_content.scss */
 .content kbd, .content samp {
   font-family: Consolas, monaco, monospace;
 }
-/* line 191, ../../_sass/patterns/_content.scss */
+/* line 195, ../../_sass/patterns/_content.scss */
 .content li {
   margin: .5em;
 }
-/* line 195, ../../_sass/patterns/_content.scss */
+/* line 199, ../../_sass/patterns/_content.scss */
 .content mark {
   background: black;
   color: white;
   font-weight: 300;
   padding: .15em .25em;
 }
-/* line 202, ../../_sass/patterns/_content.scss */
+/* line 206, ../../_sass/patterns/_content.scss */
 .content ol {
   counter-reset: li;
   list-style: decimal;
   margin: 0 0 1em;
   padding: 0 0 0 1em;
 }
-/* line 208, ../../_sass/patterns/_content.scss */
+/* line 212, ../../_sass/patterns/_content.scss */
 .content ol > li {
   list-style: none;
 }
-/* line 211, ../../_sass/patterns/_content.scss */
+/* line 215, ../../_sass/patterns/_content.scss */
 .content ol > li:before {
   color: #bbbbbb;
   content: counter(li) ".";
@@ -438,64 +440,64 @@ div[class=container] {
   position: relative;
 }
 @media (min-width: 43.75em) {
-  /* line 211, ../../_sass/patterns/_content.scss */
+  /* line 215, ../../_sass/patterns/_content.scss */
   .content ol > li:before {
     line-height: 2;
   }
 }
-/* line 235, ../../_sass/patterns/_content.scss */
+/* line 239, ../../_sass/patterns/_content.scss */
 * + html .content ol li {
   list-style: decimal;
 }
-/* line 240, ../../_sass/patterns/_content.scss */
+/* line 244, ../../_sass/patterns/_content.scss */
 .content p {
   margin: 0 0 1.5em;
 }
-/* line 244, ../../_sass/patterns/_content.scss */
+/* line 248, ../../_sass/patterns/_content.scss */
 .content pre {
   font-family: Consolas, monaco, monospace;
   margin: 2em 0;
   white-space: pre-wrap;
 }
-/* line 250, ../../_sass/patterns/_content.scss */
+/* line 254, ../../_sass/patterns/_content.scss */
 .content q {
   quotes: "“" "”" "‘" "’";
 }
-/* line 253, ../../_sass/patterns/_content.scss */
+/* line 257, ../../_sass/patterns/_content.scss */
 .content q:after {
   color: #bbbbbb;
   content: close-quote;
 }
-/* line 258, ../../_sass/patterns/_content.scss */
+/* line 262, ../../_sass/patterns/_content.scss */
 .content q:before {
   color: #bbbbbb;
   content: open-quote;
 }
-/* line 264, ../../_sass/patterns/_content.scss */
+/* line 268, ../../_sass/patterns/_content.scss */
 .content small {
   font-size: smaller;
 }
-/* line 268, ../../_sass/patterns/_content.scss */
+/* line 272, ../../_sass/patterns/_content.scss */
 .content sub {
   font-size: smaller;
   vertical-align: sub;
 }
-/* line 273, ../../_sass/patterns/_content.scss */
+/* line 277, ../../_sass/patterns/_content.scss */
 .content sup {
   font-size: smaller;
   vertical-align: super;
 }
-/* line 278, ../../_sass/patterns/_content.scss */
+/* line 282, ../../_sass/patterns/_content.scss */
 .content ul {
   list-style: circle;
   margin: 0 0 1em;
   padding: 0 0 0 1em;
 }
-/* line 283, ../../_sass/patterns/_content.scss */
+/* line 287, ../../_sass/patterns/_content.scss */
 .content ul > li {
   list-style: none;
 }
-/* line 286, ../../_sass/patterns/_content.scss */
+/* line 290, ../../_sass/patterns/_content.scss */
 .content ul > li:before {
   color: #bbbbbb;
   content: "\25cb";
@@ -505,11 +507,11 @@ div[class=container] {
   max-width: 0;
   position: relative;
 }
-/* line 299, ../../_sass/patterns/_content.scss */
+/* line 303, ../../_sass/patterns/_content.scss */
 * + html .content ul li {
   list-style: circle;
 }
-/* line 304, ../../_sass/patterns/_content.scss */
+/* line 308, ../../_sass/patterns/_content.scss */
 .content .video {
   height: 0;
   overflow: hidden;
@@ -517,7 +519,7 @@ div[class=container] {
   padding: 0 0 56.25%;
   position: relative;
 }
-/* line 311, ../../_sass/patterns/_content.scss */
+/* line 315, ../../_sass/patterns/_content.scss */
 .content .video embed, .content .video iframe, .content .video object {
   height: 100%;
   left: 0;

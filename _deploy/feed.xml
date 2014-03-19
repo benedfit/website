@@ -4,18 +4,9 @@
 		<title>Ben Edwards, a web designer and developer</title>
 		<link>http://dev.benedfit.com/</link>
 		<description>Ben Edwards, a web designer and developer</description>
-		<pubDate>Mon, 10 Mar 2014 19:22:26 +0000</pubDate>
-		<lastBuildDate>Mon, 10 Mar 2014 19:22:26 +0000</lastBuildDate>
+		<pubDate>Wed, 19 Mar 2014 15:37:41 +0000</pubDate>
+		<lastBuildDate>Wed, 19 Mar 2014 15:37:41 +0000</lastBuildDate>
 		<atom:link href="http://dev.benedfit.com/feed.xml" rel="self" type="application/rss+xml"/>
-		
-			<item>
-				<title>When did we stop trying?</title>
-				<link>http://dev.benedfit.com/2014/03/when-did-we-stop-trying/</link>
-				<description>&lt;p&gt;It seems to me that during the last few weeks that more and more of us are giving up. Everywhere I point my eyes, and everywhere I turn my ears there’s someone, somewhere, saying something like; &lt;q&gt;Framework this. Framework that. No one disables JavaScript. When can I stop supporting IE some version of other?&lt;/q&gt; It’s now so common I find myself asking when did so many in our industry stop trying?&lt;/p&gt;</description>
-				<author>Ben Edwards</author>
-				<pubDate>Sun, 09 Mar 2014 16:58:18 +0000</pubDate>
-				<guid isPermaLink="true">http://dev.benedfit.com/2014/03/when-did-we-stop-trying/</guid>
-			</item>
 		
 			<item>
 				<title>Pattern library annotations, documentation, and more</title>

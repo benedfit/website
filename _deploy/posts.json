@@ -2,20 +2,6 @@
 	
 		
 		{
-			"id":"/2014/03/when-did-we-stop-trying/",
-			"title":"When did we stop trying?",
-			"author":"Ben Edwards",
-			"published":"2014-03-09T16:58:18+00:00",
-			"day":"9",
-			"month":"03",
-			"monthname":"March",
-			"year":"2014",
-			"excerpt":"<p>It seems to me that during the last few weeks that more and more of us are giving up. Everywhere I point my eyes, and everywhere I turn my ears there’s someone, somewhere, saying something like; <q>Framework this. Framework that. No one disables JavaScript. When can I stop supporting IE some version of other?</q> It’s now so common I find myself asking when did so many in our industry stop trying?</p>",
-			"content":"It seems to me that during the last few weeks that more and more of us are giving up. Everywhere I point my eyes, and everywhere I turn my ears there’s someone, somewhere, saying something like; Framework this. Framework that. No one disables JavaScript. When can I stop supporting IE some version of other? It’s now so common I find myself asking when did so many in our industry stop trying?…anything below IE9 is the real problem. Also anyone can install chrome ;) Some Donkus"
-		}
-	
-		,
-		{
 			"id":"/2013/11/pattern-library-annotations-documentation-and-more/",
 			"title":"Pattern library annotations, documentation, and more",
 			"author":"Ben Edwards",
