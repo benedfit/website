@@ -1,8 +1,8 @@
 .container{
   margin:auto;
-  max-width:pxtoem($breakpoint-max);
+  max-width:breakpoint-to-base-em($breakpoint-max);
   padding:0 1em;
-  width:pxtoem($breakpoint-max);
+  width:breakpoint-to-base-em($breakpoint-max);
   
   @include breakpoint($breakpoint-first){
     padding:0 2em;

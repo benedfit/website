@@ -1,6 +1,4 @@
-require "atypical-sass"
 require "breakpoint"
-require "toolkit"
 
 sass_dir = "source/_sass"
 css_dir = "source/_assets/css"
