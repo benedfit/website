@@ -1,6 +1,5 @@
 .menu{
   $height:5em;
-  display:none;
   max-height:$height;
   overflow:hidden;
   @include transition(max-height 250ms ease-in-out);

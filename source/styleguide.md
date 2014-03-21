@@ -35,7 +35,6 @@ hidden: true
 	2.	This is another nested list item in an ordered list
 4.	This is the last list item
 
-
 ## Text
 
 A paragraph (from the Greek paragraphos, <q>to write beside</q> or <q>written beside</q>) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.

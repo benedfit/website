@@ -585,16 +585,15 @@ div[class=container] {
   cursor: pointer;
   display: inline-block;
   line-height: 1;
-  visibility: hidden;
 }
-/* line 20, ../../_sass/patterns/_header.scss */
+/* line 19, ../../_sass/patterns/_header.scss */
 .header .toggle-label i {
   font-size: 2em;
   font-style: normal;
   letter-spacing: -.25em;
   padding: 0 .25em 0 0;
 }
-/* line 29, ../../_sass/patterns/_header.scss */
+/* line 28, ../../_sass/patterns/_header.scss */
 .header .toggle-label span {
   display: none;
 }
