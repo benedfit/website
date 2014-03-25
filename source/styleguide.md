@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 'Style guide'
+metaDescription: 'Examples of all the styles in use on my site' 
 permalink: /styleguide/
 hidden: true
 ---

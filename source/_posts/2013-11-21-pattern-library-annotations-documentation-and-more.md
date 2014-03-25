@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Pattern library annotations, documentation, and more'
+metaDescription: 'Dave Rupert, Brad Frost, Geoff Barnes, Aaron Gustafson &amp; Patrick Fulton share their thoughts on responsive deliverables, pattern libraries &amp; annotations'
 ---
 What started out as a simple chat at [Netcel](http://www.netcel.com/) this afternoon between myself and our designer [Cheryl](https://twitter.com/cheryl_lis) on the ways in which we could integrate functional specifications into pattern libraries spawned into a great discussion on the topic via an impromptu Google Hangout.
 
