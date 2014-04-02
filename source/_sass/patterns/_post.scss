@@ -10,32 +10,6 @@
     padding:0;
   }
   
-  &.post-full{
-    h1{
-      border:none;
-      margin:0;
-      padding:0;
-    }
-    
-    header{
-      @extend %hr;
-      margin:0 0 2.25em;
-      padding:0 0 1em;
-    }
-  }
-  
-  header{
-    margin:0 0 2em;
-    
-    a{
-      border-color:$colour-black-light;
-    }
-    
-    h1,h2{
-      display:inline;
-    }
-  }
-  
   footer{
     display:none;
   }

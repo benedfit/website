@@ -1,19 +1,23 @@
-{% assign class = 'post' %}
-{% assign tag = 'h2' %}
-{% if include.full %}
-	{% assign class = 'post post-full' %}
-	{% assign tag = 'h1' %}
-{% endif %}
-<article class="{{ class }} h-entry">
-	<header>
-		<{{ tag }}><a href="{{ page.url }}" class="p-name u-url" rel="bookmark">{{ page.title }}</a></{{ tag }}>
-		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema  }}"><a href="{{ page.date | date: "/%Y/%m/" }}" rel="directory">{{ page.date | date: "%B" }}</a>&nbsp;{{ page.date | date: "%-d" }},&nbsp;<a href="{{ page.date | date: "/%Y/" }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>
-	</header>
+{% capture title %}
+<a href="{{ page.url }}" class="p-name u-url" rel="bookmark">{{ page.title }}</a>
+{% endcapture %}
+{% capture date %}
+<time class="dt-published" datetime="{{ page.date | date_to_xmlschema  }}"><a href="{{ page.date | date: "/%Y/%m/" }}" rel="directory">{{ page.date | date: "%B" }}</a>&nbsp;{{ page.date | date: "%-d" }},&nbsp;<a href="{{ page.date | date: "/%Y/" }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>
+{% endcapture %}
+<article class="post h-entry">
 	{% if include.full %}
+		<header class="hgroup hgroup-hr">
+			<h1>{{ title }}</h1>
+			{{ date }}
+		</header>
 		<div class="e-content">{{ content }}</div>
+		<footer><a href="{{ site.authorUrl }}" rel="author" class="p-author h-card p-name u-url">{{ site.authorName }}</a></footer>
 	{% else %}
+		<header class="hgroup">
+			<h2>{{ title }}</h2>
+			{{ date }}
+		</header>
 		<div class="excerpt p-summary">{{ page.excerpt | markdownify }}</div>
-		<a href="{{ page.url }}" class="ellipsis"><span>Read more</span></a>
+		<a href="{{ page.url }}" class="ellipsis"><span aria-hidden="false">Read more</span></a>
 	{% endif %}
-	<footer><a href="{{ site.url }}/" class="p-author h-card p-name u-url">{{ site.author }}</a></footer>
 </article>

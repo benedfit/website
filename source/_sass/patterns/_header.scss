@@ -1,5 +1,6 @@
 .header{
   background:image-url("header.jpg") 50% 0;
+  @include background-size(100% auto);
   padding:1em 0;
   text-align:left;
   

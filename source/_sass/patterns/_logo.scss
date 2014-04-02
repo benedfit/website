@@ -13,6 +13,7 @@
   
   span{
     letter-spacing:.5em;
+    word-spacing:-.5em;
   }
   
   @include breakpoint($breakpoint-second){

@@ -16,6 +16,28 @@ hidden: true
 ##### Heading level 5 [link](#)
 ###### Heading level 6 [link](#)
 
+## Heading group
+
+<header class="hgroup">
+	<h1>Heading level 1 <a href="#">link</a></h1>
+	<h2>Heading level 2 <a href="#">link</a></h2>
+	<h3>Heading level 3 <a href="#">link</a></h3>	
+	<h4>Heading level 4 <a href="#">link</a></h4>
+	<h5>Heading level 5 <a href="#">link</a></h5>
+	<h6>Heading level 6 <a href="#">link</a></h6>
+</header>
+
+## Heading group with border
+
+<header class="hgroup hgroup-hr">
+	<h1>Heading level 1 <a href="#">link</a></h1>
+	<h2>Heading level 2 <a href="#">link</a></h2>
+	<h3>Heading level 3 <a href="#">link</a></h3>	
+	<h4>Heading level 4 <a href="#">link</a></h4>
+	<h5>Heading level 5 <a href="#">link</a></h5>
+	<h6>Heading level 6 <a href="#">link</a></h6>
+</header>
+
 ## Horizontal rule
 
 ---

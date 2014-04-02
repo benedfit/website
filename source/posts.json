@@ -6,7 +6,6 @@
 		{
 			"id":"{{ post.url }}",
 			"title":"{{ post.title }}",
-			"author":"{{ site.author }}",
 			"published":"{{ post.date | date_to_xmlschema }}",
 			"day":"{{ post.date | date: '%-d' }}",
 			"month":"{{ post.date | date: '%m' }}",

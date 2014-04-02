@@ -305,6 +305,29 @@
     }
   }
   
+  .hgroup{
+    margin:0 0 2.25em;
+    
+    &.hgroup-hr{
+      @extend %hr;
+      padding:0 0 1em;
+    }
+    
+    *{
+      display:inline;
+    }
+    
+    a{
+      border-color:$colour-black-light;
+    }
+    
+    h1{
+      border:none;
+      margin:0;
+      padding:0;
+    }
+  }
+  
   .video{
     height:0;
     overflow:hidden;

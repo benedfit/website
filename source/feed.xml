@@ -14,7 +14,7 @@
 				<title>{{ post.title }}</title>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<description>{{ post.excerpt | markdownify | xml_escape }}</description>
-				<author>{{ site.author }}</author>
+				<author>{{ site.authorName }}</author>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 			</item>
