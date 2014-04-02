@@ -572,15 +572,14 @@ div[class=container] {
   display: inline-block;
   font-weight: bold;
   line-height: 1;
-  padding: .5em;
+  padding: .5em .65em;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.25em;
 }
 /* line 14, ../../_sass/patterns/_logo.scss */
 .logo span {
-  letter-spacing: .5em;
-  word-spacing: -.5em;
+  letter-spacing: .35em;
 }
 
 /* line 1, ../../_sass/patterns/_post.scss */
@@ -611,7 +610,7 @@ div[class=container] {
 .post .ellipsis {
   border: 0;
   display: block;
-  font-size: 1.5em;
+  font-size: 2.25em;
   line-height: 1;
   text-align: center;
   text-decoration: none;
@@ -637,4 +636,8 @@ div[class=container] {
 /* line 50, ../../_sass/patterns/_post.scss */
 .post .ellipsis span {
   display: none;
+}
+/* line 56, ../../_sass/patterns/_post.scss */
+.post .ellipsis {
+  font-size: 1.5em;
 }
