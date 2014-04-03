@@ -7,36 +7,29 @@ hidden: true
 ---
 # Styleguide
 
+<section markdown="1">
 ## Headings
-
+<section markdown="1">
 # Heading level 1 [link](#)
 ## Heading level 2 [link](#)
 ### Heading level 3 [link](#)
 #### Heading level 4 [link](#)
 ##### Heading level 5 [link](#)
 ###### Heading level 6 [link](#)
+</section>
+</section>
 
+<section markdown="1">
 ## Heading group
-
-<header class="hgroup">
-	<h1>Heading level 1 <a href="#">link</a></h1>
-	<h2>Heading level 2 <a href="#">link</a></h2>
-	<h3>Heading level 3 <a href="#">link</a></h3>	
-	<h4>Heading level 4 <a href="#">link</a></h4>
-	<h5>Heading level 5 <a href="#">link</a></h5>
-	<h6>Heading level 6 <a href="#">link</a></h6>
-</header>
-
-## Heading group with border
-
-<header class="hgroup hgroup-hr">
-	<h1>Heading level 1 <a href="#">link</a></h1>
-	<h2>Heading level 2 <a href="#">link</a></h2>
-	<h3>Heading level 3 <a href="#">link</a></h3>	
-	<h4>Heading level 4 <a href="#">link</a></h4>
-	<h5>Heading level 5 <a href="#">link</a></h5>
-	<h6>Heading level 6 <a href="#">link</a></h6>
-</header>
+<section markdown="1" class="hgroup">
+# Heading level 1 [link](#)
+## Heading level 2 [link](#)
+### Heading level 3 [link](#)
+#### Heading level 4 [link](#)
+##### Heading level 5 [link](#)
+###### Heading level 6 [link](#)
+</section>
+</section>
 
 ## Horizontal rule
 
@@ -107,6 +100,12 @@ The <mark>mark element</mark> indicates a highlight
 The <var>variable element</var>, such as <var>x</var> = <var>y</var>
 
 A timestamp, such as <time datetime="2014-01-01T00:00:00+00:00"><a href="#" rel="directory">January</a> 1, <a href="#" rel="directory">2014</a></time>
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 <pre>P R E F O R M A T T E D T E X T P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /

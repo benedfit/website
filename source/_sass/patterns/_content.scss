@@ -279,6 +279,42 @@
     vertical-align:super;
   }
   
+  table{
+    border-right:1px solid $colour-grey;
+    border-collapse:collapse;
+    margin:0 0 1.5em;
+    width:100%;
+    
+    td,th{
+      border:0 dotted $colour-grey-light;
+      border:{
+        color:rgba($colour-grey-light,.5);
+        right-width:1px;
+        top-width:1px;
+      }
+      font-weight:300;
+      padding:0 .5em;
+    }
+    
+    th{
+      border:{
+        bottom-style:solid;
+        bottom-width:1px;
+        top:0;
+      }
+      font-weight:bold;
+      padding:.25em .5em;
+    }
+  }
+  
+  time{
+    color:$colour-grey-light;
+    
+    a{
+      color:$colour-grey-light;
+    }
+  }
+  
   ul{
     list-style:circle;
     margin:0 0 1em;
@@ -306,12 +342,9 @@
   }
   
   .hgroup{
+    @extend %hr;
     margin:0 0 2.25em;
-    
-    &.hgroup-hr{
-      @extend %hr;
-      padding:0 0 1em;
-    }
+    padding:0 0 1em;
     
     *{
       display:inline;
