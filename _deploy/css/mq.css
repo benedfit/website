@@ -181,6 +181,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/* line 50, ../../_sass/_shared.scss */
+.hidden {
+  display: none;
+}
+
 /* line 1, ../../_sass/patterns/_layout.scss */
 .container {
   margin: auto;
@@ -689,10 +694,6 @@ div[class=container] {
   padding: 0;
 }
 /* line 13, ../../_sass/patterns/_post.scss */
-.post footer {
-  display: none;
-}
-/* line 17, ../../_sass/patterns/_post.scss */
 .post .ellipsis {
   border: 0;
   display: block;
@@ -702,7 +703,7 @@ div[class=container] {
   text-decoration: none;
   text-shadow: #333333 1px 1px 0;
 }
-/* line 28, ../../_sass/patterns/_post.scss */
+/* line 24, ../../_sass/patterns/_post.scss */
 .post .ellipsis:before {
   color: black;
   content: '\25cb\25cb\25cb';
@@ -711,26 +712,26 @@ div[class=container] {
   -o-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
 }
-/* line 34, ../../_sass/patterns/_post.scss */
+/* line 30, ../../_sass/patterns/_post.scss */
 .post .ellipsis:hover, .post .ellipsis:active, .post .ellipsis:focus {
   text-shadow: none;
 }
-/* line 37, ../../_sass/patterns/_post.scss */
+/* line 33, ../../_sass/patterns/_post.scss */
 .post .ellipsis:hover:before, .post .ellipsis:active:before, .post .ellipsis:focus:before {
   color: #bbbbbb;
 }
-/* line 42, ../../_sass/patterns/_post.scss */
+/* line 38, ../../_sass/patterns/_post.scss */
 .post .ellipsis span {
   display: none;
 }
-/* line 47, ../../_sass/patterns/_post.scss */
+/* line 43, ../../_sass/patterns/_post.scss */
 .post .hgroup {
   border: 0;
   margin: 0 0 2em;
   padding: 0;
 }
 @media (min-width: 56.25em) {
-  /* line 54, ../../_sass/patterns/_post.scss */
+  /* line 50, ../../_sass/patterns/_post.scss */
   .post .ellipsis {
     font-size: 1.5em;
   }

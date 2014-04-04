@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -36,6 +36,7 @@
 				{{ content }}
 			</div>
 		</main>
+		{% include breadcrumb.html %}
 		{% include footer.html %}
 		<script>document.getElementsByTagName('html')[0].className+='js'</script>
 		{% javascript js/libs/prism %}
