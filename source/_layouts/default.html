@@ -29,12 +29,14 @@
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 		<meta itemprop="name" content="{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{{ page.title }}{% endif %}">
 		<meta itemprop="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
+		<meta property="og:url" content="{{ site.url}}{{ page.url | remove: 'index.html' }}">
+		<meta property="og:type" content="{% if page.ogType %}{{ page.ogType }}{% else %}website{% endif %}">
 		<meta property="og:site_name" content="{{site.title}}">
 		<meta property="og:title" content="{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{{ page.title }}{% endif %}">
 		<meta property="og:description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
-		<meta property="og:url" content="{{ site.url}}{{ page.url | remove: 'index.html' }}">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@benedfit">
+		<meta name="twitter:domain" content="{{ site.url | remove: 'http://' }}">
 		<meta name="twitter:title" content="{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{{ page.title }}{% endif %}">
 		<meta name="twitter:description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
 		<meta name="twitter:creator" content="@benedfit">
