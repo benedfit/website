@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}</title>
 		<meta name="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
+		<meta name="author" content="{{ site.authorName }}">
 		<!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="{% asset_path css/no-mq.css %}"><![endif]-->
 		<!--[if (gte IE 9)|(IEMobile)]><!--><link rel="stylesheet" href="{% asset_path css/mq.css %}"><!--<![endif]-->
 		<link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
