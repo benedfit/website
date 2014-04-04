@@ -50,6 +50,7 @@
 		<meta name="twitter:title" content="{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}{% endif %}">
 		<meta name="twitter:description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
 		<meta name="twitter:creator" content="@benedfit">
+		<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.authorImage }}{% endif %}">
 		{% if page.image %}<meta name="twitter:image" content="{{ page.image }}">{% endif %}
 		{% if page.noindex or site.noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}
 		<!--[if lte IE 9]>{% javascript js/libs/html5 %}<![endif]-->
