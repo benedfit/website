@@ -31,7 +31,7 @@
 	</head>
 	<body class="language-markup">
 		{% include header.html %}
-		<main class="content" role="main">
+		<main class="content{% if page.cssClass %} {{ page.cssClass }}{% endif %}" role="main">
 			<div id="content-container" class="container">
 				{{ content }}
 			</div>
