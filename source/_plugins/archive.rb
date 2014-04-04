@@ -19,17 +19,21 @@ module Jekyll
       period_date_format = period_date.strftime('%B %Y')
       
       archive_title = self.data['title'] || self.data['archive_title'] || ''
+      menu_title = self.data['menuTitle'] || self.data['archive_menuTitle'] || ''
       if period['year'] == nil
         archive_title = archive_title.sub('%Y', '')
       else
         archive_title = archive_title.sub('%Y', period_date.strftime(self.data['year_format'] || '%Y'))
+        menu_title = period_date.strftime(self.data['year_menuFormat'] || self.data['year_format'] || '%Y')
       end
       if period['month'] == nil
         archive_title = archive_title.sub('%m', '')
       else
         archive_title = archive_title.sub('%m', period_date.strftime(self.data['month_format'] || '%m'))
+        menu_title = period_date.strftime(self.data['month_menuFormat'] || self.data['month_format'] || '%m')
       end
       self.data['title'] = "#{archive_title}"
+      self.data['menuTitle'] = "#{menu_title}"
     end
   end
   class ArchiveGenerator < Generator

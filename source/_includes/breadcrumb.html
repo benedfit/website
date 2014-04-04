@@ -7,14 +7,14 @@
 		{% assign title = '' %}
 		{% for page in site.pages %}
 			{% if page.url == url or page.url == urlWithExtension %}
-				{% assign title = page.title %}
+				{% if page.menuTitle %}{% assign title = page.menuTitle %}{% else %}{% assign title = page.title %}{% endif %}
 				{% break %}
 			{% endif %}
 		{% endfor %}
 		{% if title == '' %}
 			{% for post in site.posts %}
 				{% if post.url == url or post.url == urlWithExtension %}
-					{% assign title = post.title %}
+					{% if post.menuTitle %}{% assign title = post.menuTitle %}{% else %}{% assign title = post.title %}{% endif %}
 					{% break %}
 				{% endif %}
 			{% endfor %}
