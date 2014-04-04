@@ -7,7 +7,7 @@
 		<meta name="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
 		<!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="{% asset_path css/no-mq.css %}"><![endif]-->
 		<!--[if (gte IE 9)|(IEMobile)]><!--><link rel="stylesheet" href="{% asset_path css/mq.css %}"><!--<![endif]-->
-		<link rel="canonical" href="{{ site.url}}{{ page.url | remove: 'index.html' }}">
+		<link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
 		<link rel="alternate" type="application/rss+xml" title="Feed / {{site.title}}" href="{{ site.url }}/feed.xml">
 		<link rel="author" href="{{ site.authorUrl }}">
 		<link rel="source" href="https://github.com/benedfit/benedfit.github.io">
@@ -30,7 +30,7 @@
 		<meta itemprop="name" content="{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}{% endif %}">
 		<meta itemprop="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
 		<meta itemprop="image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.authorImage }}{% endif %}">
-		<meta property="og:url" content="{{ site.url}}{{ page.url | remove: 'index.html' }}">
+		<meta property="og:url" content="{{ site.url }}{{ page.url | remove: 'index.html' }}">
 		<meta property="og:type" content="{% if page.ogType %}{{ page.ogType }}{% else %}website{% endif %}">
 		<meta property="og:site_name" content="{{ site.url | remove: 'http://' }}">
 		<meta property="og:title" content="{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}{% endif %}">
@@ -40,7 +40,8 @@
 		<meta property="fb:profile_id" content="100001139733853">
 		{% if page.ogType == 'article' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema  }}">
 		<meta property="article:modified_time" content="{{ page.date | date_to_xmlschema }}">
-		<meta property="article:author" content="{{ site.url}}/">
+		<meta property="article:author" content="{{ site.authorName }}">
+		<meta property="article:author" content="{{ site.url }}/">
 		{% elsif page.ogType == 'profile' %}{% assign names = site.authorName | split: ' ' %}<meta property="profile:first_name" content="{{ names[0] }}">
 		<meta property="profile:last_name" content="{{ names[1] }}" />{% endif %}
 		<meta name="twitter:card" content="summary">
