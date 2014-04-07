@@ -1,0 +1,24 @@
+{% assign fragments = page.url | split: '/' %}
+{% assign url = '/' %}
+{% for fragment in fragments offset:1 %}
+	{% unless fragment == 'index.html' %}
+		{% assign url = url | append: fragment | append: '/' %}
+		{% assign urlWithExtension = url | append: 'index.html' %}
+		{% assign title = '' %}
+		{% for page in site.pages %}
+			{% if page.url == url or page.url == urlWithExtension %}
+				{% if page.menuTitle %}{% assign title = page.menuTitle %}{% else %}{% assign title = page.title %}{% endif %}
+				{% break %}
+			{% endif %}
+		{% endfor %}
+		{% if title == '' %}
+			{% for post in site.posts %}
+				{% if post.url == url or post.url == urlWithExtension %}
+					{% if post.menuTitle %}{% assign title = post.menuTitle %}{% else %}{% assign title = post.title %}{% endif %}
+					{% break %}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+		<div class="hidden" aria-hidden="true" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ site.url }}{{ url }}" itemprop="url"><span itemprop="title">{{ title }}</span></a></div>
+	{% endunless %}
+{% endfor %}

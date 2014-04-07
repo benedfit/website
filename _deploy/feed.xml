@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Ben Edwards, a web designer and developer</title>
+		<link>http://dev.benedfit.com/</link>
+		<description>Web Designer, Developer, and Ultimate Knot-tier&trade;. Technical Consultant at Netcel. Banging on about Responsive Design, Web Standards and all that good stuff</description>
+		<pubDate>Fri, 04 Apr 2014 15:34:48 +0100</pubDate>
+		<lastBuildDate>Fri, 04 Apr 2014 15:34:48 +0100</lastBuildDate>
+		<atom:link href="http://dev.benedfit.com/feed.xml" rel="self" type="application/rss+xml"/>
+		
+			<item>
+				<title>Pattern library annotations, documentation, and more</title>
+				<link>http://dev.benedfit.com/2013/11/pattern-library-annotations-documentation-and-more/</link>
+				<description>&lt;p&gt;What started out as a simple chat at &lt;a href='http://www.netcel.com/'&gt;Netcel&lt;/a&gt; this afternoon between myself and our designer &lt;a href='https://twitter.com/cheryl_lis'&gt;Cheryl&lt;/a&gt; on the ways in which we could integrate functional specifications into pattern libraries spawned into a great discussion on the topic via an impromptu Google Hangout.&lt;/p&gt;</description>
+				<author>Ben Edwards</author>
+				<pubDate>Thu, 21 Nov 2013 00:00:00 +0000</pubDate>
+				<guid isPermaLink="true">http://dev.benedfit.com/2013/11/pattern-library-annotations-documentation-and-more/</guid>
+			</item>
+		
+			<item>
+				<title>Phases and Atomic Design: Phase One</title>
+				<link>http://dev.benedfit.com/2013/06/phases-and-atomic-design-phase-one/</link>
+				<description>&lt;p&gt;As a follow up to my recent post on &lt;a href='/2013/06/atomic-design-phases-and-mesophases'&gt;Phases (and Mesophases) - a possible addendum to Atomic Design&lt;/a&gt; I recently released the first addition to &lt;a href='https://github.com/bradfrost/patternlab'&gt;Brad Frost’s Pattern Lab&lt;/a&gt; to allow quick switching between defined breakpoints.&lt;/p&gt;</description>
+				<author>Ben Edwards</author>
+				<pubDate>Fri, 28 Jun 2013 00:00:00 +0100</pubDate>
+				<guid isPermaLink="true">http://dev.benedfit.com/2013/06/phases-and-atomic-design-phase-one/</guid>
+			</item>
+		
+			<item>
+				<title>Phases (and Mesophases) - a possible addendum to Atomic Design</title>
+				<link>http://dev.benedfit.com/2013/06/atomic-design-phases-and-mesophases/</link>
+				<description>&lt;p&gt;This Monday I had the absolute pleasure of attending &lt;a href='http://bradfrostweb.com/'&gt;Brad Frost&lt;/a&gt;’s &lt;em&gt;Reasons to be Responsive&lt;/em&gt; workshop (&lt;a href='http://www.jrayson.co.uk/blog/130603-reasons-to-be-awesome'&gt;Recap by Jake Ryan&lt;/a&gt;). Among the 8 ‘awesome’ hours of RWD gold, Brad introduced us to &lt;a href='http://bradfrostweb.com/blog/link/atomic-design/'&gt;Atomic Design&lt;/a&gt;, a modular approach to responsive design and development, and his brand new tool &lt;a href='http://patternlab.bradfrostweb.com/'&gt;Pattern Lab&lt;/a&gt; for forging websites using the Atomic Design approach.&lt;/p&gt;</description>
+				<author>Ben Edwards</author>
+				<pubDate>Wed, 05 Jun 2013 00:00:00 +0100</pubDate>
+				<guid isPermaLink="true">http://dev.benedfit.com/2013/06/atomic-design-phases-and-mesophases/</guid>
+			</item>
+		
+	</channel>
+</rss>

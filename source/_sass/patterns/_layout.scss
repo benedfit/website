@@ -1,0 +1,13 @@
+.container{
+  margin:auto;
+  max-width:breakpoint-to-base-em($breakpoint-max);
+  padding:0 1em;
+  width:breakpoint-to-base-em($breakpoint-max);
+  
+  @include breakpoint($breakpoint-first){
+    padding:0 2em;
+  }
+}
+div[class=container]{
+  width:auto;
+}

@@ -1,0 +1,21 @@
+.logo{
+  background:$colour-black;
+  border:0;
+  color:$colour-white;
+  display:inline-block;
+  font-weight:bold;
+  line-height:1;
+  padding:.5em .65em;
+  text:{
+    decoration:none;
+    transform:uppercase;
+  }
+  
+  span{
+    letter-spacing:.35em;
+  }
+  
+  @include breakpoint($breakpoint-second){
+    font-size:1.25em;
+  }
+}

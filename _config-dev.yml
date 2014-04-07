@@ -1,0 +1,10 @@
+assets:
+  js_compressor: none
+  css_compressor: none
+  gzip: false
+  debug: true
+jekyll-press:
+  exclude: ['*.*']
+  
+url: http://dev.benedfit.com
+noindex: true
