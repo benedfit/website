@@ -128,6 +128,19 @@ div[class=container] {
   text-align: left;
 }
 /* line 8, ../../_sass/patterns/_content.scss */
+.content b, .content strong {
+  font-weight: bold;
+}
+/* line 12, ../../_sass/patterns/_content.scss */
+.content del, .content s {
+  color: #bbbbbb;
+  font-weight: 300;
+}
+/* line 17, ../../_sass/patterns/_content.scss */
+.content dfn, .content em, .content i, .content var {
+  font-style: italic;
+}
+/* line 21, ../../_sass/patterns/_content.scss */
 .content h1 {
   font-size: 2em;
   font-weight: 300;
@@ -135,7 +148,7 @@ div[class=container] {
   margin: 0 0 .75em;
   padding: 0 0 .333333em;
 }
-/* line 18, ../../_sass/patterns/_content.scss */
+/* line 31, ../../_sass/patterns/_content.scss */
 .content h1 a {
   border-color: #222222;
   -moz-border-image: none;
@@ -144,42 +157,42 @@ div[class=container] {
   -o-border-image: none;
   border-image: none;
 }
-/* line 24, ../../_sass/patterns/_content.scss */
+/* line 37, ../../_sass/patterns/_content.scss */
 .content h2 {
   font-size: 1.625em;
   font-weight: 300;
   line-height: 1.15;
   margin: 1em 0;
 }
-/* line 33, ../../_sass/patterns/_content.scss */
+/* line 46, ../../_sass/patterns/_content.scss */
 .content p {
   margin: 0 0 1.5em;
 }
-/* line 37, ../../_sass/patterns/_content.scss */
+/* line 50, ../../_sass/patterns/_content.scss */
 .content time {
   color: #bbbbbb;
 }
-/* line 40, ../../_sass/patterns/_content.scss */
+/* line 53, ../../_sass/patterns/_content.scss */
 .content time a {
   color: #bbbbbb;
 }
-/* line 45, ../../_sass/patterns/_content.scss */
+/* line 58, ../../_sass/patterns/_content.scss */
 .content .hgroup {
   margin: 0 0 2.25em;
   padding: 0 0 1em;
 }
-/* line 50, ../../_sass/patterns/_content.scss */
+/* line 63, ../../_sass/patterns/_content.scss */
 .content .hgroup * {
   display: inline;
 }
-/* line 54, ../../_sass/patterns/_content.scss */
+/* line 67, ../../_sass/patterns/_content.scss */
 .content .hgroup a {
   border-color: #222222;
 }
-/* line 58, ../../_sass/patterns/_content.scss */
+/* line 71, ../../_sass/patterns/_content.scss */
 .content .hgroup h1 {
   border: none;
-  margin: 0;
+  margin: 0 .125em 0 0;
   padding: 0;
 }
 

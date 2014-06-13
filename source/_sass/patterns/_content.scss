@@ -5,6 +5,19 @@
     padding:2em 0;
     text-align:left;
     
+    b,strong{
+      font-weight:bold;
+    }
+    
+    del,s{
+      color:$colour-grey-light;
+      font-weight:300;
+    }
+    
+    dfn,em,i,var{
+      font-style:italic;
+    }
+    
     h1{
       @extend %hr;
       font:{
@@ -57,7 +70,7 @@
       
       h1{
         border:none;
-        margin:0;
+        margin:0 .125em 0 0;
         padding:0;
       }
     }
@@ -67,11 +80,7 @@
     abbr[title]{
       border-bottom:1px dotted $colour-black-light;
     }
-    
-    b,strong{
-      font-weight:bold;
-    }
-    
+
     blockquote{
       @extend %vr;
       font:{
@@ -148,15 +157,6 @@
       .token.entity,.token.operator,.token.url,.token.variable{
         color:$colour-green;
       }
-    }
-    
-    del,s{
-      color:$colour-grey-light;
-      font-weight:300;
-    }
-    
-    dfn,em,i,var{
-      font-style:italic;
     }
    
     h1{

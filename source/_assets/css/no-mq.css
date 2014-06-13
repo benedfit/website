@@ -91,15 +91,11 @@ body {
   padding: 0 2em;
 }
 
-/* line 67, ../../_sass/patterns/_content.scss */
+/* line 80, ../../_sass/patterns/_content.scss */
 .content abbr[title] {
   border-bottom: 1px dotted #222222;
 }
-/* line 71, ../../_sass/patterns/_content.scss */
-.content b, .content strong {
-  font-weight: bold;
-}
-/* line 75, ../../_sass/patterns/_content.scss */
+/* line 84, ../../_sass/patterns/_content.scss */
 .content blockquote {
   font-size: 1.25em;
   font-weight: 300;
@@ -108,29 +104,29 @@ body {
   font-size: 1.5em;
   line-height: 1.45;
 }
-/* line 84, ../../_sass/patterns/_content.scss */
+/* line 93, ../../_sass/patterns/_content.scss */
 .content blockquote a {
   color: #bbbbbb;
 }
-/* line 88, ../../_sass/patterns/_content.scss */
+/* line 97, ../../_sass/patterns/_content.scss */
 .content blockquote cite {
   display: block;
 }
-/* line 91, ../../_sass/patterns/_content.scss */
+/* line 100, ../../_sass/patterns/_content.scss */
 .content blockquote cite:before {
   color: #bbbbbb;
   content: "\2012";
   margin: 0 0.2em 0 -0.575em;
 }
-/* line 98, ../../_sass/patterns/_content.scss */
+/* line 107, ../../_sass/patterns/_content.scss */
 .content blockquote p {
   margin: 0;
 }
-/* line 102, ../../_sass/patterns/_content.scss */
+/* line 111, ../../_sass/patterns/_content.scss */
 .content blockquote q:before {
   margin-left: -.5em;
 }
-/* line 112, ../../_sass/patterns/_content.scss */
+/* line 121, ../../_sass/patterns/_content.scss */
 .content code {
   background: black;
   color: white;
@@ -145,38 +141,29 @@ body {
   tab-size: 4;
   white-space: pre-wrap;
 }
-/* line 128, ../../_sass/patterns/_content.scss */
+/* line 137, ../../_sass/patterns/_content.scss */
 .content code .token.atrule, .content code .token.attr-value, .content code .token.keyword {
   color: #f786ad;
 }
-/* line 132, ../../_sass/patterns/_content.scss */
+/* line 141, ../../_sass/patterns/_content.scss */
 .content code .token.attr-name, .content code .token.builtin, .content code .token.selector.token.string {
   color: #ffff77;
 }
-/* line 136, ../../_sass/patterns/_content.scss */
+/* line 145, ../../_sass/patterns/_content.scss */
 .content code .token.boolean, .content code .token.constant, .content code .token.number, .content code .token.property, .content code .token.symbol, .content code .token.tag {
   color: #8ea9d7;
 }
-/* line 140, ../../_sass/patterns/_content.scss */
+/* line 149, ../../_sass/patterns/_content.scss */
 .content code .token.cdata, .content code .token.comment, .content code .token.doctype, .content code .token.prolog, .content code .token.punctuation {
   color: #bbbbbb;
 }
-/* line 144, ../../_sass/patterns/_content.scss */
+/* line 153, ../../_sass/patterns/_content.scss */
 .content code .token.important, .content code .token.regex {
   color: #fba266;
 }
-/* line 148, ../../_sass/patterns/_content.scss */
+/* line 157, ../../_sass/patterns/_content.scss */
 .content code .token.entity, .content code .token.operator, .content code .token.url, .content code .token.variable {
   color: #93b082;
-}
-/* line 153, ../../_sass/patterns/_content.scss */
-.content del, .content s {
-  color: #bbbbbb;
-  font-weight: 300;
-}
-/* line 158, ../../_sass/patterns/_content.scss */
-.content dfn, .content em, .content i, .content var {
-  font-style: italic;
 }
 /* line 162, ../../_sass/patterns/_content.scss */
 .content h1 {
