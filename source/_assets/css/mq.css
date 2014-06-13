@@ -88,6 +88,11 @@ abbr[title] {
   }
 }
 
+/* line 59, ../../_sass/_shared.scss */
+#cf_alert_div {
+  display: none !important;
+}
+
 @media (min-width: 43.75em) {
   /* line 14, ../../_sass/patterns/_layout.scss */
   .container {

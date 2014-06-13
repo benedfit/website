@@ -86,6 +86,11 @@ body {
   line-height: 1.75;
 }
 
+/* line 59, ../../_sass/_shared.scss */
+#cf_alert_div {
+  display: none !important;
+}
+
 /* line 14, ../../_sass/patterns/_layout.scss */
 .container {
   padding: 0 2em;
