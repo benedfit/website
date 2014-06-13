@@ -8,45 +8,51 @@
   @include border-image(linear-gradient(top, $colours-gradient) 1 100%);
 }
 
-[data-yesscript]{
-  display:none;
+@include critical(true){
+  a{
+    border-bottom:1px dotted $colour-grey-light;
+    border-color:rgba($colour-grey-light,.5);
+    color:$colour-white;
+    text-decoration:none;
+    @include transition(border-color .25s ease-in-out);
+    
+    &:hover,&:active,&:focus{
+      border-color:transparent !important
+    }
+  }
   
-  html.js &{
-    display:block;
+  body{
+    background:$colour-black-light;
+    color:$colour-white;
+    font:100%/1.5 $font-base;
+    text-align:center;
+  }
+  
+  html{
+    -webkit-text-size-adjust:100%;
+  }
+  
+  .hidden{
+    display:none;
   }
 }
 
-a{
-  border-bottom:1px dotted $colour-grey-light;
-  border-color:rgba($colour-grey-light,.5);
-  color:$colour-white;
-  text-decoration:none;
-  @include transition(border-color .25s ease-in-out);
-  
-  &:hover,&:active,&:focus{
-    border-color:transparent !important
+@include critical(false){
+  [data-yesscript]{
+    display:none;
+    
+    html.js &{
+      display:block;
+    }
   }
-}
-
-abbr[title]{
-  cursor:help;
-}
-
-body{
-  background:$colour-black-light;
-  color:$colour-white;
-  font:100%/1.5 $font-base;
-  text-align:center;
   
-  @include breakpoint($breakpoint-first){
-    line-height:1.75;
+  abbr[title]{
+    cursor:help;
   }
-}
-
-html{
-  -webkit-text-size-adjust:100%;
-}
-
-.hidden{
-  display:none;
+  
+  body{
+    @include breakpoint($breakpoint-first){
+      line-height:1.75;
+    }
+  }
 }

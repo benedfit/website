@@ -1,13 +1,19 @@
-.container{
-  margin:auto;
-  max-width:breakpoint-to-base-em($breakpoint-max);
-  padding:0 1em;
-  width:breakpoint-to-base-em($breakpoint-max);
-  
-  @include breakpoint($breakpoint-first){
-    padding:0 2em;
+@include critical(true){
+  .container{
+    margin:auto;
+    max-width:breakpoint-to-base-em($breakpoint-max);
+    padding:0 1em;
+    width:breakpoint-to-base-em($breakpoint-max);
+  }
+  div[class=container]{
+    width:auto;
   }
 }
-div[class=container]{
-  width:auto;
+
+@include critical(false){
+  .container{
+    @include breakpoint($breakpoint-first){
+      padding:0 2em;
+    }
+  }
 }

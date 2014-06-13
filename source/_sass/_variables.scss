@@ -1,6 +1,9 @@
 @import "compass";
-@import "compass/reset";
 @import "breakpoint";
+@import "mixins";
 @import "breakpoints";
 @import "colours";
+@include critical(true){
+  @include global-reset;
+}
 @import "fonts";

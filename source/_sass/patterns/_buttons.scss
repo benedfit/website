@@ -1,29 +1,31 @@
-.button{
-  background:transparent;
-  background:rgba($colour-white,.15);
-  border:0;
-  @include border-radius(.25em);
-  @include box-shadow($colour-white 0 0 0 1px inset);
-  color:$colour-white;
-  cursor:pointer;
-  display:inline-block;
-  font:{
-    family:inherit;
-    size:1em;
-    weight:300;
-  }
-  height:auto;
-  line-height:1;
-  margin:0 0 .5em;
-  outline:0;
-  overflow:visible;
-  padding:.85em 2em;
-  @include transition(background .25s ease-in-out);
-  vertical-align:middle;
-  width:auto;
-  -webkit-appearance:none;
-  
-  &:hover,&:active,&:focus{
-    background:rgba($colour-white,.25);
+@include critical(false){
+  .button{
+    background:transparent;
+    background:rgba($colour-white,.15);
+    border:0;
+    @include border-radius(.25em);
+    @include box-shadow($colour-white 0 0 0 1px inset);
+    color:$colour-white;
+    cursor:pointer;
+    display:inline-block;
+    font:{
+      family:inherit;
+      size:1em;
+      weight:300;
+    }
+    height:auto;
+    line-height:1;
+    margin:0 0 .5em;
+    outline:0;
+    overflow:visible;
+    padding:.85em 2em;
+    @include transition(background .25s ease-in-out);
+    vertical-align:middle;
+    width:auto;
+    -webkit-appearance:none;
+    
+    &:hover,&:active,&:focus{
+      background:rgba($colour-white,.25);
+    }
   }
 }

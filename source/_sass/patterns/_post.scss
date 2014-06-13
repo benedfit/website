@@ -1,54 +1,58 @@
 .post{
-  @extend %hr;
-  clear:both;
-  margin:0 0 3em;
-  padding:0 0 2em;
-  
-  &:last-of-type{
-    border:0;
-    margin:0;
-    padding:0;
-  }
-  
-  .ellipsis{
-    border:0;
-    display:block;
-    font-size:2.25em;
-    line-height:1;
-    text:{
-      align:center;
-      decoration:none;
-    }
-    @include text-shadow($colour-grey 1px 1px 0);
+  @include critical(true){
+    @extend %hr;
+    clear:both;
+    margin:0 0 3em;
+    padding:0 0 2em;
     
-    &:before{
-      color:$colour-black;
-      content:'\25cb\25cb\25cb';
-      @include transition(color .25s ease-in-out);
+    &:last-of-type{
+      border:0;
+      margin:0;
+      padding:0;
     }
     
-    &:hover,&:active,&:focus{
-      @include text-shadow(none);
+    .ellipsis{
+      border:0;
+      display:block;
+      font-size:2.25em;
+      line-height:1;
+      text:{
+        align:center;
+        decoration:none;
+      }
+      @include text-shadow($colour-grey 1px 1px 0);
       
       &:before{
-        color:$colour-grey-light;
+        color:$colour-black;
+        content:'\25cb\25cb\25cb';
+        @include transition(color .25s ease-in-out);
+      }
+      
+      &:hover,&:active,&:focus{
+        @include text-shadow(none);
+        
+        &:before{
+          color:$colour-grey-light;
+        }
+      }
+      
+      span{
+        display:none;
       }
     }
     
-    span{
-      display:none;
+    .hgroup{
+      border:0 !important;
+      margin:0 0 2em !important;
+      padding:0 !important;
     }
   }
   
-  .hgroup{
-    border:0;
-    margin:0 0 2em;
-    padding:0;
-  }
-  
-  @include breakpoint($breakpoint-second){
-    .ellipsis{
-      font-size:1.5em;
+  @include critical(false){
+    @include breakpoint($breakpoint-second){
+      .ellipsis{
+        font-size:1.5em;
+      }
     }
   }
 }
