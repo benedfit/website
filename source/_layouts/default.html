@@ -7,6 +7,8 @@
 		<meta name="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
 		<meta name="author" content="{{ site.authorName }}">
 		<style>{% asset css/critical.css %}</style>
+		<!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="{% asset_path css/no-mq.css %}"><![endif]-->
+		<!--[if (gte IE 9)|(IEMobile)]><!--><link rel="stylesheet" href="{% asset_path css/mq.css %}"><!--<![endif]-->
 		<link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
 		<link rel="alternate" type="application/rss+xml" title="Feed / {{site.title}}" href="{{ site.url }}/feed.xml">
 		<link rel="author" href="{{ site.authorUrl }}">
@@ -64,8 +66,6 @@
 		</main>
 		{% include breadcrumb.html %}
 		{% include footer.html %}
-		<!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="{% asset_path css/no-mq.css %}"><![endif]-->
-		<!--[if (gte IE 9)|(IEMobile)]><!--><link rel="stylesheet" href="{% asset_path css/mq.css %}"><!--<![endif]-->
 		<script>document.getElementsByTagName('html')[0].className+='js'</script>
 		{% javascript js/libs/prism %}
 	</body>
