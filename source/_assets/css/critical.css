@@ -192,8 +192,12 @@ div[class=container] {
 /* line 71, ../../_sass/patterns/_content.scss */
 .content .hgroup h1 {
   border: none;
-  margin: 0 .125em 0 0;
+  margin: 0 .25em 0 0;
   padding: 0;
+}
+/* line 77, ../../_sass/patterns/_content.scss */
+.content .hgroup h2 {
+  margin-right: .125em;
 }
 
 /* line 1, ../../_sass/patterns/_header.scss */
