@@ -117,21 +117,23 @@ p q r s t u v w x y z { | } ~</pre>
 
 `<div class="example">This is what inline code looks like.</div>`
 
-	<script>
-		// This is what a code block looks like
-		// Sample script
-		window.console && console.log('foo');
-		var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
-	</script>
-	<style>
-		/* Sample style */
-		.sample{
-			background:url(none);
-			content:"test";
-			margin:0 !important;
-    	}
-	</style>
-	<div>
-		<!-- Sample HTML -->
-		<p class=".sample">This is an sample pattern</p>
-	</div>
+~~~
+<script>
+	// This is what a code block looks like
+	// Sample script
+	window.console && console.log('foo');
+	var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
+</script>
+<style>
+	/* Sample style */
+	.sample{
+		background:url(none);
+		content:"test";
+		margin:0 !important;
+	}
+</style>
+<div>
+	<!-- Sample HTML -->
+	<p class=".sample">This is an sample pattern</p>
+</div>
+~~~

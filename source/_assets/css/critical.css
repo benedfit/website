@@ -103,6 +103,11 @@ html {
 }
 
 /* line 35, ../../_sass/_shared.scss */
+#cf_alert_div {
+  display: none !important;
+}
+
+/* line 39, ../../_sass/_shared.scss */
 .hidden {
   display: none;
 }

@@ -1,6 +1,7 @@
 source: ./source
 destination: ./_deploy
 permalink: /:year/:month/:title/
+highlighter: pygments
 
 assets:
   dirname: .

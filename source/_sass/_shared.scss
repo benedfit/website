@@ -32,6 +32,10 @@
     -webkit-text-size-adjust:100%;
   }
   
+  #cf_alert_div{
+    display:none !important;
+  }
+  
   .hidden{
     display:none;
   }
@@ -54,9 +58,5 @@
     @include breakpoint($breakpoint-first){
       line-height:1.75;
     }
-  }
-  
-  #cf_alert_div{
-    display:none !important;
   }
 }
