@@ -1,90 +1,18 @@
-.content{
-  @include critical(true){
+@include critical(true){
+  .content{
     background:$colour-grey;
     display:block;
     padding:2em 0;
     text-align:left;
     
+    abbr[title]{
+      border-bottom:1px dotted $colour-black-light;
+    }
+    
     b,strong{
       font-weight:bold;
     }
     
-    del,s{
-      color:$colour-grey-light;
-      font-weight:300;
-    }
-    
-    dfn,em,i,var{
-      font-style:italic;
-    }
-    
-    h1{
-      @extend %hr;
-      font:{
-        size:2em;
-        weight:300;
-      }
-      line-height:1.25;
-      margin:0 0 .75em;
-      padding:0 0 .333333em;
-      
-      a{
-        border-color:$colour-black-light;
-        @include border-image(none);
-      }
-    }
-    
-    h2{
-      font:{
-        size:1.625em;
-        weight:300;
-      }
-      line-height:1.15;
-      margin:1em 0;
-    }
-    
-    p{
-      margin:0 0 1.5em;
-    }
-    
-    time{
-      color:$colour-grey-light;
-      
-      a{
-        color:$colour-grey-light;
-      }
-    }
-    
-    .hgroup{
-      @extend %hr;
-      margin:0 0 2.25em;
-      padding:0 0 1em;
-      
-      *{
-        display:inline;
-      }
-      
-      a{
-        border-color:$colour-black-light;
-      }
-      
-      h1{
-        border:none;
-        margin:0 .25em 0 0;
-        padding:0;
-      }
-      
-      h2{
-        margin-right:.125em;
-      }
-    }
-  }
-  
-  @include critical(false){
-    abbr[title]{
-      border-bottom:1px dotted $colour-black-light;
-    }
-
     blockquote{
       @extend %vr;
       font:{
@@ -162,8 +90,31 @@
         color:$colour-green;
       }
     }
-   
+    
+    del,s{
+      color:$colour-grey-light;
+      font-weight:300;
+    }
+    
+    dfn,em,i,var{
+      font-style:italic;
+    }
+    
     h1{
+      @extend %hr;
+      font:{
+        size:2em;
+        weight:300;
+      }
+      line-height:1.25;
+      margin:0 0 .75em;
+      padding:0 0 .333333em;
+      
+      a{
+        border-color:$colour-black-light;
+        @include border-image(none);
+      }
+      
       @include breakpoint($breakpoint-first){
         font-size:2.5em;
         line-height:1.125;
@@ -176,6 +127,13 @@
     }
     
     h2{
+      font:{
+        size:1.625em;
+        weight:300;
+      }
+      line-height:1.15;
+      margin:1em 0;
+      
       @include breakpoint($breakpoint-first){
         font-size:2em;
         line-height:1.25;
@@ -284,6 +242,10 @@
       }
     }
     
+    p{
+      margin:0 0 1.5em;
+    }
+    
     pre{
       font-family:$font-monospace;
       margin:2em 0;
@@ -346,6 +308,14 @@
       }
     }
     
+    time{
+      color:$colour-grey-light;
+      
+      a{
+        color:$colour-grey-light;
+      }
+    }
+    
     ul{
       list-style:circle;
       margin:0 0 1em;
@@ -369,6 +339,30 @@
       
       * + html & li{
         list-style:circle;
+      }
+    }
+    
+    .hgroup{
+      @extend %hr;
+      margin:0 0 2.25em;
+      padding:0 0 1em;
+      
+      *{
+        display:inline;
+      }
+      
+      a{
+        border-color:$colour-black-light;
+      }
+      
+      h1{
+        border:none;
+        margin:0 .25em 0 0;
+        padding:0;
+      }
+      
+      h2{
+        margin-right:.125em;
       }
     }
     

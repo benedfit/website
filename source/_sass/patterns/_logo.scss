@@ -1,25 +1,23 @@
-.logo{
-  @include critical(true){
-    background:$colour-black;
-    border:0;
-    color:$colour-white;
-    display:inline-block;
-    font-weight:bold;
-    line-height:1;
-    padding:.5em .65em;
-    text:{
-      decoration:none;
-      transform:uppercase;
-    }
+@include critical(true){
+  .logo{   
+      background:$colour-black;
+      border:0;
+      color:$colour-white;
+      display:inline-block;
+      font-weight:bold;
+      line-height:1;
+      padding:.5em .65em;
+      text:{
+        decoration:none;
+        transform:uppercase;
+      }
+      
+      span{
+        letter-spacing:.35em;
+      }
     
-    span{
-      letter-spacing:.35em;
-    }
-  }
-  
-  @include critical(false){
-    @include breakpoint($breakpoint-second){
-      font-size:1.25em;
-    }
+      @include breakpoint($breakpoint-second){
+        font-size:1.25em;
+      }
   }
 }

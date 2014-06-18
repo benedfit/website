@@ -63,9 +63,7 @@
 		</main>
 		{% include breadcrumb.html %}
 		{% include footer.html %}
-		<!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="{% asset_path css/no-mq.css %}"><![endif]-->
-		<!--[if (gte IE 9)|(IEMobile)]><!--><link rel="stylesheet" href="{% asset_path css/mq.css %}"><!--<![endif]-->
-		<script>document.getElementsByTagName('html')[0].className+='js'</script>
+		<link rel="stylesheet" href="{% asset_path css/non-critical.css %}">
 		{% javascript js/libs/prism %}
 	</body>
 </html>

@@ -1,5 +1,5 @@
-.post{
-  @include critical(true){
+@include critical(true){
+  .post{
     @extend %hr;
     clear:both;
     margin:0 0 3em;
@@ -9,10 +9,6 @@
       border:0;
       margin:0;
       padding:0;
-    }
-    
-    time{
-      font-size:1.25em;
     }
     
     .ellipsis{
@@ -25,6 +21,10 @@
         decoration:none;
       }
       @include text-shadow($colour-grey 1px 1px 0);
+      
+      @include breakpoint($breakpoint-second){
+        font-size:1.5em;
+      }
       
       &:before{
         color:$colour-black;
@@ -49,14 +49,6 @@
       border:0 !important;
       margin:0 0 2em !important;
       padding:0 !important;
-    }
-  }
-  
-  @include critical(false){
-    @include breakpoint($breakpoint-second){
-      .ellipsis{
-        font-size:1.5em;
-      }
     }
   }
 }

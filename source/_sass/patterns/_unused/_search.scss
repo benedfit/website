@@ -1,4 +1,12 @@
 @include critical(false){
+  [data-yesscript]{
+    display:none;
+  
+    html.js &{
+      display:block;
+    }
+  }
+   
   .search{
     $height:1em;
     display:none;

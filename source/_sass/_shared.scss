@@ -9,6 +9,8 @@
 }
 
 @include critical(true){
+  @include global-reset;
+  
   a{
     border-bottom:1px dotted $colour-grey-light;
     border-color:rgba($colour-grey-light,.5);
@@ -42,14 +44,6 @@
 }
 
 @include critical(false){
-  [data-yesscript]{
-    display:none;
-    
-    html.js &{
-      display:block;
-    }
-  }
-  
   abbr[title]{
     cursor:help;
   }
