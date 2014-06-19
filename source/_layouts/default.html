@@ -2,11 +2,11 @@
 <html lang="en-gb">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}</title>
-		<meta name="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>{% asset css/critical.css %}</style>
+        <meta name="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
 		<meta name="author" content="{{ site.authorName }}">
-		<style>{% asset css/critical.css %}</style>
 		<link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
 		<link rel="alternate" type="application/rss+xml" title="Feed / {{site.title}}" href="{{ site.url }}/feed.xml">
 		<link rel="author" href="{{ site.authorUrl }}">
@@ -50,9 +50,8 @@
 		<meta name="twitter:description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
 		<meta name="twitter:creator" content="@benedfit">
 		<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.authorImage }}{% endif %}">
-		{% if page.image %}<meta name="twitter:image" content="{{ page.image }}">{% endif %}
-		{% if page.noindex or site.noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}
-		<!--[if lte IE 9]>{% javascript js/libs/html5 %}<![endif]-->
+        {% if page.image %}<meta name="twitter:image" content="{{ page.image }}">{% endif %}
+        {% if page.noindex or site.noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}
 	</head>
 	<body class="language-markup">
 		{% include header.html %}
@@ -63,7 +62,15 @@
 		</main>
 		{% include breadcrumb.html %}
 		{% include footer.html %}
-		<link rel="stylesheet" href="{% asset_path css/non-critical.css %}">
-		{% javascript js/libs/prism %}
+        <link rel="stylesheet" href="{% asset_path css/non-critical.css %}">
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-34470231-1', 'benedfit.com');
+  			ga('send', 'pageview');
+		</script>
 	</body>
 </html>

@@ -1,2 +1,3 @@
-$critical-css-only:false;
-@import "critical";
+$jacket:non-critical;
+@import "variables";
+@import "screen";

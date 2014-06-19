@@ -1,12 +1,12 @@
-@include critical(true){
+@include jacket(critical){
   .logo{   
       background:$colour-black;
       border:0;
       color:$colour-white;
       display:inline-block;
       font-weight:bold;
-      line-height:1;
-      padding:.5em .65em;
+      line-height:2;
+      padding:0 .65em .25em;
       text:{
         decoration:none;
         transform:uppercase;

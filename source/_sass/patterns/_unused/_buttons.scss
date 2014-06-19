@@ -1,4 +1,4 @@
-@include critical(false){
+@include jacket(non-critical){
   .button{
     background:transparent;
     background:rgba($colour-white,.15);

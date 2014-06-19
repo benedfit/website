@@ -1,4 +1,4 @@
-@include critical(true){
+@include jacket(critical){
   .post{
     @extend %hr;
     clear:both;

@@ -4,7 +4,7 @@ assets:
   gzip: false
   debug: true
 jekyll-press:
-  exclude: ['*.*']
+  exclude: ['**.*','**/**.*']
   
 url: http://dev.benedfit.com
 noindex: true
