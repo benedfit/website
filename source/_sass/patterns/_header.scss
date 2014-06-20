@@ -1,6 +1,7 @@
 @include jacket(critical){
   .header{
-    background:image-url("header.jpg") 50% 0;
+    @include background(linear-gradient(left, $colours-gradient) 50% 0);
+    background-image:inline-image("header.jpg", jpg);
     @include background-size(100% auto);
     padding:1em 0;
     text-align:left;
