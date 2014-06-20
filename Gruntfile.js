@@ -1,4 +1,8 @@
-var ngrok = require('ngrok');
+try {
+	var ngrok = require('ngrok');
+}
+catch(e) {
+}
 
 module.exports = function(grunt) {
 	'use strict';
