@@ -117,9 +117,9 @@ p q r s t u v w x y z { | } ~</pre>
 
 `<div class="example">This is what inline code looks like.</div>`
 
-~~~
+{% highlight html %}
 <script>
-	// This is what a code block looks like
+	// This is what a hightlighted code block looks like
 	// Sample script
 	window.console && console.log('foo');
 	var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
@@ -136,4 +136,4 @@ p q r s t u v w x y z { | } ~</pre>
 	<!-- Sample HTML -->
 	<p class=".sample">This is an sample pattern</p>
 </div>
-~~~
+{% endhighlight %}

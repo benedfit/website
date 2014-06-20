@@ -1,1 +1,671 @@
-@charset "CP850";.content h1,.content hr,.content .hgroup,.post{border-bottom:1px solid #bbb;border-bottom-color:rgba(187,187,187,0.5);-moz-border-image:-moz-linear-gradient(left, #748d77,#748d77,#6f8f77,#6f8f77,#73937b,#73937b,#739574,#739574,#769877,#769877,#7a9c7b,#7a9c7b,#7d9f7e,#7d9f7e,#80a37b,#80a37b,#89a57f,#89a57f,#8ca97b,#8ca97b,#8fac7e,#8fac7e,#93b082,#93b082,#98ad82,#98ad82,#9bb085,#9bb085,#9bb27e,#9bb27e,#9fb682,#9fb682,#a3b382,#a3b382,#a3b47d,#a3b47d,#a6b780,#a6b780,#acb580,#acb580,#b2b280,#b2b280,#afaf7d,#afaf7d,#b3ae76,#b3ae76,#b8ab76,#b8ab76,#baa472,#bea272,#c49f72,#c49f72,#c8a376,#c8a376,#cca176,#cca176,#c8a376,#c8a376,#c49f72,#c49f72,#bea272,#bea272,#baa472,#baa472,#bea876,#bea876,#b8ab76,#b8ab76,#b3ad7d,#b3ad7d,#afa979,#afa979,#a8a876,#a8a876,#a8a77b,#a8a77b,#a4a377,#a4a377,#9ea677,#9ea677,#9ba374,#9ba374,#989e78,#989e78,#8e9d74,#8b9a71,#889675,#889675,#849271,#809471,#7d916e,#7d916e,#798c70,#76896d,#6e8771,#6e8771,#6a836d,#6a836d,#67806a,#67806a,#62816f,#62816f,#5f7e6c,#5f7e6c,#5b7a68,#5b7a68,#5b796f,#5b796f,#60776f,#60776f,#65746f,#65746f,#627073,#627073,#5e6c6f,#5e6c6f,#5b696c,#5b6871,#58656e,#58656e,#53676e,#53676e,#4f636a,#4f636a,#4c6067,#4c6067,#495c6b,#495c6b,#455867,#455867,#425564,#425564,#3e5160,#3e5160,#3b4d65,#3b4d65,#3e5068,#3e5068,#3e5160,#3e5160,#475264,#4a5567,#4e596b,#4e596b,#515c6e,#515c6e,#555b67,#555b67,#5c626e,#5c626e,#656371,#686674,#6c6b73,#6c6b73,#73727a,#73727a,#7c7376,#7f7679,#8a7b80,#8d7e83,#948683,#948683,#988a87,#988a87,#a08c85,#a08c85,#a7938c,#a7938c,#aa968f,#ad9992,#b79b8f,#b79b8f,#ba9e92,#ba9e92,#bea296,#bea296,#c1a599,#c1a599,#bea296,#bea296,#ba9e92,#ba9e92,#b79b8f,#b79b8f,#b3978b,#b3978b,#b0938f,#b0938f) 100% 1;-webkit-border-image:-webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #748d77), color-stop(0.53476%, #748d77), color-stop(1.06952%, #6f8f77), color-stop(1.60428%, #6f8f77), color-stop(2.13904%, #73937b), color-stop(2.6738%, #73937b), color-stop(3.20856%, #739574), color-stop(3.74332%, #739574), color-stop(4.27807%, #769877), color-stop(4.81283%, #769877), color-stop(5.34759%, #7a9c7b), color-stop(5.88235%, #7a9c7b), color-stop(6.41711%, #7d9f7e), color-stop(6.95187%, #7d9f7e), color-stop(7.48663%, #80a37b), color-stop(8.02139%, #80a37b), color-stop(8.55615%, #89a57f), color-stop(9.09091%, #89a57f), color-stop(9.62567%, #8ca97b), color-stop(10.16043%, #8ca97b), color-stop(10.69519%, #8fac7e), color-stop(11.22995%, #8fac7e), color-stop(11.76471%, #93b082), color-stop(12.29947%, #93b082), color-stop(12.83422%, #98ad82), color-stop(13.36898%, #98ad82), color-stop(13.90374%, #9bb085), color-stop(14.4385%, #9bb085), color-stop(14.97326%, #9bb27e), color-stop(15.50802%, #9bb27e), color-stop(16.04278%, #9fb682), color-stop(16.57754%, #9fb682), color-stop(17.1123%, #a3b382), color-stop(17.64706%, #a3b382), color-stop(18.18182%, #a3b47d), color-stop(18.71658%, #a3b47d), color-stop(19.25134%, #a6b780), color-stop(19.7861%, #a6b780), color-stop(20.32086%, #acb580), color-stop(20.85561%, #acb580), color-stop(21.39037%, #b2b280), color-stop(21.92513%, #b2b280), color-stop(22.45989%, #afaf7d), color-stop(22.99465%, #afaf7d), color-stop(23.52941%, #b3ae76), color-stop(24.06417%, #b3ae76), color-stop(24.59893%, #b8ab76), color-stop(25.13369%, #b8ab76), color-stop(25.66845%, #baa472), color-stop(26.20321%, #bea272), color-stop(26.73797%, #c49f72), color-stop(27.27273%, #c49f72), color-stop(27.80749%, #c8a376), color-stop(28.34225%, #c8a376), color-stop(28.87701%, #cca176), color-stop(29.41176%, #cca176), color-stop(29.94652%, #c8a376), color-stop(30.48128%, #c8a376), color-stop(31.01604%, #c49f72), color-stop(31.5508%, #c49f72), color-stop(32.08556%, #bea272), color-stop(32.62032%, #bea272), color-stop(33.15508%, #baa472), color-stop(33.68984%, #baa472), color-stop(34.2246%, #bea876), color-stop(34.75936%, #bea876), color-stop(35.29412%, #b8ab76), color-stop(35.82888%, #b8ab76), color-stop(36.36364%, #b3ad7d), color-stop(36.8984%, #b3ad7d), color-stop(37.43316%, #afa979), color-stop(37.96791%, #afa979), color-stop(38.50267%, #a8a876), color-stop(39.03743%, #a8a876), color-stop(39.57219%, #a8a77b), color-stop(40.10695%, #a8a77b), color-stop(40.64171%, #a4a377), color-stop(41.17647%, #a4a377), color-stop(41.71123%, #9ea677), color-stop(42.24599%, #9ea677), color-stop(42.78075%, #9ba374), color-stop(43.31551%, #9ba374), color-stop(43.85027%, #989e78), color-stop(44.38503%, #989e78), color-stop(44.91979%, #8e9d74), color-stop(45.45455%, #8b9a71), color-stop(45.9893%, #889675), color-stop(46.52406%, #889675), color-stop(47.05882%, #849271), color-stop(47.59358%, #809471), color-stop(48.12834%, #7d916e), color-stop(48.6631%, #7d916e), color-stop(49.19786%, #798c70), color-stop(49.73262%, #76896d), color-stop(50.26738%, #6e8771), color-stop(50.80214%, #6e8771), color-stop(51.3369%, #6a836d), color-stop(51.87166%, #6a836d), color-stop(52.40642%, #67806a), color-stop(52.94118%, #67806a), color-stop(53.47594%, #62816f), color-stop(54.0107%, #62816f), color-stop(54.54545%, #5f7e6c), color-stop(55.08021%, #5f7e6c), color-stop(55.61497%, #5b7a68), color-stop(56.14973%, #5b7a68), color-stop(56.68449%, #5b796f), color-stop(57.21925%, #5b796f), color-stop(57.75401%, #60776f), color-stop(58.28877%, #60776f), color-stop(58.82353%, #65746f), color-stop(59.35829%, #65746f), color-stop(59.89305%, #627073), color-stop(60.42781%, #627073), color-stop(60.96257%, #5e6c6f), color-stop(61.49733%, #5e6c6f), color-stop(62.03209%, #5b696c), color-stop(62.56684%, #5b6871), color-stop(63.1016%, #58656e), color-stop(63.63636%, #58656e), color-stop(64.17112%, #53676e), color-stop(64.70588%, #53676e), color-stop(65.24064%, #4f636a), color-stop(65.7754%, #4f636a), color-stop(66.31016%, #4c6067), color-stop(66.84492%, #4c6067), color-stop(67.37968%, #495c6b), color-stop(67.91444%, #495c6b), color-stop(68.4492%, #455867), color-stop(68.98396%, #455867), color-stop(69.51872%, #425564), color-stop(70.05348%, #425564), color-stop(70.58824%, #3e5160), color-stop(71.12299%, #3e5160), color-stop(71.65775%, #3b4d65), color-stop(72.19251%, #3b4d65), color-stop(72.72727%, #3e5068), color-stop(73.26203%, #3e5068), color-stop(73.79679%, #3e5160), color-stop(74.33155%, #3e5160), color-stop(74.86631%, #475264), color-stop(75.40107%, #4a5567), color-stop(75.93583%, #4e596b), color-stop(76.47059%, #4e596b), color-stop(77.00535%, #515c6e), color-stop(77.54011%, #515c6e), color-stop(78.07487%, #555b67), color-stop(78.60963%, #555b67), color-stop(79.14439%, #5c626e), color-stop(79.67914%, #5c626e), color-stop(80.2139%, #656371), color-stop(80.74866%, #686674), color-stop(81.28342%, #6c6b73), color-stop(81.81818%, #6c6b73), color-stop(82.35294%, #73727a), color-stop(82.8877%, #73727a), color-stop(83.42246%, #7c7376), color-stop(83.95722%, #7f7679), color-stop(84.49198%, #8a7b80), color-stop(85.02674%, #8d7e83), color-stop(85.5615%, #948683), color-stop(86.09626%, #948683), color-stop(86.63102%, #988a87), color-stop(87.16578%, #988a87), color-stop(87.70053%, #a08c85), color-stop(88.23529%, #a08c85), color-stop(88.77005%, #a7938c), color-stop(89.30481%, #a7938c), color-stop(89.83957%, #aa968f), color-stop(90.37433%, #ad9992), color-stop(90.90909%, #b79b8f), color-stop(91.44385%, #b79b8f), color-stop(91.97861%, #ba9e92), color-stop(92.51337%, #ba9e92), color-stop(93.04813%, #bea296), color-stop(93.58289%, #bea296), color-stop(94.11765%, #c1a599), color-stop(94.65241%, #c1a599), color-stop(95.18717%, #bea296), color-stop(95.72193%, #bea296), color-stop(96.25668%, #ba9e92), color-stop(96.79144%, #ba9e92), color-stop(97.3262%, #b79b8f), color-stop(97.86096%, #b79b8f), color-stop(98.39572%, #b3978b), color-stop(98.93048%, #b3978b), color-stop(99.46524%, #b0938f), color-stop(100%, #b0938f)) 100% 1;-webkit-border-image:-webkit-linear-gradient(left, #748d77,#748d77,#6f8f77,#6f8f77,#73937b,#73937b,#739574,#739574,#769877,#769877,#7a9c7b,#7a9c7b,#7d9f7e,#7d9f7e,#80a37b,#80a37b,#89a57f,#89a57f,#8ca97b,#8ca97b,#8fac7e,#8fac7e,#93b082,#93b082,#98ad82,#98ad82,#9bb085,#9bb085,#9bb27e,#9bb27e,#9fb682,#9fb682,#a3b382,#a3b382,#a3b47d,#a3b47d,#a6b780,#a6b780,#acb580,#acb580,#b2b280,#b2b280,#afaf7d,#afaf7d,#b3ae76,#b3ae76,#b8ab76,#b8ab76,#baa472,#bea272,#c49f72,#c49f72,#c8a376,#c8a376,#cca176,#cca176,#c8a376,#c8a376,#c49f72,#c49f72,#bea272,#bea272,#baa472,#baa472,#bea876,#bea876,#b8ab76,#b8ab76,#b3ad7d,#b3ad7d,#afa979,#afa979,#a8a876,#a8a876,#a8a77b,#a8a77b,#a4a377,#a4a377,#9ea677,#9ea677,#9ba374,#9ba374,#989e78,#989e78,#8e9d74,#8b9a71,#889675,#889675,#849271,#809471,#7d916e,#7d916e,#798c70,#76896d,#6e8771,#6e8771,#6a836d,#6a836d,#67806a,#67806a,#62816f,#62816f,#5f7e6c,#5f7e6c,#5b7a68,#5b7a68,#5b796f,#5b796f,#60776f,#60776f,#65746f,#65746f,#627073,#627073,#5e6c6f,#5e6c6f,#5b696c,#5b6871,#58656e,#58656e,#53676e,#53676e,#4f636a,#4f636a,#4c6067,#4c6067,#495c6b,#495c6b,#455867,#455867,#425564,#425564,#3e5160,#3e5160,#3b4d65,#3b4d65,#3e5068,#3e5068,#3e5160,#3e5160,#475264,#4a5567,#4e596b,#4e596b,#515c6e,#515c6e,#555b67,#555b67,#5c626e,#5c626e,#656371,#686674,#6c6b73,#6c6b73,#73727a,#73727a,#7c7376,#7f7679,#8a7b80,#8d7e83,#948683,#948683,#988a87,#988a87,#a08c85,#a08c85,#a7938c,#a7938c,#aa968f,#ad9992,#b79b8f,#b79b8f,#ba9e92,#ba9e92,#bea296,#bea296,#c1a599,#c1a599,#bea296,#bea296,#ba9e92,#ba9e92,#b79b8f,#b79b8f,#b3978b,#b3978b,#b0938f,#b0938f) 100% 1;-o-border-image:-o-linear-gradient(left, #748d77,#748d77,#6f8f77,#6f8f77,#73937b,#73937b,#739574,#739574,#769877,#769877,#7a9c7b,#7a9c7b,#7d9f7e,#7d9f7e,#80a37b,#80a37b,#89a57f,#89a57f,#8ca97b,#8ca97b,#8fac7e,#8fac7e,#93b082,#93b082,#98ad82,#98ad82,#9bb085,#9bb085,#9bb27e,#9bb27e,#9fb682,#9fb682,#a3b382,#a3b382,#a3b47d,#a3b47d,#a6b780,#a6b780,#acb580,#acb580,#b2b280,#b2b280,#afaf7d,#afaf7d,#b3ae76,#b3ae76,#b8ab76,#b8ab76,#baa472,#bea272,#c49f72,#c49f72,#c8a376,#c8a376,#cca176,#cca176,#c8a376,#c8a376,#c49f72,#c49f72,#bea272,#bea272,#baa472,#baa472,#bea876,#bea876,#b8ab76,#b8ab76,#b3ad7d,#b3ad7d,#afa979,#afa979,#a8a876,#a8a876,#a8a77b,#a8a77b,#a4a377,#a4a377,#9ea677,#9ea677,#9ba374,#9ba374,#989e78,#989e78,#8e9d74,#8b9a71,#889675,#889675,#849271,#809471,#7d916e,#7d916e,#798c70,#76896d,#6e8771,#6e8771,#6a836d,#6a836d,#67806a,#67806a,#62816f,#62816f,#5f7e6c,#5f7e6c,#5b7a68,#5b7a68,#5b796f,#5b796f,#60776f,#60776f,#65746f,#65746f,#627073,#627073,#5e6c6f,#5e6c6f,#5b696c,#5b6871,#58656e,#58656e,#53676e,#53676e,#4f636a,#4f636a,#4c6067,#4c6067,#495c6b,#495c6b,#455867,#455867,#425564,#425564,#3e5160,#3e5160,#3b4d65,#3b4d65,#3e5068,#3e5068,#3e5160,#3e5160,#475264,#4a5567,#4e596b,#4e596b,#515c6e,#515c6e,#555b67,#555b67,#5c626e,#5c626e,#656371,#686674,#6c6b73,#6c6b73,#73727a,#73727a,#7c7376,#7f7679,#8a7b80,#8d7e83,#948683,#948683,#988a87,#988a87,#a08c85,#a08c85,#a7938c,#a7938c,#aa968f,#ad9992,#b79b8f,#b79b8f,#ba9e92,#ba9e92,#bea296,#bea296,#c1a599,#c1a599,#bea296,#bea296,#ba9e92,#ba9e92,#b79b8f,#b79b8f,#b3978b,#b3978b,#b0938f,#b0938f) 100% 1;border-image:linear-gradient(left, #748d77,#748d77,#6f8f77,#6f8f77,#73937b,#73937b,#739574,#739574,#769877,#769877,#7a9c7b,#7a9c7b,#7d9f7e,#7d9f7e,#80a37b,#80a37b,#89a57f,#89a57f,#8ca97b,#8ca97b,#8fac7e,#8fac7e,#93b082,#93b082,#98ad82,#98ad82,#9bb085,#9bb085,#9bb27e,#9bb27e,#9fb682,#9fb682,#a3b382,#a3b382,#a3b47d,#a3b47d,#a6b780,#a6b780,#acb580,#acb580,#b2b280,#b2b280,#afaf7d,#afaf7d,#b3ae76,#b3ae76,#b8ab76,#b8ab76,#baa472,#bea272,#c49f72,#c49f72,#c8a376,#c8a376,#cca176,#cca176,#c8a376,#c8a376,#c49f72,#c49f72,#bea272,#bea272,#baa472,#baa472,#bea876,#bea876,#b8ab76,#b8ab76,#b3ad7d,#b3ad7d,#afa979,#afa979,#a8a876,#a8a876,#a8a77b,#a8a77b,#a4a377,#a4a377,#9ea677,#9ea677,#9ba374,#9ba374,#989e78,#989e78,#8e9d74,#8b9a71,#889675,#889675,#849271,#809471,#7d916e,#7d916e,#798c70,#76896d,#6e8771,#6e8771,#6a836d,#6a836d,#67806a,#67806a,#62816f,#62816f,#5f7e6c,#5f7e6c,#5b7a68,#5b7a68,#5b796f,#5b796f,#60776f,#60776f,#65746f,#65746f,#627073,#627073,#5e6c6f,#5e6c6f,#5b696c,#5b6871,#58656e,#58656e,#53676e,#53676e,#4f636a,#4f636a,#4c6067,#4c6067,#495c6b,#495c6b,#455867,#455867,#425564,#425564,#3e5160,#3e5160,#3b4d65,#3b4d65,#3e5068,#3e5068,#3e5160,#3e5160,#475264,#4a5567,#4e596b,#4e596b,#515c6e,#515c6e,#555b67,#555b67,#5c626e,#5c626e,#656371,#686674,#6c6b73,#6c6b73,#73727a,#73727a,#7c7376,#7f7679,#8a7b80,#8d7e83,#948683,#948683,#988a87,#988a87,#a08c85,#a08c85,#a7938c,#a7938c,#aa968f,#ad9992,#b79b8f,#b79b8f,#ba9e92,#ba9e92,#bea296,#bea296,#c1a599,#c1a599,#bea296,#bea296,#ba9e92,#ba9e92,#b79b8f,#b79b8f,#b3978b,#b3978b,#b0938f,#b0938f) 100% 1}.content blockquote{border-left:1px solid #bbb;border-left-color:rgba(187,187,187,0.5);-moz-border-image:-moz-linear-gradient(top, #748d77,#748d77,#6f8f77,#6f8f77,#73937b,#73937b,#739574,#739574,#769877,#769877,#7a9c7b,#7a9c7b,#7d9f7e,#7d9f7e,#80a37b,#80a37b,#89a57f,#89a57f,#8ca97b,#8ca97b,#8fac7e,#8fac7e,#93b082,#93b082,#98ad82,#98ad82,#9bb085,#9bb085,#9bb27e,#9bb27e,#9fb682,#9fb682,#a3b382,#a3b382,#a3b47d,#a3b47d,#a6b780,#a6b780,#acb580,#acb580,#b2b280,#b2b280,#afaf7d,#afaf7d,#b3ae76,#b3ae76,#b8ab76,#b8ab76,#baa472,#bea272,#c49f72,#c49f72,#c8a376,#c8a376,#cca176,#cca176,#c8a376,#c8a376,#c49f72,#c49f72,#bea272,#bea272,#baa472,#baa472,#bea876,#bea876,#b8ab76,#b8ab76,#b3ad7d,#b3ad7d,#afa979,#afa979,#a8a876,#a8a876,#a8a77b,#a8a77b,#a4a377,#a4a377,#9ea677,#9ea677,#9ba374,#9ba374,#989e78,#989e78,#8e9d74,#8b9a71,#889675,#889675,#849271,#809471,#7d916e,#7d916e,#798c70,#76896d,#6e8771,#6e8771,#6a836d,#6a836d,#67806a,#67806a,#62816f,#62816f,#5f7e6c,#5f7e6c,#5b7a68,#5b7a68,#5b796f,#5b796f,#60776f,#60776f,#65746f,#65746f,#627073,#627073,#5e6c6f,#5e6c6f,#5b696c,#5b6871,#58656e,#58656e,#53676e,#53676e,#4f636a,#4f636a,#4c6067,#4c6067,#495c6b,#495c6b,#455867,#455867,#425564,#425564,#3e5160,#3e5160,#3b4d65,#3b4d65,#3e5068,#3e5068,#3e5160,#3e5160,#475264,#4a5567,#4e596b,#4e596b,#515c6e,#515c6e,#555b67,#555b67,#5c626e,#5c626e,#656371,#686674,#6c6b73,#6c6b73,#73727a,#73727a,#7c7376,#7f7679,#8a7b80,#8d7e83,#948683,#948683,#988a87,#988a87,#a08c85,#a08c85,#a7938c,#a7938c,#aa968f,#ad9992,#b79b8f,#b79b8f,#ba9e92,#ba9e92,#bea296,#bea296,#c1a599,#c1a599,#bea296,#bea296,#ba9e92,#ba9e92,#b79b8f,#b79b8f,#b3978b,#b3978b,#b0938f,#b0938f) 1 100%;-webkit-border-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #748d77), color-stop(0.53476%, #748d77), color-stop(1.06952%, #6f8f77), color-stop(1.60428%, #6f8f77), color-stop(2.13904%, #73937b), color-stop(2.6738%, #73937b), color-stop(3.20856%, #739574), color-stop(3.74332%, #739574), color-stop(4.27807%, #769877), color-stop(4.81283%, #769877), color-stop(5.34759%, #7a9c7b), color-stop(5.88235%, #7a9c7b), color-stop(6.41711%, #7d9f7e), color-stop(6.95187%, #7d9f7e), color-stop(7.48663%, #80a37b), color-stop(8.02139%, #80a37b), color-stop(8.55615%, #89a57f), color-stop(9.09091%, #89a57f), color-stop(9.62567%, #8ca97b), color-stop(10.16043%, #8ca97b), color-stop(10.69519%, #8fac7e), color-stop(11.22995%, #8fac7e), color-stop(11.76471%, #93b082), color-stop(12.29947%, #93b082), color-stop(12.83422%, #98ad82), color-stop(13.36898%, #98ad82), color-stop(13.90374%, #9bb085), color-stop(14.4385%, #9bb085), color-stop(14.97326%, #9bb27e), color-stop(15.50802%, #9bb27e), color-stop(16.04278%, #9fb682), color-stop(16.57754%, #9fb682), color-stop(17.1123%, #a3b382), color-stop(17.64706%, #a3b382), color-stop(18.18182%, #a3b47d), color-stop(18.71658%, #a3b47d), color-stop(19.25134%, #a6b780), color-stop(19.7861%, #a6b780), color-stop(20.32086%, #acb580), color-stop(20.85561%, #acb580), color-stop(21.39037%, #b2b280), color-stop(21.92513%, #b2b280), color-stop(22.45989%, #afaf7d), color-stop(22.99465%, #afaf7d), color-stop(23.52941%, #b3ae76), color-stop(24.06417%, #b3ae76), color-stop(24.59893%, #b8ab76), color-stop(25.13369%, #b8ab76), color-stop(25.66845%, #baa472), color-stop(26.20321%, #bea272), color-stop(26.73797%, #c49f72), color-stop(27.27273%, #c49f72), color-stop(27.80749%, #c8a376), color-stop(28.34225%, #c8a376), color-stop(28.87701%, #cca176), color-stop(29.41176%, #cca176), color-stop(29.94652%, #c8a376), color-stop(30.48128%, #c8a376), color-stop(31.01604%, #c49f72), color-stop(31.5508%, #c49f72), color-stop(32.08556%, #bea272), color-stop(32.62032%, #bea272), color-stop(33.15508%, #baa472), color-stop(33.68984%, #baa472), color-stop(34.2246%, #bea876), color-stop(34.75936%, #bea876), color-stop(35.29412%, #b8ab76), color-stop(35.82888%, #b8ab76), color-stop(36.36364%, #b3ad7d), color-stop(36.8984%, #b3ad7d), color-stop(37.43316%, #afa979), color-stop(37.96791%, #afa979), color-stop(38.50267%, #a8a876), color-stop(39.03743%, #a8a876), color-stop(39.57219%, #a8a77b), color-stop(40.10695%, #a8a77b), color-stop(40.64171%, #a4a377), color-stop(41.17647%, #a4a377), color-stop(41.71123%, #9ea677), color-stop(42.24599%, #9ea677), color-stop(42.78075%, #9ba374), color-stop(43.31551%, #9ba374), color-stop(43.85027%, #989e78), color-stop(44.38503%, #989e78), color-stop(44.91979%, #8e9d74), color-stop(45.45455%, #8b9a71), color-stop(45.9893%, #889675), color-stop(46.52406%, #889675), color-stop(47.05882%, #849271), color-stop(47.59358%, #809471), color-stop(48.12834%, #7d916e), color-stop(48.6631%, #7d916e), color-stop(49.19786%, #798c70), color-stop(49.73262%, #76896d), color-stop(50.26738%, #6e8771), color-stop(50.80214%, #6e8771), color-stop(51.3369%, #6a836d), color-stop(51.87166%, #6a836d), color-stop(52.40642%, #67806a), color-stop(52.94118%, #67806a), color-stop(53.47594%, #62816f), color-stop(54.0107%, #62816f), color-stop(54.54545%, #5f7e6c), color-stop(55.08021%, #5f7e6c), color-stop(55.61497%, #5b7a68), color-stop(56.14973%, #5b7a68), color-stop(56.68449%, #5b796f), color-stop(57.21925%, #5b796f), color-stop(57.75401%, #60776f), color-stop(58.28877%, #60776f), color-stop(58.82353%, #65746f), color-stop(59.35829%, #65746f), color-stop(59.89305%, #627073), color-stop(60.42781%, #627073), color-stop(60.96257%, #5e6c6f), color-stop(61.49733%, #5e6c6f), color-stop(62.03209%, #5b696c), color-stop(62.56684%, #5b6871), color-stop(63.1016%, #58656e), color-stop(63.63636%, #58656e), color-stop(64.17112%, #53676e), color-stop(64.70588%, #53676e), color-stop(65.24064%, #4f636a), color-stop(65.7754%, #4f636a), color-stop(66.31016%, #4c6067), color-stop(66.84492%, #4c6067), color-stop(67.37968%, #495c6b), color-stop(67.91444%, #495c6b), color-stop(68.4492%, #455867), color-stop(68.98396%, #455867), color-stop(69.51872%, #425564), color-stop(70.05348%, #425564), color-stop(70.58824%, #3e5160), color-stop(71.12299%, #3e5160), color-stop(71.65775%, #3b4d65), color-stop(72.19251%, #3b4d65), color-stop(72.72727%, #3e5068), color-stop(73.26203%, #3e5068), color-stop(73.79679%, #3e5160), color-stop(74.33155%, #3e5160), color-stop(74.86631%, #475264), color-stop(75.40107%, #4a5567), color-stop(75.93583%, #4e596b), color-stop(76.47059%, #4e596b), color-stop(77.00535%, #515c6e), color-stop(77.54011%, #515c6e), color-stop(78.07487%, #555b67), color-stop(78.60963%, #555b67), color-stop(79.14439%, #5c626e), color-stop(79.67914%, #5c626e), color-stop(80.2139%, #656371), color-stop(80.74866%, #686674), color-stop(81.28342%, #6c6b73), color-stop(81.81818%, #6c6b73), color-stop(82.35294%, #73727a), color-stop(82.8877%, #73727a), color-stop(83.42246%, #7c7376), color-stop(83.95722%, #7f7679), color-stop(84.49198%, #8a7b80), color-stop(85.02674%, #8d7e83), color-stop(85.5615%, #948683), color-stop(86.09626%, #948683), color-stop(86.63102%, #988a87), color-stop(87.16578%, #988a87), color-stop(87.70053%, #a08c85), color-stop(88.23529%, #a08c85), color-stop(88.77005%, #a7938c), color-stop(89.30481%, #a7938c), color-stop(89.83957%, #aa968f), color-stop(90.37433%, #ad9992), color-stop(90.90909%, #b79b8f), color-stop(91.44385%, #b79b8f), color-stop(91.97861%, #ba9e92), color-stop(92.51337%, #ba9e92), color-stop(93.04813%, #bea296), color-stop(93.58289%, #bea296), color-stop(94.11765%, #c1a599), color-stop(94.65241%, #c1a599), color-stop(95.18717%, #bea296), color-stop(95.72193%, #bea296), color-stop(96.25668%, #ba9e92), color-stop(96.79144%, #ba9e92), color-stop(97.3262%, #b79b8f), color-stop(97.86096%, #b79b8f), color-stop(98.39572%, #b3978b), color-stop(98.93048%, #b3978b), color-stop(99.46524%, #b0938f), color-stop(100%, #b0938f)) 1 100%;-webkit-border-image:-webkit-linear-gradient(top, #748d77,#748d77,#6f8f77,#6f8f77,#73937b,#73937b,#739574,#739574,#769877,#769877,#7a9c7b,#7a9c7b,#7d9f7e,#7d9f7e,#80a37b,#80a37b,#89a57f,#89a57f,#8ca97b,#8ca97b,#8fac7e,#8fac7e,#93b082,#93b082,#98ad82,#98ad82,#9bb085,#9bb085,#9bb27e,#9bb27e,#9fb682,#9fb682,#a3b382,#a3b382,#a3b47d,#a3b47d,#a6b780,#a6b780,#acb580,#acb580,#b2b280,#b2b280,#afaf7d,#afaf7d,#b3ae76,#b3ae76,#b8ab76,#b8ab76,#baa472,#bea272,#c49f72,#c49f72,#c8a376,#c8a376,#cca176,#cca176,#c8a376,#c8a376,#c49f72,#c49f72,#bea272,#bea272,#baa472,#baa472,#bea876,#bea876,#b8ab76,#b8ab76,#b3ad7d,#b3ad7d,#afa979,#afa979,#a8a876,#a8a876,#a8a77b,#a8a77b,#a4a377,#a4a377,#9ea677,#9ea677,#9ba374,#9ba374,#989e78,#989e78,#8e9d74,#8b9a71,#889675,#889675,#849271,#809471,#7d916e,#7d916e,#798c70,#76896d,#6e8771,#6e8771,#6a836d,#6a836d,#67806a,#67806a,#62816f,#62816f,#5f7e6c,#5f7e6c,#5b7a68,#5b7a68,#5b796f,#5b796f,#60776f,#60776f,#65746f,#65746f,#627073,#627073,#5e6c6f,#5e6c6f,#5b696c,#5b6871,#58656e,#58656e,#53676e,#53676e,#4f636a,#4f636a,#4c6067,#4c6067,#495c6b,#495c6b,#455867,#455867,#425564,#425564,#3e5160,#3e5160,#3b4d65,#3b4d65,#3e5068,#3e5068,#3e5160,#3e5160,#475264,#4a5567,#4e596b,#4e596b,#515c6e,#515c6e,#555b67,#555b67,#5c626e,#5c626e,#656371,#686674,#6c6b73,#6c6b73,#73727a,#73727a,#7c7376,#7f7679,#8a7b80,#8d7e83,#948683,#948683,#988a87,#988a87,#a08c85,#a08c85,#a7938c,#a7938c,#aa968f,#ad9992,#b79b8f,#b79b8f,#ba9e92,#ba9e92,#bea296,#bea296,#c1a599,#c1a599,#bea296,#bea296,#ba9e92,#ba9e92,#b79b8f,#b79b8f,#b3978b,#b3978b,#b0938f,#b0938f) 1 100%;-o-border-image:-o-linear-gradient(top, #748d77,#748d77,#6f8f77,#6f8f77,#73937b,#73937b,#739574,#739574,#769877,#769877,#7a9c7b,#7a9c7b,#7d9f7e,#7d9f7e,#80a37b,#80a37b,#89a57f,#89a57f,#8ca97b,#8ca97b,#8fac7e,#8fac7e,#93b082,#93b082,#98ad82,#98ad82,#9bb085,#9bb085,#9bb27e,#9bb27e,#9fb682,#9fb682,#a3b382,#a3b382,#a3b47d,#a3b47d,#a6b780,#a6b780,#acb580,#acb580,#b2b280,#b2b280,#afaf7d,#afaf7d,#b3ae76,#b3ae76,#b8ab76,#b8ab76,#baa472,#bea272,#c49f72,#c49f72,#c8a376,#c8a376,#cca176,#cca176,#c8a376,#c8a376,#c49f72,#c49f72,#bea272,#bea272,#baa472,#baa472,#bea876,#bea876,#b8ab76,#b8ab76,#b3ad7d,#b3ad7d,#afa979,#afa979,#a8a876,#a8a876,#a8a77b,#a8a77b,#a4a377,#a4a377,#9ea677,#9ea677,#9ba374,#9ba374,#989e78,#989e78,#8e9d74,#8b9a71,#889675,#889675,#849271,#809471,#7d916e,#7d916e,#798c70,#76896d,#6e8771,#6e8771,#6a836d,#6a836d,#67806a,#67806a,#62816f,#62816f,#5f7e6c,#5f7e6c,#5b7a68,#5b7a68,#5b796f,#5b796f,#60776f,#60776f,#65746f,#65746f,#627073,#627073,#5e6c6f,#5e6c6f,#5b696c,#5b6871,#58656e,#58656e,#53676e,#53676e,#4f636a,#4f636a,#4c6067,#4c6067,#495c6b,#495c6b,#455867,#455867,#425564,#425564,#3e5160,#3e5160,#3b4d65,#3b4d65,#3e5068,#3e5068,#3e5160,#3e5160,#475264,#4a5567,#4e596b,#4e596b,#515c6e,#515c6e,#555b67,#555b67,#5c626e,#5c626e,#656371,#686674,#6c6b73,#6c6b73,#73727a,#73727a,#7c7376,#7f7679,#8a7b80,#8d7e83,#948683,#948683,#988a87,#988a87,#a08c85,#a08c85,#a7938c,#a7938c,#aa968f,#ad9992,#b79b8f,#b79b8f,#ba9e92,#ba9e92,#bea296,#bea296,#c1a599,#c1a599,#bea296,#bea296,#ba9e92,#ba9e92,#b79b8f,#b79b8f,#b3978b,#b3978b,#b0938f,#b0938f) 1 100%;border-image:linear-gradient(top, #748d77,#748d77,#6f8f77,#6f8f77,#73937b,#73937b,#739574,#739574,#769877,#769877,#7a9c7b,#7a9c7b,#7d9f7e,#7d9f7e,#80a37b,#80a37b,#89a57f,#89a57f,#8ca97b,#8ca97b,#8fac7e,#8fac7e,#93b082,#93b082,#98ad82,#98ad82,#9bb085,#9bb085,#9bb27e,#9bb27e,#9fb682,#9fb682,#a3b382,#a3b382,#a3b47d,#a3b47d,#a6b780,#a6b780,#acb580,#acb580,#b2b280,#b2b280,#afaf7d,#afaf7d,#b3ae76,#b3ae76,#b8ab76,#b8ab76,#baa472,#bea272,#c49f72,#c49f72,#c8a376,#c8a376,#cca176,#cca176,#c8a376,#c8a376,#c49f72,#c49f72,#bea272,#bea272,#baa472,#baa472,#bea876,#bea876,#b8ab76,#b8ab76,#b3ad7d,#b3ad7d,#afa979,#afa979,#a8a876,#a8a876,#a8a77b,#a8a77b,#a4a377,#a4a377,#9ea677,#9ea677,#9ba374,#9ba374,#989e78,#989e78,#8e9d74,#8b9a71,#889675,#889675,#849271,#809471,#7d916e,#7d916e,#798c70,#76896d,#6e8771,#6e8771,#6a836d,#6a836d,#67806a,#67806a,#62816f,#62816f,#5f7e6c,#5f7e6c,#5b7a68,#5b7a68,#5b796f,#5b796f,#60776f,#60776f,#65746f,#65746f,#627073,#627073,#5e6c6f,#5e6c6f,#5b696c,#5b6871,#58656e,#58656e,#53676e,#53676e,#4f636a,#4f636a,#4c6067,#4c6067,#495c6b,#495c6b,#455867,#455867,#425564,#425564,#3e5160,#3e5160,#3b4d65,#3b4d65,#3e5068,#3e5068,#3e5160,#3e5160,#475264,#4a5567,#4e596b,#4e596b,#515c6e,#515c6e,#555b67,#555b67,#5c626e,#5c626e,#656371,#686674,#6c6b73,#6c6b73,#73727a,#73727a,#7c7376,#7f7679,#8a7b80,#8d7e83,#948683,#948683,#988a87,#988a87,#a08c85,#a08c85,#a7938c,#a7938c,#aa968f,#ad9992,#b79b8f,#b79b8f,#ba9e92,#ba9e92,#bea296,#bea296,#c1a599,#c1a599,#bea296,#bea296,#ba9e92,#ba9e92,#b79b8f,#b79b8f,#b3978b,#b3978b,#b0938f,#b0938f) 1 100%}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}a{border-bottom:1px dotted #bbb;border-color:rgba(187,187,187,0.5);color:#fff;text-decoration:none;-webkit-transition:border-color 0.25s ease-in-out;-moz-transition:border-color 0.25s ease-in-out;-o-transition:border-color 0.25s ease-in-out;transition:border-color 0.25s ease-in-out}a:hover,a:active,a:focus{border-color:transparent !important}abbr[title]{cursor:help}body{background:#222;color:#fff;font:100%/1.5 "Muli",Arial,sans-serif;text-align:center}@media (min-width: 43.75em){body{line-height:1.75}}html{-webkit-text-size-adjust:100%}#cf_alert_div{display:none !important}.hidden{display:none}.container{margin:auto;max-width:62.5em;padding:0 1em;width:62.5em}@media (min-width: 43.75em){.container{padding:0 2em}}div[class=container]{width:auto}.content{background:#333;display:block;padding:2em 0;text-align:left}.content abbr[title]{border-bottom:1px dotted #222}.content b,.content strong{font-weight:bold}.content blockquote{font-size:1.25em;font-weight:300;margin:1.5em 0;padding:0 1em}.content blockquote a{color:#bbb}.content blockquote cite{display:block}.content blockquote cite:before{color:#bbb;content:"\2012";margin:0 0.2em 0 -0.575em}.content blockquote p{margin:0}.content blockquote q:before{margin-left:-.5em}@media (min-width: 43.75em){.content blockquote{font-size:1.5em;line-height:1.45}}.content code{background:#000;color:#fff;font-family:Consolas,monaco,monospace;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:.15em .25em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;white-space:pre-wrap}.content code .token.atrule,.content code .token.attr-value,.content code .token.keyword{color:#f786ad}.content code .token.attr-name,.content code .token.builtin,.content code .token.selector.token.string{color:#ff7}.content code .token.boolean,.content code .token.constant,.content code .token.number,.content code .token.property,.content code .token.symbol,.content code .token.tag{color:#8ea9d7}.content code .token.cdata,.content code .token.comment,.content code .token.doctype,.content code .token.prolog,.content code .token.punctuation{color:#bbb}.content code .token.important,.content code .token.regex{color:#fba266}.content code .token.entity,.content code .token.operator,.content code .token.url,.content code .token.variable{color:#93b082}.content del,.content s{color:#bbb;font-weight:300}.content dfn,.content em,.content i,.content var{font-style:italic}.content h1{font-size:2em;font-weight:300;line-height:1.25;margin:0 0 .75em;padding:0 0 .333333em}.content h1 a{border-color:#222;-moz-border-image:none;-webkit-border-image:none;-webkit-border-image:none;-o-border-image:none;border-image:none}@media (min-width: 43.75em){.content h1{font-size:2.5em;line-height:1.125}}@media (min-width: 56.25em){.content h1{font-size:3em;line-height:1.25}}.content h2{font-size:1.625em;font-weight:300;line-height:1.15;margin:1em 0}@media (min-width: 43.75em){.content h2{font-size:2em;line-height:1.25}}@media (min-width: 56.25em){.content h2{font-size:2.25em}}.content h3{font-size:1.375em;line-height:1.15;margin:0 0 1em}@media (min-width: 43.75em){.content h3{font-size:1.5em;line-height:1.25}}@media (min-width: 56.25em){.content h3{font-size:1.75em}}.content h4{font-size:1.125em;line-height:1.1;margin:0 0 .5em}@media (min-width: 43.75em){.content h4{line-height:1.2}}.content h5,.content h6{margin:0 0 .25em}.content hr{border-left:0;border-right:0;border-top:0;height:0;margin:0 0 1.5em;overflow:hidden}.content ins,.content u{font-weight:300}.content kbd,.content samp{font-family:Consolas,monaco,monospace}.content li{margin:.5em}.content mark{background:#000;color:#fff;font-weight:300;padding:.15em .25em}.content ol{counter-reset:li;list-style:decimal;margin:0 0 1em;padding:0 0 0 1em}.content ol>li{list-style:none}.content ol>li:before{color:#bbb;content:counter(li) ".";counter-increment:li;display:block;font-size:.85em;font-style:italic;font-weight:300;left:-1.25em;line-height:1.75;max-height:0;max-width:0;position:relative}@media (min-width: 43.75em){.content ol>li:before{line-height:2}}*+html .content ol li{list-style:decimal}.content p{margin:0 0 1.5em}.content pre{font-family:Consolas,monaco,monospace;margin:2em 0;white-space:pre-wrap}.content q{quotes:"“" "”" "‘" "’"}.content q:after{color:#bbb;content:close-quote}.content q:before{color:#bbb;content:open-quote}.content small{font-size:smaller}.content sub{font-size:smaller;vertical-align:sub}.content sup{font-size:smaller;vertical-align:super}.content table{border-right:1px solid #333;border-collapse:collapse;margin:0 0 1.5em;width:100%}.content table td,.content table th{border:0 dotted #bbb;border-color:rgba(187,187,187,0.5);border-right-width:1px;border-top-width:1px;font-weight:300;padding:0 .5em}.content table th{border-bottom-style:solid;border-bottom-width:1px;border-top:0;font-weight:bold;padding:.25em .5em}.content time{color:#bbb}.content time a{color:#bbb}.content ul{list-style:circle;margin:0 0 1em;padding:0 0 0 1em}.content ul>li{list-style:none}.content ul>li:before{color:#bbb;content:"\25cb";display:block;left:-1em;max-height:0;max-width:0;position:relative}*+html .content ul li{list-style:circle}.content .hgroup{margin:0 0 2.25em;padding:0 0 1em}.content .hgroup *{display:inline}.content .hgroup a{border-color:#222}.content .hgroup h1{border:none;margin:0 .25em 0 0;padding:0}.content .hgroup h2{margin-right:.125em}.content .video{height:0;overflow:hidden;margin:0 0 1.5em;padding:0 0 56.25%;position:relative}.content .video embed,.content .video iframe,.content .video object{height:100%;left:0;position:absolute;top:0;width:100%}.footer{color:#bbb;overflow:hidden;padding:3em 0}.footer a{display:inline-block;margin:0 .5em 1em}.footer p{font-weight:300;margin:0 0 2em}.footer .established{-webkit-border-radius:100%;-moz-border-radius:100%;-ms-border-radius:100%;-o-border-radius:100%;border-radius:100%;-webkit-box-shadow:0 0 0 1px #bbb inset;-moz-box-shadow:0 0 0 1px #bbb inset;box-shadow:0 0 0 1px #bbb inset;display:inline-block;line-height:1.15;padding:1em;text-transform:uppercase}.footer .established abbr{display:block}.header{background:url('/img/header.jpg') 50% 0;-webkit-background-size:100% auto;-moz-background-size:100% auto;-o-background-size:100% auto;background-size:100% auto;padding:1em 0;text-align:left}@media (min-width: 56.25em){.header{padding:2em 0}}.logo{background:#000;border:0;color:#fff;display:inline-block;font-weight:bold;line-height:2;padding:0 .65em .25em;text-decoration:none;text-transform:uppercase}.logo span{letter-spacing:.35em}@media (min-width: 56.25em){.logo{font-size:1.25em}}.post{clear:both;margin:0 0 3em;padding:0 0 2em}.post:last-of-type{border:0;margin:0;padding:0}.post .ellipsis{border:0;display:block;font-size:2.25em;line-height:1;text-align:center;text-decoration:none;text-shadow:#333 1px 1px 0}@media (min-width: 56.25em){.post .ellipsis{font-size:1.5em}}.post .ellipsis:before{color:#000;content:'\25cb\25cb\25cb';-webkit-transition:color 0.25s ease-in-out;-moz-transition:color 0.25s ease-in-out;-o-transition:color 0.25s ease-in-out;transition:color 0.25s ease-in-out}.post .ellipsis:hover,.post .ellipsis:active,.post .ellipsis:focus{text-shadow:none}.post .ellipsis:hover:before,.post .ellipsis:active:before,.post .ellipsis:focus:before{color:#bbb}.post .ellipsis span{display:none}.post .hgroup{border:0 !important;margin:0 0 2em !important;padding:0 !important}
+@charset "CP850";
+/* line 1, ../../_sass/_shared.scss */
+.content h1, .content hr, .content .hgroup, .post {
+  border-bottom: 1px solid #bbbbbb;
+  border-bottom-color: rgba(187, 187, 187, 0.5);
+  -moz-border-image: -moz-linear-gradient(left, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 100% 1;
+  -webkit-border-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #748d77), color-stop(0.53476%, #748d77), color-stop(1.06952%, #6f8f77), color-stop(1.60428%, #6f8f77), color-stop(2.13904%, #73937b), color-stop(2.6738%, #73937b), color-stop(3.20856%, #739574), color-stop(3.74332%, #739574), color-stop(4.27807%, #769877), color-stop(4.81283%, #769877), color-stop(5.34759%, #7a9c7b), color-stop(5.88235%, #7a9c7b), color-stop(6.41711%, #7d9f7e), color-stop(6.95187%, #7d9f7e), color-stop(7.48663%, #80a37b), color-stop(8.02139%, #80a37b), color-stop(8.55615%, #89a57f), color-stop(9.09091%, #89a57f), color-stop(9.62567%, #8ca97b), color-stop(10.16043%, #8ca97b), color-stop(10.69519%, #8fac7e), color-stop(11.22995%, #8fac7e), color-stop(11.76471%, #93b082), color-stop(12.29947%, #93b082), color-stop(12.83422%, #98ad82), color-stop(13.36898%, #98ad82), color-stop(13.90374%, #9bb085), color-stop(14.4385%, #9bb085), color-stop(14.97326%, #9bb27e), color-stop(15.50802%, #9bb27e), color-stop(16.04278%, #9fb682), color-stop(16.57754%, #9fb682), color-stop(17.1123%, #a3b382), color-stop(17.64706%, #a3b382), color-stop(18.18182%, #a3b47d), color-stop(18.71658%, #a3b47d), color-stop(19.25134%, #a6b780), color-stop(19.7861%, #a6b780), color-stop(20.32086%, #acb580), color-stop(20.85561%, #acb580), color-stop(21.39037%, #b2b280), color-stop(21.92513%, #b2b280), color-stop(22.45989%, #afaf7d), color-stop(22.99465%, #afaf7d), color-stop(23.52941%, #b3ae76), color-stop(24.06417%, #b3ae76), color-stop(24.59893%, #b8ab76), color-stop(25.13369%, #b8ab76), color-stop(25.66845%, #baa472), color-stop(26.20321%, #bea272), color-stop(26.73797%, #c49f72), color-stop(27.27273%, #c49f72), color-stop(27.80749%, #c8a376), color-stop(28.34225%, #c8a376), color-stop(28.87701%, #cca176), color-stop(29.41176%, #cca176), color-stop(29.94652%, #c8a376), color-stop(30.48128%, #c8a376), color-stop(31.01604%, #c49f72), color-stop(31.5508%, #c49f72), color-stop(32.08556%, #bea272), color-stop(32.62032%, #bea272), color-stop(33.15508%, #baa472), color-stop(33.68984%, #baa472), color-stop(34.2246%, #bea876), color-stop(34.75936%, #bea876), color-stop(35.29412%, #b8ab76), color-stop(35.82888%, #b8ab76), color-stop(36.36364%, #b3ad7d), color-stop(36.8984%, #b3ad7d), color-stop(37.43316%, #afa979), color-stop(37.96791%, #afa979), color-stop(38.50267%, #a8a876), color-stop(39.03743%, #a8a876), color-stop(39.57219%, #a8a77b), color-stop(40.10695%, #a8a77b), color-stop(40.64171%, #a4a377), color-stop(41.17647%, #a4a377), color-stop(41.71123%, #9ea677), color-stop(42.24599%, #9ea677), color-stop(42.78075%, #9ba374), color-stop(43.31551%, #9ba374), color-stop(43.85027%, #989e78), color-stop(44.38503%, #989e78), color-stop(44.91979%, #8e9d74), color-stop(45.45455%, #8b9a71), color-stop(45.9893%, #889675), color-stop(46.52406%, #889675), color-stop(47.05882%, #849271), color-stop(47.59358%, #809471), color-stop(48.12834%, #7d916e), color-stop(48.6631%, #7d916e), color-stop(49.19786%, #798c70), color-stop(49.73262%, #76896d), color-stop(50.26738%, #6e8771), color-stop(50.80214%, #6e8771), color-stop(51.3369%, #6a836d), color-stop(51.87166%, #6a836d), color-stop(52.40642%, #67806a), color-stop(52.94118%, #67806a), color-stop(53.47594%, #62816f), color-stop(54.0107%, #62816f), color-stop(54.54545%, #5f7e6c), color-stop(55.08021%, #5f7e6c), color-stop(55.61497%, #5b7a68), color-stop(56.14973%, #5b7a68), color-stop(56.68449%, #5b796f), color-stop(57.21925%, #5b796f), color-stop(57.75401%, #60776f), color-stop(58.28877%, #60776f), color-stop(58.82353%, #65746f), color-stop(59.35829%, #65746f), color-stop(59.89305%, #627073), color-stop(60.42781%, #627073), color-stop(60.96257%, #5e6c6f), color-stop(61.49733%, #5e6c6f), color-stop(62.03209%, #5b696c), color-stop(62.56684%, #5b6871), color-stop(63.1016%, #58656e), color-stop(63.63636%, #58656e), color-stop(64.17112%, #53676e), color-stop(64.70588%, #53676e), color-stop(65.24064%, #4f636a), color-stop(65.7754%, #4f636a), color-stop(66.31016%, #4c6067), color-stop(66.84492%, #4c6067), color-stop(67.37968%, #495c6b), color-stop(67.91444%, #495c6b), color-stop(68.4492%, #455867), color-stop(68.98396%, #455867), color-stop(69.51872%, #425564), color-stop(70.05348%, #425564), color-stop(70.58824%, #3e5160), color-stop(71.12299%, #3e5160), color-stop(71.65775%, #3b4d65), color-stop(72.19251%, #3b4d65), color-stop(72.72727%, #3e5068), color-stop(73.26203%, #3e5068), color-stop(73.79679%, #3e5160), color-stop(74.33155%, #3e5160), color-stop(74.86631%, #475264), color-stop(75.40107%, #4a5567), color-stop(75.93583%, #4e596b), color-stop(76.47059%, #4e596b), color-stop(77.00535%, #515c6e), color-stop(77.54011%, #515c6e), color-stop(78.07487%, #555b67), color-stop(78.60963%, #555b67), color-stop(79.14439%, #5c626e), color-stop(79.67914%, #5c626e), color-stop(80.2139%, #656371), color-stop(80.74866%, #686674), color-stop(81.28342%, #6c6b73), color-stop(81.81818%, #6c6b73), color-stop(82.35294%, #73727a), color-stop(82.8877%, #73727a), color-stop(83.42246%, #7c7376), color-stop(83.95722%, #7f7679), color-stop(84.49198%, #8a7b80), color-stop(85.02674%, #8d7e83), color-stop(85.5615%, #948683), color-stop(86.09626%, #948683), color-stop(86.63102%, #988a87), color-stop(87.16578%, #988a87), color-stop(87.70053%, #a08c85), color-stop(88.23529%, #a08c85), color-stop(88.77005%, #a7938c), color-stop(89.30481%, #a7938c), color-stop(89.83957%, #aa968f), color-stop(90.37433%, #ad9992), color-stop(90.90909%, #b79b8f), color-stop(91.44385%, #b79b8f), color-stop(91.97861%, #ba9e92), color-stop(92.51337%, #ba9e92), color-stop(93.04813%, #bea296), color-stop(93.58289%, #bea296), color-stop(94.11765%, #c1a599), color-stop(94.65241%, #c1a599), color-stop(95.18717%, #bea296), color-stop(95.72193%, #bea296), color-stop(96.25668%, #ba9e92), color-stop(96.79144%, #ba9e92), color-stop(97.3262%, #b79b8f), color-stop(97.86096%, #b79b8f), color-stop(98.39572%, #b3978b), color-stop(98.93048%, #b3978b), color-stop(99.46524%, #b0938f), color-stop(100%, #b0938f)) 100% 1;
+  -webkit-border-image: -webkit-linear-gradient(left, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 100% 1;
+  -o-border-image: -o-linear-gradient(left, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 100% 1;
+  border-image: linear-gradient(left, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 100% 1;
+}
+
+/* line 7, ../../_sass/_shared.scss */
+.content blockquote {
+  border-left: 1px solid #bbbbbb;
+  border-left-color: rgba(187, 187, 187, 0.5);
+  -moz-border-image: -moz-linear-gradient(top, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 1 100%;
+  -webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #748d77), color-stop(0.53476%, #748d77), color-stop(1.06952%, #6f8f77), color-stop(1.60428%, #6f8f77), color-stop(2.13904%, #73937b), color-stop(2.6738%, #73937b), color-stop(3.20856%, #739574), color-stop(3.74332%, #739574), color-stop(4.27807%, #769877), color-stop(4.81283%, #769877), color-stop(5.34759%, #7a9c7b), color-stop(5.88235%, #7a9c7b), color-stop(6.41711%, #7d9f7e), color-stop(6.95187%, #7d9f7e), color-stop(7.48663%, #80a37b), color-stop(8.02139%, #80a37b), color-stop(8.55615%, #89a57f), color-stop(9.09091%, #89a57f), color-stop(9.62567%, #8ca97b), color-stop(10.16043%, #8ca97b), color-stop(10.69519%, #8fac7e), color-stop(11.22995%, #8fac7e), color-stop(11.76471%, #93b082), color-stop(12.29947%, #93b082), color-stop(12.83422%, #98ad82), color-stop(13.36898%, #98ad82), color-stop(13.90374%, #9bb085), color-stop(14.4385%, #9bb085), color-stop(14.97326%, #9bb27e), color-stop(15.50802%, #9bb27e), color-stop(16.04278%, #9fb682), color-stop(16.57754%, #9fb682), color-stop(17.1123%, #a3b382), color-stop(17.64706%, #a3b382), color-stop(18.18182%, #a3b47d), color-stop(18.71658%, #a3b47d), color-stop(19.25134%, #a6b780), color-stop(19.7861%, #a6b780), color-stop(20.32086%, #acb580), color-stop(20.85561%, #acb580), color-stop(21.39037%, #b2b280), color-stop(21.92513%, #b2b280), color-stop(22.45989%, #afaf7d), color-stop(22.99465%, #afaf7d), color-stop(23.52941%, #b3ae76), color-stop(24.06417%, #b3ae76), color-stop(24.59893%, #b8ab76), color-stop(25.13369%, #b8ab76), color-stop(25.66845%, #baa472), color-stop(26.20321%, #bea272), color-stop(26.73797%, #c49f72), color-stop(27.27273%, #c49f72), color-stop(27.80749%, #c8a376), color-stop(28.34225%, #c8a376), color-stop(28.87701%, #cca176), color-stop(29.41176%, #cca176), color-stop(29.94652%, #c8a376), color-stop(30.48128%, #c8a376), color-stop(31.01604%, #c49f72), color-stop(31.5508%, #c49f72), color-stop(32.08556%, #bea272), color-stop(32.62032%, #bea272), color-stop(33.15508%, #baa472), color-stop(33.68984%, #baa472), color-stop(34.2246%, #bea876), color-stop(34.75936%, #bea876), color-stop(35.29412%, #b8ab76), color-stop(35.82888%, #b8ab76), color-stop(36.36364%, #b3ad7d), color-stop(36.8984%, #b3ad7d), color-stop(37.43316%, #afa979), color-stop(37.96791%, #afa979), color-stop(38.50267%, #a8a876), color-stop(39.03743%, #a8a876), color-stop(39.57219%, #a8a77b), color-stop(40.10695%, #a8a77b), color-stop(40.64171%, #a4a377), color-stop(41.17647%, #a4a377), color-stop(41.71123%, #9ea677), color-stop(42.24599%, #9ea677), color-stop(42.78075%, #9ba374), color-stop(43.31551%, #9ba374), color-stop(43.85027%, #989e78), color-stop(44.38503%, #989e78), color-stop(44.91979%, #8e9d74), color-stop(45.45455%, #8b9a71), color-stop(45.9893%, #889675), color-stop(46.52406%, #889675), color-stop(47.05882%, #849271), color-stop(47.59358%, #809471), color-stop(48.12834%, #7d916e), color-stop(48.6631%, #7d916e), color-stop(49.19786%, #798c70), color-stop(49.73262%, #76896d), color-stop(50.26738%, #6e8771), color-stop(50.80214%, #6e8771), color-stop(51.3369%, #6a836d), color-stop(51.87166%, #6a836d), color-stop(52.40642%, #67806a), color-stop(52.94118%, #67806a), color-stop(53.47594%, #62816f), color-stop(54.0107%, #62816f), color-stop(54.54545%, #5f7e6c), color-stop(55.08021%, #5f7e6c), color-stop(55.61497%, #5b7a68), color-stop(56.14973%, #5b7a68), color-stop(56.68449%, #5b796f), color-stop(57.21925%, #5b796f), color-stop(57.75401%, #60776f), color-stop(58.28877%, #60776f), color-stop(58.82353%, #65746f), color-stop(59.35829%, #65746f), color-stop(59.89305%, #627073), color-stop(60.42781%, #627073), color-stop(60.96257%, #5e6c6f), color-stop(61.49733%, #5e6c6f), color-stop(62.03209%, #5b696c), color-stop(62.56684%, #5b6871), color-stop(63.1016%, #58656e), color-stop(63.63636%, #58656e), color-stop(64.17112%, #53676e), color-stop(64.70588%, #53676e), color-stop(65.24064%, #4f636a), color-stop(65.7754%, #4f636a), color-stop(66.31016%, #4c6067), color-stop(66.84492%, #4c6067), color-stop(67.37968%, #495c6b), color-stop(67.91444%, #495c6b), color-stop(68.4492%, #455867), color-stop(68.98396%, #455867), color-stop(69.51872%, #425564), color-stop(70.05348%, #425564), color-stop(70.58824%, #3e5160), color-stop(71.12299%, #3e5160), color-stop(71.65775%, #3b4d65), color-stop(72.19251%, #3b4d65), color-stop(72.72727%, #3e5068), color-stop(73.26203%, #3e5068), color-stop(73.79679%, #3e5160), color-stop(74.33155%, #3e5160), color-stop(74.86631%, #475264), color-stop(75.40107%, #4a5567), color-stop(75.93583%, #4e596b), color-stop(76.47059%, #4e596b), color-stop(77.00535%, #515c6e), color-stop(77.54011%, #515c6e), color-stop(78.07487%, #555b67), color-stop(78.60963%, #555b67), color-stop(79.14439%, #5c626e), color-stop(79.67914%, #5c626e), color-stop(80.2139%, #656371), color-stop(80.74866%, #686674), color-stop(81.28342%, #6c6b73), color-stop(81.81818%, #6c6b73), color-stop(82.35294%, #73727a), color-stop(82.8877%, #73727a), color-stop(83.42246%, #7c7376), color-stop(83.95722%, #7f7679), color-stop(84.49198%, #8a7b80), color-stop(85.02674%, #8d7e83), color-stop(85.5615%, #948683), color-stop(86.09626%, #948683), color-stop(86.63102%, #988a87), color-stop(87.16578%, #988a87), color-stop(87.70053%, #a08c85), color-stop(88.23529%, #a08c85), color-stop(88.77005%, #a7938c), color-stop(89.30481%, #a7938c), color-stop(89.83957%, #aa968f), color-stop(90.37433%, #ad9992), color-stop(90.90909%, #b79b8f), color-stop(91.44385%, #b79b8f), color-stop(91.97861%, #ba9e92), color-stop(92.51337%, #ba9e92), color-stop(93.04813%, #bea296), color-stop(93.58289%, #bea296), color-stop(94.11765%, #c1a599), color-stop(94.65241%, #c1a599), color-stop(95.18717%, #bea296), color-stop(95.72193%, #bea296), color-stop(96.25668%, #ba9e92), color-stop(96.79144%, #ba9e92), color-stop(97.3262%, #b79b8f), color-stop(97.86096%, #b79b8f), color-stop(98.39572%, #b3978b), color-stop(98.93048%, #b3978b), color-stop(99.46524%, #b0938f), color-stop(100%, #b0938f)) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(top, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 1 100%;
+  -o-border-image: -o-linear-gradient(top, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 1 100%;
+  border-image: linear-gradient(top, #748d77, #748d77, #6f8f77, #6f8f77, #73937b, #73937b, #739574, #739574, #769877, #769877, #7a9c7b, #7a9c7b, #7d9f7e, #7d9f7e, #80a37b, #80a37b, #89a57f, #89a57f, #8ca97b, #8ca97b, #8fac7e, #8fac7e, #93b082, #93b082, #98ad82, #98ad82, #9bb085, #9bb085, #9bb27e, #9bb27e, #9fb682, #9fb682, #a3b382, #a3b382, #a3b47d, #a3b47d, #a6b780, #a6b780, #acb580, #acb580, #b2b280, #b2b280, #afaf7d, #afaf7d, #b3ae76, #b3ae76, #b8ab76, #b8ab76, #baa472, #bea272, #c49f72, #c49f72, #c8a376, #c8a376, #cca176, #cca176, #c8a376, #c8a376, #c49f72, #c49f72, #bea272, #bea272, #baa472, #baa472, #bea876, #bea876, #b8ab76, #b8ab76, #b3ad7d, #b3ad7d, #afa979, #afa979, #a8a876, #a8a876, #a8a77b, #a8a77b, #a4a377, #a4a377, #9ea677, #9ea677, #9ba374, #9ba374, #989e78, #989e78, #8e9d74, #8b9a71, #889675, #889675, #849271, #809471, #7d916e, #7d916e, #798c70, #76896d, #6e8771, #6e8771, #6a836d, #6a836d, #67806a, #67806a, #62816f, #62816f, #5f7e6c, #5f7e6c, #5b7a68, #5b7a68, #5b796f, #5b796f, #60776f, #60776f, #65746f, #65746f, #627073, #627073, #5e6c6f, #5e6c6f, #5b696c, #5b6871, #58656e, #58656e, #53676e, #53676e, #4f636a, #4f636a, #4c6067, #4c6067, #495c6b, #495c6b, #455867, #455867, #425564, #425564, #3e5160, #3e5160, #3b4d65, #3b4d65, #3e5068, #3e5068, #3e5160, #3e5160, #475264, #4a5567, #4e596b, #4e596b, #515c6e, #515c6e, #555b67, #555b67, #5c626e, #5c626e, #656371, #686674, #6c6b73, #6c6b73, #73727a, #73727a, #7c7376, #7f7679, #8a7b80, #8d7e83, #948683, #948683, #988a87, #988a87, #a08c85, #a08c85, #a7938c, #a7938c, #aa968f, #ad9992, #b79b8f, #b79b8f, #ba9e92, #ba9e92, #bea296, #bea296, #c1a599, #c1a599, #bea296, #bea296, #ba9e92, #ba9e92, #b79b8f, #b79b8f, #b3978b, #b3978b, #b0938f, #b0938f) 1 100%;
+}
+
+/* line 17, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../../_sass/_shared.scss */
+a {
+  border-bottom: 1px dotted #bbbbbb;
+  border-color: rgba(187, 187, 187, 0.5);
+  color: white;
+  text-decoration: none;
+  -webkit-transition: border-color 0.25s ease-in-out;
+  -moz-transition: border-color 0.25s ease-in-out;
+  -o-transition: border-color 0.25s ease-in-out;
+  transition: border-color 0.25s ease-in-out;
+}
+/* line 23, ../../_sass/_shared.scss */
+a:hover, a:active, a:focus {
+  border-color: transparent !important;
+}
+
+/* line 28, ../../_sass/_shared.scss */
+abbr[title] {
+  cursor: help;
+}
+
+/* line 32, ../../_sass/_shared.scss */
+body {
+  background: #222222;
+  color: white;
+  font: 100%/1.5 "Muli", Arial, sans-serif;
+  text-align: center;
+}
+@media (min-width: 43.75em) {
+  /* line 32, ../../_sass/_shared.scss */
+  body {
+    line-height: 1.75;
+  }
+}
+
+/* line 43, ../../_sass/_shared.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 47, ../../_sass/_shared.scss */
+#cf_alert_div {
+  display: none !important;
+}
+
+/* line 51, ../../_sass/_shared.scss */
+.hidden {
+  display: none;
+}
+
+/* line 2, ../../_sass/patterns/_layout.scss */
+.container {
+  margin: auto;
+  max-width: 62.5em;
+  padding: 0 1em;
+  width: 62.5em;
+}
+@media (min-width: 43.75em) {
+  /* line 2, ../../_sass/patterns/_layout.scss */
+  .container {
+    padding: 0 2em;
+  }
+}
+
+/* line 12, ../../_sass/patterns/_layout.scss */
+div[class=container] {
+  width: auto;
+}
+
+/* line 2, ../../_sass/patterns/_content.scss */
+.content {
+  background: #333333;
+  display: block;
+  padding: 2em 0;
+  text-align: left;
+}
+/* line 8, ../../_sass/patterns/_content.scss */
+.content abbr[title] {
+  border-bottom: 1px dotted #222222;
+}
+/* line 12, ../../_sass/patterns/_content.scss */
+.content b, .content strong {
+  font-weight: bold;
+}
+/* line 16, ../../_sass/patterns/_content.scss */
+.content blockquote {
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 1.5em 0;
+  padding: 0 1em;
+}
+/* line 25, ../../_sass/patterns/_content.scss */
+.content blockquote a {
+  color: #bbbbbb;
+}
+/* line 29, ../../_sass/patterns/_content.scss */
+.content blockquote cite {
+  display: block;
+}
+/* line 32, ../../_sass/patterns/_content.scss */
+.content blockquote cite:before {
+  color: #bbbbbb;
+  content: "\2012";
+  margin: 0 0.2em 0 -0.575em;
+}
+/* line 39, ../../_sass/patterns/_content.scss */
+.content blockquote p {
+  margin: 0;
+}
+/* line 43, ../../_sass/patterns/_content.scss */
+.content blockquote q:before {
+  margin-left: -.5em;
+}
+@media (min-width: 43.75em) {
+  /* line 16, ../../_sass/patterns/_content.scss */
+  .content blockquote {
+    font-size: 1.5em;
+    line-height: 1.45;
+  }
+}
+/* line 53, ../../_sass/patterns/_content.scss */
+.content code {
+  background: black;
+  color: white;
+  font-family: Consolas, monaco, monospace;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: .15em .25em;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  white-space: pre-wrap;
+}
+/* line 69, ../../_sass/patterns/_content.scss */
+.content code .c, .content code .c1, .content code .p {
+  color: #bbbbbb;
+}
+/* line 73, ../../_sass/patterns/_content.scss */
+.content code .cp, .content code .sr {
+  color: #fba266;
+}
+/* line 77, ../../_sass/patterns/_content.scss */
+.content code .k, .content code .nt {
+  color: #8ea9d7;
+}
+/* line 81, ../../_sass/patterns/_content.scss */
+.content code .kd, .content code .s {
+  color: #f786ad;
+}
+/* line 85, ../../_sass/patterns/_content.scss */
+.content code .na {
+  color: #ffff77;
+}
+/* line 89, ../../_sass/patterns/_content.scss */
+.content code .o, .content code .sx {
+  color: #93b082;
+}
+/* line 94, ../../_sass/patterns/_content.scss */
+.content del, .content s {
+  color: #bbbbbb;
+  font-weight: 300;
+}
+/* line 99, ../../_sass/patterns/_content.scss */
+.content dfn, .content em, .content i, .content var {
+  font-style: italic;
+}
+/* line 103, ../../_sass/patterns/_content.scss */
+.content h1 {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0 0 .75em;
+  padding: 0 0 .333333em;
+}
+/* line 113, ../../_sass/patterns/_content.scss */
+.content h1 a {
+  border-color: #222222;
+  -moz-border-image: none;
+  -webkit-border-image: none;
+  -webkit-border-image: none;
+  -o-border-image: none;
+  border-image: none;
+}
+@media (min-width: 43.75em) {
+  /* line 103, ../../_sass/patterns/_content.scss */
+  .content h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 103, ../../_sass/patterns/_content.scss */
+  .content h1 {
+    font-size: 3em;
+    line-height: 1.25;
+  }
+}
+/* line 129, ../../_sass/patterns/_content.scss */
+.content h2 {
+  font-size: 1.625em;
+  font-weight: 300;
+  line-height: 1.15;
+  margin: 1em 0;
+}
+@media (min-width: 43.75em) {
+  /* line 129, ../../_sass/patterns/_content.scss */
+  .content h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 129, ../../_sass/patterns/_content.scss */
+  .content h2 {
+    font-size: 2.25em;
+  }
+}
+/* line 147, ../../_sass/patterns/_content.scss */
+.content h3 {
+  font-size: 1.375em;
+  line-height: 1.15;
+  margin: 0 0 1em;
+}
+@media (min-width: 43.75em) {
+  /* line 147, ../../_sass/patterns/_content.scss */
+  .content h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 147, ../../_sass/patterns/_content.scss */
+  .content h3 {
+    font-size: 1.75em;
+  }
+}
+/* line 162, ../../_sass/patterns/_content.scss */
+.content h4 {
+  font-size: 1.125em;
+  line-height: 1.1;
+  margin: 0 0 .5em;
+}
+@media (min-width: 43.75em) {
+  /* line 162, ../../_sass/patterns/_content.scss */
+  .content h4 {
+    line-height: 1.2;
+  }
+}
+/* line 172, ../../_sass/patterns/_content.scss */
+.content h5, .content h6 {
+  margin: 0 0 .25em;
+}
+/* line 176, ../../_sass/patterns/_content.scss */
+.content hr {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  height: 0;
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+/* line 188, ../../_sass/patterns/_content.scss */
+.content ins, .content u {
+  font-weight: 300;
+}
+/* line 192, ../../_sass/patterns/_content.scss */
+.content kbd, .content samp {
+  font-family: Consolas, monaco, monospace;
+}
+/* line 196, ../../_sass/patterns/_content.scss */
+.content li {
+  margin: .5em;
+}
+/* line 200, ../../_sass/patterns/_content.scss */
+.content mark {
+  background: black;
+  color: white;
+  font-weight: 300;
+  padding: .15em .25em;
+}
+/* line 207, ../../_sass/patterns/_content.scss */
+.content ol {
+  counter-reset: li;
+  list-style: decimal;
+  margin: 0 0 1em;
+  padding: 0 0 0 1em;
+}
+/* line 213, ../../_sass/patterns/_content.scss */
+.content ol > li {
+  list-style: none;
+}
+/* line 216, ../../_sass/patterns/_content.scss */
+.content ol > li:before {
+  color: #bbbbbb;
+  content: counter(li) ".";
+  counter-increment: li;
+  display: block;
+  font-size: .85em;
+  font-style: italic;
+  font-weight: 300;
+  left: -1.25em;
+  line-height: 1.75;
+  max-height: 0;
+  max-width: 0;
+  position: relative;
+}
+@media (min-width: 43.75em) {
+  /* line 216, ../../_sass/patterns/_content.scss */
+  .content ol > li:before {
+    line-height: 2;
+  }
+}
+/* line 240, ../../_sass/patterns/_content.scss */
+* + html .content ol li {
+  list-style: decimal;
+}
+/* line 245, ../../_sass/patterns/_content.scss */
+.content p {
+  margin: 0 0 1.5em;
+}
+/* line 249, ../../_sass/patterns/_content.scss */
+.content pre {
+  font-family: Consolas, monaco, monospace;
+  margin: 2em 0;
+  white-space: pre-wrap;
+}
+/* line 255, ../../_sass/patterns/_content.scss */
+.content q {
+  quotes: "“" "”" "‘" "’";
+}
+/* line 258, ../../_sass/patterns/_content.scss */
+.content q:after {
+  color: #bbbbbb;
+  content: close-quote;
+}
+/* line 263, ../../_sass/patterns/_content.scss */
+.content q:before {
+  color: #bbbbbb;
+  content: open-quote;
+}
+/* line 269, ../../_sass/patterns/_content.scss */
+.content small {
+  font-size: smaller;
+}
+/* line 273, ../../_sass/patterns/_content.scss */
+.content sub {
+  font-size: smaller;
+  vertical-align: sub;
+}
+/* line 278, ../../_sass/patterns/_content.scss */
+.content sup {
+  font-size: smaller;
+  vertical-align: super;
+}
+/* line 283, ../../_sass/patterns/_content.scss */
+.content table {
+  border-right: 1px solid #333333;
+  border-collapse: collapse;
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+/* line 289, ../../_sass/patterns/_content.scss */
+.content table td, .content table th {
+  border: 0 dotted #bbbbbb;
+  border-color: rgba(187, 187, 187, 0.5);
+  border-right-width: 1px;
+  border-top-width: 1px;
+  font-weight: 300;
+  padding: 0 .5em;
+}
+/* line 300, ../../_sass/patterns/_content.scss */
+.content table th {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top: 0;
+  font-weight: bold;
+  padding: .25em .5em;
+}
+/* line 311, ../../_sass/patterns/_content.scss */
+.content time {
+  color: #bbbbbb;
+}
+/* line 314, ../../_sass/patterns/_content.scss */
+.content time a {
+  color: #bbbbbb;
+}
+/* line 319, ../../_sass/patterns/_content.scss */
+.content ul {
+  list-style: circle;
+  margin: 0 0 1em;
+  padding: 0 0 0 1em;
+}
+/* line 324, ../../_sass/patterns/_content.scss */
+.content ul > li {
+  list-style: none;
+}
+/* line 327, ../../_sass/patterns/_content.scss */
+.content ul > li:before {
+  color: #bbbbbb;
+  content: "\25cb";
+  display: block;
+  left: -1em;
+  max-height: 0;
+  max-width: 0;
+  position: relative;
+}
+/* line 340, ../../_sass/patterns/_content.scss */
+* + html .content ul li {
+  list-style: circle;
+}
+/* line 345, ../../_sass/patterns/_content.scss */
+.content .hgroup {
+  margin: 0 0 2.25em;
+  padding: 0 0 1em;
+}
+/* line 350, ../../_sass/patterns/_content.scss */
+.content .hgroup * {
+  display: inline;
+}
+/* line 354, ../../_sass/patterns/_content.scss */
+.content .hgroup a {
+  border-color: #222222;
+}
+/* line 358, ../../_sass/patterns/_content.scss */
+.content .hgroup h1 {
+  border: none;
+  margin: 0 .25em 0 0;
+  padding: 0;
+}
+/* line 364, ../../_sass/patterns/_content.scss */
+.content .hgroup h2 {
+  margin-right: .125em;
+}
+/* line 369, ../../_sass/patterns/_content.scss */
+.content .video {
+  height: 0;
+  overflow: hidden;
+  margin: 0 0 1.5em;
+  padding: 0 0 56.25%;
+  position: relative;
+}
+/* line 376, ../../_sass/patterns/_content.scss */
+.content .video embed, .content .video iframe, .content .video object {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 2, ../../_sass/patterns/_footer.scss */
+.footer {
+  color: #bbbbbb;
+  overflow: hidden;
+  padding: 3em 0;
+}
+/* line 7, ../../_sass/patterns/_footer.scss */
+.footer a {
+  display: inline-block;
+  margin: 0 .5em 1em;
+}
+/* line 12, ../../_sass/patterns/_footer.scss */
+.footer p {
+  font-weight: 300;
+  margin: 0 0 2em;
+}
+/* line 17, ../../_sass/patterns/_footer.scss */
+.footer .established {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 0 1px #bbbbbb inset;
+  -moz-box-shadow: 0 0 0 1px #bbbbbb inset;
+  box-shadow: 0 0 0 1px #bbbbbb inset;
+  display: inline-block;
+  line-height: 1.15;
+  padding: 1em;
+  text-transform: uppercase;
+}
+/* line 25, ../../_sass/patterns/_footer.scss */
+.footer .established abbr {
+  display: block;
+}
+
+/* line 2, ../../_sass/patterns/_header.scss */
+.header {
+  background: url('/img/header.jpg') 50% 0;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  padding: 1em 0;
+  text-align: left;
+}
+@media (min-width: 56.25em) {
+  /* line 2, ../../_sass/patterns/_header.scss */
+  .header {
+    padding: 2em 0;
+  }
+}
+
+/* line 2, ../../_sass/patterns/_logo.scss */
+.logo {
+  background: black;
+  border: 0;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 2;
+  padding: 0 .65em .25em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 15, ../../_sass/patterns/_logo.scss */
+.logo span {
+  letter-spacing: .35em;
+}
+@media (min-width: 56.25em) {
+  /* line 2, ../../_sass/patterns/_logo.scss */
+  .logo {
+    font-size: 1.25em;
+  }
+}
+
+/* line 2, ../../_sass/patterns/_post.scss */
+.post {
+  clear: both;
+  margin: 0 0 3em;
+  padding: 0 0 2em;
+}
+/* line 8, ../../_sass/patterns/_post.scss */
+.post:last-of-type {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* line 14, ../../_sass/patterns/_post.scss */
+.post .ellipsis {
+  border: 0;
+  display: block;
+  font-size: 2.25em;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: #333333 1px 1px 0;
+}
+@media (min-width: 56.25em) {
+  /* line 14, ../../_sass/patterns/_post.scss */
+  .post .ellipsis {
+    font-size: 1.5em;
+  }
+}
+/* line 29, ../../_sass/patterns/_post.scss */
+.post .ellipsis:before {
+  color: black;
+  content: '\25cb\25cb\25cb';
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+/* line 35, ../../_sass/patterns/_post.scss */
+.post .ellipsis:hover, .post .ellipsis:active, .post .ellipsis:focus {
+  text-shadow: none;
+}
+/* line 38, ../../_sass/patterns/_post.scss */
+.post .ellipsis:hover:before, .post .ellipsis:active:before, .post .ellipsis:focus:before {
+  color: #bbbbbb;
+}
+/* line 43, ../../_sass/patterns/_post.scss */
+.post .ellipsis span {
+  display: none;
+}
+/* line 48, ../../_sass/patterns/_post.scss */
+.post .hgroup {
+  border: 0 !important;
+  margin: 0 0 2em !important;
+  padding: 0 !important;
+}

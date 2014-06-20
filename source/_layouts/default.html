@@ -52,8 +52,9 @@
 		<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.authorImage }}{% endif %}">
 		{% if page.image %}<meta name="twitter:image" content="{{ page.image }}">{% endif %}
 		{% if page.noindex or site.noindex %}<meta name="robots" content="noindex,nofollow">{% endif %}
+		<!--[if lte IE 9]><script src="{% asset_path js/libs/html5.js %}"></script><![endif]-->
 	</head>
-	<body class="language-markup">
+	<body>
 		{% include header.html %}
 		<main class="content{% if page.cssClass %} {{ page.cssClass }}{% endif %}" role="main">
 			<div id="content-container" class="container">
