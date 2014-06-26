@@ -5,6 +5,5 @@ assets:
   debug: true
 jekyll-press:
   exclude: ['**.*','**/**.*']
-  
 url: http://dev.benedfit.com
 noindex: true

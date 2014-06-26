@@ -14,14 +14,14 @@ module.exports = function(grunt) {
     	var port = 80;
 
     	ngrok.connect(port, function(err, url) {
-			if (err !== null) {
-	        	grunt.fail.fatal(err);
-	        	return done();
-	      	}
-	      	
-      		grunt.config.set('pagespeed.options.url', url);
-      		grunt.task.run('pagespeed');
-      		done();
+        if (err !== null) {
+          grunt.fail.fatal(err);
+	       	return done();
+        }
+
+    		grunt.config.set('pagespeed.options.url', url);
+    		grunt.task.run('pagespeed');
+    		done();
 		});
 	});
 };
