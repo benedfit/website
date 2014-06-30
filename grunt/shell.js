@@ -4,13 +4,13 @@ module.exports = {
 			stdout: true
 			},
 		command: 'bundle exec compass compile -e production --force --debug-info'
-	},	
+	},
 	jekyll: {
 		options: {
 			stdout: true
 		},
 		command: 'bundle exec jekyll build --trace'
-	},	
+	},
 	jekyll_dev: {
 		options: {
 			stdout: true
