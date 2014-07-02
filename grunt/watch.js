@@ -1,4 +1,7 @@
 module.exports = {
+	options: {
+		livereload: true
+	},
 	compass: {
 		files: ['source/**/*.scss'],
 		tasks: ['compass']

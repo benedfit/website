@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('insights', 'Run pagespeed with ngrok', function() {
 		var done = this.async();
-    	var port = 80;
+    	var port = 4000;
 
     	ngrok.connect(port, function(err, url) {
         if (err !== null) {

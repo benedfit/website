@@ -16,9 +16,7 @@
     "grunt-svgmin": "~0.3.0",
     "jpegtran-bin": "0.2.0",
     "load-grunt-config": "~0.7.1",
-    "load-grunt-tasks": "~0.4.0"
-  },
-  "optionalDependencies": {
+    "load-grunt-tasks": "~0.4.0",
     "ngrok": "~0.1.94"
   }
 }

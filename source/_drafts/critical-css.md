@@ -37,8 +37,6 @@ content, and the rest, which can be deferred.
 > just agree that anything we can do to get our data to the user as quickly as
 > possible is a good thing, right?
 
-### Inlining a small CSS file
-
 If your HTML document was as follows:
 
 {% highlight html %}
@@ -50,7 +48,7 @@ If your HTML document was as follows:
     <div class="thing1">
       Hey world, how's tricks?
     </div>
-  </body
+  </body>
 </html>
 {% endhighlight %}
 
@@ -61,7 +59,24 @@ And `things.css` contained the following:
 .thing2 { background: green; }
 {% endhighlight %}
 
-Then you could inline your
+Then your could inline your critical CSS like so:
+
+{% highlight html %}
+<html>
+  <head>
+    <style>
+      .thing1 { color: red; }
+    </style>
+  </head>
+  <body>
+    <div class="thing1">
+      Hey world, how's tricks?
+    </div>
+    <link rel="stylesheet" href="thing2-only.css">
+  </body>
+</html>
+{% endhighlight %}
+
 
 <!--## Determining critical css-->
 

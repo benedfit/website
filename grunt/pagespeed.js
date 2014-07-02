@@ -2,10 +2,10 @@ module.exports = {
 	options: {
 		nokey: true,
 		locale: 'en_GB',
-        threshold: 80,
+        threshold: 10,
 	url: 'http://benedfit.com/',
         paths: [
-        	'/',
+        	'/'/*,
         	'/404.html',
         	'/2013/',
         	'/2013/06/',
@@ -14,7 +14,7 @@ module.exports = {
         	'/2013/11/',
         	'/2013/11/pattern-library-annotations-documentation-and-more/',
         	'/archive/',
-        	'/styleguide/'
+        	'/styleguide/'*/
         ]
 	},
 	mobile: {
