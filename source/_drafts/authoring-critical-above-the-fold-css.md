@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Authoring Critical Above-the-fold CSS'
+title: 'Authoring critical above-the-fold CSS'
 metaDescription: 'TBC'
 excerpt: >
   [Google PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/)
@@ -10,7 +10,7 @@ excerpt: >
   without waiting for those files to load, and that I should inline the critical
   portions of those files directly into my HTML.
 ---
-> This was originally posted on [CSS-Tricks](http://css-tricks.com/TBC) on Blah
+> This was originally posted on [CSS-Tricks](http://css-tricks.com/TBC) on July
 > 0, 2014
 
 {{ page.excerpt }} <q>Go home PageSpeed,</q> I cried,<q> who in their right mind
@@ -19,7 +19,6 @@ I couldn't possible be seen to FOUT</q> I scoffed.
 
 **TBC - Bit about how I changed**
 
-<!--Cover what critical css is, why it's important, page speed etc.-->
 ## Here comes the science part...
 
 External stylesheets (read those included via `link` tags) are render-blocking.
@@ -63,11 +62,12 @@ And `things.css` contained the following:
 .thing2 { background: green; }
 {% endhighlight %}
 
-Then your could inline the critical, above-the-fold, portion of your CSS like so:
+Then you can inline the critical, above-the-fold, portion of your CSS like so:
 
 {% highlight html %}
 <html>
   <head>
+    <!-- Inline critical CSS -->
     <style>
       .thing1 { color: red; }
     </style>
@@ -80,18 +80,24 @@ Then your could inline the critical, above-the-fold, portion of your CSS like so
     <div class="thing2">
       Hey, I'm totally below-the-fold
     </div>
-    <!-- Then asynchronously load
-      <link rel="stylesheet" href="thing2-only.css">
-    -->
+    <!-- Then asynchronously load below-the-fold CSS -->
+    <script>
+      function async(href){
+        var ss = window.document.createElement('link'),
+            ref = window.document.getElementsByTagName('head')[0];
+
+        ss.rel = 'stylesheet';
+        ss.href = href;
+        ss.media = 'only x';
+
+        ref.parentNode.insertBefore(ss, ref);
+
+        setTimeout( function(){
+          ss.media = 'all';
+        },0);
+      }
+      async('thing2-only.css');
+    </script>
   </body>
 </html>
 {% endhighlight %}
-
-While this is the essence of the idea, the above solution will still get you in
-trouble with
-
-## Changing your workflow
-
-<!--## Determining critical css-->
-
-<!--## Authoring critical css-->

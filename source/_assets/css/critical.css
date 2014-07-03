@@ -226,7 +226,7 @@ div[class=container] {
   color: #bbbbbb;
 }
 /* line 66, ../../_sass/patterns/_content.scss */
-.content code .cp, .content code .sr {
+.content code .cp, .content code .mi, .content code .sr {
   color: #fba266;
 }
 /* line 70, ../../_sass/patterns/_content.scss */
@@ -238,7 +238,7 @@ div[class=container] {
   color: #f786ad;
 }
 /* line 78, ../../_sass/patterns/_content.scss */
-.content code .na {
+.content code .na, .content code .nb {
   color: #ffff77;
 }
 /* line 82, ../../_sass/patterns/_content.scss */
@@ -593,7 +593,7 @@ div[class=container] {
   display: inline-block;
   font-weight: bold;
   line-height: 2;
-  padding: 0 .65em .25em;
+  padding: 0 .65em .2em;
   text-decoration: none;
   text-transform: uppercase;
 }
