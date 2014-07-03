@@ -1,34 +1,34 @@
 %hr{
   border-bottom:1px solid $colour-grey-light;
   border-bottom-color:rgba($colour-grey-light,.5);
-  @include border-image(linear-gradient(left, $colours-gradient) 100% 1);
+  border-image:linear-gradient(left, $colours-gradient) 100% 1;
 }
 
 %vr{
   border-left:1px solid $colour-grey-light;
   border-left-color:rgba($colour-grey-light,.5);
-  @include border-image(linear-gradient(top, $colours-gradient) 1 100%);
+  border-image:linear-gradient(top, $colours-gradient) 1 100%;
 }
 
 @include jacket(critical){
   @include global-reset;
-  
+
   a{
     border-bottom:1px dotted $colour-grey-light;
     border-color:rgba($colour-grey-light,.5);
     color:$colour-white;
     text-decoration:none;
-    @include transition(border-color .25s ease-in-out);
-    
+    transition:border-color .25s ease-in-out;
+
     &:hover,&:active,&:focus{
-      border-color:transparent !important
+      border-color:transparent !important;
     }
   }
 
   abbr[title]{
     cursor:help;
   }
-  
+
   body{
     background:$colour-black-light;
     color:$colour-white;
@@ -39,15 +39,15 @@
       line-height:1.75;
     }
   }
-  
+
   html{
-    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
   }
-  
+
   #cf_alert_div{
     display:none !important;
   }
-  
+
   .hidden{
     display:none;
   }

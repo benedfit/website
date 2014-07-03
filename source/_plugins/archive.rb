@@ -9,7 +9,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'archive.html')
       self.data['period'] = period
       self.data['period_posts'] = posts
-      
+
       period_year = period["year"].to_s()
       period_month = period["month"].to_s.rjust(2, '0')
       if period['month'] == nil
@@ -17,7 +17,7 @@ module Jekyll
       end
       period_date = DateTime.parse('%s-%s-01 00:00:00' % [period_year, period_month])
       period_date_format = period_date.strftime('%B %Y')
-      
+
       archive_title = self.data['title'] || self.data['archive_title'] || ''
       menu_title = self.data['menuTitle'] || self.data['archive_menuTitle'] || ''
       if period['year'] == nil
@@ -45,7 +45,7 @@ module Jekyll
           archive_dir = File.join(period["year"].to_s(), "%02d" % period["month"].to_s())
           write_archive_index(site, archive_dir, period, posts)
         end
-        
+
         # Generate yearly archives
         site.posts.sort_by{ |p| -p.date.to_f }.group_by{ |c| {"year" => c.date.year} }.each do |period, posts|
           archive_dir = File.join(period["year"].to_s())

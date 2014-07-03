@@ -4,13 +4,13 @@
     clear:both;
     margin:0 0 3em;
     padding:0 0 2em;
-    
+
     &:last-of-type{
       border:0;
       margin:0;
       padding:0;
     }
-    
+
     .ellipsis{
       border:0;
       display:block;
@@ -20,31 +20,31 @@
         align:center;
         decoration:none;
       }
-      @include text-shadow($colour-grey 1px 1px 0);
-      
+      text-shadow:$colour-grey 1px 1px 0;
+
       @include breakpoint($breakpoint-second){
         font-size:1.5em;
       }
-      
+
       &:before{
         color:$colour-black;
         content:'\25cb\25cb\25cb';
-        @include transition(color .25s ease-in-out);
+        transition:color .25s ease-in-out;
       }
-      
+
       &:hover,&:active,&:focus{
-        @include text-shadow(none);
-        
+        text-shadow:none;
+
         &:before{
           color:$colour-grey-light;
         }
       }
-      
+
       span{
         display:none;
       }
     }
-    
+
     .hgroup{
       border:0 !important;
       margin:0 0 2em !important;

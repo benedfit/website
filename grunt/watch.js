@@ -2,6 +2,10 @@ module.exports = {
 	options: {
 		livereload: true
 	},
+	autoprefixer: {
+		files: ['source/**/*.css'],
+		tasks: ['autoprefixer']
+	},
 	compass: {
 		files: ['source/**/*.scss'],
 		tasks: ['compass']

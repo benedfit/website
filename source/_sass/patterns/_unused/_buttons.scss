@@ -1,10 +1,11 @@
 @include jacket(non-critical){
   .button{
+    appearance:none;
     background:transparent;
     background:rgba($colour-white,.15);
     border:0;
-    @include border-radius(.25em);
-    @include box-shadow($colour-white 0 0 0 1px inset);
+    border-radius:.25em;
+    box-shadow:$colour-white 0 0 0 1px inset;
     color:$colour-white;
     cursor:pointer;
     display:inline-block;
@@ -19,11 +20,12 @@
     outline:0;
     overflow:visible;
     padding:.85em 2em;
-    @include transition(background .25s ease-in-out);
+    transition:background .25s ease-in-out;
     vertical-align:middle;
     width:auto;
     -webkit-appearance:none;
-    
+       -mox-appearance:none;
+
     &:hover,&:active,&:focus{
       background:rgba($colour-white,.25);
     }

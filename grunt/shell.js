@@ -2,7 +2,7 @@ module.exports = {
 	compass: {
 		options: {
 			stdout: true
-			},
+		},
 		command: 'bundle exec compass compile -e production --force --debug-info'
 	},
 	jekyll: {

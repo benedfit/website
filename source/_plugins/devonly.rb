@@ -1,7 +1,5 @@
 module Jekyll
-
   class DevOnlyTag < Liquid::Block
-
     def render(context)
       if DevOnlyTag.dev?(context)
         super(context)
@@ -21,7 +19,6 @@ module Jekyll
 
       false
     end
-
   end
 end
 

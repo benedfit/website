@@ -1,5 +1,5 @@
 @include jacket(critical){
-  .logo{   
+  .logo{
       background:$colour-black;
       border:0;
       color:$colour-white;
@@ -11,11 +11,11 @@
         decoration:none;
         transform:uppercase;
       }
-      
+
       span{
         letter-spacing:.35em;
       }
-    
+
       @include breakpoint($breakpoint-second){
         font-size:1.25em;
       }

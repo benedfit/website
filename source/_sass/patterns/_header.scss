@@ -1,11 +1,11 @@
 @include jacket(critical){
   .header{
-    @include background(linear-gradient(left, $colours-gradient) 50% 0);
+    background:linear-gradient(left, $colours-gradient) 50% 0;
     background-image:inline-image("header.jpg", jpg);
-    @include background-size(100% auto);
+    background-size:100% auto;
     padding:1em 0;
     text-align:left;
-  
+
     @include breakpoint($breakpoint-second){
       padding:2em 0;
     }
