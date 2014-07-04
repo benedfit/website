@@ -17,7 +17,15 @@ excerpt: >
 wants a mass of CSS in their HTML? I'm a legitimate professional don't you know?
 I couldn't possible be seen to FOUT</q> I scoffed.
 
-**TBC - Bit about how I changed**
+This was my stand point until [Scott Jehl](https://twitter.com/scottjehl) tweeted:
+
+> <q>I'd like to see a site like CSS Zen Garden, but where developers try to make
+> the same responsive site score better on [webpagetest.org](http://webpagetest.org)</q>
+> <cite>[Scott Jehl](https://twitter.com/scottjehl/statuses/477112692684390400)
+> <time>June 12, 2014</time></cite>
+
+<!--<blockquote class="twitter-tweet" lang="en"><p>I&#39;d like to see a site like CSS Zen Garden, but where developers try to make the same responsive site score better on <a href="http://t.co/OOoqPEPWVx">http://t.co/OOoqPEPWVx</a></p>&mdash; Scott Jehl (@scottjehl) <a href="https://twitter.com/scottjehl/statuses/477112692684390400">June 12, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 
 ## Here comes the science part...
 

@@ -9,4 +9,4 @@ Location: Leighton Buzzard, UK
 /* SITE */
 Last update: {{ site.time | date: '%Y/%m/%d' }}
 Standards: HTML5, CSS3
-Software: Aptana, Jekyll, Sass, Grunt, Wercker
+Software: Jekyll, Sass, Grunt, Wercker

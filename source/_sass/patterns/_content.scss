@@ -44,6 +44,11 @@
         margin-left:-.5em;
       }
 
+      time{
+        font-size:.666em;
+        margin:0 0 0 .25em;
+      }
+
       @include breakpoint($breakpoint-first){
         font-size:1.5em;
         line-height:1.45;
