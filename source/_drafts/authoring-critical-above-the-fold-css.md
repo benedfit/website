@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Authoring critical above-the-fold CSS'
-metaDescription: 'TBC'
+metaDescription: 'Authoring critical above-the-fold CSS, and asynchronously loading none render-blocking CSS'
 excerpt: >
   [Google PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/)
   and my web pages; it was a match made in heaven, until things changed... PageSpeed
@@ -10,8 +10,7 @@ excerpt: >
   without waiting for those files to load, and that I should in-line the critical
   portions of those files directly into my HTML.
 ---
-> This was originally posted on [CSS-Tricks](http://css-tricks.com/TBC) on July
-> 0, 2014
+> [This was originally posted on CSS-Tricks on July 0, 2014](http://css-tricks.com/TBC)
 
 {{ page.excerpt }} <q>Go home PageSpeed,</q> I cried, <q>who in their right mind
 wants a mass of CSS in their HTML? I'm a legitimate professional, I have a work-flow
@@ -67,9 +66,9 @@ to aid in the process
 [an on-line tool](http://jonassebastianohlsson.com/criticalpathcssgenerator/)
 
 Armed with the results of the inspection process I now need to modify my HTML to
-load my CSS in a non-render-blocking way.
+load my CSS in a none render-blocking way.
 
-## Asynchronously loading CSS
+## An asynchronously load off my mind
 
 Let's imagine that one of my HTML documents was as follows:
 
@@ -114,7 +113,7 @@ above-the-fold, portion of my CSS in the `head` like so:
     ...
 {% endhighlight %}
 
-Then using [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS)
+Pair this with [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS)
 I can asynchronously load the remaining below-the-fold CSS like this:
 
 {% highlight html %}
@@ -157,17 +156,96 @@ I can asynchronously load the remaining below-the-fold CSS like this:
 </html>
 {% endhighlight %}
 
-## Changing your work-flow to accommodate critical CSS
+## A work-flow for the future
 
-Excellent news! PageSpeed is happy! It no longer complains of render-blocking CSS and
-is happy that above-the-fold content has been given the priority is deserves, but in
-this heady modern world of front-end tooling a manual process like the one above
-just isn't going to hack it...
+Excellent news! PageSpeed is elated! It no longer complains of render-blocking CSS and
+is satisfied that above-the-fold content has been given the priority it deserves, but in
+this modern world of CSS preprocessors and front-end tooling a manual process like
+the one above just isn't going to hack it...
 
-<!--
-Cover Addy Osmani's https://github.com/addyosmani/critical being very much like mod_pagespeed
--->
+### An automated approach
 
-<!--
-But then cover my preference of it being an author's decision and show examples using Jacket
--->
+... Those of you looking for an automated mod_pagespeed style approach, and also
+familiar with Node (Apologies to those who aren't, but here at
+[Clock it's a massive part of everything we do](http://clock.co.uk/)) will definitely want to look into
+[Penthouse](https://github.com/pocketjoso/penthouse) and
+[Addy Osmani's](https://twitter.com/addyosmani)
+[experimental Node module, Critical](https://github.com/addyosmani/critical), both
+of which provide means for in-lining or manipulating critical CSS as determined
+via the PageSpeed API. Now while a fully automated work-flow sounds like heaven
+the one thing that irks me with the current tools is that they don't take address
+the fact that any CSS rules that are in-lined are served again once the below-the-fold
+CSS is downloaded. And in the spirit of sending as little data as needed to our
+users, this feels like an unnecessary duplication.
+
+### CSS preprocessors to the rescue
+
+Making use of your favourite CSS preprocessor for authoring above and below-the-fold
+CSS seems like a no-brainer to me and is something the Front-end team is currently
+experimenting with at Clock.
+
+New projects lend themselves very well to this approach, and critical and non-critical
+CSS could be authored via some well structured `@import` rules:
+
+{% highlight scss %}
+// critical.scss - to be in-lined
+@import "header";
+{% endhighlight %}
+
+{% highlight scss %}
+// non-critical.scss - to be asynchronously loaded
+@import "web-fonts";
+@import "footer";
+{% endhighlight %}
+
+Should you're partials not lend themselves to this sort of structuring,
+[Team Sass's conditional styles Compass plug-in Jacket](https://github.com/Team-Sass/jacket)
+can come in very handy. For example if your partial `_shared.scss` contained rules
+for both above and below-the-fold elements, the critical and non-critical rules
+could be wrapped by Jacket like so:
+
+{% highlight scss %}
+@include jacket(critical) {
+  .header{
+    color: red;
+  }
+}
+
+@include jacket(non-critical) {
+  @include font-face(...);
+  ...
+
+  .footer{
+    color: blue;
+  }
+}
+{% endhighlight %}
+
+Then `critical.css` and `non-critical.css` could be edited as follows to result
+in the same CSS:
+
+{% highlight scss %}
+// critical.scss - to be in-lined
+$jacket: critical;
+@import "shared";
+{% endhighlight %}
+
+{% highlight scss %}
+// non-critical.scss - to be asynchronously loaded
+$jacket: non-critical;
+@import "shared";
+{% endhighlight %}
+
+This approach also feels in-keeping with the way lots of the community is authoring
+media queries at a component level rather than in a global location, and could feasible
+be used to define critical and non-critical CSS rules at a component level.
+
+## We're still working this stuff out
+
+While the [update to the web version of PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights_extensions)
+is almost a year old now, I feel that the topic of critical CSS and prioritising
+above-the-fold content has only gained significant traction in the past few months.
+I hope by giving you and insight into the way I've handle its authoring will
+entice you into incorporate it into your work-flow. And make sure to keep a
+weather eye on the tools outline above, as most are in the early stages of
+development and I expect exciting changes ahead.
