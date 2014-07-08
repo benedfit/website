@@ -15,7 +15,7 @@ excerpt: >
 
 {{ page.excerpt }} <q>Go home PageSpeed,</q> I cried, <q>who in their right mind
 wants a mass of CSS in their HTML? I'm a legitimate professional, I have a work-flow
-don't you know? I couldn't possible be seen to advocate FOUTing</q> I scoffed.
+don't you know?</q> I scoffed.
 
 This had long been my stand point until I read the following tweet:
 
@@ -58,7 +58,7 @@ the CSS rules applied to the elements visible in the viewport. This seemed like
 a daunting task, but fear not, some very smart people were there to help:
 
 * [Paul Kinlan](https://twitter.com/Paul_Kinlan) has created a
-[bookmarklet/Chrome devtools snippet](https://gist.github.com/PaulKinlan/6284142)
+[bookmarklet/Chrome dev tools snippet](https://gist.github.com/PaulKinlan/6284142)
 to aid in the process
 * [as too has Scott Jehl](https://gist.github.com/scottjehl/b6129da04733e4e0f9a4)
 * Penthouse by [Jonas Ohlsson](https://twitter.com/pocketjoso) is available as a
@@ -147,9 +147,27 @@ I can asynchronously load the remaining below-the-fold CSS like this:
           ss.media = 'all';
         },0);
       }
-      loadCss('thing2-only.css');
+      loadCss('things.css');
     </script>
+    <noscript>
+      <!-- Let's not assume anything -->
+      <link rel="stylesheet" href="things.css">
+    </noscript>
   </body>
 </html>
 {% endhighlight %}
 
+## Changing your work-flow to accommodate critical CSS
+
+Excellent news! PageSpeed is happy! It no longer complains of render-blocking CSS and
+is happy that above-the-fold content has been given the priority is deserves, but in
+this heady modern world of front-end tooling a manual process like the one above
+just isn't going to hack it...
+
+<!--
+Cover Addy Osmani's https://github.com/addyosmani/critical being very much like mod_pagespeed
+-->
+
+<!--
+But then cover my preference of it being an author's decision and show examples using Jacket
+-->
