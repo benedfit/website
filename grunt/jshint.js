@@ -1,5 +1,5 @@
 module.exports = {
-	all: {
-		src: ['source/**/*.js','!**/libs/*.js']
-	}
+  all: {
+    src: ['source/**/*.js','!**/libs/*.js']
+  }
 };

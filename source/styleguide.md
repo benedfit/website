@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'Style guide'
-metaDescription: 'Examples of all the styles in use on my site' 
+metaDescription: 'Examples of all the styles in use on my site'
 permalink: /styleguide/
 hidden: true
 ---
@@ -37,19 +37,19 @@ hidden: true
 
 ## Lists
 
-*	This is a list item in an unordered list [link](#)
-*	An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. 
-*	Lists can be nested inside of each other
-	*	This is a nested list item
-	*	This is another nested list item in an unordered list
-*	This is the last list item
+* This is a list item in an unordered list [link](#)
+* An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line.
+* Lists can be nested inside of each other
+  * This is a nested list item
+  * This is another nested list item in an unordered list
+* This is the last list item
 
-1.	This is a list item in an ordered list [link](#)
-2.	An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.
-3.	Lists can be nested inside of each other
-	1.	This is a nested list item
-	2.	This is another nested list item in an ordered list
-4.	This is the last list item
+1.  This is a list item in an ordered list [link](#)
+2.  An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.
+3.  Lists can be nested inside of each other
+  1.  This is a nested list item
+  2.  This is another nested list item in an ordered list
+4.  This is the last list item
 
 ## Text
 
@@ -119,21 +119,21 @@ p q r s t u v w x y z { | } ~</pre>
 
 {% highlight html %}
 <script>
-	// This is what a hightlighted code block looks like
-	// Sample script
-	window.console && console.log('foo');
-	var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
+  // This is what a hightlighted code block looks like
+  // Sample script
+  window.console && console.log('foo');
+  var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
 </script>
 <style>
-	/* Sample style */
-	.sample{
-		background:url(none);
-		content:"test";
-		margin:0 !important;
-	}
+  /* Sample style */
+  .sample{
+    background:url(none);
+    content:"test";
+    margin:0 !important;
+  }
 </style>
 <div>
-	<!-- Sample HTML -->
-	<p class=".sample">This is an sample pattern</p>
+  <!-- Sample HTML -->
+  <p class=".sample">This is an sample pattern</p>
 </div>
 {% endhighlight %}

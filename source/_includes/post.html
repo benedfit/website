@@ -6,18 +6,18 @@
 {% endcapture %}
 {% if include.full %}
 <header class="hgroup hgroup-hr">
-	<h1>{{ title }}</h1>
-	{{ date }}
+  <h1>{{ title }}</h1>
+  {{ date }}
 </header>
 <div class="e-content">{{ content }}</div>
 <footer class="hidden" aria-hidden="true"><a href="{{ site.authorUrl }}" rel="author" class="p-author h-card">{{ site.authorName }}</a></footer>
 {% else %}
 <article class="post hr h-entry">
-	<header class="hgroup">
-		<h2>{{ title }}</h2>
-		{{ date }}
-	</header>
-	<div class="excerpt p-summary">{{ page.excerpt | markdownify }}</div>
-	<a href="{{ page.url }}" class="ellipsis"><span aria-hidden="false">Read more</span></a>
+  <header class="hgroup">
+    <h2>{{ title }}</h2>
+    {{ date }}
+  </header>
+  <div class="excerpt p-summary">{{ page.excerpt | markdownify }}</div>
+  <a href="{{ page.url }}" class="ellipsis"><span aria-hidden="false">Read more</span></a>
 </article>
 {% endif %}

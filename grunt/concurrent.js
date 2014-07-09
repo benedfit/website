@@ -3,5 +3,5 @@ module.exports = {
     logConcurrentOutput: true
   },
   watch: ['watch', 'connect'],
-	minify: ['imagemin', 'svgmin']
+  minify: ['imagemin', 'svgmin']
 };
