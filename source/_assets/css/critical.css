@@ -390,69 +390,62 @@ div[class=container] {
   display: block;
   font-size: .85em;
   font-style: italic;
-  font-weight: 300;
   left: -1.25em;
-  line-height: 1.75;
   max-height: 0;
   max-width: 0;
   position: relative;
+  top: .2em;
 }
-@media (min-width: 43.75em) {
-  /* line 214, ../../_sass/patterns/_content.scss */
-  .content ol > li:before {
-    line-height: 2;
-  }
-}
-/* line 238, ../../_sass/patterns/_content.scss */
+/* line 233, ../../_sass/patterns/_content.scss */
 * + html .content ol li {
   list-style: decimal;
 }
-/* line 243, ../../_sass/patterns/_content.scss */
+/* line 238, ../../_sass/patterns/_content.scss */
 .content p {
   margin: 0 0 1.5em;
 }
-/* line 247, ../../_sass/patterns/_content.scss */
+/* line 242, ../../_sass/patterns/_content.scss */
 .content pre {
   font-family: Consolas, monaco, monospace;
   margin: 2em 0;
   white-space: pre-wrap;
 }
-/* line 253, ../../_sass/patterns/_content.scss */
+/* line 248, ../../_sass/patterns/_content.scss */
 .content q {
   quotes: "“" "”" "‘" "’";
 }
-/* line 256, ../../_sass/patterns/_content.scss */
+/* line 251, ../../_sass/patterns/_content.scss */
 .content q:after {
   color: #bbbbbb;
   content: close-quote;
 }
-/* line 261, ../../_sass/patterns/_content.scss */
+/* line 256, ../../_sass/patterns/_content.scss */
 .content q:before {
   color: #bbbbbb;
   content: open-quote;
 }
-/* line 267, ../../_sass/patterns/_content.scss */
+/* line 262, ../../_sass/patterns/_content.scss */
 .content small {
   font-size: smaller;
 }
-/* line 271, ../../_sass/patterns/_content.scss */
+/* line 266, ../../_sass/patterns/_content.scss */
 .content sub {
   font-size: smaller;
   vertical-align: sub;
 }
-/* line 276, ../../_sass/patterns/_content.scss */
+/* line 271, ../../_sass/patterns/_content.scss */
 .content sup {
   font-size: smaller;
   vertical-align: super;
 }
-/* line 281, ../../_sass/patterns/_content.scss */
+/* line 276, ../../_sass/patterns/_content.scss */
 .content table {
   border-right: 1px solid #333333;
   border-collapse: collapse;
   margin: 0 0 1.5em;
   width: 100%;
 }
-/* line 287, ../../_sass/patterns/_content.scss */
+/* line 282, ../../_sass/patterns/_content.scss */
 .content table td, .content table th {
   border: 0 dotted #bbbbbb;
   border-color: rgba(187, 187, 187, 0.5);
@@ -461,7 +454,7 @@ div[class=container] {
   font-weight: 300;
   padding: 0 .5em;
 }
-/* line 298, ../../_sass/patterns/_content.scss */
+/* line 293, ../../_sass/patterns/_content.scss */
 .content table th {
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -469,25 +462,25 @@ div[class=container] {
   font-weight: bold;
   padding: .25em .5em;
 }
-/* line 309, ../../_sass/patterns/_content.scss */
+/* line 304, ../../_sass/patterns/_content.scss */
 .content time {
   color: #bbbbbb;
 }
-/* line 312, ../../_sass/patterns/_content.scss */
+/* line 307, ../../_sass/patterns/_content.scss */
 .content time a {
   color: #bbbbbb;
 }
-/* line 317, ../../_sass/patterns/_content.scss */
+/* line 312, ../../_sass/patterns/_content.scss */
 .content ul {
   list-style: circle;
   margin: 0 0 1em;
   padding: 0 0 0 1em;
 }
-/* line 322, ../../_sass/patterns/_content.scss */
+/* line 317, ../../_sass/patterns/_content.scss */
 .content ul > li {
   list-style: none;
 }
-/* line 325, ../../_sass/patterns/_content.scss */
+/* line 320, ../../_sass/patterns/_content.scss */
 .content ul > li:before {
   color: #bbbbbb;
   content: "\25cb";
@@ -497,34 +490,34 @@ div[class=container] {
   max-width: 0;
   position: relative;
 }
-/* line 338, ../../_sass/patterns/_content.scss */
+/* line 333, ../../_sass/patterns/_content.scss */
 * + html .content ul li {
   list-style: circle;
 }
-/* line 343, ../../_sass/patterns/_content.scss */
+/* line 338, ../../_sass/patterns/_content.scss */
 .content .hgroup {
   margin: 0 0 2.25em;
   padding: 0 0 1em;
 }
-/* line 348, ../../_sass/patterns/_content.scss */
+/* line 343, ../../_sass/patterns/_content.scss */
 .content .hgroup * {
   display: inline;
 }
-/* line 352, ../../_sass/patterns/_content.scss */
+/* line 347, ../../_sass/patterns/_content.scss */
 .content .hgroup a {
   border-color: #222222;
 }
-/* line 356, ../../_sass/patterns/_content.scss */
+/* line 351, ../../_sass/patterns/_content.scss */
 .content .hgroup h1 {
   border: none;
   margin: 0 .25em 0 0;
   padding: 0;
 }
-/* line 362, ../../_sass/patterns/_content.scss */
+/* line 357, ../../_sass/patterns/_content.scss */
 .content .hgroup h2 {
   margin-right: .125em;
 }
-/* line 367, ../../_sass/patterns/_content.scss */
+/* line 362, ../../_sass/patterns/_content.scss */
 .content .video {
   height: 0;
   overflow: hidden;
@@ -532,7 +525,7 @@ div[class=container] {
   padding: 0 0 56.25%;
   position: relative;
 }
-/* line 374, ../../_sass/patterns/_content.scss */
+/* line 369, ../../_sass/patterns/_content.scss */
 .content .video embed, .content .video iframe, .content .video object {
   height: 100%;
   left: 0;

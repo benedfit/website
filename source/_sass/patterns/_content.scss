@@ -64,29 +64,29 @@
       tab-size:4;
       white-space:pre-wrap;
 
-    .c,.c1,.cm,.p{
-    color:$colour-grey-light;
-    }
+      .c,.c1,.cm,.p{
+      color:$colour-grey-light;
+      }
 
-    .cp,.mi,.sr{
-    color:$colour-orange;
-    }
+      .cp,.mi,.sr{
+      color:$colour-orange;
+      }
 
-    .k,.nt{
-    color:$colour-blue;
-    }
+      .k,.nt{
+      color:$colour-blue;
+      }
 
-    .kd,.s{
-    color:$colour-pink;
-    }
+      .kd,.s{
+      color:$colour-pink;
+      }
 
-    .na,.nb{
-    color:$colour-yellow;
-    }
+      .na,.nb{
+      color:$colour-yellow;
+      }
 
-    .o,.sx{
-    color:$colour-green;
-    }
+      .o,.sx{
+      color:$colour-green;
+      }
     }
 
     del,s{
@@ -219,19 +219,14 @@
           font:{
             size:.85em;
             style:italic;
-            weight:300;
           }
           left:-1.25em;
-          line-height:1.75;
           max:{
             height:0;
             width:0;
           }
           position:relative;
-
-          @include breakpoint($breakpoint-first){
-            line-height:2;
-          }
+          top:.2em;
         }
       }
 
