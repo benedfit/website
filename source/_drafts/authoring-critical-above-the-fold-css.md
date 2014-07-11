@@ -60,6 +60,8 @@ a daunting task, but fear not, some very smart people were there to help:
 [bookmarklet/Chrome dev tools snippet](https://gist.github.com/PaulKinlan/6284142)
 to aid in the process
 * [as too has Scott Jehl](https://gist.github.com/scottjehl/b6129da04733e4e0f9a4)
+which is also available as a [Node module](https://github.com/filamentgroup/criticalcss)
+and as a [Grunt task](https://github.com/filamentgroup/grunt-criticalcss)
 * Penthouse by [Jonas Ohlsson](https://twitter.com/pocketjoso) is available as a
 [Node module](https://github.com/pocketjoso/penthouse) a
 [Grunt task](https://github.com/fatso83/grunt-penthouse) and as
