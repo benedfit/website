@@ -1,6 +1,6 @@
 @include jacket(critical){
   .header{
-    background:linear-gradient(left, $colours-gradient) 50% 0;
+    background:#cba276 linear-gradient(left, $colours-gradient) 50% 0;
     background-image:inline-image("header.jpg", jpg);
     background-size:100% 100%;
     padding:1em 0;

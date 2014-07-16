@@ -2,8 +2,8 @@ $font-base:"Muli",Arial,sans-serif;
 $font-monospace:Consolas,monaco,monospace;
 
 @include jacket(non-critical){
+  @include font-face("Muli", inline-font-files("muli/light.woff", woff, "muli/light.ttf", truetype, "muli/light.svg", svg), "muli/light.eot", 300, normal);
   @include font-face("Muli", inline-font-files("muli/regular.woff", woff, "muli/regular.ttf", truetype, "muli/regular.svg", svg), "muli/regular.eot", normal, normal);
   @include font-face("Muli", inline-font-files("muli/bold.woff", woff, "muli/bold.ttf", truetype, "muli/bold.svg", svg), "muli/bold.eot", bold, normal);
-  @include font-face("Muli", inline-font-files("muli/light.woff", woff, "muli/light.ttf", truetype, "muli/light.svg", svg), "muli/light.eot", 300, normal);
   @include font-face("Muli", inline-font-files("muli/regular-italic.woff", woff, "muli/regular-italic.ttf", truetype, "muli/regular-italic.svg", svg), "muli/regular-italic.eot", normal, italic);
 }

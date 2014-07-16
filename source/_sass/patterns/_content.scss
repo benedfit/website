@@ -5,10 +5,6 @@
     padding:2em 0;
     text-align:left;
 
-    &.content-alt{
-      background:none;
-    }
-
     abbr[title]{
       border-bottom:1px dotted $colour-black-light;
     }
@@ -134,6 +130,10 @@
       }
       line-height:1.15;
       margin:1em 0;
+
+      small{
+        color:$colour-grey-light;
+      }
 
       @include breakpoint($breakpoint-first){
         font-size:2em;
@@ -262,17 +262,15 @@
       }
     }
 
-    small{
-      font-size:smaller;
+    small,sub,sup{
+      font-size:.75em;
     }
 
     sub{
-      font-size:smaller;
       vertical-align:sub;
     }
 
     sup{
-      font-size:smaller;
       vertical-align:super;
     }
 
@@ -362,30 +360,6 @@
       }
     }
 
-    .intro{
-      font:{
-        size:2em;
-        weight:300;
-      }
-      line-height:1.25;
-      margin:0 0 .75em;
-
-      small{
-        color:$colour-grey-light;
-        font-size:.5em;
-      }
-
-      @include breakpoint($breakpoint-first){
-        font-size:2.5em;
-        line-height:1.125;
-      }
-
-      @include breakpoint($breakpoint-second){
-        font-size:3em;
-        line-height:1.25;
-      }
-    }
-
     .video{
       height:0;
       overflow:hidden;
@@ -401,5 +375,9 @@
         width:100%;
       }
     }
+  }
+
+  .content-about{
+    background:$colour-black-light;
   }
 }

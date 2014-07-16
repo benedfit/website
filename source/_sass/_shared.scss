@@ -1,17 +1,17 @@
-%hr{
-  border-bottom:1px solid $colour-grey-light;
-  border-bottom-color:rgba($colour-grey-light,.5);
-  border-image:linear-gradient(left, $colours-gradient) 100% 1;
-}
-
-%vr{
-  border-left:1px solid $colour-grey-light;
-  border-left-color:rgba($colour-grey-light,.5);
-  border-image:linear-gradient(top, $colours-gradient) 1 100%;
-}
-
 @include jacket(critical){
   @include global-reset;
+
+  %hr{
+    border-bottom:1px solid $colour-grey-light;
+    border-bottom-color:rgba($colour-grey-light,.5);
+    border-image:linear-gradient(left, $colours-gradient) 100% 1;
+  }
+
+  %vr{
+    border-left:1px solid $colour-grey-light;
+    border-left-color:rgba($colour-grey-light,.5);
+    border-image:linear-gradient(top, $colours-gradient) 1 100%;
+  }
 
   a{
     border-bottom:1px dotted $colour-grey-light;

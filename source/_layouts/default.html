@@ -5,6 +5,21 @@
     <title>{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>{% asset css/critical.css %}</style>
+    <script>
+      function async(href){
+        var ss = window.document.createElement('link'),
+            ref = window.document.getElementsByTagName('head')[0];
+        ss.rel = 'stylesheet';
+        ss.href = href;
+        ss.media = 'only x';
+        ref.parentNode.insertBefore(ss,ref);
+
+        setTimeout( function(){
+          ss.media = 'all';
+        },0);
+      }
+      async('{% asset_path css/non-critical.css %}');
+    </script>
     <meta name="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="{{ site.authorName }}">
     <link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
@@ -73,7 +88,6 @@
       ga('create', 'UA-34470231-1', 'benedfit.com');
       ga('send', 'pageview');
     </script>
-    {% devonly %}<script src="//localhost:35729/livereload.js"></script>{% enddevonly %}
     <noscript><link rel="stylesheet" href="{% asset_path css/non-critical.css %}"></noscript>
   </body>
 </html>
