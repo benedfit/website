@@ -4,21 +4,6 @@
     <meta charset="utf-8">
     <title>{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script>
-      function async(href){
-        var ss = window.document.createElement('link'),
-            ref = window.document.getElementsByTagName('head')[0];
-        ss.rel = 'stylesheet';
-        ss.href = href;
-        ss.media = 'only x';
-        ref.parentNode.insertBefore(ss,ref);
-
-        setTimeout( function(){
-          ss.media = 'all';
-        },0);
-      }
-      async('{% asset_path css/non-critical.css %}');
-    </script>
     <style>{% asset css/critical.css %}</style>
     <meta name="description" content="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="{{ site.authorName }}">
@@ -89,8 +74,6 @@
       ga('send', 'pageview');
     </script>
     {% devonly %}<script src="//localhost:35729/livereload.js"></script>{% enddevonly %}
-    <noscript>
-      <link rel="stylesheet" href="% asset_path css/non-critical.css %}">
-    </noscript>
+    <noscript><link rel="stylesheet" href="{% asset_path css/non-critical.css %}"></noscript>
   </body>
 </html>
