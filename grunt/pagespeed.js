@@ -6,7 +6,7 @@ module.exports = {
     url: 'http://benedfit.com/',
     paths: [
       '/',
-      '/404.html',
+      /*'/404.html',
       '/2013/',
       '/2013/06/',
       '/2013/06/atomic-design-phases-and-mesophases/',
@@ -14,7 +14,7 @@ module.exports = {
       '/2013/11/',
       '/2013/11/pattern-library-annotations-documentation-and-more/',
       '/archive/',
-      '/styleguide/'
+      '/styleguide/'*/
     ]
   },
   mobile: {

@@ -2,12 +2,34 @@
   .header{
     background:linear-gradient(left, $colours-gradient) 50% 0;
     background-image:inline-image("header.jpg", jpg);
-    background-size:100% auto;
+    background-size:100% 100%;
     padding:1em 0;
     text-align:left;
 
+    a{
+      background:$colour-black;
+      border:0;
+      color:$colour-white;
+      display:inline-block;
+      font:{
+        size:1.125em;
+        weight:bold;
+      }
+      letter-spacing:.35em;
+      line-height:2;
+      padding:0 .3em .2em .65em;
+      text:{
+        decoration:none;
+        transform:uppercase;
+      }
+    }
+
     @include breakpoint($breakpoint-second){
       padding:2em 0;
+
+      a{
+        font-size:1.25em;
+      }
     }
   }
 }

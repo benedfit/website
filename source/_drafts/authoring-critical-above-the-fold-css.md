@@ -10,7 +10,7 @@ excerpt: >
   without waiting for those files to load, and that I should in-line the critical
   portions of those files directly into my HTML.
 ---
-> [This was originally posted on CSS-Tricks on July 0, 2014](http://css-tricks.com/TBC)
+<mark>[This was originally posted on CSS-Tricks on July 0, 2014](http://css-tricks.com/TBC)</mark>
 
 {{ page.excerpt }} <q>Go home PageSpeed,</q> I cried, <q>who in their right mind
 wants a mass of CSS in their HTML? I'm a legitimate professional, I have a work-flow

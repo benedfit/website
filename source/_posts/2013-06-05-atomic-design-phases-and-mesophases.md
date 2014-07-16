@@ -27,6 +27,4 @@ As these  are changes affecting Atomic Design organisms, molecules, or even atom
 
 One of Brad's key aims for Pattern Lab is that he doesn't want to dictate naming conventions and development styles, and I'm keen to stick to that plan. So if you don't like the idea of Phases and Mesophases, please do ignore these musing. However, my plan is to take [my fork of Pattern Lab](https://github.com/benedfit/patternlab), and work out how Phases and Mesophases can be automatically added to the UI directly by looking for them in .scss files, and provide users with the means to scale the display to the necessary dimensions to view them.
 
-Please feel free to share your thoughts with me on [Twitter @benedfit](https://twitter.com/benedfit).
-
-P.S. I do plan on opening my blog for comments in the near future, but <del>the Blogger comments module looks terrible out-of-the-box, and my OCD can't handle having it live in it's current state :)</del> <ins>I'm still trying to find a suitable Jekyll plugin</ins>.
+Please feel free to share your thoughts with me on [Twitter](https://twitter.com/benedfit).

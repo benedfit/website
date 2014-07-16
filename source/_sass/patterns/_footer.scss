@@ -1,30 +1,13 @@
 @include jacket(critical){
   .footer{
     color:$colour-grey-light;
+    font-weight:300;
     overflow:hidden;
-    padding:3em 0;
+    padding:3em 0 2em;
 
-    a{
+    a,small{
       display:inline-block;
       margin:0 .5em 1em;
-    }
-
-    p{
-      font-weight:300;
-      margin:0 0 2em;
-    }
-
-    .established{
-      border-radius:100%;
-      box-shadow:0 0 0 1px $colour-grey-light inset;
-      display:inline-block;
-      line-height:1.15;
-      padding:1em;
-      text-transform:uppercase;
-
-      abbr{
-        display:block;
-      }
     }
   }
 }

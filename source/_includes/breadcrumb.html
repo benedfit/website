@@ -19,6 +19,8 @@
         {% endif %}
       {% endfor %}
     {% endif %}
-    <div class="hidden" aria-hidden="true" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ site.url }}{{ url }}" itemprop="url"><span itemprop="title">{{ title }}</span></a></div>
+    <div class="hidden" aria-hidden="true" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="{{ site.url }}{{ url }}" itemprop="url"><span itemprop="title">{{ title }}</span></a>
+    </div>
   {% endunless %}
 {% endfor %}
