@@ -10,7 +10,9 @@ excerpt: >
   without waiting for those files to load, and that I should in-line the critical
   portions of those files directly into my HTML.
 ---
-<mark>[This was originally posted on CSS-Tricks on July 0, 2014](http://css-tricks.com/TBC)</mark>
+> [This was originally posted on CSS-Tricks on July 14, 2014](http://css-tricks.com/authoring-critical-fold-css/). [Chris Coyier](https://twitter.com/chriscoyier) invited me to write
+> a piece [after I shared this gist](https://gist.github.com/benedfit/46da533805566141c42f),
+> that led me down a rabbit hole to this article.
 
 {{ page.excerpt }} <q>Go home PageSpeed,</q> I cried, <q>who in their right mind
 wants a mass of CSS in their HTML? I'm a legitimate professional, I have a work-flow
@@ -200,7 +202,7 @@ CSS could be authored via some well structured `@import` rules:
 @import "footer";
 {% endhighlight %}
 
-Should you're partials not lend themselves to this sort of structuring,
+Should your partials not lend themselves to this sort of structuring,
 [Team Sass's conditional styles Compass plug-in Jacket](https://github.com/Team-Sass/jacket)
 can come in very handy. For example if your partial `_shared.scss` contained rules
 for both above and below-the-fold elements, the critical and non-critical rules

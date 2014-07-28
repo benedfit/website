@@ -33,7 +33,6 @@
     background:$colour-black-light;
     color:$colour-white;
     font:100%/1.5 $font-base;
-    text-align:center;
 
     @include breakpoint($breakpoint-first){
       line-height:1.75;

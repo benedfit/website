@@ -110,7 +110,6 @@ body {
   background: #222222;
   color: white;
   font: 100%/1.5 "Muli", Arial, sans-serif;
-  text-align: center;
 }
 @media (min-width: 43.75em) {
   /* line 32, ../../_sass/_shared.scss */
@@ -119,19 +118,19 @@ body {
   }
 }
 
-/* line 43, ../../_sass/_shared.scss */
+/* line 42, ../../_sass/_shared.scss */
 html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
 }
 
-/* line 47, ../../_sass/_shared.scss */
+/* line 46, ../../_sass/_shared.scss */
 #cf_alert_div {
   display: none !important;
 }
 
-/* line 51, ../../_sass/_shared.scss */
+/* line 50, ../../_sass/_shared.scss */
 .hidden {
   display: none;
 }
@@ -164,9 +163,8 @@ div[class=container] {
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   padding: 1em 0;
-  text-align: left;
 }
-/* line 9, ../../_sass/patterns/_header.scss */
+/* line 8, ../../_sass/patterns/_header.scss */
 .header a {
   background: black;
   border: 0;
@@ -180,12 +178,17 @@ div[class=container] {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* line 26, ../../_sass/patterns/_header.scss */
+.header .container {
+  padding-bottom: 0;
+  padding-top: 0;
+}
 @media (min-width: 56.25em) {
   /* line 2, ../../_sass/patterns/_header.scss */
   .header {
     padding: 2em 0;
   }
-  /* line 30, ../../_sass/patterns/_header.scss */
+  /* line 36, ../../_sass/patterns/_header.scss */
   .header a {
     font-size: 1.25em;
   }
@@ -580,8 +583,8 @@ div[class=container] {
 .footer {
   color: #bbbbbb;
   font-weight: 300;
-  overflow: hidden;
-  padding: 3em 0 2em;
+  padding-top: 3em;
+  text-align: center;
 }
 /* line 8, ../../_sass/patterns/_footer.scss */
 .footer a, .footer small {

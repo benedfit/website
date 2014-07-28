@@ -19,18 +19,6 @@ hidden: true
 </section>
 </section>
 
-<section markdown="1">
-## Heading group
-<section markdown="1" class="hgroup">
-# Heading level 1 [link](#)
-## Heading level 2 [link](#)
-### Heading level 3 [link](#)
-#### Heading level 4 [link](#)
-##### Heading level 5 [link](#)
-###### Heading level 6 [link](#)
-</section>
-</section>
-
 ## Horizontal rule
 
 ---

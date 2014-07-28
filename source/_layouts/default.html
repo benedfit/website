@@ -72,11 +72,11 @@
   <body>
     {% include header.html %}
     {% if page.ogType == 'profile' %}{% include about.html %}{% endif %}
-    <main class="content{% if page.cssClass %} {{ page.cssClass }}{% endif %}" role="main">
+    <div class="content{% if page.cssClass %} {{ page.cssClass }}{% endif %}" role="main">
       <div id="content-container" class="container">
         {{ content }}
       </div>
-    </main>
+    </div>
     {% include breadcrumb.html %}
     {% include footer.html %}
     <script>
