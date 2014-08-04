@@ -1,12 +1,15 @@
 
-/* line 4 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 7 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 
 /* line 1 : /private/var/application/Benedfit/benedfit.com/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
-/* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 287 : /private/var/application/Benedfit/benedfit.com/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/_variables.styl */
+
+/* line 3 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 body {
-  font-size: 18px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  background: #222;
+  color: #fff;
+  font: 100%/1.5 'Muli', Arial, sans-serif;
 }

@@ -1,6 +1,10 @@
 doctype html
-html
+html(lang='en-gb')
   head
-    title test
+    meta(charset='utf-8')
+    title {% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    style
+      | {% asset css/critical.css %}
   body
     | {{content}}

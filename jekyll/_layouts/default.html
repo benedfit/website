@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
   <head>
-    <title>test</title>
+    <meta charset="utf-8">
+    <title>{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>{% asset css/critical.css %}</style>
   </head>
   <body>{{content}}</body>
 </html>

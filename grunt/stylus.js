@@ -8,7 +8,7 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'stylus',
-      src: ['**/*.styl'],
+      src: ['**/*.styl', '!**/_*.styl'],
       dest: 'jekyll/_assets/css',
       ext: '.css'
     }]

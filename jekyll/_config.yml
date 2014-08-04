@@ -1,1 +1,16 @@
 permalink: /:year/:month/:title
+assets:
+  dirname: .
+  baseurl: /
+  sources:
+    - _assets
+    - _assets/css
+    - _assets/js
+  js_compressor: yui
+  css_compressor: yui
+  cachebust: none
+jekyll-press:
+  exclude: ['*.txt']
+url: http://benedfit.com
+title: Ben Edwards, a Web Designer and Developer
+description: Ultimate Knot-tier and Head of Front-end Development at Clock. Banging on about Responsive Design, Web Standards

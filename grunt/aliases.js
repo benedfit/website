@@ -1,3 +1,4 @@
 module.exports = {
-  default: ['watch']
+  default: ['build', 'concurrent:watch'],
+  build: ['jade', 'stylus', 'jekyll']
 }
