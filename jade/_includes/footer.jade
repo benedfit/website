@@ -1,8 +1,12 @@
 .footer(role='contentinfo')
-  small &copy; {{ site.time | date: '%Y' }} 
-  a(href='{{ site.url }}') {{ site.authorName }} 
-  a(href='/styleguide/') Styleguide 
-  a(href='mailto:hello@benedfit.com') Email 
-  a(href='https://twitter.com/benedfit') Twitter 
-  a(href='https://github.com/benedfit/') GitHub 
+  span &copy; {{ site.time | date: '%Y' }}
+  a(href='{{ site.url }}') {{ site.authorName }}
+  | {% for page in site.pages %}
+  | {% if page.hidden != true %}
+  a(href='{{ page.url }}') {{ page.title }}
+  | {% endif %}
+  | {% endfor %}
+  a(href='mailto:hello@benedfit.com') Email
+  a(href='https://twitter.com/benedfit') Twitter
+  a(href='https://github.com/benedfit/') GitHub
   a(href='https://codepen.io/benedfit/') CodePen

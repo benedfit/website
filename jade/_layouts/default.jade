@@ -5,8 +5,12 @@ html(lang='en-gb')
     title {% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}
     meta(name='viewport', content='width=device-width,initial-scale=1')
     style. {% asset css/critical.css %}
+    meta(name='description'. content='{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}')
+    meta(name='author', content='{{ site.authorName }}')
+    link(rel='canonical' href='{{ site.url }}{{ page.url | remove: \'index.html\' }}')
   body
     | {% include header.html %}
     .content(role='main')
-      | {{content}}
+      .container
+        | {{content}}
     | {% include footer.html %}

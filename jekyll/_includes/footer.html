@@ -1,2 +1,5 @@
 
-<div role="contentinfo" class="footer"><small>&copy; {{ site.time | date: '%Y' }} </small><a href="{{ site.url }}">{{ site.authorName }} </a><a href="/styleguide/">Styleguide </a><a href="mailto:hello@benedfit.com">Email </a><a href="https://twitter.com/benedfit">Twitter </a><a href="https://github.com/benedfit/">GitHub </a><a href="https://codepen.io/benedfit/">CodePen</a></div>
+<div role="contentinfo" class="footer"><span>&copy; {{ site.time | date: '%Y' }}</span><a href="{{ site.url }}">{{ site.authorName }}</a>{% for page in site.pages %}
+  {% if page.hidden != true %}<a href="{{ page.url }}">{{ page.title }}</a>{% endif %}
+  {% endfor %}<a href="mailto:hello@benedfit.com">Email</a><a href="https://twitter.com/benedfit">Twitter</a><a href="https://github.com/benedfit/">GitHub</a><a href="https://codepen.io/benedfit/">CodePen</a>
+</div>

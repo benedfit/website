@@ -1,9 +1,33 @@
 @import '_variables'
 
+html
+  text-size-adjust 100%
+
 body
   background $colors_black-light;
-  color $colour-white
+  color $colors_white
   font 100%/1.5 $fonts_base
+  margin 0
 
 a
   border-bottom 1px solid $colors_grey-light
+  border-color alpha($colors_grey-light, .5)
+  color: $colors_white
+  text-decoration none
+  transition border-color .25s ease-in-out
+
+  &:hover, &:active, &:focus
+    border-color transparent
+
+.container
+  margin auto
+  max-width 62.5em
+  padding 0 1em
+  width 62.5em
+
+[class~=container]
+  width auto
+
+@import 'includes/_header'
+@import 'includes/_content'
+@import 'includes/_footer'

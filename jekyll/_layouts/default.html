@@ -5,8 +5,13 @@
     <title>{% if page.metaTitle %}{{ page.metaTitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>{% asset css/critical.css %}</style>
+    <meta name="{% if page.metaDescription %}{{ page.metaDescription }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.authorName }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
   </head>
   <body>{% include header.html %}
-    <div role="main" class="content">{{content}}</div>{% include footer.html %}
+    <div role="main" class="content">
+      <div class="container">{{content}}</div>
+    </div>{% include footer.html %}
   </body>
 </html>

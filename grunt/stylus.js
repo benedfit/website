@@ -3,6 +3,10 @@ module.exports = {
     options: {
       compress: false,
       linenos: true,
+      urlfunc: {
+        name: 'embedurl',
+        paths: ['jekyll/_assets/img']
+      },
       use: [require('autoprefixer-stylus')]
     },
     files: [{

@@ -1,5 +1,5 @@
 
-/* line 10 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 33 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 
 /* line 1 : /private/var/application/Benedfit/benedfit.com/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
@@ -8,13 +8,113 @@
 /* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/_variables.styl */
 
 /* line 3 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
-body {
-  background: #222;
-  color: $colour-white;
-  font: 100%/1.5 'Muli', Arial, sans-serif;
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 
-/* line 8 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 6 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+body {
+  background: #222;
+  color: #fff;
+  font: 100%/1.5 'Muli', Arial, sans-serif;
+  margin: 0;
+}
+
+/* line 12 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 a {
   border-bottom: 1px solid #bbb;
+  border-color: rgba(187,187,187,0.5);
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: border-color 0.25s ease-in-out;
+          transition: border-color 0.25s ease-in-out;
+}
+
+/* line 19 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+a:hover,
+a:active,
+a:focus {
+  border-color: transparent;
+}
+
+/* line 22 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+.container {
+  margin: auto;
+  max-width: 62.5em;
+  padding: 0 1em;
+  width: 62.5em;
+}
+
+/* line 28 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+[class~=container] {
+  width: auto;
+}
+
+/* line 19 : /private/var/application/Benedfit/benedfit.com/stylus/_variables.styl */
+
+/* line 19 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+
+/* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+.header {
+  background: #cba276 url("data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAAAAD/4QMZaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVCQ0E3M0U0MzEwMDExRTNCNTkzQUE5MEIzREZFOEVCIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVCQ0E3M0UzMzEwMDExRTNCNTkzQUE5MEIzREZFOEVCIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSIxMDVEQjFCRjFEM0NBRjUxRUFFRjg4MjNDNjlBMjVCNyIgc3RSZWY6ZG9jdW1lbnRJRD0iMTA1REIxQkYxRDNDQUY1MUVBRUY4ODIzQzY5QTI1QjciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAhQWRvYmUAZMAAAAABAwAQAwIDBgAAFEsAABR4AAAUnP/bAIQAGxoaKR0pQSYmQUIvLy9CRz8+Pj9HR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHRwEdKSk0JjQ/KCg/Rz81P0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dH/8IAEQgBkAfQAwEiAAIRAQMRAf/EAG0AAQEBAQEBAQAAAAAAAAAAAAABAgYFAwQBAQEBAQEAAAAAAAAAAAAAAAABAwIEEAEBAAMBAQEAAAAAAAAAAAARABAgcLCg0BEBAAAAAAAAAAAAAAAAAAAA0BIBAAAAAAAAAAAAAAAAAAAAsP/aAAwDAQACEQMRAAAAqueIpIoiiNCKJaiWiWgtiLVlWJaJaWVYillqIpYoilk0MtSWKIpYoy0XKiKIpYoiiKWLSKIoiliiKIoiiKIoiiKSKIokoiiKIpIoiiKIoikiiKABUiiLALIoiwikkqpLEiypLEkqpLEksqCySwSyxLAAAKBQAAAAWLKSiSiSqksSLCLKgICLCKqAAFJQKhVVZRqWW1VamoVZbVW1YalltUUlVSVSKIokoiiSiSiAiwAiygPk0mGWhFEURoRaZtEtEtRLaRbEWrKsRaRaubURSxURSxRFLFLlqEVLFEUsUZaGVLFEURaubYFEURRFLFEURRFEURSRRFEWEURRFEUkURRFEURRFJFEURVRSRRFgCRYJVSWJFlSUmVlSWJJZZJZUCSWUlgllgAAAUAKsUJRFEBFlRYRYRZUWJJVSUSUQEURYAFApKqiirKqls1Kqy2qWrLbNSqpbLLSigVKAlEUSVUlJJRJRARYARYZaMc2iKI0TNojQi2ItItWLYi0lqItWLYili2M2liiKlk0MqWKIpcqIpYoiliiSpYoiiKEpYoAAAFIoiiKIsAAEoiiKIoiiKsiiLAAAAEAAAAikiiCosEpMrKixJLKkpMzUszNSsrEksqSrJLBKsgAAAFAAKAASiAiyosIsqSiSkkqpKIsIoiiKJQKUoVYVVVZWpS1ZbZqVqaGpZbZpVWFFVYlAUgEokokokqpKJKSAgEoqpjFEaGWhFpm0S0S1EaEtLLUS0RbLFEtRFLFRFLFLFEmpLFEUslEUsURYRSxRFEUsURRFEURSxRFEURRFEURRFEUkURYAJRFEURRFEURRFEUkURYBSURSQEWEWVFiSalSWJJZZJYSazZJVmZqVJYkWVAiVUURQAKSgAAFRRARZZFhJqElVJRJRBZFEBFEopRKpKsKLbLLbKWrK1Kt1LFqy2yrasKqqRSgAACUSUSUSUSWUlglglECfRUyi0y0ItMtIjQi0zbTNqJaJaItliiWpYoipYoilioilyoiliwiliogIpYoiliwAAABQAAAAAAAAAIoiiKIoiwACkoiiKIpIoiiKIABKIsEqyAiwiyySjKyySwksskssksJNSzKyySiCyKIAWyKACiUAEoiqkoiwiypNRJNQkqpNQiwiiKqKIolIKVQVRVlVVali2alalW1YtlW2WLZVtlhQFUBKICLEiwiwgIKgICLD7q5yjRM2iNDNoloi0i2IpZaItiKJaliiKliiKliiKWAipYsIoixUoiliwSiKWKIoiiBQAAAAAAAAAAAAIoiiLAAAACKIoiiACgEoiwAixEogqSiSyyTUJLLJLEk1KzNSzM1LMrEk1KixIqopIoigAolKASiKJKSLKiwiyosIsSLKiiAiiKJQKUUFhRaVVWLZVtmoalltlW1YtlW2WFlWgWUAAQEsEsEsRLBLKSwSwA/SrjKLSKItIoloi0iiWoi0illWIoipYoiiKliiSliogWKIFiiAiliiBUoiiKIoiliiKIUioiiKIoiqgAAAEoiiKIsAAEoiiKWAAAAikiwCkogIsEokqySwk1KksSTUszNSszUTKyyTUsyoyqyTUIpIqgCiKAQACKqSiLKiwixIsqLCKJKqKIoiiKJQUlUFUWWW2VbZYtlW2WW6lLZZbZSiLZVWUWCoKgASwSwSwSxEsEspLAD9a3jOKSLSKJaItIqJVIoKWKiVSKliiKIslAiliyIogWKIFiogVKIsAEpYoiiKIogAUoiiKIoiiAAAAAiiKqLAACKIpYAABKIogAAIogpKICLEiwiypNRJKrM1Eyssk1KzNRMqsyqsqTKkiqiiKSKABaiwAiiCyLCLCKrKiSrJKIokoiiKJRSiVSVVFhRbZRVlVS2WW2UtiXVzS2WWpSpSoKlBCoBABAQEBLLEsAP21c84oKIoKJVIoFIolIKIpYqIoipYsAIqWAilgIqIFiwAixQAIpYsAAAAAABSKIoiwAAABUoiiLAACKqLAFASiLAAACKIABKIBKqAiwixIsqSkysqTUsysSTUrKkyqzKjKrIoikiqiiKIoikiykoiwi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") 50% 0;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  padding: 1em 0;
+}
+
+/* line 6 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+.header a {
+  background: #000;
+  display: inline-block;
+  font-size: 1.125em;
+  font-weight: bold;
+  letter-spacing: 0.35em;
+  line-height: 2;
+  padding: 0 0.3em 0 0.65em;
+  text-transform: uppercase;
+}
+
+/* line 15 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+
+/* line 15 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+
+/* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+.content {
+  background: #333;
+  padding: 2em 0;
+}
+
+/* line 5 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+p {
+  margin: 0 0 1.5em;
+}
+
+/* line 8 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0 0 0.75em;
+  padding: 0 0 0.35em;
+}
+
+/* line 14 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+
+/* line 14 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
+
+/* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
+.footer {
+  color: #bbb;
+  font-weight: 300;
+  padding: 3em 0 2em;
+  text-align: center;
+}
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
+.footer a,
+.footer span {
+  display: inline-block;
+  margin: 0 0.5em 1em;
 }
