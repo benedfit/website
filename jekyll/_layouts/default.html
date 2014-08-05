@@ -6,5 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>{% asset css/critical.css %}</style>
   </head>
-  <body>{{content}}</body>
+  <body>{% include header.html %}
+    <div role="main" class="content">{{content}}</div>{% include footer.html %}
+  </body>
 </html>

@@ -1,5 +1,5 @@
 
-/* line 7 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 10 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 
 /* line 1 : /private/var/application/Benedfit/benedfit.com/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
@@ -10,6 +10,11 @@
 /* line 3 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 body {
   background: #222;
-  color: #fff;
+  color: $colour-white;
   font: 100%/1.5 'Muli', Arial, sans-serif;
+}
+
+/* line 8 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+a {
+  border-bottom: 1px solid #bbb;
 }
