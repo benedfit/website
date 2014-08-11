@@ -1,18 +1,22 @@
+@import 'stylus-mixins'
 @import '_variables'
 
 html
   text-size-adjust 100%
 
 body
-  background $colors_black-light;
-  color $colors_white
+  background $color--black-light;
+  color $color--white
   font 100%/1.5 $fonts_base
   margin 0
 
+  +width-min($breakpoint--first)
+    line-height 1.75
+
 a
-  border-bottom 1px solid $colors_grey-light
-  border-color alpha($colors_grey-light, .5)
-  color: $colors_white
+  border-bottom 1px solid $color--grey-light
+  border-color alpha($color--grey-light, .5)
+  color: $color--white
   text-decoration none
   transition border-color .25s ease-in-out
 
@@ -22,7 +26,7 @@ a
 .container
   margin auto
   max-width 62.5em
-  padding 0 1em
+  padding 2em 1em
   width 62.5em
 
 [class~=container]

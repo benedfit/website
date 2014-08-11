@@ -14,6 +14,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jekyll": "^0.4.2",
     "load-grunt-config": "^0.12.0",
-    "load-grunt-tasks": "^0.6.0"
+    "load-grunt-tasks": "^0.6.0",
+    "stylus-mixins": "^0.1.5"
   }
 }

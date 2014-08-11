@@ -7,7 +7,7 @@ module.exports = {
         name: 'embedurl',
         paths: ['jekyll/_assets/img']
       },
-      use: [require('autoprefixer-stylus')]
+      use: [require('autoprefixer-stylus'), require('stylus-mixins')]
     },
     files: [{
       expand: true,

@@ -1,28 +1,99 @@
 
-/* line 33 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 37 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 
 /* line 1 : /private/var/application/Benedfit/benedfit.com/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
 /* line 287 : /private/var/application/Benedfit/benedfit.com/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
+/* line 51 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/index.styl */
+
+/* line 51 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/index.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/clearfix.styl */
+
+/* line 17 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/clearfix.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/ie.styl */
+
+/* line 18 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/ie.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/opacity.styl */
+
+/* line 24 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/opacity.styl */
+
+/* line 9 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/triangle.styl */
+
+/* line 49 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/triangle.styl */
+
+/* line 8 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/helpers/timing-functions.styl */
+
+/* line 46 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/helpers/timing-functions.styl */
+
+/* line 8 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/hidpi.styl */
+
+/* line 14 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/hidpi.styl */
+
+/* line 8 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+
+/* line 83 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/text/ellipsis.styl */
+
+/* line 12 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/text/ellipsis.styl */
+
+/* line 8 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/text/font-face.styl */
+
+/* line 21 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/text/font-face.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/text/hide-text.styl */
+
+/* line 11 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/text/hide-text.styl */
+
+/* line 8 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/em.styl */
+
+/* line 12 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/em.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/percentage.styl */
+
+/* line 9 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/percentage.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/ratio.styl */
+
+/* line 9 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/ratio.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/ratio-percentage.styl */
+
+/* line 9 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/ratio-percentage.styl */
+
+/* line 7 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/tracking.styl */
+
+/* line 12 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/units/tracking.styl */
+
 /* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/_variables.styl */
 
-/* line 3 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 4 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
 }
 
-/* line 6 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 7 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 body {
   background: #222;
   color: #fff;
   font: 100%/1.5 'Muli', Arial, sans-serif;
   margin: 0;
 }
+@media screen and (min-width: 700px) {
 
-/* line 12 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  body {
+    line-height: 1.75;
+  }
+}
+
+/* line 16 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 a {
   border-bottom: 1px solid #bbb;
   border-color: rgba(187,187,187,0.5);
@@ -32,39 +103,43 @@ a {
           transition: border-color 0.25s ease-in-out;
 }
 
-/* line 19 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 23 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 a:hover,
 a:active,
 a:focus {
   border-color: transparent;
 }
 
-/* line 22 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 26 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 .container {
   margin: auto;
   max-width: 62.5em;
-  padding: 0 1em;
+  padding: 2em 1em;
   width: 62.5em;
 }
 
-/* line 28 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
+/* line 32 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 [class~=container] {
   width: auto;
 }
 
-/* line 19 : /private/var/application/Benedfit/benedfit.com/stylus/_variables.styl */
+/* line 22 : /private/var/application/Benedfit/benedfit.com/stylus/_variables.styl */
 
-/* line 19 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+/* line 22 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
 
 /* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
 .header {
   background: #cba276 url("data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAAAAD/4QMZaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVCQ0E3M0U0MzEwMDExRTNCNTkzQUE5MEIzREZFOEVCIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVCQ0E3M0UzMzEwMDExRTNCNTkzQUE5MEIzREZFOEVCIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSIxMDVEQjFCRjFEM0NBRjUxRUFFRjg4MjNDNjlBMjVCNyIgc3RSZWY6ZG9jdW1lbnRJRD0iMTA1REIxQkYxRDNDQUY1MUVBRUY4ODIzQzY5QTI1QjciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAhQWRvYmUAZMAAAAABAwAQAwIDBgAAFEsAABR4AAAUnP/bAIQAGxoaKR0pQSYmQUIvLy9CRz8+Pj9HR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHRwEdKSk0JjQ/KCg/Rz81P0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dH/8IAEQgBkAfQAwEiAAIRAQMRAf/EAG0AAQEBAQEBAQAAAAAAAAAAAAABAgYFAwQBAQEBAQEAAAAAAAAAAAAAAAABAwIEEAEBAAMBAQEAAAAAAAAAAAARABAgcLCg0BEBAAAAAAAAAAAAAAAAAAAA0BIBAAAAAAAAAAAAAAAAAAAAsP/aAAwDAQACEQMRAAAAqueIpIoiiNCKJaiWiWgtiLVlWJaJaWVYillqIpYoilk0MtSWKIpYoy0XKiKIpYoiiKWLSKIoiliiKIoiiKIoiiKSKIokoiiKIpIoiiKIoikiiKABUiiLALIoiwikkqpLEiypLEkqpLEksqCySwSyxLAAAKBQAAAAWLKSiSiSqksSLCLKgICLCKqAAFJQKhVVZRqWW1VamoVZbVW1YalltUUlVSVSKIokoiiSiSiAiwAiygPk0mGWhFEURoRaZtEtEtRLaRbEWrKsRaRaubURSxURSxRFLFLlqEVLFEUsUZaGVLFEURaubYFEURRFLFEURRFEURSRRFEWEURRFEUkURRFEURRFJFEURVRSRRFgCRYJVSWJFlSUmVlSWJJZZJZUCSWUlgllgAAAUAKsUJRFEBFlRYRYRZUWJJVSUSUQEURYAFApKqiirKqls1Kqy2qWrLbNSqpbLLSigVKAlEUSVUlJJRJRARYARYZaMc2iKI0TNojQi2ItItWLYi0lqItWLYili2M2liiKlk0MqWKIpcqIpYoiliiSpYoiiKEpYoAAAFIoiiKIsAAEoiiKIoiiKsiiLAAAAEAAAAikiiCosEpMrKixJLKkpMzUszNSsrEksqSrJLBKsgAAAFAAKAASiAiyosIsqSiSkkqpKIsIoiiKJQKUoVYVVVZWpS1ZbZqVqaGpZbZpVWFFVYlAUgEokokokqpKJKSAgEoqpjFEaGWhFpm0S0S1EaEtLLUS0RbLFEtRFLFRFLFLFEmpLFEUslEUsURYRSxRFEUsURRFEURSxRFEURRFEURRFEUkURYAJRFEURRFEURRFEUkURYBSURSQEWEWVFiSalSWJJZZJYSazZJVmZqVJYkWVAiVUURQAKSgAAFRRARZZFhJqElVJRJRBZFEBFEopRKpKsKLbLLbKWrK1Kt1LFqy2yrasKqqRSgAACUSUSUSUSWUlglglECfRUyi0y0ItMtIjQi0zbTNqJaJaItliiWpYoipYoilioilyoiliwiliogIpYoiliwAAABQAAAAAAAAAIoiiKIoiwACkoiiKIpIoiiKIABKIsEqyAiwiyySjKyySwksskssksJNSzKyySiCyKIAWyKACiUAEoiqkoiwiypNRJNQkqpNQiwiiKqKIolIKVQVRVlVVali2alalW1YtlW2WLZVtlhQFUBKICLEiwiwgIKgICLD7q5yjRM2iNDNoloi0i2IpZaItiKJaliiKliiKliiKWAipYsIoixUoiliwSiKWKIoiiBQAAAAAAAAAAAAIoiiLAAAACKIoiiACgEoiwAixEogqSiSyyTUJLLJLEk1KzNSzM1LMrEk1KixIqopIoigAolKASiKJKSLKiwiyosIsSLKiiAiiKJQKUUFhRaVVWLZVtmoalltlW1YtlW2WFlWgWUAAQEsEsEsRLBLKSwSwA/SrjKLSKItIoloi0iiWoi0illWIoipYoiiKliiSliogWKIFiiAiliiBUoiiKIoiliiKIUioiiKIoiqgAAAEoiiKIsAAEoiiKWAAAAikiwCkogIsEokqySwk1KksSTUszNSszUTKyyTUsyoyqyTUIpIqgCiKAQACKqSiLKiwixIsqLCKJKqKIoiiKJQUlUFUWWW2VbZYtlW2WW6lLZZbZSiLZVWUWCoKgASwSwSwSxEsEspLAD9a3jOKSLSKJaItIqJVIoKWKiVSKliiKIslAiliyIogWKIFiogVKIsAEpYoiiKIogAUoiiKIoiiAAAAAiiKqLAACKIpYAABKIogAAIogpKICLEiwiypNRJKrM1Eyssk1KzNRMqsyqsqTKkiqiiKSKABaiwAiiCyLCLCKrKiSrJKIokoiiKJRSiVSVVFhRbZRVlVS2WW2UtiXVzS2WWpSpSoKlBCoBABAQEBLLEsAP21c84oKIoKJVIoFIolIKIpYqIoipYsAIqWAilgIqIFiwAixQAIpYsAAAAAABSKIoiwAAABUoiiLAACKqLAFASiLAAACKIABKIBKqAiwixIsqSkysqTUsysSTUrKkyqzKjKrIoikiqiiKIoikiykoiwi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") 50% 0;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
-  padding: 1em 0;
 }
 
-/* line 6 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+/* line 5 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+.header .container {
+  padding: 1em;
+}
+
+/* line 8 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
 .header a {
   background: #000;
   display: inline-block;
@@ -75,23 +150,34 @@ a:focus {
   padding: 0 0.3em 0 0.65em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 900px) {
 
-/* line 15 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+/* line 19 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+  .header .container {
+    padding: 2em 1em;
+  }
 
-/* line 15 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+/* line 22 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+  .header a {
+    font-size: 1.25em;
+  }
+}
+
+/* line 24 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_header.styl */
+
+/* line 24 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
 
 /* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
 .content {
   background: #333;
-  padding: 2em 0;
 }
 
-/* line 5 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+/* line 4 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
 p {
   margin: 0 0 1.5em;
 }
 
-/* line 8 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+/* line 7 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
 h1 {
   font-size: 2em;
   font-weight: 300;
@@ -100,9 +186,9 @@ h1 {
   padding: 0 0 0.35em;
 }
 
-/* line 14 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+/* line 13 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
 
-/* line 14 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
+/* line 13 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
 
 /* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
 .footer {

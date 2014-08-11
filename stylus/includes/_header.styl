@@ -1,10 +1,12 @@
 .header
   background color-stop(0) embedurl('header.jpg') 50% 0
   background-size 100% 100%
-  padding 1em 0
+
+  .container
+    padding 1em
 
   a
-    background $colors_black
+    background $color--black
     display inline-block
     font-size 1.125em
     font-weight bold
@@ -12,3 +14,10 @@
     line-height 2
     padding 0 .3em 0 .65em
     text-transform uppercase
+
+  +width-min($breakpoint--second)
+    .container
+      padding 2em 1em
+
+    a
+      font-size 1.25em

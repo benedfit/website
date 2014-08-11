@@ -1,6 +1,8 @@
 ---
 layout: default
 hidden: true
-ogType: profile
+ogtype: profile
 ---
-Homepage
+{% for page in site.posts %}
+  {% include post.html %}
+{% endfor %}
