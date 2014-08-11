@@ -8,13 +8,12 @@ time(datetime='{{ page.date | date_to_xmlschema  }}')
   a(href='{{ page.date | date: "/%Y/" }}', rel='directory') {{ page.date | date: "%Y" }}
 | {% endcapture %}
 | {% if include.full %}
-h1 {{ title }}
-| {{ date }}
+h1 {{ title }} {{ date }}
 | {{ content }}
 | {% else %}
 article
-  h2 {{ title }}
-  | {{ date }}
+  h2 {{ title }} {{ date }}
   | {{ page.excerpt | markdownify }}
-  a(href='{{ page.url }}') Read more
+  a.ellipsis(href='{{ page.url }}')
+    span(aria-hidden='false') Read more
 | {% endif %}

@@ -7,14 +7,14 @@ html
 body
   background $color--black-light;
   color $color--white
-  font 100%/1.5 $fonts_base
+  font 112.5%/1.5 $font--base
   margin 0
 
-  +width-min($breakpoint--first)
+  +width-min($bp--first)
     line-height 1.75
 
 a
-  border-bottom 1px solid $color--grey-light
+  border-bottom 1px dotted $color--grey-light
   border-color alpha($color--grey-light, .5)
   color: $color--white
   text-decoration none
@@ -25,9 +25,9 @@ a
 
 .container
   margin auto
-  max-width 62.5em
+  max-width 60em
   padding 2em 1em
-  width 62.5em
+  width 60em
 
 [class~=container]
   width auto

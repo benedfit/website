@@ -2,10 +2,8 @@
 {% capture date %}
 <time datetime="{{ page.date | date_to_xmlschema  }}"><a href="{{ page.date | date: &quot;/%Y/%m/&quot; }}" rel="directory">{{ page.date | date: "%B" }}</a>&nbsp;{{ page.date | date: "%-d" }},&nbsp;<a href="{{ page.date | date: &quot;/%Y/&quot; }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>{% endcapture %}
 {% if include.full %}
-<h1>{{ title }}</h1>{{ date }}
-{{ content }}
+<h1>{{ title }} {{ date }}</h1>{{ content }}
 {% else %}
 <article>
-  <h2>{{ title }}</h2>{{ date }}
-  {{ page.excerpt | markdownify }}<a href="{{ page.url }}">Read more</a>
+  <h2>{{ title }} {{ date }}</h2>{{ page.excerpt | markdownify }}<a href="{{ page.url }}" class="ellipsis"><span aria-hidden="false">Read more</span></a>
 </article>{% endif %}

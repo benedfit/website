@@ -82,7 +82,7 @@ html {
 body {
   background: #222;
   color: #fff;
-  font: 100%/1.5 'Muli', Arial, sans-serif;
+  font: 112.5%/1.5 'Muli', Arial, sans-serif;
   margin: 0;
 }
 @media screen and (min-width: 700px) {
@@ -95,7 +95,7 @@ body {
 
 /* line 16 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 a {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px dotted #bbb;
   border-color: rgba(187,187,187,0.5);
   color: #fff;
   text-decoration: none;
@@ -113,9 +113,9 @@ a:focus {
 /* line 26 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
 .container {
   margin: auto;
-  max-width: 62.5em;
+  max-width: 60em;
   padding: 2em 1em;
-  width: 62.5em;
+  width: 60em;
 }
 
 /* line 32 : /private/var/application/Benedfit/benedfit.com/stylus/critical.styl */
@@ -179,16 +179,491 @@ p {
 
 /* line 7 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
 h1 {
+  border: 0;
+  border-bottom: 1px solid #bbb;
+  border-bottom-color: rgba(187,187,187,0.5);
+  -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#cba276), color-stop(8%, #c9a376), color-stop(9%, #cba276), color-stop(14%, #c3a174), color-stop(18%, #bea272), color-stop(19%, #c0a172), color-stop(20%, #bea473), color-stop(25%, #bba774), color-stop(30%, #b3a978), color-stop(31%, #aca878), color-stop(32%, #a9a777), color-stop(33%, #a8a676), color-stop(35%, #9ca178), color-stop(36%, #979e74), color-stop(38%, #8d9975), color-stop(39%, #859571), color-stop(41%, #788c70), color-stop(42%, #738a6e), color-stop(45%, #65806d), color-stop(48%, #5e7a6c), color-stop(55%, #5f7270), color-stop(57%, #5d6c6f), color-stop(59%, #56686c), color-stop(60%, #56676e), color-stop(66%, #435667), color-stop(68%, #405165), color-stop(72%, #445366), color-stop(75%, #565d6d), color-stop(78%, #6e6c77), color-stop(82%, #9b8987), color-stop(87%, #b89d94), color-stop(92%, #bca094), color-stop(95%, #b69a8f), color-stop(96%, #b5998e), to(#b2958f)) 100% 1;
+  -webkit-border-image: -webkit-linear-gradient(left, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 100% 1;
+       -o-border-image: linear-gradient(left, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 100% 1;
+          border-image: -webkit-gradient(linear, left top, right top, from(#cba276), color-stop(8%, #c9a376), color-stop(9%, #cba276), color-stop(14%, #c3a174), color-stop(18%, #bea272), color-stop(19%, #c0a172), color-stop(20%, #bea473), color-stop(25%, #bba774), color-stop(30%, #b3a978), color-stop(31%, #aca878), color-stop(32%, #a9a777), color-stop(33%, #a8a676), color-stop(35%, #9ca178), color-stop(36%, #979e74), color-stop(38%, #8d9975), color-stop(39%, #859571), color-stop(41%, #788c70), color-stop(42%, #738a6e), color-stop(45%, #65806d), color-stop(48%, #5e7a6c), color-stop(55%, #5f7270), color-stop(57%, #5d6c6f), color-stop(59%, #56686c), color-stop(60%, #56676e), color-stop(66%, #435667), color-stop(68%, #405165), color-stop(72%, #445366), color-stop(75%, #565d6d), color-stop(78%, #6e6c77), color-stop(82%, #9b8987), color-stop(87%, #b89d94), color-stop(92%, #bca094), color-stop(95%, #b69a8f), color-stop(96%, #b5998e), to(#b2958f)) 100% 1;
+          border-image: linear-gradient(left, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 100% 1;
   font-size: 2em;
   font-weight: 300;
   line-height: 1.25;
   margin: 0 0 0.75em;
-  padding: 0 0 0.35em;
+  padding: 0 0 0.25em;
+}
+@media screen and (min-width: 700px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+}
+@media screen and (min-width: 900px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  h1 {
+    font-size: 3em;
+    line-height: 1.25;
+  }
 }
 
-/* line 13 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+/* line 26 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h1 a {
+  border-color: #222;
+}
 
-/* line 13 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
+/* line 29 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h1 time {
+  font-size: 0.5em;
+}
+
+/* line 32 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h2 {
+  font-size: 1.625em;
+  font-weight: 300;
+  line-height: 1.15;
+  margin: 1em 0;
+}
+@media screen and (min-width: 700px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 900px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  h2 {
+    font-size: 2.25em;
+  }
+}
+
+/* line 45 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h2 a {
+  border-color: #222;
+}
+
+/* line 48 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h2 small {
+  color: #bbb;
+}
+
+/* line 51 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h2 time {
+  font-size: 0.65em;
+}
+
+/* line 54 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+.ellipsis {
+  border: 0;
+  display: block;
+  line-height: 1;
+  margin: 0 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: #333 1px 1px 0;
+}
+
+/* line 63 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+.ellipsis:before {
+  color: #000;
+  content: '○○○';
+  font-size: 2.25em;
+  -webkit-transition: color 0.25s ease-in-out;
+          transition: color 0.25s ease-in-out;
+}
+@media screen and (min-width: 900px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  .ellipsis:before {
+    font-size: 1.5em;
+  }
+}
+
+/* line 72 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+.ellipsis:hover,
+.ellipsis:active,
+.ellipsis:focus {
+  text-shadow: none;
+}
+
+/* line 75 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+.ellipsis:hover:before,
+.ellipsis:active:before,
+.ellipsis:focus:before {
+  color: #bbb;
+}
+
+/* line 78 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+.ellipsis span {
+  display: none;
+}
+
+/* line 81 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h3 {
+  font-size: 1.375em;
+  line-height: 1.15;
+  margin: 0 0 1em;
+}
+@media screen and (min-width: 700px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 900px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  h3 {
+    font-size: 1.75em;
+  }
+}
+
+/* line 93 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h4 {
+  font-size: 1.125em;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
+@media screen and (min-width: 700px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  h4 {
+    line-height: 1.2;
+  }
+}
+
+/* line 101 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+h5,
+h6 {
+  font-size: 1em;
+  margin: 0 0 0.25em;
+}
+
+/* line 105 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+time {
+  color: #bbb;
+}
+
+/* line 108 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+time a {
+  color: #bbb;
+}
+
+/* line 111 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+hr {
+  border: 0;
+  border-bottom: 1px solid #bbb;
+  border-bottom-color: rgba(187,187,187,0.5);
+  -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#cba276), color-stop(8%, #c9a376), color-stop(9%, #cba276), color-stop(14%, #c3a174), color-stop(18%, #bea272), color-stop(19%, #c0a172), color-stop(20%, #bea473), color-stop(25%, #bba774), color-stop(30%, #b3a978), color-stop(31%, #aca878), color-stop(32%, #a9a777), color-stop(33%, #a8a676), color-stop(35%, #9ca178), color-stop(36%, #979e74), color-stop(38%, #8d9975), color-stop(39%, #859571), color-stop(41%, #788c70), color-stop(42%, #738a6e), color-stop(45%, #65806d), color-stop(48%, #5e7a6c), color-stop(55%, #5f7270), color-stop(57%, #5d6c6f), color-stop(59%, #56686c), color-stop(60%, #56676e), color-stop(66%, #435667), color-stop(68%, #405165), color-stop(72%, #445366), color-stop(75%, #565d6d), color-stop(78%, #6e6c77), color-stop(82%, #9b8987), color-stop(87%, #b89d94), color-stop(92%, #bca094), color-stop(95%, #b69a8f), color-stop(96%, #b5998e), to(#b2958f)) 100% 1;
+  -webkit-border-image: -webkit-linear-gradient(left, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 100% 1;
+       -o-border-image: linear-gradient(left, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 100% 1;
+          border-image: -webkit-gradient(linear, left top, right top, from(#cba276), color-stop(8%, #c9a376), color-stop(9%, #cba276), color-stop(14%, #c3a174), color-stop(18%, #bea272), color-stop(19%, #c0a172), color-stop(20%, #bea473), color-stop(25%, #bba774), color-stop(30%, #b3a978), color-stop(31%, #aca878), color-stop(32%, #a9a777), color-stop(33%, #a8a676), color-stop(35%, #9ca178), color-stop(36%, #979e74), color-stop(38%, #8d9975), color-stop(39%, #859571), color-stop(41%, #788c70), color-stop(42%, #738a6e), color-stop(45%, #65806d), color-stop(48%, #5e7a6c), color-stop(55%, #5f7270), color-stop(57%, #5d6c6f), color-stop(59%, #56686c), color-stop(60%, #56676e), color-stop(66%, #435667), color-stop(68%, #405165), color-stop(72%, #445366), color-stop(75%, #565d6d), color-stop(78%, #6e6c77), color-stop(82%, #9b8987), color-stop(87%, #b89d94), color-stop(92%, #bca094), color-stop(95%, #b69a8f), color-stop(96%, #b5998e), to(#b2958f)) 100% 1;
+          border-image: linear-gradient(left, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 100% 1;
+  height: 0;
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+
+/* line 120 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+p {
+  margin: 0 0 1.5em;
+}
+
+/* line 123 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+li {
+  margin: 0.5em;
+}
+
+/* line 126 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+ul {
+  list-style: circle;
+  margin: 0 0 1em;
+  padding: 0 0 0 1em;
+}
+
+/* line 131 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+ul > li {
+  list-style: none;
+}
+
+/* line 134 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+ul > li:before {
+  color: #bbb;
+  content: '○';
+  display: block;
+  left: -1em;
+  max-height: 0;
+  max-width: 0;
+  position: relative;
+}
+
+/* line 143 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+* + html ul li {
+  list-style: circle;
+}
+
+/* line 146 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+ol {
+  counter-reset: li;
+  list-style: decimal;
+  margin: 0 0 1em;
+  padding: 0 0 0 1em;
+}
+
+/* line 152 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+ol > li {
+  list-style: none;
+}
+
+/* line 155 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+ol > li:before {
+  color: #bbb;
+  content: counter(li) '.';
+  counter-increment: li;
+  display: block;
+  font-size: 0.85em;
+  font-style: italic;
+  left: -1.25em;
+  max-height: 0;
+  max-width: 0;
+  position: relative;
+  top: 0.2em;
+}
+
+/* line 168 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+* + html ol li {
+  list-style: decimal;
+}
+
+/* line 171 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+blockquote {
+  border: 0;
+  border-left: 1px solid #bbb;
+  border-left-color: rgba(187,187,187,0.5);
+  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#cba276), color-stop(8%, #c9a376), color-stop(9%, #cba276), color-stop(14%, #c3a174), color-stop(18%, #bea272), color-stop(19%, #c0a172), color-stop(20%, #bea473), color-stop(25%, #bba774), color-stop(30%, #b3a978), color-stop(31%, #aca878), color-stop(32%, #a9a777), color-stop(33%, #a8a676), color-stop(35%, #9ca178), color-stop(36%, #979e74), color-stop(38%, #8d9975), color-stop(39%, #859571), color-stop(41%, #788c70), color-stop(42%, #738a6e), color-stop(45%, #65806d), color-stop(48%, #5e7a6c), color-stop(55%, #5f7270), color-stop(57%, #5d6c6f), color-stop(59%, #56686c), color-stop(60%, #56676e), color-stop(66%, #435667), color-stop(68%, #405165), color-stop(72%, #445366), color-stop(75%, #565d6d), color-stop(78%, #6e6c77), color-stop(82%, #9b8987), color-stop(87%, #b89d94), color-stop(92%, #bca094), color-stop(95%, #b69a8f), color-stop(96%, #b5998e), to(#b2958f)) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(top, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 1 100%;
+       -o-border-image: linear-gradient(top, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 1 100%;
+          border-image: -webkit-gradient(linear, left top, left bottom, from(#cba276), color-stop(8%, #c9a376), color-stop(9%, #cba276), color-stop(14%, #c3a174), color-stop(18%, #bea272), color-stop(19%, #c0a172), color-stop(20%, #bea473), color-stop(25%, #bba774), color-stop(30%, #b3a978), color-stop(31%, #aca878), color-stop(32%, #a9a777), color-stop(33%, #a8a676), color-stop(35%, #9ca178), color-stop(36%, #979e74), color-stop(38%, #8d9975), color-stop(39%, #859571), color-stop(41%, #788c70), color-stop(42%, #738a6e), color-stop(45%, #65806d), color-stop(48%, #5e7a6c), color-stop(55%, #5f7270), color-stop(57%, #5d6c6f), color-stop(59%, #56686c), color-stop(60%, #56676e), color-stop(66%, #435667), color-stop(68%, #405165), color-stop(72%, #445366), color-stop(75%, #565d6d), color-stop(78%, #6e6c77), color-stop(82%, #9b8987), color-stop(87%, #b89d94), color-stop(92%, #bca094), color-stop(95%, #b69a8f), color-stop(96%, #b5998e), to(#b2958f)) 1 100%;
+          border-image: linear-gradient(top, #cba276 0%, #c9a376 8%, #cba276 9%, #c3a174 14%, #bea272 18%, #c0a172 19%, #bea473 20%, #bba774 25%, #b3a978 30%, #aca878 31%, #a9a777 32%, #a8a676 33%, #9ca178 35%, #979e74 36%, #8d9975 38%, #859571 39%, #788c70 41%, #738a6e 42%, #65806d 45%, #5e7a6c 48%, #5f7270 55%, #5d6c6f 57%, #56686c 59%, #56676e 60%, #435667 66%, #405165 68%, #445366 72%, #565d6d 75%, #6e6c77 78%, #9b8987 82%, #b89d94 87%, #bca094 92%, #b69a8f 95%, #b5998e 96%, #b2958f 100%) 1 100%;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 1.5em 0;
+  padding: 0 1em;
+}
+
+/* line 181 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+blockquote a {
+  color: #bbb;
+}
+
+/* line 184 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+blockquote cite {
+  display: block;
+  font-style: normal;
+}
+
+/* line 188 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+blockquote cite:before {
+  color: #bbb;
+  content: '-';
+  margin: 0 0.2em 0 -0.575em;
+}
+
+/* line 193 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+blockquote p {
+  margin: 0;
+}
+
+/* line 196 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+blockquote q:before {
+  margin-left: -0.5em;
+}
+
+/* line 199 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+blockquote time {
+  font-size: 0.65em;
+  margin: 0 0 0 0.25em;
+}
+@media screen and (min-width: 700px) {
+
+/* line 64 : /private/var/application/Benedfit/benedfit.com/node_modules/stylus-mixins/lib/stylus-mixins/media/width-height.styl */
+  blockquote {
+    font-size: 1.5em;
+    line-height: 1.45;
+  }
+}
+
+/* line 207 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+q {
+  quotes: '“' '”' '‘' '’';
+}
+
+/* line 210 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+q:after {
+  color: #bbb;
+  content: close-quote;
+}
+
+/* line 214 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+q:before {
+  color: #bbb;
+  content: open-quote;
+}
+
+/* line 218 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+pre {
+  font-family: Consolas, monaco, monospace;
+  margin: 2em 0;
+  overflow: auto;
+}
+
+/* line 223 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+code {
+  background: #000;
+  color: #fff;
+  font-family: Consolas, monaco, monospace;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  padding: 0.15em 0.25em;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+}
+
+/* line 231 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+code .c,
+code .c1,
+code .cm,
+code .p {
+  color: #bbb;
+}
+
+/* line 234 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+code .cp,
+code .mi,
+code .sr {
+  color: #fba266;
+}
+
+/* line 237 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+code .k,
+code .nt {
+  color: #8ea9d7;
+}
+
+/* line 240 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+code .kd,
+code .s {
+  color: #f786ad;
+}
+
+/* line 243 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+code .na,
+code .nb {
+  color: #ff7;
+}
+
+/* line 246 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+code .o,
+code .sx {
+  color: #93b082;
+}
+
+/* line 249 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+abbr[title] {
+  border-bottom: 1px dotted #222;
+  cursor: help;
+}
+
+/* line 253 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+del,
+s {
+  color: #bbb;
+  font-weight: 300;
+}
+
+/* line 257 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+ins,
+u {
+  font-weight: 300;
+}
+
+/* line 260 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+kbd,
+samp {
+  font-family: Consolas, monaco, monospace;
+}
+
+/* line 263 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+mark {
+  background: #000;
+  color: #fff;
+  font-weight: 300;
+  padding: 0.15em 0.25em;
+}
+
+/* line 269 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+table {
+  border-right: 1px solid #333;
+  border-collapse: collapse;
+  font-weight: 300;
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/* line 276 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+table td,
+table th {
+  border: 0 dotted #bbb;
+  border: -color rgba(187,187,187,0.5);
+  border-right-width: 1px;
+  border-top-width: 1px;
+  padding: 0 0.5em;
+}
+
+/* line 283 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+table th {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top: 0;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+}
+
+/* line 290 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+.video {
+  height: 0;
+  overflow: hidden;
+  margin: 0 0 1.5em;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+/* line 297 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+.video embed,
+.video iframe,
+.video object {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 304 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_content.styl */
+
+/* line 304 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
 
 /* line 1 : /private/var/application/Benedfit/benedfit.com/stylus/includes/_footer.styl */
 .footer {

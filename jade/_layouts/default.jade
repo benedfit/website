@@ -15,6 +15,20 @@ html(lang='en-gb')
     title {% if page.metatitle %}{{ page.metatitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}
     meta(name='viewport', content='width=device-width,initial-scale=1')
     style. {% asset css/critical.css %}
+    //- script.
+    //-   function async (href) {
+    //-     var ss = window.document.createElement('link')
+    //-       , ref = window.document.getElementsByTagName('head')[0]
+    //-     ss.rel = 'stylesheet'
+    //-     ss.href = href
+    //-     ss.media = 'only x'
+    //-     ref.parentNode.insertBefore(ss,ref)
+
+    //-     setTimeout( function(){
+    //-       ss.media = 'all'
+    //-     })
+    //-   }
+    //-   async('{% asset_path css/non-critical.css %}')
     meta(name='description', content='{{ description }}')
     meta(name='author', content='{{ site.authorname }}')
     link(rel='canonical', href='{{ url }}')
@@ -81,3 +95,5 @@ html(lang='en-gb')
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-34470231-1', 'benedfit.com');
       ga('send', 'pageview');
+    //- noscript
+    //-   link(rel='stylesheet', href='{% asset_path css/non-critical.css %}')

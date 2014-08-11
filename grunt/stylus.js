@@ -5,7 +5,7 @@ module.exports = {
       linenos: true,
       urlfunc: {
         name: 'embedurl',
-        paths: ['jekyll/_assets/img']
+        paths: ['jekyll/_assets/img', 'jekyll/_assets/fonts']
       },
       use: [require('autoprefixer-stylus'), require('stylus-mixins')]
     },

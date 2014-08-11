@@ -5,8 +5,299 @@ p
   margin 0 0 1.5em
 
 h1
+  border 0
+  border-bottom 1px solid $color--grey-light
+  border-bottom-color alpha($color--grey-light, .5)
+  border-image:linear-gradient(left, $color--gradient) 100% 1
   font-size 2em
   font-weight 300
   line-height 1.25
   margin 0 0 .75em
-  padding 0 0 .35em
+  padding 0 0 .25em
+
+  +width-min($bp--first)
+    font-size 2.5em
+    line-height 1.125
+
+  +width-min($bp--second)
+    font-size 3em
+    line-height 1.25
+
+  a
+    border-color $color--black-light
+
+  time
+    font-size .5em
+
+h2
+  font-size 1.625em
+  font-weight 300
+  line-height 1.15
+  margin 1em 0
+
+  +width-min($bp--first)
+    font-size 2em
+    line-height 1.25
+
+  +width-min($bp--second)
+    font-size 2.25em
+
+  a
+    border-color $color--black-light
+
+  small
+    color $color--grey-light
+
+  time
+    font-size .65em
+
+.ellipsis
+  border 0
+  display block
+  line-height 1
+  margin 0 0 1.5em
+  text-align center
+  text-decoration none
+  text-shadow $color--grey 1px 1px 0
+
+  &:before
+    color $color--black
+    content '○○○'
+    font-size 2.25em
+    transition color .25s ease-in-out
+
+    +width-min($bp--second)
+      font-size 1.5em
+
+  &:hover, &:active, &:focus
+    text-shadow none
+
+    &:before
+      color $color--grey-light
+
+  span
+    display none
+
+h3
+  font-size 1.375em
+  line-height 1.15
+  margin 0 0 1em
+
+  +width-min($bp--first)
+    font-size 1.5em
+    line-height 1.25
+
+  +width-min($bp--second)
+    font-size 1.75em
+
+h4
+  font-size 1.125em
+  line-height 1.1
+  margin 0 0 .5em
+
+  +width-min($bp--first)
+    line-height 1.2
+
+h5, h6
+  font-size 1em
+  margin 0 0 .25em
+
+time
+  color $color--grey-light
+
+  a
+    color $color--grey-light
+
+hr
+  border 0
+  border-bottom 1px solid $color--grey-light
+  border-bottom-color alpha($color--grey-light, .5)
+  border-image linear-gradient(left, $color--gradient) 100% 1
+  height 0
+  margin 0 0 1.5em
+  overflow hidden
+
+p
+  margin 0 0 1.5em
+
+li
+  margin .5em
+
+ul
+  list-style circle
+  margin 0 0 1em
+  padding 0 0 0 1em
+
+  > li
+    list-style none
+
+    &:before
+      color $color--grey-light
+      content '○'
+      display block
+      left -1em
+      max-height 0
+      max-width 0
+      position relative
+
+  * + html & li
+    list-style circle
+
+ol
+  counter-reset li
+  list-style decimal
+  margin 0 0 1em
+  padding 0 0 0 1em
+
+  > li
+    list-style none
+
+    &:before
+      color $color--grey-light
+      content counter(li)'.'
+      counter-increment li
+      display block
+      font-size .85em
+      font-style italic
+      left -1.25em
+      max-height 0
+      max-width 0
+      position relative
+      top .2em
+
+  * + html & li
+    list-style decimal
+
+blockquote
+  border 0
+  border-left 1px solid $color--grey-light
+  border-left-color alpha($color--grey-light, .5)
+  border-image linear-gradient(top, $color--gradient) 1 100%
+  font-size 1.25em
+  font-weight 300
+  margin 1.5em 0
+  padding 0 1em
+
+  a
+    color $color--grey-light
+
+  cite
+    display block
+    font-style normal
+
+    &:before
+      color $color--grey-light
+      content '-'
+      margin 0 .2em 0 -.575em
+
+  p
+    margin 0
+
+  q:before
+    margin-left -.5em
+
+  time
+    font-size .65em
+    margin 0 0 0 .25em
+
+  +width-min($bp--first)
+    font-size 1.5em
+    line-height 1.45
+
+q
+  quotes '“' '”' '‘' '’'
+
+  &:after
+    color $color--grey-light
+    content close-quote
+
+  &:before
+    color $color--grey-light
+    content open-quote
+
+pre
+  font-family $font--monospace
+  margin 2em 0
+  overflow auto
+
+code
+  background $color--black
+  color $color--white
+  font-family $font--monospace
+  hyphens none
+  padding .15em .25em
+  tab-size 4
+
+  .c, .c1, .cm, .p
+    color $color--grey-light
+
+  .cp, .mi, .sr
+    color $color--orange
+
+  .k, .nt
+    color $color--blue
+
+  .kd, .s
+    color $color--pink
+
+  .na, .nb
+    color $color--yellow
+
+  .o, .sx
+    color $color--green
+
+abbr[title]
+  border-bottom 1px dotted $color--black-light
+  cursor help
+
+del, s
+  color $color--grey-light
+  font-weight 300
+
+ins, u
+  font-weight 300
+
+kbd, samp
+  font-family $font--monospace
+
+mark
+  background $color--black
+  color $color--white
+  font-weight 300
+  padding .15em .25em
+
+table
+  border-right 1px solid $color--grey
+  border-collapse collapse
+  font-weight 300
+  margin 0 0 1.5em
+  width 100%
+
+  td, th
+    border 0 dotted $color--grey-light
+    border:-color alpha($color--grey-light, .5)
+    border-right-width 1px
+    border-top-width 1px
+    padding 0 .5em
+
+  th
+    border-bottom-style solid
+    border-bottom-width 1px
+    border-top 0
+    font-weight bold
+    padding .25em .5em
+
+.video
+  height 0
+  overflow hidden
+  margin 0 0 1.5em
+  padding-bottom ratio-percentage(9, 16)
+  position relative
+
+  embed, iframe, object
+    border 0
+    height 100%
+    left 0
+    position absolute
+    top 0
+    width 100%

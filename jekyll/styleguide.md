@@ -10,12 +10,18 @@ hidden: true
 
 <section markdown="1">
 ## Headings
+
 <section markdown="1">
 # Heading level 1 [link](#)
+
 ## Heading level 2 [link](#)
+
 ### Heading level 3 [link](#)
+
 #### Heading level 4 [link](#)
+
 ##### Heading level 5 [link](#)
+
 ###### Heading level 6 [link](#)
 </section>
 </section>
