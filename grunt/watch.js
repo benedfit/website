@@ -4,7 +4,7 @@ module.exports = {
   },
   browserify: {
     files: ['browserify/**'],
-    tasks: ['newer:jshint', 'newer:browserify']
+    tasks: ['jshint', 'browserify']
   },
   jekyll: {
     files: ['jekyll/**'],
@@ -12,10 +12,10 @@ module.exports = {
   },
   jade: {
     files: ['jade/**'],
-    tasks: ['newer:jade']
+    tasks: ['jade']
   },
   stylus: {
     files: ['stylus/**'],
-    tasks: ['newer:stylus']
+    tasks: ['stylus']
   }
 }

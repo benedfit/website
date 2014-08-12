@@ -1,3 +1,9 @@
+$hr
+  border-image:linear-gradient(left, $color--gradient) 100% 1 !important
+
+$vr
+  border-image linear-gradient(top, $color--gradient) 1 100% !important
+
 .content
   background $color--grey
 
@@ -5,10 +11,10 @@ p
   margin 0 0 1.5em
 
 h1
+  @extend $hr
   border 0
   border-bottom 1px solid $color--grey-light
   border-bottom-color alpha($color--grey-light, .5)
-  border-image:linear-gradient(left, $color--gradient) 100% 1
   font-size 2em
   font-weight 300
   line-height 1.25
@@ -109,10 +115,10 @@ time
     color $color--grey-light
 
 hr
+  @extend $hr
   border 0
   border-bottom 1px solid $color--grey-light
   border-bottom-color alpha($color--grey-light, .5)
-  border-image linear-gradient(left, $color--gradient) 100% 1
   height 0
   margin 0 0 1.5em
   overflow hidden
@@ -169,10 +175,10 @@ ol
     list-style decimal
 
 blockquote
+  @extend $vr
   border 0
   border-left 1px solid $color--grey-light
   border-left-color alpha($color--grey-light, .5)
-  border-image linear-gradient(top, $color--gradient) 1 100%
   font-size 1.25em
   font-weight 300
   margin 1.5em 0
