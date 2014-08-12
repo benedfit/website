@@ -1,4 +1,4 @@
 module.exports = {
   default: ['build', 'concurrent:watch'],
-  build: ['concurrent:build', 'jade']
+  build: ['concurrent:build', 'newer:jade', 'jekyll']
 }

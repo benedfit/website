@@ -2,6 +2,6 @@ module.exports = {
   options: {
     logConcurrentOutput: true
   },
-  build: ['stylus', 'browserify'],
+  build: ['newer:stylus', 'newer:browserify', 'newer:imagemin'],
   watch: ['watch', 'connect']
 }
