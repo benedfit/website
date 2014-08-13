@@ -1,5 +1,5 @@
 
 <div role="contentinfo" class="footer"><span>&copy; {{ site.time | date: '%Y' }}</span><a href="{{ site.url }}">{{ site.authorname }}</a>{% for page in site.pages %}
   {% if page.inmenu %}<a href="{{ page.url }}">{{ page.title }}</a>{% endif %}
-  {% endfor %}<a href="mailto:{{ site.authoremail }}">Email</a><a href="https://twitter.com/{{ site.authorhandle }}">Twitter</a><a href="https://github.com/{{ site.authorhandle }}/">GitHub</a><a href="https://codepen.io/{{ site.authorhandle }}/">CodePen</a>
+  {% endfor %}<a href="mailto:{{ site.authoremail }}">Email</a><a href="https://twitter.com/{{ site.authorhandle }}" rel="me">Twitter</a><a href="https://github.com/{{ site.authorhandle }}/" rel="me">GitHub</a><a href="https://codepen.io/{{ site.authorhandle }}/" rel="me">CodePen</a>
 </div>

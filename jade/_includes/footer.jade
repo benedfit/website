@@ -7,6 +7,6 @@
   | {% endif %}
   | {% endfor %}
   a(href='mailto:{{ site.authoremail }}') Email
-  a(href='https://twitter.com/{{ site.authorhandle }}') Twitter
-  a(href='https://github.com/{{ site.authorhandle }}/') GitHub
-  a(href='https://codepen.io/{{ site.authorhandle }}/') CodePen
+  a(href='https://twitter.com/{{ site.authorhandle }}', rel='me') Twitter
+  a(href='https://github.com/{{ site.authorhandle }}/', rel='me') GitHub
+  a(href='https://codepen.io/{{ site.authorhandle }}/', rel='me') CodePen
