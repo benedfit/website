@@ -1,6 +1,6 @@
 {% capture title %}<a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a>{% endcapture %}
 {% capture date %}
-<time datetime="{{ page.date | date_to_xmlschema  }}"><a href="{{ page.date | date: &quot;/%Y/%m/&quot; }}" rel="directory">{{ page.date | date: "%B" }}</a>&nbsp;{{ page.date | date: "%-d" }},&nbsp;<a href="{{ page.date | date: &quot;/%Y/&quot; }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>{% endcapture %}
+<time datetime="{{ page.date | date_to_xmlschema  }}"><a href="{{ page.date | date: '/%Y/%m/' }}" rel="directory">{{ page.date | date: "%B" }}</a>&nbsp;{{ page.date | date: "%-d" }},&nbsp;<a href="{{ page.date | date: '/%Y/' }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>{% endcapture %}
 {% if include.full %}
 <h1>{{ title }} {{ date }}</h1>{{ content }}
 {% else %}

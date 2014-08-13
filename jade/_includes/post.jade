@@ -3,9 +3,9 @@ a(href='{{ page.url }}', rel='bookmark') {{ page.title }}
 | {% endcapture %}
 | {% capture date %}
 time(datetime='{{ page.date | date_to_xmlschema  }}')
-  a(href='{{ page.date | date: "/%Y/%m/" }}', rel='directory') {{ page.date | date: "%B" }}
+  a(href="{{ page.date | date: '/%Y/%m/' }}", rel='directory') {{ page.date | date: "%B" }}
   | &nbsp;{{ page.date | date: "%-d" }},&nbsp;
-  a(href='{{ page.date | date: "/%Y/" }}', rel='directory') {{ page.date | date: "%Y" }}
+  a(href="{{ page.date | date: '/%Y/' }}", rel='directory') {{ page.date | date: "%Y" }}
 | {% endcapture %}
 | {% if include.full %}
 h1 {{ title }} {{ date }}
