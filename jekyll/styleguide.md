@@ -82,7 +82,7 @@ Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
 
 Keybord input: <kbd>Cmd</kbd>
 
-<q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation. <q>With another quotation inside it.</q></q>
+<q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">This text is a short inline quotation. <q>With another quotation inside it.</q></q>
 
 <cite>This is a citation</cite>
 
@@ -103,8 +103,8 @@ A timestamp, such as <time datetime="2014-01-01T00:00:00+00:00"><a href="#" rel=
 | zebra stripes | are neat      |    $1 |
 
 <pre>P R E F O R M A T T E D T E X T P R E F O R M A T T E D T E X T
-! " # $ % &amp; ' ( ) * + , - . /
-0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+! " # $ % & ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; < = > ?
 @ A B C D E F G H I J K L M N O
 P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
