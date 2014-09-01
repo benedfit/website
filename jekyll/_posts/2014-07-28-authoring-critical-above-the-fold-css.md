@@ -11,7 +11,7 @@ excerpt: >
 
 This had long been my stand point until I read the following tweet:
 
-> <q>I'd like to see a site like CSS Zen Garden, but where developers try to make the same responsive site score better on [webpagetest.org](http://webpagetest.org)</q>
+> <q>I'd like to see a site like CSS Zen Garden, but where developers try to make the same responsive site score better on [webpagetest.org](http://www.webpagetest.org/)</q>
 > <cite>[Scott Jehl](https://twitter.com/scottjehl/statuses/477112692684390400) <time>June 12, 2014</time></cite>
 
 I've long committed myself to getting my web pages the best possible scores from webpagetest.org, and that required a change of work-flow, so why shouldn't I change it for PageSpeed?.. Now if you're already using [Google's mod_pagespeed module](https://developers.google.com/speed/pagespeed/module?csw=1) put your feet up and give yourself a pat on the back as [the module has you covered](https://developers.google.com/speed/pagespeed/module/filter-prioritize-critical-css). For those of you, like myself, who aren't, here's how I went about it:
