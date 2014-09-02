@@ -1,13 +1,13 @@
 font-face($name, $file-path, $weight = 'normal', $style = 'normal')
   @font-face
     font-family $name
+    font-style unquote($style)
+    font-weight unquote($weight)
     src url("<%= asset_path('" + $file-path + ".eot') %>")
     src url("<%= asset_path('" + $file-path + ".eot') %>?#iefix") format('embedded-opentype')
     src embedurl($file-path + '.woff') format('woff')
       , embedurl($file-path + '.ttf') format('truetype')
       , embedurl($file-path + '.svg') format('svg')
-    font-weight unquote($weight)
-    font-style unquote($style)
 
 font-face('Muli', 'fonts/muli/light', '300')
 font-face('Muli', 'fonts/muli/bold', 'bold')
