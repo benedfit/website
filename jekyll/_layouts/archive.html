@@ -9,5 +9,9 @@ hidden: true
 <h1>{{ page.title }}</h1>{% assign posts = page.period_posts %}
 {% if posts == null %}{% assign posts = site.posts %}{% endif %}
 {% for page in posts %}
+  {{ separator }}
+  {% capture separator %}
+  <hr>
+  {% endcapture %}
   {% include post.html %}
 {% endfor %}
