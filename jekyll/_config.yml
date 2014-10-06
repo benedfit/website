@@ -13,7 +13,7 @@ assets:
   cachebust: none
 jekyll-press:
   exclude: ['*.txt']
-url: http://benedfit.com
+url: https://benedfit.com
 title: Ben Edwards, a Web Designer and Developer
 description: Ultimate Knot-tier and Head of Front-end Development at Clock. Banging on about Responsive Design, Web Standards
 tilecolor: #000000

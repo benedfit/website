@@ -2,7 +2,8 @@ module.exports = {
   all: {
     options: {
       base: 'output',
-      keepalive: true
+      keepalive: true,
+      port: '?'
     }
   }
 }
