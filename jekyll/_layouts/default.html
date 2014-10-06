@@ -5,7 +5,7 @@
 {% if description == null %}{% assign description = site.description %}{% endif %}
 {% assign image = page.image %}
 {% if image == null %}{% assign image = site.authorimage %}{% endif %}
-{% assign domain = site.url | remove: "http://" %}
+{% assign domain = site.url | remove: "https://" %}
 {% capture url %}{{ site.url }}{{ page.url | remove: 'index.html' }}{% endcapture %}<!DOCTYPE html>
 <html lang="en-gb">
   <head>
