@@ -1,9 +1,0 @@
-{% capture title %}<a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a>{% endcapture %}
-{% capture date %}
-<time datetime="{{ page.date | date_to_xmlschema  }}"><a href="{{ page.date | date: '/%Y/%m/' }}" rel="directory">{{ page.date | date: "%B" }}</a>&nbsp;{{ page.date | date: "%-d" }},&nbsp;<a href="{{ page.date | date: '/%Y/' }}" rel="directory">{{ page.date | date: "%Y" }}</a></time>{% endcapture %}
-{% if include.full %}
-<h1>{{ title }} {{ date }}</h1>{{ content }}
-{% else %}
-<article>
-  <h2>{{ title }} {{ date }}</h2>{{ page.excerpt | markdownify }}<a href="{{ page.url }}" class="ellipsis"><span aria-hidden="false">Read more</span></a>
-</article>{% endif %}
