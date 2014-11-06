@@ -1,0 +1,11 @@
+{
+  "global": {
+    "projectName": "Benedfit.com",
+    "src": "source",
+    "dest": "_output",
+    "domain": "benedfit.com",
+    "url": "https://%domain%",
+    "metaTitle": "Ben Edwards, a Web Designer and Developer",
+    "metaDescription": "Ultimate Knot-tier and Head of Front-end Development at Clock. Banging on about Responsive Design, Web Standards"
+  }
+}
