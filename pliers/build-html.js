@@ -13,16 +13,21 @@ function task(pliers, config) {
 
   pliers('buildHtml', function (done) {
 
+    console.log(pliers.filesets.contents.length)
+
     async.each(pliers.filesets.contents, function (file) {
       var dest = file.replace(config.src, config.dest)
         , ext = path.extname(file)
         , properties
         , options =
         { pretty: false
+        , filename: file
         , cache: true
         }
 
       mkdir(path.dirname(dest))
+
+      console.log(file)
 
       fs.readFile(file, 'utf8', function (err, data) {
         if (err) {
@@ -37,7 +42,11 @@ function task(pliers, config) {
           merge(options, properties.attributes)
 
           if (properties.attributes.layout) {
-            file = join(__dirname, '..', config.src, '_layouts', properties.attributes.layout + '.jade')
+            file = join(__dirname, '..', config.src, 'views', properties.attributes.layout + '.jade')
+            options.contents = properties.body
+            data = jade.renderFile(file, options)
+          } else {
+            data = jade.render(properties.body, options)
           }
 
           switch(ext) {
@@ -48,11 +57,6 @@ function task(pliers, config) {
               dest = dest.replace(ext, '.html')
               break
           }
-
-          options.contents = properties.body
-
-          data = jade.renderFile(file, options)
-
         }
 
         fs.writeFile(dest, data)

@@ -12,6 +12,7 @@ var path = require('path')
   , dest = join(__dirname, config.dest)
   , hiddenGlob = join(src, '**/_*')
   , stylusGlob = join(src, '**/*.styl')
+  , jadeGlob = join(src, 'views', '**/*.jade')
 
 function tasks(pliers) {
 
@@ -32,8 +33,8 @@ function tasks(pliers) {
   // Define the filesets
   pliers.filesets('stylus', stylusGlob)
   pliers.filesets('stylesheets', pliers.filesets.stylus, hiddenGlob)
-  pliers.filesets('jade', join(src, '**/*.jade'))
-  pliers.filesets('contents', join(src, '**/*.*'), [ join(src, '_**/**'), hiddenGlob, stylusGlob ])
+  pliers.filesets('jade', join(src, jadeGlob))
+  pliers.filesets('contents', join(src, '**/*'), [ join(src, '_**/**'), hiddenGlob, stylusGlob, jadeGlob ])
 
   pliers('clean', function (done) {
     rmdir(dest, done)
