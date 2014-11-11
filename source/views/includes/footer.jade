@@ -1,12 +1,13 @@
+- var year = (new Date()).getFullYear()
 .footer(role='contentinfo')
-  span &copy; {{ site.time | date: '%Y' }}
-  a(href='{{ site.url }}') {{ site.authorname }}
-  | {% for page in site.pages %}
-  | {% if page.inmenu %}
-  a(href='{{ page.url }}') {{ page.title }}
-  | {% endif %}
-  | {% endfor %}
-  a(href='mailto:{{ site.authoremail }}') Email
-  a(href='https://twitter.com/{{ site.authorhandle }}', rel='me') Twitter
-  a(href='https://github.com/{{ site.authorhandle }}/', rel='me') GitHub
-  a(href='https://codepen.io/{{ site.authorhandle }}/', rel='me') CodePen
+  span &copy; #{year}
+  a(href='/', rel='home') #{authorName}
+  //- | {% for page in site.pages %}
+  //- | {% if page.inmenu %}
+  //- a(href='{{ page.url }}') {{ page.title }}
+  //- | {% endif %}
+  //- | {% endfor %}
+  a(href='mailto:#{authorEmail}', rel='me') Email
+  a(href='https://twitter.com/#{authorHandle}', rel='me') Twitter
+  a(href='https://github.com/#{authorHandle}/', rel='me') GitHub
+  a(href='https://codepen.io/#{authorHandle}/', rel='me') CodePen

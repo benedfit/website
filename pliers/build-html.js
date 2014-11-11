@@ -8,26 +8,20 @@ var path = require('path')
   , merge = require('lodash.merge')
   , frontmatter = require('front-matter')
   , jade = require('jade')
+  , namp = require('namp')
 
 function task(pliers, config) {
 
   pliers('buildHtml', function (done) {
 
-    console.log(pliers.filesets.contents.length)
-
-    async.each(pliers.filesets.contents, function (file) {
+    async.each(pliers.filesets.pages, function (file) {
       var dest = file.replace(config.src, config.dest)
         , ext = path.extname(file)
+        , isMarkdown = ext === '.md'
         , properties
-        , options =
-        { pretty: false
-        , filename: file
-        , cache: true
-        }
+        , options = { pretty: false }
 
       mkdir(path.dirname(dest))
-
-      console.log(file)
 
       fs.readFile(file, 'utf8', function (err, data) {
         if (err) {
@@ -43,19 +37,22 @@ function task(pliers, config) {
 
           if (properties.attributes.layout) {
             file = join(__dirname, '..', config.src, 'views', properties.attributes.layout + '.jade')
-            options.contents = properties.body
+
+            if (isMarkdown) {
+              options.contents = namp(properties.body).html
+            } else {
+              options.contents = properties.body
+            }
+
             data = jade.renderFile(file, options)
           } else {
             data = jade.render(properties.body, options)
           }
 
-          switch(ext) {
-            case '.md':
-              dest = dest.replace(ext, '.html')
-              break
-            case '.jade':
-              dest = dest.replace(ext, '.html')
-              break
+          if (isMarkdown) {
+            dest = dest.replace(ext, '.html')
+          } else {
+            dest = dest.replace('.jade', '')
           }
         }
 

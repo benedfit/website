@@ -96,11 +96,11 @@ The <var>variable element</var>, such as <var>x</var> = <var>y</var>
 
 A timestamp, such as <time datetime="2014-01-01T00:00:00+00:00"><a href="#" rel="directory">January</a> 1, <a href="#" rel="directory">2014</a></time>
 
-| Tables        | Are           | Cool  |
+<!-- | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| zebra stripes | are neat      |    $1 | -->
 
 <pre>P R E F O R M A T T E D T E X T P R E F O R M A T T E D T E X T
 ! " # $ % & ' ( ) * + , - . /
@@ -112,23 +112,23 @@ p q r s t u v w x y z { | } ~</pre>
 
 `<div class="example">This is what inline code looks like.</div>`
 
-{% highlight html %}
+```
 <script>
-  // This is what a hightlighted code block looks like
+  // This is what a highlighted code block looks like
   // Sample script
   window.console && console.log('foo');
   var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
 </script>
 <style>
   /* Sample style */
-  .sample{
-    background:url(none);
-    content:"test";
-    margin:0 !important;
+  .sample {
+    background: url(none);
+    content: "test";
+    margin: 0 !important;
   }
 </style>
 <div>
   <!-- Sample HTML -->
-  <p class=".sample">This is an sample pattern</p>
+  <p class="sample">This is an sample pattern</p>
 </div>
-{% endhighlight %}
+```

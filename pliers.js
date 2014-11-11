@@ -2,12 +2,12 @@ module.exports = tasks
 
 var path = require('path')
   , join = path.join
-  , notifier = require('node-notifier')
   , glob = require('glob')
   , rmdir = require('rimraf')
   , createConfigury = require('configury')
   , configury = createConfigury('./config.json')
   , config = configury(process.env.NODE_ENV)
+  , browserSync = require('browser-sync')
   , src = join(__dirname, config.src)
   , dest = join(__dirname, config.dest)
   , hiddenGlob = join(src, '**/_*')
@@ -15,15 +15,6 @@ var path = require('path')
   , jadeGlob = join(src, 'views', '**/*.jade')
 
 function tasks(pliers) {
-
-  function notify(message, title) {
-    title = title || config.projectName
-    notifier.notify(
-      { title: title
-      , message: message
-      })
-    pliers.logger.info(message)
-  }
 
   // Load pliers plugins
   glob.sync(__dirname + '/pliers/*.js').forEach(function (file) {
@@ -34,10 +25,22 @@ function tasks(pliers) {
   pliers.filesets('stylus', stylusGlob)
   pliers.filesets('stylesheets', pliers.filesets.stylus, hiddenGlob)
   pliers.filesets('jade', join(src, jadeGlob))
-  pliers.filesets('contents', join(src, '**/*'), [ join(src, '_**/**'), hiddenGlob, stylusGlob, jadeGlob ])
+  pliers.filesets('src', join(src, '**/*.*'))
+  pliers.filesets('pages', pliers.filesets.src, [ join(src, '_**/**'), hiddenGlob, stylusGlob, jadeGlob ])
 
   pliers('clean', function (done) {
     rmdir(dest, done)
+  })
+
+  pliers('start', function (done) {
+    var browserSyncConfig = {
+      server: {
+        baseDir: config.dest
+      }
+    }
+
+    browserSync(browserSyncConfig)
+    done()
   })
 
   // Any building that is needed before running the application
@@ -47,18 +50,18 @@ function tasks(pliers) {
 
     pliers.watch(pliers.filesets.stylus, function () {
       pliers.run('buildCss', function () {
-        if (notify) notify('CSS updated')
+        browserSync.reload()
       })
     })
 
-    pliers.watch(pliers.filesets.jade, function () {
+    pliers.watch(pliers.filesets.src, function () {
       pliers.run('buildHtml', function () {
-        if (notify) notify('HTML updated')
+        browserSync.reload()
       })
     })
 
   })
 
-  pliers('go', 'build', 'watch')
+  pliers('go', 'build', 'start', 'watch')
 
 }

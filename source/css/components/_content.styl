@@ -75,7 +75,9 @@ h2
     +width-min($bp--second)
       font-size 1.5em
 
-  &:hover, &:active, &:focus
+  &:hover
+  &:active
+  &:focus
     text-shadow none
 
     &:before
@@ -104,7 +106,8 @@ h4
   +width-min($bp--first)
     line-height 1.2
 
-h5, h6
+h5
+h6
   font-size 1em
   margin 0 0 .25em
 
@@ -234,36 +237,43 @@ code
   padding .15em .25em
   tab-size 4
 
-  .c, .c1, .cm, .p
-    color $color--grey-light
+.hljs-attribute
+  color $color--yellow
 
-  .cp, .mi, .sr
-    color $color--orange
+.hljs-built_in
+  color $color--green
 
-  .k, .nt
-    color $color--blue
+.hljs-comment
+.hljs-tag
+  color $color--grey-light
 
-  .kd, .s
-    color $color--pink
+.hljs-important
+.hljs-regexp
+  color $color--orange
 
-  .na, .nb
-    color $color--yellow
+.hljs-keyword
+.hljs-string
+.hljs-value
+  color $color--pink
 
-  .o, .sx
-    color $color--green
+.hljs-title
+  color $color--blue
 
 abbr[title]
   border-bottom 1px dotted $color--black-light
   cursor help
 
-del, s
+del
+s
   color $color--grey-light
   font-weight 300
 
-ins, u
+ins
+u
   font-weight 300
 
-kbd, samp
+kbd
+samp
   font-family $font--monospace
 
 mark
@@ -279,7 +289,8 @@ table
   margin 0 0 1.5em
   width 100%
 
-  td, th
+  td
+  th
     border 0 dotted $color--grey-light
     border:-color alpha($color--grey-light, .5)
     border-right-width 1px
@@ -300,7 +311,9 @@ table
   padding-bottom ratio-percentage(9, 16)
   position relative
 
-  embed, iframe, object
+  embed
+  iframe
+  object
     border 0
     height 100%
     left 0

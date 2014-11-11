@@ -4,8 +4,14 @@
     "src": "source",
     "dest": "_output",
     "domain": "benedfit.com",
-    "url": "https://%domain%",
+    "url": "https://%domain%/",
     "metaTitle": "Ben Edwards, a Web Designer and Developer",
-    "metaDescription": "Ultimate Knot-tier and Head of Front-end Development at Clock. Banging on about Responsive Design, Web Standards"
+    "metaDescription": "Ultimate Knot-tier and Head of Front-end Development at Clock. Banging on about Responsive Design, Web Standards",
+    "metaTileColor": "#000000",
+    "authorName": "Ben Edwards",
+    "authorEmail": "hello@benedfit.com",
+    "authorHandle": "benedfit",
+    "authorUrl": "https://plus.google.com/+benedfit",
+    "authorImage": "https://www.gravatar.com/avatar/f192577527e4541aa21b501fb43ee68c?s=200"
   }
 }
