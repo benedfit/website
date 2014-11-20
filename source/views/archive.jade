@@ -1,20 +1,22 @@
-:verbatim
-  ---
-  layout: default
-  archive_title: 'Archive for %m%Y'
-  year_format: '%Y'
-  month_format: '%B, '
-  month_menuFormat: '%B'
-  hidden: true
-  ---
+//- :verbatim
+//-   ---
+//-   layout: default
+//-   archive_title: 'Archive for %m%Y'
+//-   year_format: '%Y'
+//-   month_format: '%B, '
+//-   month_menuFormat: '%B'
+//-   hidden: true
+//-   ---
+extend default
+
 h1 {{ page.title }}
-:verbatim
-  {% assign posts = page.period_posts %}
-  {% if posts == null %}{% assign posts = site.posts %}{% endif %}
-  {% for page in posts %}
-    {{ separator }}
-    {% capture separator %}
-    <hr>
-    {% endcapture %}
-    {% include post.html %}
-  {% endfor %}
+//- :verbatim
+//-   {% assign posts = page.period_posts %}
+//-   {% if posts == null %}{% assign posts = site.posts %}{% endif %}
+//-   {% for page in posts %}
+//-     {{ separator }}
+//-     {% capture separator %}
+//-     <hr>
+//-     {% endcapture %}
+//-     {% include post.html %}
+//-   {% endfor %}

@@ -1,7 +1,11 @@
-:verbatim
-  ---
-  layout: default
-  cssclass: h-entry
-  ogtype: article
-  ---
-  {% include post.html full="true" %}
+//- :verbatim
+//-   ---
+//-   layout: default
+//-   cssclass: h-entry
+//-   ogtype: article
+//-   ---
+//-   {% include post.html full="true" %}
+extend default
+
+- var full = true
+include includes/post

@@ -2,11 +2,11 @@
 .footer(role='contentinfo')
   span &copy; #{year}
   a(href='/', rel='home') #{authorName}
-  //- | {% for page in site.pages %}
-  //- | {% if page.inmenu %}
-  //- a(href='{{ page.url }}') {{ page.title }}
-  //- | {% endif %}
-  //- | {% endfor %}
+
+  each page in pages
+    if page.inmenu
+      a(href=page.url)= page.title
+
   a(href='mailto:#{authorEmail}', rel='me') Email
   a(href='https://twitter.com/#{authorHandle}', rel='me') Twitter
   a(href='https://github.com/#{authorHandle}/', rel='me') GitHub
