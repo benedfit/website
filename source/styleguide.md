@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'Style guide'
-metadescription: 'Examples of all the styles in use on my site'
+metaDescription: 'Examples of all the styles in use on my site'
 permalink: /styleguide/
 inmenu: true
 hidden: true

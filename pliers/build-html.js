@@ -45,7 +45,7 @@ function task(pliers, config) {
           page.path = setDestination(dest, page)
           page.url = page.path.replace(join(__dirname, '..', config.dest), '').replace('index.html', '')
 
-          if (page.date) page.date = moment(page.date)
+          if (page.date) page.date = moment.utc(page.date)
 
           if (page.layout === 'post') posts.push(page)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pattern library annotations, documentation, and more
-metadescription: Dave Rupert, Brad Frost, Geoff Barnes, Aaron Gustafson & Patrick Fulton share their thoughts on responsive deliverables, pattern libraries & annotations
+metaDescription: Dave Rupert, Brad Frost, Geoff Barnes, Aaron Gustafson & Patrick Fulton share their thoughts on responsive deliverables, pattern libraries & annotations
 date: 2013-11-21
 permalink: /2013/11/pattern-library-annotations-documentation-and-more/
 ---

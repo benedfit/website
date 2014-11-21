@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Authoring critical above-the-fold CSS
-metadescription: Authoring critical above-the-fold CSS, and asynchronously loading none render-blocking CSS
+metaDescription: Authoring critical above-the-fold CSS, and asynchronously loading none render-blocking CSS
 excerpt: >
   [Google PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/) and my web pages; it was a match made in heaven, until things changed... PageSpeed started telling me I needed to optimise my CSS delivery, that my CSS files were render-blocking, that none of the above-the-fold content of my page could render without waiting for those files to load, and that I should in-line the critical portions of those files directly into my HTML.
 date: 2014-07-28

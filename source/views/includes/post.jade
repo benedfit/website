@@ -2,11 +2,12 @@ mixin title
   a(href=page.url, rel='bookmark')= page.title
 
 mixin date
+  - var utc = page.date.format()
   - var year = page.date.format('YYYY')
   - var month = page.date.format('MM')
   - var monthName = page.date.format('MMMM')
   - var day = page.date.format('D')
-  time(datetime=page.date)
+  time(datetime=utc)
     a(href='/#{year}/#{month}/', rel='directory')= monthName
     | &nbsp;#{day},&nbsp;
     a(href="/#{year}/", rel='directory')= year

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Phases and Atomic Design: Phase one'
-metadescription: The initial implementation of Phases in the Atomic Design System, Pattern Lab, to show defined breakpoints and tweakpoints
+metaDescription: The initial implementation of Phases in the Atomic Design System, Pattern Lab, to show defined breakpoints and tweakpoints
 date: 2013-06-28
 permalink: /2013/06/phases-and-atomic-design-phase-one/
 ---

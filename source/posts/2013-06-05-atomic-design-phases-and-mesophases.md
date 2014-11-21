@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Phases (and Mesophases) - a possible addendum to Atomic Design
-metadescription: Thoughts on the use of Phases and Mesophases as an addendum to Atomic Design, to describe breakpoints and tweakpoints
+metaDescription: Thoughts on the use of Phases and Mesophases as an addendum to Atomic Design, to describe breakpoints and tweakpoints
 date: 2013-06-05
 permalink: /2013/06/atomic-design-phases-and-mesophases/
 ---
