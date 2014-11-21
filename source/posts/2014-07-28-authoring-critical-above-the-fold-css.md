@@ -38,7 +38,7 @@ Armed with the results of the inspection process I now need to modify my HTML to
 
 Let's imagine that one of my HTML documents was as follows:
 
-{% highlight html %}
+```
 <html>
   <head>
     <link rel="stylesheet" href="things.css">
@@ -53,18 +53,18 @@ Let's imagine that one of my HTML documents was as follows:
     </div>
   </body>
 </html>
-{% endhighlight %}
+```
 
 And that `things.css` contained the following:
 
-{% highlight css %}
+```
 .thing1 { color: red; }
 .thing2 { background: green; }
-{% endhighlight %}
+```
 
 Using the results of the inspection process I can now in-line the critical, above-the-fold, portion of my CSS in the `head` like so:
 
-{% highlight html %}
+```
 <html>
   <head>
     <style>
@@ -76,11 +76,11 @@ Using the results of the inspection process I can now in-line the critical, abov
       Hello world, how goes it?
     </div>
     ...
-{% endhighlight %}
+```
 
 Pair this with [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS) and I can asynchronously load the remaining below-the-fold CSS like this:
 
-{% highlight html %}
+```
     ...
     <div class="thing2">
       Hey, I'm totally below-the-fold
@@ -108,7 +108,7 @@ Pair this with [Filament Group's loadCSS](https://github.com/filamentgroup/loadC
         setTimeout( function(){
           // set media back to `all` so that the stylesheet applies once it loads
           ss.media = 'all';
-        },0);
+        }, 0);
       }
       loadCss('things.css');
     </script>
@@ -118,7 +118,7 @@ Pair this with [Filament Group's loadCSS](https://github.com/filamentgroup/loadC
     </noscript>
   </body>
 </html>
-{% endhighlight %}
+```
 
 ## A work-flow for the future
 
@@ -134,20 +134,20 @@ Making use of your favourite CSS preprocessor for authoring above and below-the-
 
 New projects lend themselves very well to this approach, and critical and non-critical CSS could be authored via some well structured `@import` rules:
 
-{% highlight scss %}
+```scss
 // critical.scss - to be in-lined
 @import "header";
-{% endhighlight %}
+```
 
-{% highlight scss %}
+```scss
 // non-critical.scss - to be asynchronously loaded
 @import "web-fonts";
 @import "footer";
-{% endhighlight %}
+```
 
 Should your partials not lend themselves to this sort of structuring, [Team Sass's conditional styles Compass plug-in Jacket](https://github.com/Team-Sass/jacket) can come in very handy. For example if your partial `_shared.scss` contained rules for both above and below-the-fold elements, the critical and non-critical rules could be wrapped by Jacket like so:
 
-{% highlight scss %}
+```scss
 @include jacket(critical) {
   .header{
     color: red;
@@ -162,21 +162,21 @@ Should your partials not lend themselves to this sort of structuring, [Team Sass
     color: blue;
   }
 }
-{% endhighlight %}
+```
 
 Then `critical.css` and `non-critical.css` could be edited as follows to result in the same CSS:
 
-{% highlight scss %}
+```scss
 // critical.scss - to be in-lined
 $jacket: critical;
 @import "shared";
-{% endhighlight %}
+```
 
-{% highlight scss %}
+```scss
 // non-critical.scss - to be asynchronously loaded
 $jacket: non-critical;
 @import "shared";
-{% endhighlight %}
+```
 
 This approach also feels in-keeping with the way lots of the community is authoring media queries at a component level rather than in a global location, and could feasible be used to define critical and non-critical CSS rules at a component level.
 

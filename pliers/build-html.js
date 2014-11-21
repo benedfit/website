@@ -9,6 +9,7 @@ var path = require('path')
   , frontmatter = require('front-matter')
   , jade = require('jade')
   , namp = require('namp')
+  , moment = require('moment')
 
 function task(pliers, config) {
 
@@ -44,12 +45,15 @@ function task(pliers, config) {
           page.path = setDestination(dest, page)
           page.url = page.path.replace(join(__dirname, '..', config.dest), '').replace('index.html', '')
 
+          if (page.date) page.date = moment(page.date)
+
           if (page.layout === 'post') posts.push(page)
+
           pages.push(page)
         } else {
-          mkdir(path.dirname(dest))
-
-          fs.writeFile(dest, data)
+          mkdir(path.dirname(dest), function () {
+            fs.writeFile(dest, data)
+          })
         }
 
         callback()
@@ -61,6 +65,12 @@ function task(pliers, config) {
         pliers.logger.error(err.stack)
       }
 
+      posts.sort(function (a, b) {
+        a = a.date
+        b = b.date
+        return a > b ? -1 : a < b ? 1 : 0
+      })
+
       options.posts = posts
       options.pages = pages
 
@@ -69,22 +79,25 @@ function task(pliers, config) {
           , file
           , data
 
-        mkdir(path.dirname(dest))
+        mkdir(path.dirname(dest), function () {
+          options.page = page
 
-        if (page.layout) {
-          if (!page.parsed) {
-            options.contents = jade.render(page.contents, options)
+          if (page.layout) {
+            file = join(__dirname, '..', config.src, 'views', page.layout + '.jade')
+
+            if (!page.parsed) {
+              options.contents = jade.render(page.contents, options)
+            } else {
+              options.contents = page.contents
+            }
+
+            data = jade.renderFile(file, options)
           } else {
-            options.contents = page.contents
+            data = jade.render(page.contents, options)
           }
 
-          file = join(__dirname, '..', config.src, 'views', page.layout + '.jade')
-          data = jade.renderFile(file, options)
-        } else {
-          data = jade.render(page.contents, options)
-        }
-
-        fs.writeFile(dest, data)
+          fs.writeFile(dest, data)
+        })
       })
 
       done()

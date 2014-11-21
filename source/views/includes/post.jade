@@ -2,12 +2,12 @@ mixin title
   a(href=page.url, rel='bookmark')= page.title
 
 mixin date
-  - var year = page.date.getFullYear()
-  - var month = page.date.getMonth()
-  - var monthName = 'month name TBC'
-  - var day = 'day TBC'
-  time(datetime='{{ page.date | date_to_xmlschema  }}')
-    a(href='/#{year}/#{month}', rel='directory')= monthName
+  - var year = page.date.format('YYYY')
+  - var month = page.date.format('MM')
+  - var monthName = page.date.format('MMMM')
+  - var day = page.date.format('D')
+  time(datetime=page.date)
+    a(href='/#{year}/#{month}/', rel='directory')= monthName
     | &nbsp;#{day},&nbsp;
     a(href="/#{year}/", rel='directory')= year
 
@@ -15,7 +15,7 @@ if full
   h1
     +title
     +date
-  != page.content
+  != contents
 else
   article
     h2

@@ -5,11 +5,11 @@ metadescription: The initial implementation of Phases in the Atomic Design Syste
 date: 2013-06-28
 permalink: /2013/06/phases-and-atomic-design-phase-one/
 ---
-As a follow up to my recent post on [Phases (and Mesophases) - a possible addendum to Atomic Design]({% post_url 2013-06-05-atomic-design-phases-and-mesophases %}) I recently released the first addition to [Brad Frost's Pattern Lab](https://github.com/bradfrost/patternlab) to allow quick switching between defined breakpoints.
+As a follow up to my recent post on [Phases (and Mesophases) - a possible addendum to Atomic Design](/2013/06/atomic-design-phases-and-mesophases/) I recently released the first addition to [Brad Frost's Pattern Lab](https://github.com/bradfrost/patternlab) to allow quick switching between defined breakpoints.
 
 ## The first release includes:
 
-*   Basic feature to traverse /css/scss folder structure  and find Sass variables prefixed `$bp-`, then render as a 'Phases' tab  in the menu bar, using remainder of variable name and value for control  e.g. `$bp-small` becomes <mark>SMALL > 24em</mark>.
+*   Basic feature to traverse /css/scss folder structure  and find Sass variables prefixed `$bp-`, then render as a 'Phases' tab  in the menu bar, using remainder of variable name and value for control  e.g. `$bp-small` becomes <mark>Small > 24em</mark>.
 *   Basic support provided for detecting whether `px` or `em` value has been specified.
 
 ## To-do:

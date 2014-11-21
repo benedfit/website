@@ -13,7 +13,7 @@ One of the other topics during the day was inevitably the art of selecting break
 
 I love a good science analogy, so following along the matter-based naming convention of Atomic Design, I settled upon [Phases](http://en.wikipedia.org/wiki/Phase_(matter)) as a suitable term. In physics the term phase is sometimes used as a synonym for states of matter (this being another term that I considered using, until I learned of [mesophases](http://en.wikipedia.org/wiki/Mesophase), but I'll get onto that shortly), which you may remember from GSCE physics being: solid, liquid, gas, and a new one to me, plasma.
 
-So I started experimenting with using Phases as a way to name my Sass variables, which lead to such examples as `$bp-small: 24em;`{: .language-css} becoming `$phase-first: 24em;`{: .language-css} and `$bp-med: 46.8em;`{: .language-css} becoming `$phase-second: 46.8em;`{: .language-css}.
+So I started experimenting with using Phases as a way to name my Sass variables, which lead to such examples as `$bp-small: 24em;` becoming `$phase-first: 24em;` and `$bp-med: 46.8em;` becoming `$phase-second: 46.8em;`.
 
 > <q>That's all very well and good Ben, by what about [tweakpoints](http://adactio.com/journal/6044/)</q>
 > <cite>Someone, somewhere</cite>
@@ -22,7 +22,7 @@ I hear you... That's where [Mesophases](http://en.wikipedia.org/wiki/Mesophase) 
 
 I envisage Phases as a way to describe when the layout of a page changes significantly, for example, if it changes from a one column to multi-column layout. Mesophases, on the other hand, would be the changes between those significant changes, for example, tweaking the font-size of the nav to make it fit more comfortablly.
 
-As these  are changes affecting Atomic Design organisms, molecules, or even atoms, I feel it's best to name the associated Sass variables accordingly. So what once might have been `$bp-small-2: 29.75em;`{: .language-css} could become `$mesophase-nav-first: 29.75em;`{: .language-css}.
+As these  are changes affecting Atomic Design organisms, molecules, or even atoms, I feel it's best to name the associated Sass variables accordingly. So what once might have been `$bp-small-2: 29.75em;` could become `$mesophase-nav-first: 29.75em;`.
 
 ##  What next?
 
