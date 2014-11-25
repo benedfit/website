@@ -8,3 +8,9 @@ cd benedfit.com
 npm install
 pliers go
 ```
+## Deployment
+
+```
+git subtree split --prefix _output -b master
+git push master
+```
