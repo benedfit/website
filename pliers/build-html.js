@@ -83,6 +83,7 @@ function task(pliers, config) {
 
       async.each(pages, function (page) {
         var dest = page.path
+          , ext = path.extname(dest)
           , data
 
         mkdir(path.dirname(dest), function () {
@@ -100,7 +101,7 @@ function task(pliers, config) {
             data = jade.render(page.contents, options)
           }
 
-          fs.writeFile(dest, minify(data, { collapseWhitespace: true }))
+          fs.writeFile(dest, minify(data, { collapseWhitespace: ext !== '.txt' }))
         })
       })
 
