@@ -1,4 +1,4 @@
-# https://benedfit.com
+# https://benedfit.com/
 
 ## Installation
 
