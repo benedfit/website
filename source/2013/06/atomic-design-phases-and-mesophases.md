@@ -5,13 +5,13 @@ permalink: /2013/06/atomic-design-phases-and-mesophases/
 title: Phases (and Mesophases) - a possible addendum to Atomic Design
 metaDescription: Thoughts on the use of Phases and Mesophases as an addendum to Atomic Design, to describe breakpoints and tweakpoints
 ---
-This Monday I had the absolute pleasure of attending [Brad Frost](http://bradfrostweb.com/)'s _Reasons to be Responsive_ workshop ([Recap by Jake Ryan](http://www.jrayson.co.uk/blog/130603-reasons-to-be-awesome)). Among the 8 'awesome' hours of RWD gold, Brad introduced us to [Atomic Design](http://bradfrostweb.com/blog/link/atomic-design/), a modular approach to responsive design and development, and his brand new tool [Pattern Lab](http://patternlab.bradfrostweb.com/) for forging websites using the Atomic Design approach.
+This Monday I had the absolute pleasure of attending [Brad Frost](http://bradfrost.com/)'s _Reasons to be Responsive_ workshop ([Recap by Jake Ryan](http://www.jrayson.co.uk/blog/130603-reasons-to-be-awesome)). Among the 8 'awesome' hours of RWD gold, Brad introduced us to [Atomic Design](http://bradfrost.com/blog/link/atomic-design/), a modular approach to responsive design and development, and his brand new tool [Pattern Lab](http://patternlab.bradfrostweb.com/) for forging websites using the Atomic Design approach.
 
 One of the other topics during the day was inevitably the art of selecting breakpoints, and more importantly for this post, the naming of the Sass variables for these breakpoints, and how said names could be tied into Atomic Design.
 
 ## Introducing... Phases
 
-I love a good science analogy, so following along the matter-based naming convention of Atomic Design, I settled upon [Phases](http://en.wikipedia.org/wiki/Phase_(matter)) as a suitable term. In physics the term phase is sometimes used as a synonym for states of matter (this being another term that I considered using, until I learned of [mesophases](http://en.wikipedia.org/wiki/Mesophase), but I'll get onto that shortly), which you may remember from GSCE physics being: solid, liquid, gas, and a new one to me, plasma.
+I love a good science analogy, so following along the matter-based naming convention of Atomic Design, I settled upon [Phases](http://en.wikipedia.org/wiki/Phase_%28matter%29) as a suitable term. In physics the term phase is sometimes used as a synonym for states of matter (this being another term that I considered using, until I learned of [mesophases](http://en.wikipedia.org/wiki/Mesophase), but I'll get onto that shortly), which you may remember from GSCE physics being: solid, liquid, gas, and a new one to me, plasma.
 
 So I started experimenting with using Phases as a way to name my Sass variables, which lead to such examples as `$bp-small: 24em;` becoming `$phase-first: 24em;` and `$bp-med: 46.8em;` becoming `$phase-second: 46.8em;`.
 
