@@ -1,0 +1,21 @@
+---
+---
+-var format = 'ddd, D MMM YYYY HH:MM:SS ZZ'
+doctype xml
+rss(version='2.0', xmlns:atom='http://www.w3.org/2005/Atom')
+  channel
+    title= metaTitle
+    link #{url}/
+    description= metaDescription
+    pubDate= time.format(format)
+    lastBuildDate= time.format(format)
+    atom:link(href='#{url}#{page.url}')
+    each page in posts
+      - var pageUrl = url + page.url
+      item
+        title= page.title
+        link= pageUrl
+        description= page.excerpt
+        author= authorName
+        pubDate= page.date.format(format)
+        guid(isPermaLink='true')= pageUrl

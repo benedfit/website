@@ -9,13 +9,8 @@ var path = require('path')
   , autoprefixer = require('autoprefixer-stylus')
   , stylusMixins = require('stylus-mixins')
   , cleancss = require('./lib/clean-css')
-  , middleware = [ autoprefixer(), stylusMixins() ]
+  , middleware = [ autoprefixer(), stylusMixins(), cleancss() ]
   , env = process.env.NODE_ENV || 'development'
-  , debug = env === 'development'
-
-if (!debug) {
-  middleware.push(cleancss())
-}
 
 function task(pliers, config) {
 
@@ -23,7 +18,7 @@ function task(pliers, config) {
 
     async.each(pliers.filesets.stylesheets, function (file) {
       var src = path.dirname(file)
-        , dest = src.replace(config.src, config.dest)
+        , dest = src.replace('stylus', '_css')
 
       mkdir(dest)
 
@@ -41,10 +36,7 @@ function task(pliers, config) {
             }
           }
           , function (err) {
-            if (err) {
-              pliers.logger.error('Failed to render stylus')
-              pliers.logger.error(err.stack)
-            }
+            if (err) throw(err)
             done()
           }).on('log', function (msg, level) { pliers.logger[level](msg) })
     })

@@ -1,15 +1,15 @@
 ---
 layout: post
+date: 2014-07-28
+permalink: /2014/07/authoring-critical-above-the-fold-css/
 title: Authoring critical above-the-fold CSS
 metaDescription: Authoring critical above-the-fold CSS, and asynchronously loading none render-blocking CSS
 excerpt: >
   [Google PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/) and my web pages; it was a match made in heaven, until things changed... PageSpeed started telling me I needed to optimise my CSS delivery, that my CSS files were render-blocking, that none of the above-the-fold content of my page could render without waiting for those files to load, and that I should in-line the critical portions of those files directly into my HTML.
-date: 2014-07-28
-permalink: /2014/07/authoring-critical-above-the-fold-css/
 ---
 > [This was originally posted on CSS-Tricks on July 14, 2014](http://css-tricks.com/authoring-critical-fold-css/). [Chris Coyier](https://twitter.com/chriscoyier) invited me to write a piece [after I shared this gist](https://gist.github.com/benedfit/46da533805566141c42f), that led me down a rabbit hole to this article.
 
-{{ page.excerpt }} <q>Go home PageSpeed,</q> I cried, <q>who in their right mind wants a mass of CSS in their HTML? I'm a legitimate professional, I have a work-flow don't you know?</q> I scoffed.
+[Google PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/) and my web pages; it was a match made in heaven, until things changed... PageSpeed started telling me I needed to optimise my CSS delivery, that my CSS files were render-blocking, that none of the above-the-fold content of my page could render without waiting for those files to load, and that I should in-line the critical portions of those files directly into my HTML. <q>Go home PageSpeed,</q> I cried, <q>who in their right mind wants a mass of CSS in their HTML? I'm a legitimate professional, I have a work-flow don't you know?</q> I scoffed.
 
 This had long been my stand point until I read the following tweet:
 

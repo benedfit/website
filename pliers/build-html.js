@@ -4,7 +4,7 @@ var path = require('path')
   , join = path.join
   , async = require('async')
   , mkdir = require('mkdirp')
-  , fs = require('fs')
+  , fs = require('fs-extra')
   , merge = require('lodash.merge')
   , frontmatter = require('front-matter')
   , jade = require('jade')
@@ -15,7 +15,7 @@ function task(pliers, config) {
 
   pliers('buildHtml', function (done) {
 
-    var options = { pretty: false }
+    var options = { pretty: false, time: moment.utc() }
       , pages = []
       , posts = []
 
@@ -37,6 +37,7 @@ function task(pliers, config) {
 
           if (ext === '.md') {
             page.contents = namp(properties.body).html
+            parseExcerpt(page, properties.body)
             page.parsed = true
           } else {
             page.contents = properties.body
@@ -47,12 +48,14 @@ function task(pliers, config) {
 
           if (page.date) page.date = moment.utc(page.date)
 
-          if (page.layout === 'post') posts.push(page)
+          if (page.layout) {
+            parseLayout(page)
+          }
 
           pages.push(page)
         } else {
           mkdir(path.dirname(dest), function () {
-            fs.writeFile(dest, data)
+            fs.copy(file, dest)
           })
         }
 
@@ -60,10 +63,7 @@ function task(pliers, config) {
       })
 
     }, function (err) {
-      if (err) {
-        pliers.logger.error('Failed to render contents')
-        pliers.logger.error(err.stack)
-      }
+      if (err) throw(err)
 
       posts.sort(function (a, b) {
         a = a.date
@@ -71,27 +71,30 @@ function task(pliers, config) {
         return a > b ? -1 : a < b ? 1 : 0
       })
 
+      pages.sort(function (a, b) {
+        a = a.url
+        b = b.url
+        return a < b ? -1 : a > b ? 1 : 0
+      })
+
       options.posts = posts
       options.pages = pages
 
       async.each(pages, function (page) {
         var dest = page.path
-          , file
           , data
 
         mkdir(path.dirname(dest), function () {
           options.page = page
 
           if (page.layout) {
-            file = join(__dirname, '..', config.src, 'views', page.layout + '.jade')
-
             if (!page.parsed) {
               options.contents = jade.render(page.contents, options)
             } else {
               options.contents = page.contents
             }
 
-            data = jade.renderFile(file, options)
+            data = jade.renderFile(page.layoutPath, options)
           } else {
             data = jade.render(page.contents, options)
           }
@@ -102,6 +105,28 @@ function task(pliers, config) {
 
       done()
     })
+
+    function parseExcerpt(page, body) {
+      if (page.excerpt) {
+        page.excerpt = namp(page.excerpt).html
+      } else {
+        page.excerpt = namp(body.split('\n')[0]).html
+      }
+    }
+
+    function parseLayout(page) {
+      page.layoutPath = join(__dirname, '..', config.src, 'views', page.layout + '.jade')
+
+      var data = fs.readFileSync(page.layoutPath, 'utf8')
+        , properties
+
+      if (frontmatter.test(data)) {
+        properties = frontmatter(data)
+        merge(page, properties.attributes)
+      }
+
+      if (page.layout === 'post') posts.push(page)
+    }
 
     function setDestination(dest, page) {
       var permalink = page.permalink
@@ -115,7 +140,7 @@ function task(pliers, config) {
         dest = join(__dirname, '..', config.dest, permalink)
       }
 
-      if (ext === '.md' || ext === '.jade') {
+      if (ext === '.md') {
         dest = dest.replace(ext, '.html')
       } else {
         dest = dest.replace('.jade', '')

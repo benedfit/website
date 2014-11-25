@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Phases (and Mesophases) - a possible addendum to Atomic Design
-metaDescription: Thoughts on the use of Phases and Mesophases as an addendum to Atomic Design, to describe breakpoints and tweakpoints
 date: 2013-06-05
 permalink: /2013/06/atomic-design-phases-and-mesophases/
+title: Phases (and Mesophases) - a possible addendum to Atomic Design
+metaDescription: Thoughts on the use of Phases and Mesophases as an addendum to Atomic Design, to describe breakpoints and tweakpoints
 ---
 This Monday I had the absolute pleasure of attending [Brad Frost](http://bradfrostweb.com/)'s _Reasons to be Responsive_ workshop ([Recap by Jake Ryan](http://www.jrayson.co.uk/blog/130603-reasons-to-be-awesome)). Among the 8 'awesome' hours of RWD gold, Brad introduced us to [Atomic Design](http://bradfrostweb.com/blog/link/atomic-design/), a modular approach to responsive design and development, and his brand new tool [Pattern Lab](http://patternlab.bradfrostweb.com/) for forging websites using the Atomic Design approach.
 

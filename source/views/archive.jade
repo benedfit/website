@@ -1,22 +1,18 @@
-//- :verbatim
-//-   ---
-//-   layout: default
-//-   archive_title: 'Archive for %m%Y'
-//-   year_format: '%Y'
-//-   month_format: '%B, '
-//-   month_menuFormat: '%B'
-//-   hidden: true
-//-   ---
+---
+hidden: true
+---
 extend default
 
-h1= title
-//- :verbatim
-//-   {% assign posts = page.period_posts %}
-//-   {% if posts == null %}{% assign posts = site.posts %}{% endif %}
-//-   {% for page in posts %}
-//-     {{ separator }}
-//-     {% capture separator %}
-//-     <hr>
-//-     {% endcapture %}
-//-     {% include post.html %}
-//-   {% endfor %}
+block contents
+  if page.title
+    h1= page.title
+
+  - var postsYear = page.postsYear ? page.postsYear.toString() : ''
+  - var postsMonth = page.postsMonth ? page.postsMonth.toString() : ''
+  - var first = true
+  each page in posts
+    if (page.date.format('YYYY') === postsYear || postsYear === '') && (page.date.format('M') === postsMonth || postsMonth === '')
+      if !first
+        hr
+      include ./includes/post
+      - first = false

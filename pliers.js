@@ -29,7 +29,9 @@ function tasks(pliers) {
   pliers.filesets('pages', pliers.filesets.src, [ join(src, '_**/**'), hiddenGlob, stylusGlob, jadeGlob ])
 
   pliers('clean', function (done) {
-    rmdir(dest, done)
+    rmdir(dest, function () {
+      rmdir(join(src, '_css'), done)
+    })
   })
 
   pliers('start', function (done) {
@@ -48,15 +50,9 @@ function tasks(pliers) {
 
   pliers('watch', function () {
 
-    pliers.watch(pliers.filesets.stylus, function () {
-      pliers.run('buildCss', function () {
-        browserSync.reload()
-      })
-    })
-
     pliers.watch(pliers.filesets.src, function () {
-      pliers.run('buildHtml', function () {
-        browserSync.reload()
+      pliers.run('build', function () {
+        browserSync.reload(pliers.filesets.src)
       })
     })
 

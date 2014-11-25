@@ -1,5 +1,6 @@
 mixin title
   a(href=page.url, rel='bookmark')= page.title
+  | 
 
 mixin date
   - var utc = page.date.format()
@@ -22,6 +23,6 @@ else
     h2
       +title
       +date
-    | {{ page.excerpt | markdownify }}
+    != page.excerpt
     a.ellipsis(href=page.url)
       span(aria-hidden='false') Read more

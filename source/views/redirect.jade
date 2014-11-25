@@ -1,0 +1,12 @@
+doctype html
+html(lang='en-gb')
+  head
+    meta(charset='utf-8')
+    title Redirecting...
+    link(rel='canonical', href=url + page.redirect)
+    meta(http-equiv='refresh', content='0; url=#{page.redirect}')
+  body
+    h1 Redirecting...
+    a(href=page.redirect) Click here if you are not redirected.
+    script.
+      location = '#{page.redirect}'

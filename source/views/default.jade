@@ -1,19 +1,19 @@
-- var title = page.metaTitle || page.title || metaTitle
-- var description = page.metaDescription || metaDescription
-- var image = page.image || authorImage
-- var url = url + page.url
+- var pageTitle = page.metaTitle || page.title || metaTitle
+- var pageDescription = page.metaDescription || metaDescription
+- var pageImage = page.image || authorImage
+- var pageUrl = url + page.url
 
 doctype html
 html(lang='en-gb')
   head
     meta(charset='utf-8')
-    //- title {% if page.metatitle %}{{ page.metatitle }}{% else %}{% if page.title %}{{ page.title }} / {% endif %}{{site.title}}{% endif %}
+    title= page.metaTitle || page.title ? page.title + ' / ' + metaTitle : metaTitle
     meta(name='viewport', content='initial-scale=1')
-    link(href='/css/index.css', rel='stylesheet')
-    meta(name='description', content=description)
+    style: include ../_css/index.css
+    meta(name='description', content=pageDescription)
     meta(name='author', content=authorName)
-    link(rel='canonical', href=url)
-    link(rel='alternate', type='application/rss+xml', title='Feed / #{metaTitle}' href='#{url}feed.xml')
+    link(rel='canonical', href=pageUrl)
+    link(rel='alternate', type='application/rss+xml', title='Feed / #{metaTitle}' href='#{url}/feed.xml')
     link(rel='author' href=authorUrl)
     link(rel='source' href='https://github.com/benedfit/benedfit.github.io')
     each size in [57, 60, 72, 76, 114, 120, 144, 152]
@@ -23,47 +23,46 @@ html(lang='en-gb')
     <!--[if IE]><link rel='shortcut icon' type='image/x-icon' href='/favicon.ico')<![endif]-->
     meta(name='msapplication-TileColor', content=metaTileColor)
     meta(name='msapplication-TileImage', content='/img/mstile-144x144.png')
-    meta(itemprop='name', content=title)
-    meta(itemprop='description', content=description)
-    meta(itemprop='image', content=image)
-    meta(property='og:url' content=url)
+    meta(itemprop='name', content=pageTitle)
+    meta(itemprop='description', content=pageDescription)
+    meta(itemprop='image', content=pageImage)
+    meta(property='og:url' content=pageUrl)
     meta(property='og:type' content=page.ogtype || 'website')
     meta(property='og:site_name' content=domain)
-    meta(property='og:title' content=title)
-    meta(property='og:description' content=description)
-    meta(property='og:image' content=image)
-    //- meta(property='og:updated_time' content='{{ site.time | date_to_xmlschema }}')
+    meta(property='og:title' content=pageTitle)
+    meta(property='og:description' content=pageDescription)
+    meta(property='og:image' content=pageImage)
+    meta(property='og:updated_time' content=time.format())
     meta(property='fb:profile_id' content='100001139733853')
-    //- | {% if page.ogtype == 'article' %}
-    //- meta(property='article:published_time' content='{{ page.date | date_to_xmlschema  }}')
-    //- meta(property='article:modified_time' content='{{ page.date | date_to_xmlschema }}')
-    //- meta(property='article:author' content='{{ site.url }}/')
-    //- | {% elsif page.ogtype == 'profile' %}
-    //- | {% assign names = site.authorname | split: ' ' %}
-    //- meta(property='profile:first_name' content='{{ names[0] }}')
-    //- meta(property='profile:last_name' content='{{ names[1] }}')
-    //- | {% endif %}
+    if page.ogtype === 'article'
+      meta(property='article:published_time' content=page.date.format())
+      meta(property='article:modified_time' content=page.date.format())
+      meta(property='article:author' content='#{url}/')
+    else if page.ogtype === 'profile'
+      - var authorNames = authorName.split(' ')
+      meta(property='profile:first_name' content=authorNames[0])
+      meta(property='profile:last_name' content=authorNames[1])
     meta(name='twitter:card' content='summary')
     meta(name='twitter:site' content='@#{authorHandle}')
     meta(name='twitter:domain' content=domain)
-    meta(name='twitter:title' content=title)
-    meta(name='twitter:description' content=description)
+    meta(name='twitter:title' content=pageTitle)
+    meta(name='twitter:description' content=pageDescription)
     meta(name='twitter:creator' content='@#{authorHandle}')
-    meta(name='twitter:image' content=image)
+    meta(name='twitter:image' content=pageImage)
     if page.noindex
         meta(name='robots', content='noindex,nofollow')
   body
-    include includes/header
+    include ./includes/header
 
     if page.ogtype === 'profile'
-      include includes/about
+      include ./includes/about
 
     .content(role='main')
       .container
         block contents
           != contents
 
-    include includes/footer
+    include ./includes/footer
 
     script
       :uglify
