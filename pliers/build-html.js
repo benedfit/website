@@ -10,6 +10,7 @@ var path = require('path')
   , jade = require('jade')
   , namp = require('namp')
   , moment = require('moment')
+  , minify = require('html-minifier').minify
 
 function task(pliers, config) {
 
@@ -99,7 +100,7 @@ function task(pliers, config) {
             data = jade.render(page.contents, options)
           }
 
-          fs.writeFile(dest, data)
+          fs.writeFile(dest, minify(data, { collapseWhitespace: true }))
         })
       })
 
