@@ -12,6 +12,5 @@ pliers go
 ## Deployment
 
 ```
-git subtree split --prefix _output -b master
-git push master
+git subtree push --prefix _output origin master
 ```
