@@ -5,6 +5,6 @@ Twitter: @benedfit
 Location: Leighton Buzzard, UK
 
 /* SITE */
-Last update: 2014/11/27
+Last update: 2014/11/28
 Standards: HTML5, CSS3
 Software: Jade, Stylus, Browserify

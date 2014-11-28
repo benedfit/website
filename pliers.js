@@ -50,9 +50,17 @@ function tasks(pliers) {
 
   pliers('watch', function () {
 
-    pliers.watch(pliers.filesets.src, function () {
-      pliers.run('build', function () {
-        browserSync.reload(pliers.filesets.src)
+    pliers.watch(pliers.filesets.stylus, function () {
+      pliers.run('buildCss', function () {
+        pliers.run('buildHtml', function () {
+          browserSync.reload(pliers.filesets.pages)
+        })
+      })
+    })
+
+    pliers.watch(pliers.filesets.pages, function () {
+      pliers.run('buildHtml', function () {
+        browserSync.reload(pliers.filesets.pages)
       })
     })
 
