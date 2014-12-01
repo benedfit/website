@@ -33,8 +33,8 @@ html(lang='en-gb')
     meta(property='og:description' content=pageDescription)
     meta(property='og:image' content=pageImage)
     meta(property='og:updated_time' content=time.format())
-    meta(property='fb:admins', content='100001139733853')
-    meta(property='fb:profile_id' content='100001139733853')
+    each tag in ['admins', 'profile_id']
+      meta(property='fb:#{tag}', content='100001139733853')
     if page.ogtype === 'article'
       meta(property='article:published_time' content=page.date.format())
       meta(property='article:modified_time' content=page.date.format())
