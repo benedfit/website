@@ -1,19 +1,26 @@
-box: wercker/ubuntu12.04-nodejs0.10
+box: wercker/nodejs
 build:
   steps:
-    - npm-install
     - script:
-        name: pliers build
+        name: install pliers
+        code: sudo npm install-g pliers
+    - script:
+        name: install npm dependencies
         code: |
-          exec pliers build
-  after-steps:
-    - email-notify:
-        on: failed
-        from: alerts@wercker.com
-        to: hello@benedfit.com
-        host: smtp.gmail.com:587
-        username: hello@benedfit.com
-        password: $EMAIL_PASSWORD
+          mkdir -p $WERCKER_CACHE_DIR/wercker/npm
+          npm config set cache $WERCKER_CACHE_DIR/wercker/npm
+          sudo npm install --save-dev
+    - script:
+        name: build project using pliers
+        code: pliers build
+  # after-steps:
+  #   - email-notify:
+  #       on: failed
+  #       from: alerts@wercker.com
+  #       to: hello@benedfit.com
+  #       host: smtp.gmail.com:587
+  #       username: hello@benedfit.com
+  #       password: $EMAIL_PASSWORD
 # deploy:
 #   steps:
 #     - script:
