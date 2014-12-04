@@ -1,21 +1,24 @@
 ---
 ---
--var format = 'ddd, D MMM YYYY HH:MM:SS ZZ'
 doctype xml
-rss(version='2.0', xmlns:atom='http://www.w3.org/2005/Atom')
+rss(version='2.0', xmlns:atom='http://www.w3.org/2005/Atom', xmlns:dc='http://purl.org/dc/elements/1.1/')
   channel
+    -var format = 'ddd, D MMM YYYY HH:MM:SS ZZ'
     title= metaTitle
     link #{url}/
     description= metaDescription
+    language en-gb
     pubDate= time.format(format)
     lastBuildDate= time.format(format)
-    atom:link(href='#{url}#{page.url}')
+    atom:link(href='#{url}#{page.url}', rel='self')
     each page in posts
       - var pageUrl = url + page.url
       item
         title= page.title
         link= pageUrl
-        description= page.excerpt
+        description
+          != '<![CDATA[' + page.excerpt + ']]>'
         author= authorName
+        dc:creator= authorName
         pubDate= page.date.format(format)
         guid(isPermaLink='true')= pageUrl

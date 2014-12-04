@@ -101,7 +101,9 @@ function task(pliers, config) {
             data = jade.render(page.contents, options)
           }
 
-          fs.writeFile(dest, minify(data, { collapseWhitespace: ext !== '.txt' }))
+          if (ext !== '.xml') data = minify(data, { collapseWhitespace: ext !== '.txt' })
+
+          fs.writeFile(dest, data)
         })
       })
 

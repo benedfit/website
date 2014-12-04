@@ -14,6 +14,7 @@ var path = require('path')
   , stylusGlob = join(src, '**/*.styl')
   , jadeGlob = join(src, 'views', '**/*.jade')
   , compiledStylesheetsPath = join(src, '_css')
+  , pliersImagemin = require('pliers-imagemin')
   , openBrowser = false
 
 function tasks(pliers) {
@@ -28,14 +29,19 @@ function tasks(pliers) {
   pliers.filesets('stylesheets', pliers.filesets.stylus, hiddenGlob)
   pliers.filesets('compiledStylesheets', join(compiledStylesheetsPath, '**/*.css'))
   pliers.filesets('jade', join(src, jadeGlob))
+  pliers.filesets('images', join(src, 'img', '**/*.{gif,jpg,jpeg,png,svg}'))
   pliers.filesets('src', join(src, '**/*.*'))
   pliers.filesets('pages', pliers.filesets.src, [ join(src, '_**/**'), hiddenGlob, stylusGlob, jadeGlob ])
 
+  // Reset project to clean state
   pliers('clean', function (done) {
     rmdir(dest, function () {
       rmdir(compiledStylesheetsPath, done)
     })
   })
+
+  // Optimise images
+  pliersImagemin(pliers, pliers.filesets.images)
 
   // Start BrowserSync server
   pliers('start', function (done) {
