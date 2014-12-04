@@ -13,6 +13,8 @@ var path = require('path')
   , hiddenGlob = join(src, '**/_*')
   , stylusGlob = join(src, '**/*.styl')
   , jadeGlob = join(src, 'views', '**/*.jade')
+  , compiledStylesheetsPath = join(src, '_css')
+  , openBrowser = false
 
 function tasks(pliers) {
 
@@ -24,21 +26,24 @@ function tasks(pliers) {
   // Define the filesets
   pliers.filesets('stylus', stylusGlob)
   pliers.filesets('stylesheets', pliers.filesets.stylus, hiddenGlob)
+  pliers.filesets('compiledStylesheets', join(compiledStylesheetsPath, '**/*.css'))
   pliers.filesets('jade', join(src, jadeGlob))
   pliers.filesets('src', join(src, '**/*.*'))
   pliers.filesets('pages', pliers.filesets.src, [ join(src, '_**/**'), hiddenGlob, stylusGlob, jadeGlob ])
 
   pliers('clean', function (done) {
     rmdir(dest, function () {
-      rmdir(join(src, '_css'), done)
+      rmdir(compiledStylesheetsPath, done)
     })
   })
 
+  // Start BrowserSync server
   pliers('start', function (done) {
     var browserSyncConfig = {
       server: {
         baseDir: config.dest
       }
+      , open: openBrowser
     }
 
     browserSync(browserSyncConfig)
@@ -66,6 +71,15 @@ function tasks(pliers) {
 
   })
 
-  pliers('go', 'build', 'start', 'watch')
+  pliers('go', function () {
+
+    if (process.argv.indexOf('-o') !== -1 || process.argv.indexOf('--open') !== -1) {
+      openBrowser = true
+    }
+
+    pliers('run', 'build', 'start', 'watch')
+    pliers.run('run')
+
+  })
 
 }

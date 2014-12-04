@@ -6,7 +6,7 @@ metaDescription: 'Examples of all the styles in use on my site'
 hidden: true
 inmenu: true
 ---
-# Styleguide
+# Style guide
 
 <section markdown="1">
 ## Headings
