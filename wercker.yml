@@ -1,7 +1,7 @@
 box: wercker/nodejs
 build:
   steps:
-    - npm-install
+    - npm-install:
         options: -g pliers cfcli
     - script:
         name: pliers build
