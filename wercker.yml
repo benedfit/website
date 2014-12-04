@@ -5,7 +5,7 @@ build:
         name: install pliers
         code: sudo npm install -g pliers
     - script:
-        name: install project npm dependencies
+        name: install npm dependencies
         code: |-
           mkdir -p $WERCKER_CACHE_DIR/wercker/npm
           npm config set cache $WERCKER_CACHE_DIR/wercker/npm
