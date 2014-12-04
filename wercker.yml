@@ -3,7 +3,7 @@ build:
   steps:
     - script:
         name: install pliers
-        code: sudo npm install-g pliers
+        code: sudo npm install -g pliers
     - script:
         name: install npm dependencies
         code: |
