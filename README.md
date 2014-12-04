@@ -8,10 +8,3 @@ cd benedfit.com
 npm install
 pliers go
 ```
-
-## Deployment
-
-```
-git subtree push --prefix _output origin master
-cfcli purgecache -d benedfit.com
-```

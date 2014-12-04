@@ -19,7 +19,7 @@ build:
         from: alerts@wercker.com
         to: hello@benedfit.com
         host: smtp.gmail.com:587
-        username: hello@benedfit.com
+        username: $EMAIL_USERNAME
         password: $EMAIL_PASSWORD
 deploy:
   steps:
@@ -37,10 +37,14 @@ deploy:
           git add .
           git commit -m "deploy commit from $WERCKER_STARTED_BY via Wercker"
           git push -f $GIT_REMOTE $GIT_BRANCH
+    - script:
+        name: purge cloudflare cache
+        code: |-
+          cfcli purgecache -k $CLOUDFLARE_TOKEN -e $EMAIL_USERNAME -d benedfit.com
   after-steps:
     - email-notify:
         from: alerts@wercker.com
         to: hello@benedfit.com
         host: smtp.gmail.com:587
-        username: hello@benedfit.com
+        username: $EMAIL_USERNAME
         password: $EMAIL_PASSWORD
