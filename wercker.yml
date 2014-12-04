@@ -1,12 +1,11 @@
 box: wercker/nodejs
 build:
   steps:
-    - npm-install:
-        options: -g pliers cloudflare-cli
+    - npm-install
     - script:
         name: pliers build
         code: |
-          pliers build
+          exec pliers build
   after-steps:
     - email-notify:
         on: failed
