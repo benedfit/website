@@ -1,0 +1,36 @@
+box: wercker/nodejs
+build:
+  steps:
+    - npm-install
+      options: -g pliers cfcli
+    - script:
+        name: pliers build
+        code: |
+          pliers build
+  after-steps:
+    - email-notify:
+        on: failed
+        from: alerts@wercker.com
+        to: hello@benedfit.com
+        host: smtp.gmail.com:587
+        username: hello@benedfit.com
+        password: $EMAIL_PASSWORD
+# deploy:
+#   steps:
+#     - script:
+#         name: deploy to github pages
+#         code: |-
+#           cd _deploy
+#           git config --global user.email "pleasemailus@wercker.com"
+#           git config --global user.name "wercker"
+#           git init
+#           git add .
+#           git commit -m "deploy commit from $WERCKER_STARTED_BY via Wercker"
+#           git push -f $GIT_REMOTE $GIT_BRANCH
+#   after-steps:
+#     - email-notify:
+#         from: alerts@wercker.com
+#         to: hello@benedfit.com
+#         host: smtp.gmail.com:587
+#         username: hello@benedfit.com
+#         password: $EMAIL_PASSWORD

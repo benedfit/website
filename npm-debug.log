@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'cfcli' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json benedfit.com@3.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'cfcli', null ]
+7 verbose cache add name=undefined spec="cfcli" args=["cfcli",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'cfcli',
+8 verbose parsed url   path: 'cfcli',
+8 verbose parsed url   href: 'cfcli' }
+9 silly lockFile 250ddb17-cfcli cfcli
+10 verbose lock cfcli /Users/admin/.npm/250ddb17-cfcli.lock
+11 silly lockFile 250ddb17-cfcli cfcli
+12 silly lockFile 250ddb17-cfcli cfcli
+13 verbose addNamed [ 'cfcli', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile a5a1afe9-cfcli cfcli@
+16 verbose lock cfcli@ /Users/admin/.npm/a5a1afe9-cfcli.lock
+17 silly addNameRange { name: 'cfcli', range: '*', hasData: false }
+18 verbose request where is /cfcli
+19 verbose request registry http://npm.clockte.ch/
+20 verbose request id 314b7362d98ece3e
+21 verbose url raw /cfcli
+22 verbose url resolving [ 'http://npm.clockte.ch/', './cfcli' ]
+23 verbose url resolved http://npm.clockte.ch/cfcli
+24 verbose request where is http://npm.clockte.ch/cfcli
+25 info trying registry request attempt 1 at 11:35:06
+26 http GET http://npm.clockte.ch/cfcli
+27 http 404 http://npm.clockte.ch/cfcli
+28 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'cache-control': 'must-revalidate',
+28 verbose headers   'x-clock-backend': 'public_registry_strongloop',
+28 verbose headers   'x-clock-cacheable': 'NO:status',
+28 verbose headers   'content-length': '52',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   date: 'Thu, 04 Dec 2014 11:35:06 GMT',
+28 verbose headers   'x-varnish': '408808130',
+28 verbose headers   age: '0',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'x-clock-cache': 'MISS' }
+29 silly registry.get cb [ 404,
+29 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'cache-control': 'must-revalidate',
+29 silly registry.get     'x-clock-backend': 'public_registry_strongloop',
+29 silly registry.get     'x-clock-cacheable': 'NO:status',
+29 silly registry.get     'content-length': '52',
+29 silly registry.get     'accept-ranges': 'bytes',
+29 silly registry.get     date: 'Thu, 04 Dec 2014 11:35:06 GMT',
+29 silly registry.get     'x-varnish': '408808130',
+29 silly registry.get     age: '0',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     connection: 'keep-alive',
+29 silly registry.get     'x-clock-cache': 'MISS' } ]
+30 silly lockFile a5a1afe9-cfcli cfcli@
+31 silly lockFile a5a1afe9-cfcli cfcli@
+32 error 404 404 Not Found: cfcli
+32 error 404
+32 error 404 'cfcli' is not in the npm registry.
+32 error 404 You should bug the author to publish it
+32 error 404 It was specified as a dependency of 'benedfit.com'
+32 error 404
+32 error 404 Note that you can also install from a
+32 error 404 tarball, folder, or http url, or git url.
+33 error System Darwin 14.0.0
+34 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save-dev" "cfcli"
+35 error cwd /private/var/application/Benedfit/benedfit.com
+36 error node -v v0.10.33
+37 error npm -v 1.4.28
+38 error code E404
+39 verbose exit [ 1, true ]

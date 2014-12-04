@@ -1,3 +1,0 @@
-Sitemap: https://benedfit.comsitemap.xml
-User-agent: *
-Disallow: /cdn-cgi/

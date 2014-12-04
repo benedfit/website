@@ -6,6 +6,7 @@
     "autoprefixer-stylus": "^0.3.1",
     "browser-sync": "^1.6.5",
     "clean-css": "^2.2.19",
+    "cloudflare-cli": "0.0.10",
     "configury": "^0.2.0",
     "front-matter": "^0.2.0",
     "fs-extra": "^0.12.0",
