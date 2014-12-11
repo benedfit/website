@@ -19,8 +19,6 @@ As a follow up to my recent post on [Phases (and Mesophases) - a possible addend
 *   Confirm this works with `.sass` as well as `.scss`.
 *   Deal with other browser units of measure.
 
-[Check out the release on GitHub](https://github.com/benedfit/patternlab) and [let me know what you think via Twitter](https://twitter.com/benedfit).
-
 ## Update
 
 Brad's updated [patternlab.bradfrostweb.com](http://patternlab.bradfrostweb.com/) with my first release. So try it out!
