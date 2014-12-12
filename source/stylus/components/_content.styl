@@ -1,8 +1,10 @@
 $hr
-  border-image linear-gradient(left, $color--gradient) 100% 1 !important
+  border 0
+  border-image linear-gradient(to right, $color--gradient) 100% 1
 
 $vr
-  border-image linear-gradient(top, $color--gradient) 1 100% !important
+  border 0
+  border-image linear-gradient(to bottom, $color--gradient) 1 100%
 
 .content
   background $color--grey
@@ -12,28 +14,21 @@ p
 
 h1
   @extend $hr
-  border 0
-  border-bottom 1px solid $color--grey-light
-  border-bottom-color alpha($color--grey-light, .5)
+  border-bottom 1px solid
+  border-color $color--grey-light
+  border-color rgba($color--grey-light, 0.5)
   font-size 2em
   font-weight 300
   line-height 1.25
-  margin 0 0 .75em
-  padding 0 0 .25em
+  margin 0 0 0.75em
+  padding 0 0 0.25em
 
-  +width-min($bp--first)
-    font-size 2.5em
-    line-height 1.125
-
-  +width-min($bp--second)
+  +width-min($bp--wide)
     font-size 3em
     line-height 1.25
 
   a
     border-color $color--black-light
-
-  time
-    font-size .5em
 
 h2
   font-size 1.625em
@@ -41,21 +36,18 @@ h2
   line-height 1.15
   margin 1em 0
 
-  +width-min($bp--first)
-    font-size 2em
-    line-height 1.25
-
-  +width-min($bp--second)
+  +width-min($bp--wide)
     font-size 2.25em
+    line-height 1.25
 
   a
     border-color $color--black-light
 
-  small
-    color $color--grey-light
+small
+  color $color--grey-light
 
-  time
-    font-size .65em
+  a
+    color $color--grey-light
 
 .ellipsis
   border 0
@@ -70,10 +62,7 @@ h2
     color $color--black
     content '○○○'
     font-size 2.25em
-    transition color .25s ease-in-out
-
-    +width-min($bp--second)
-      font-size 1.5em
+    transition color 0.25s ease-in-out
 
   &:hover
   &:active
@@ -91,37 +80,24 @@ h3
   line-height 1.15
   margin 0 0 1em
 
-  +width-min($bp--first)
-    font-size 1.5em
+  +width-min($bp--wide)
+    font-size 1.75em
     line-height 1.25
 
-  +width-min($bp--second)
-    font-size 1.75em
-
 h4
-  font-size 1.125em
-  line-height 1.1
-  margin 0 0 .5em
-
-  +width-min($bp--first)
-    line-height 1.2
-
 h5
 h6
-  font-size 1em
-  margin 0 0 .25em
+  line-height 1.1
+  margin 0 0 0.5em
 
-time
-  color $color--grey-light
-
-  a
-    color $color--grey-light
+  +width-min($bp--wide)
+    line-height 1.2
 
 hr
   @extend $hr
-  border 0
-  border-bottom 1px solid $color--grey-light
-  border-bottom-color alpha($color--grey-light, .5)
+  border-bottom 1px solid
+  border-color $color--grey-light
+  border-color rgba($color--grey-light, 0.5)
   height 0
   margin 0 0 1.5em
   overflow hidden
@@ -130,7 +106,7 @@ p
   margin 0 0 1.5em
 
 li
-  margin .5em
+  margin 0.5em
 
 ul
   list-style circle
@@ -166,23 +142,21 @@ ol
       content counter(li)'.'
       counter-increment li
       display block
-      font-size .85em
       font-style italic
       left -1.25em
       max-height 0
       max-width 0
       position relative
-      top .2em
 
   * + html & li
     list-style decimal
 
 blockquote
   @extend $vr
-  border 0
-  border-left 1px solid $color--grey-light
-  border-left-color alpha($color--grey-light, .5)
-  font-size 1.25em
+  border-left 1px solid
+  border-color $color--grey-light
+  border-color rgba($color--grey-light, 0.5)
+  font-size 1.35em
   font-weight 300
   margin 1.5em 0
   padding 0 1em
@@ -197,21 +171,16 @@ blockquote
     &:before
       color $color--grey-light
       content '-'
-      margin 0 .2em 0 -.575em
+      margin 0 0.2em 0 -0.575em
 
   p
     margin 0
 
   q:before
-    margin-left -.5em
+    margin-left -0.5em
 
   time
-    font-size .65em
-    margin 0 0 0 .25em
-
-  +width-min($bp--first)
-    font-size 1.5em
-    line-height 1.45
+    margin 0 0 0 0.25em
 
 q
   quotes '“' '”' '‘' '’'
@@ -234,7 +203,7 @@ code
   color $color--white
   font-family $font--monospace
   hyphens none
-  padding .15em .25em
+  padding 0.15em 0.25em
   tab-size 4
 
 .hljs-attribute
@@ -280,7 +249,7 @@ mark
   background $color--black
   color $color--white
   font-weight 300
-  padding .15em .25em
+  padding 0.15em 0.25em
 
 table
   border-right 1px solid $color--grey
@@ -291,18 +260,19 @@ table
 
   td
   th
-    border 0 dotted $color--grey-light
-    border:-color alpha($color--grey-light, .5)
+    border 0 dotted
+    border-color $color--grey-light
+    border-color rgba($color--grey-light, 0.5)
     border-right-width 1px
     border-top-width 1px
-    padding 0 .5em
+    padding 0 0.5em
 
   th
     border-bottom-style solid
     border-bottom-width 1px
     border-top 0
     font-weight bold
-    padding .25em .5em
+    padding 0.25em 0.5em
 
 .video
   height 0

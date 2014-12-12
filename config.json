@@ -1,18 +1,19 @@
 {
   "global": {
-    "projectName": "Benedfit.com",
+    "title": "benedfit.com",
+    "description": "Personal website of Ben Edwards, a Web Designer and Developer",
     "src": "source",
     "dest": "_output",
     "protocol": "https",
-    "domain": "benedfit.com",
-    "url": "%protocol://%domain%",
-    "metaTitle": "Ben Edwards, a Web Designer and Developer",
+    "domain": "%authorHandle%.com",
+    "url": "%protocol%://%domain%",
+    "metaTitle": "%authorName%, a Web Designer and Developer",
     "metaDescription": "Ultimate Knot-tier and Head of Front-end Development at Clock. Banging on about Responsive Design, Progressive Enhancement &amp; Web Standards",
     "metaTileColor": "#000000",
     "authorName": "Ben Edwards",
-    "authorEmail": "hello@benedfit.com",
+    "authorEmail": "hello@%domain%",
     "authorHandle": "benedfit",
-    "authorUrl": "https://plus.google.com/+benedfit",
+    "authorUrl": "https://plus.google.com/+%authorHandle%",
     "authorImage": "/img/ben-edwards.jpg"
   }
 }

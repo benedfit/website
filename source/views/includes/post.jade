@@ -8,10 +8,11 @@ mixin date
   - var month = page.date.format('MM')
   - var monthName = page.date.format('MMMM')
   - var day = page.date.format('D')
-  time(datetime=utc)
-    a(href='/#{year}/#{month}/', rel='directory')= monthName
-    | &nbsp;#{day},&nbsp;
-    a(href="/#{year}/", rel='directory')= year
+  small
+    time(datetime=utc)
+      a(href='/#{year}/#{month}/', rel='directory')= monthName
+      | &nbsp;#{day},&nbsp;
+      a(href="/#{year}/", rel='directory')= year
 
 if full
   h1

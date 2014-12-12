@@ -2,7 +2,8 @@
 @require 'utilities/_settings'
 
 html
-  text-size-adjust 100%
+  -webkit-text-size-adjust 100%
+  -ms-text-size-adjust 100%
 
 body
   background $color--black-light
@@ -10,15 +11,16 @@ body
   font 112.5%/1.5 $font--base
   margin 0
 
-  +width-min($bp--first)
+  +width-min($bp--wide)
     line-height 1.75
 
 a
-  border-bottom 1px dotted $color--grey-light
-  border-color alpha($color--grey-light, .5)
+  border-bottom 1px dotted
+  border-bottom-color $color--grey-light
+  border-bottom-color rgba($color--grey-light, 0.5)
   color: $color--white
   text-decoration none
-  transition border-color .25s ease-in-out
+  transition border-color 0.25s ease-in-out
 
   &:hover, &:active, &:focus
     border-color transparent
@@ -27,9 +29,6 @@ a
   margin auto
   max-width 60em
   padding 2em 1em
-  width 60em
-
-[class=container]
   width auto
 
 @require 'components/*'

@@ -6,5 +6,5 @@
 git clone git@bitbucket.org:benedfit/benedfit.com.git
 cd benedfit.com
 npm install
-pliers go
+npm start
 ```
