@@ -5,9 +5,10 @@
   "private": true,
   "scripts": {
     "start": "pliers go -o",
-    "lint": "jshint .",
+    "lintcss": "csslint .",
+    "lintjs": "jshint",
     "checkStyle": "jscs .",
-    "pretest": "npm run-script lint && npm run-script checkStyle && pliers lintCss",
+    "pretest": "npm run-script lintcss && npm run-script lintjs && npm run-script checkStyle",
     "postinstall": "pliers build"
   },
   "devDependencies": {
