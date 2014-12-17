@@ -1,10 +1,10 @@
 $hr
   border 0
-  border-image linear-gradient(to right, $color--gradient) 100% 1
+  border-image linear-gradient(90deg, $color--gradient) 100% 1
 
 $vr
   border 0
-  border-image linear-gradient(to bottom, $color--gradient) 1 100%
+  border-image linear-gradient($color--gradient) 1 100%
 
 .content
   background $color--grey
@@ -200,6 +200,7 @@ pre
 
 code
   background $color--black
+  box-decoration-break clone
   color $color--white
   font-family $font--monospace
   hyphens none

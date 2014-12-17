@@ -69,7 +69,7 @@ function tasks(pliers) {
       })
     })
 
-    pliers.watch(pliers.filesets.pages, function () {
+    pliers.watch(pliers.filesets.src, function () {
       pliers.run('buildHtml', function () {
         browserSync.reload(pliers.filesets.pages)
       })
