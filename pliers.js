@@ -41,7 +41,7 @@ function tasks(pliers) {
   })
 
   // Optimise images
-  pliersImagemin(pliers, pliers.filesets.images)
+  pliers('imagemin', pliersImagemin(pliers, pliers.filesets.images))
 
   // Start BrowserSync server
   pliers('start', function (done) {
@@ -61,11 +61,15 @@ function tasks(pliers) {
 
   pliers('watch', function () {
 
+    pliers.watch(pliers.filesets.images, function() {
+      pliers.run('imagemin', function () {
+        browserSync.reload(pliers.filesets.pages)
+      })
+    })
+
     pliers.watch(pliers.filesets.stylus, function () {
       pliers.run('buildCss', function () {
-        pliers.run('buildHtml', function () {
-          browserSync.reload(pliers.filesets.pages)
-        })
+        browserSync.reload(pliers.filesets.pages)
       })
     })
 
