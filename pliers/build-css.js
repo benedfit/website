@@ -38,7 +38,7 @@ function task(pliers, config) {
           , function (err) {
             if (err) throw(err)
             done()
-          }).on('log', function (msg, level) { pliers.logger[level](msg) })
+          }).on('log', function (msg, level) { pliers.logger[ level ](msg) })
     })
 
   })

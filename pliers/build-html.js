@@ -114,7 +114,7 @@ function task(pliers, config) {
       if (page.excerpt) {
         page.excerpt = namp(page.excerpt).html
       } else {
-        page.excerpt = namp(body.split('\n')[0]).html
+        page.excerpt = namp(body.split('\n')[ 0 ]).html
       }
     }
 
