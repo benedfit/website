@@ -1,0 +1,35 @@
+@media print
+  *
+    background transparent !important
+    border-color $color--black !important
+    border-image none !important
+    color $color--black !important
+
+  a
+    border 0
+    text-decoration underline
+
+  a[href]:after
+    content ' (' attr(href) ')'
+
+  abbr[title]
+    border 0
+
+    &:after
+      content ' (' attr(title) ')'
+
+  h1
+  h2
+    a
+      text-decoration none
+
+      &[href]:after
+        content ''
+
+  .ellipsis
+  .footer
+  .header
+    display none
+
+  .container
+    padding 0
