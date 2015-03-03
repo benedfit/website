@@ -7,7 +7,7 @@
 ## Installation
 
 ```
-git clone git@bitbucket.org:benedfit/benedfit.com.git
+git clone git@github.com:benedfit/benedfit.github.io.git
 cd benedfit.com
 npm install
 npm start
