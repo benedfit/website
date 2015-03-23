@@ -119,7 +119,7 @@ function task(pliers, config) {
     }
 
     function parseLayout(page) {
-      page.layoutPath = join(__dirname, '..', config.src, 'views', page.layout + '.jade')
+      page.layoutPath = join(__dirname, '..', config.src, 'templates', page.layout + '.jade')
 
       var data = fs.readFileSync(page.layoutPath, 'utf8')
         , properties
