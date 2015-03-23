@@ -102,6 +102,33 @@ A timestamp, such as <time datetime="2014-01-01T00:00:00+00:00"><a href="/styleg
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 | -->
 
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th align="center">Are</th>
+      <th align="right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 3 is</td>
+      <td align="center">right-aligned</td>
+      <td align="right">$1600</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td align="center">centered</td>
+      <td align="right">$12</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td align="center">are neat</td>
+      <td align="right">$1</td>
+    </tr>
+  </tbody>
+</table>
+
 <pre>P R E F O R M A T T E D T E X T P R E F O R M A T T E D T E X T
 ! " # $ % & ' ( ) * + , - . /
 0 1 2 3 4 5 6 7 8 9 : ; =

@@ -15,8 +15,8 @@ p
 h1
   @extend $hr
   border-bottom 1px solid
-  border-color $color--grey-light
-  border-color rgba($color--grey-light, 0.5)
+  border-color $color--grey--light
+  border-color rgba($color--grey--light, 0.5)
   font-size 2em
   font-weight 300
   line-height 1.25
@@ -28,7 +28,7 @@ h1
     line-height 1.25
 
   a
-    border-color $color--black-light
+    border-color $color--black--light
 
 h2
   font-size 1.625em
@@ -41,13 +41,13 @@ h2
     line-height 1.25
 
   a
-    border-color $color--black-light
+    border-color $color--black--light
 
 small
-  color $color--grey-light
+  color $color--grey--light
 
   a
-    color $color--grey-light
+    color $color--grey--light
 
 .ellipsis
   border 0
@@ -70,7 +70,7 @@ small
     text-shadow none
 
     &:before
-      color $color--grey-light
+      color $color--grey--light
 
   span
     display none
@@ -96,8 +96,8 @@ h6
 hr
   @extend $hr
   border-bottom 1px solid
-  border-color $color--grey-light
-  border-color rgba($color--grey-light, 0.5)
+  border-color $color--grey--light
+  border-color rgba($color--grey--light, 0.5)
   height 0
   margin 0 0 1.5em
   overflow hidden
@@ -117,7 +117,7 @@ ul
     list-style none
 
     &:before
-      color $color--grey-light
+      color $color--grey--light
       content '○'
       display block
       left -1em
@@ -138,7 +138,7 @@ ol
     list-style none
 
     &:before
-      color $color--grey-light
+      color $color--grey--light
       content counter(li)'.'
       counter-increment li
       display block
@@ -154,21 +154,21 @@ ol
 blockquote
   @extend $vr
   border-left 1px solid
-  border-color $color--grey-light
-  border-color rgba($color--grey-light, 0.5)
+  border-color $color--grey--light
+  border-color rgba($color--grey--light, 0.5)
   font-size 1.35em
   margin 1.5em 0
   padding 0 1em
 
   a
-    color $color--grey-light
+    color $color--grey--light
 
   cite
     display block
     font-style normal
 
     &:before
-      color $color--grey-light
+      color $color--grey--light
       content '-'
       margin 0 0.2em 0 -0.575em
 
@@ -185,11 +185,11 @@ q
   quotes '“' '”' '‘' '’'
 
   &:after
-    color $color--grey-light
+    color $color--grey--light
     content close-quote
 
   &:before
-    color $color--grey-light
+    color $color--grey--light
     content open-quote
 
 pre
@@ -214,7 +214,7 @@ code
 
 .hljs-comment
 .hljs-tag
-  color $color--grey-light
+  color $color--grey--light
 
 .hljs-important
 .hljs-regexp
@@ -229,12 +229,12 @@ code
   color $color--blue
 
 abbr[title]
-  border-bottom 1px dotted $color--black-light
+  border-bottom 1px dotted $color--black--light
   cursor help
 
 del
 s
-  color $color--grey-light
+  color $color--grey--light
   font-weight 300
 
 ins
@@ -252,27 +252,27 @@ mark
   padding 0.15em 0.25em
 
 table
-  border-right 1px solid $color--grey
   border-collapse collapse
+  border-right 1px solid $color--grey
   font-weight 300
   margin 0 0 1.5em
   width 100%
 
-  td
-  th
-    border 0 dotted
-    border-color $color--grey-light
-    border-color rgba($color--grey-light, 0.5)
-    border-right-width 1px
-    border-top-width 1px
-    padding 0 0.5em
+td
+th
+  border 0 dotted
+  border-color $color--grey--light
+  border-color rgba($color--grey--light, 0.5)
+  border-right-width 1px
+  border-top-width 1px
+  padding 0 0.5em
 
-  th
-    border-bottom-style solid
-    border-bottom-width 1px
-    border-top 0
-    font-weight bold
-    padding 0.25em 0.5em
+th
+  border-bottom-style solid
+  border-bottom-width 1px
+  border-top 0
+  font-weight bold
+  padding 0.25em 0.5em
 
 .video
   height 0
