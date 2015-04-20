@@ -3,7 +3,6 @@ layout: default
 permalink: /styleguide/
 title: 'Style guide'
 metaDescription: 'Examples of all the styles in use on my site'
-hidden: true
 inmenu: true
 ---
 # Style guide
