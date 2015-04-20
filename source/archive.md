@@ -2,5 +2,7 @@
 layout: archive
 permalink: /archive/
 title: 'Archive'
-hidden: false
+titleYear: '[Archive for] YYYY'
+titleMonth: '[Archive for] MMMM, YYYY'
+isarchive: true
 ---
