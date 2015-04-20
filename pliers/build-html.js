@@ -19,6 +19,8 @@ function task(pliers, config) {
     var options = { pretty: false, time: moment.utc() }
       , pages = []
       , posts = []
+      , archive
+      , archives = []
 
     merge(options, config)
 
@@ -45,7 +47,7 @@ function task(pliers, config) {
           }
 
           page.path = setDestination(dest, page)
-          page.url = page.path.replace(join(__dirname, '..', config.dest), '').replace('index.html', '')
+          page.url = setUrl(page)
 
           if (page.date) page.date = moment.utc(page.date)
 
@@ -71,6 +73,13 @@ function task(pliers, config) {
         b = b.date
         return a > b ? -1 : a < b ? 1 : 0
       })
+
+      if (archive !== null) {
+        async.each(posts, function (post) {
+          createArchive(post.date)
+          createArchive(post.date, true)
+        })
+      }
 
       pages.sort(function (a, b) {
         a = a.url
@@ -110,6 +119,30 @@ function task(pliers, config) {
       done()
     })
 
+    function createArchive(date, isMonth) {
+      var page = JSON.parse(JSON.stringify(archive))
+        , year = date.format('YYYY')
+        , month = date.format('M')
+
+      page.postsYear = year
+      page.permalink = '/' + year + '/'
+      page.title = date.format(page.titleYear)
+
+      if (isMonth) {
+        page.postsMonth = month
+        page.permalink = page.permalink + ('0' + month).slice(-2) + '/'
+        page.title = date.format(page.titleMonth)
+      }
+
+      page.path = setDestination(page.path, page)
+      page.url = setUrl(page)
+
+      if (archives.indexOf(page.permalink) === -1) {
+        archives.push(page.permalink)
+        pages.push(page)
+      }
+    }
+
     function parseExcerpt(page, body) {
       if (page.excerpt) {
         page.excerpt = namp(page.excerpt).html
@@ -130,6 +163,7 @@ function task(pliers, config) {
       }
 
       if (page.layout === 'post') posts.push(page)
+      if (page.layout === 'archive' && page.isarchive) archive = page
     }
 
     function setDestination(dest, page) {
@@ -151,6 +185,10 @@ function task(pliers, config) {
       }
 
       return dest
+    }
+
+    function setUrl(page) {
+      return page.path.replace(join(__dirname, '..', config.dest), '').replace('index.html', '')
     }
 
   })
