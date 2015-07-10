@@ -1,20 +1,10 @@
 module.exports = tasks
 
-var path = require('path')
-  , join = path.join
-  , glob = require('glob')
-  , rmdir = require('rimraf')
+var glob = require('glob')
   , createConfigury = require('configury')
   , configury = createConfigury('./config.json')
   , config = configury(process.env.NODE_ENV)
   , browserSync = require('browser-sync')
-  , src = join(__dirname, config.src)
-  , dest = join(__dirname, config.dest)
-  , hiddenGlob = join(src, '**/_*')
-  , stylusGlob = join(src, '**/*.styl')
-  , jadeGlob = join(src, 'views', '**/*.jade')
-  , compiledStylesheetsPath = join(src, '_css')
-  , pliersImagemin = require('pliers-imagemin')
   , openBrowser = false
 
 function tasks(pliers) {
