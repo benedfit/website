@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2015-06-09
-permalink: /daily-battles-won-in-the-war-on-regex-1/
+permalink: /2015/06/daily-battles-won-in-the-war-on-regex-1/
 title: Daily battles won in the war on regular expressions - Vol. 1
 metaDescription: The first in a series of posts where I, or more than likely someone else, manages to write a killer regular expression
 ---
