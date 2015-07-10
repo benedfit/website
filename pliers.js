@@ -24,16 +24,7 @@ function tasks(pliers) {
     require(file)(pliers, config)
   })
 
-
-  // Reset project to clean state
-  pliers('clean', function (done) {
-    rmdir(dest, function () {
-      rmdir(compiledStylesheetsPath, done)
-    })
   })
-
-  // Optimise images
-  pliers('imagemin', pliersImagemin(pliers, pliers.filesets.images))
 
   // Start BrowserSync server
   pliers('start', function (done) {
@@ -47,9 +38,6 @@ function tasks(pliers) {
     browserSync(browserSyncConfig)
     done()
   })
-
-  // Any building that is needed before running the application
-  pliers('build', 'clean', 'buildCss', 'buildHtml')
 
   pliers('watch', function () {
 
