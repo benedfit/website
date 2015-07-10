@@ -1,4 +1,4 @@
-module.exports = task
+module.exports = createTask
 
 var path = require('path')
   , join = path.join
@@ -12,7 +12,7 @@ var path = require('path')
   , moment = require('moment')
   , minify = require('html-minifier').minify
 
-function task(pliers, config) {
+function createTask(pliers, config) {
 
   pliers('buildHtml', function (done) {
 
