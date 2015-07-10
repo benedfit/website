@@ -24,6 +24,9 @@ function tasks(pliers) {
     require(file)(pliers, config)
   })
 
+  // Load filesets
+  glob.sync(__dirname + '/pliers/filesets/*.js').forEach(function (file) {
+    require(file)(pliers, config)
   })
 
   // Start BrowserSync server
