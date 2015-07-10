@@ -1,4 +1,5 @@
 _output
+coverage
 node_modules
 source/_css
 npm-debug.log

@@ -10,6 +10,8 @@
     "checkStyle": "./node_modules/.bin/jscs .",
     "wrap": "rm -f npm-shrinkwrap.json; npm prune && npm install && npm shrinkwrap && pliers cleanShrinkwrap",
     "pretest": "npm run lintcss && npm run lintjs && npm run checkStyle",
+    "test": "./node_modules/.bin/istanbul --include-all-sources cover ./node_modules/.bin/_mocha -- --recursive -R spec",
+    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
     "postinstall": "pliers build"
   },
   "dependencies": {
@@ -35,8 +37,10 @@
   },
   "devDependencies": {
     "csslint": "^0.10.0",
+    "istanbul": "^0.3.10",
     "jscs": "^1.8.1",
     "jshint": "^2.5.10",
+    "mocha": "^2.2.5",
     "pliers": "^1.1.2",
     "pliers-clean-shrinkwrap": "^1.0.1",
     "pliers-imagemin": "^2.0.2",
