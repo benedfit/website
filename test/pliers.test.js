@@ -7,10 +7,14 @@ var assert = require('assert')
 
 describe('pliers', function () {
 
-  before(function () {
+  before(function (done) {
+    this.timeout(0)
+
     pliers = createPliers()
 
-    require(__dirname + '/../pliers.js')(pliers, config)
+    require(__dirname + '/../pliers')(pliers, config)
+
+    done()
   })
 
   it('should have filesets', function () {
