@@ -24,14 +24,6 @@ function tasks(pliers) {
     require(file)(pliers, config)
   })
 
-  // Define the filesets
-  pliers.filesets('stylus', stylusGlob)
-  pliers.filesets('stylesheets', pliers.filesets.stylus, hiddenGlob)
-  pliers.filesets('compiledStylesheets', join(compiledStylesheetsPath, '**/*.css'))
-  pliers.filesets('jade', join(src, jadeGlob))
-  pliers.filesets('images', join(src, 'img', '**/*.{gif,jpg,jpeg,png,svg}'))
-  pliers.filesets('src', join(src, '**/*.*'))
-  pliers.filesets('pages', pliers.filesets.src, [ join(src, '_**/**'), hiddenGlob, stylusGlob, jadeGlob ])
 
   // Reset project to clean state
   pliers('clean', function (done) {
