@@ -12,7 +12,7 @@ mixin date
     time(datetime=utc)
       a(href='/#{year}/#{month}/', rel='directory')= monthName
       | &nbsp;#{day},&nbsp;
-      a(href="/#{year}/", rel='directory')= year
+      a(href='/#{year}/', rel='directory')= year
 
 if full
   h1
