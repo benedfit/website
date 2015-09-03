@@ -18,7 +18,7 @@ function createTask(pliers, config) {
 
   pliers('start', function (done) {
 
-    browserSync.create(config.name).init(browserSyncConfig)
+    browserSync.create(config.title).init(browserSyncConfig)
 
     done()
 
