@@ -13,11 +13,12 @@ rss(version='2.0', xmlns:atom='http://www.w3.org/2005/Atom', xmlns:dc='http://pu
     atom:link(href='#{url}#{page.url}', rel='self')
     each page in posts
       - var pageUrl = url + page.url
+      - var pageDescription = '<![CDATA[' + page.excerpt + ']]>'
       item
         title= page.title
         link= pageUrl
         description
-          != '<![CDATA[' + page.excerpt + ']]>'
+          != pageDescription
         author= authorName
         dc:creator= authorName
         pubDate= page.date.format(format)
