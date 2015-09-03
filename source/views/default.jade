@@ -1,4 +1,5 @@
-- var pageTitle = page.metaTitle || page.title || metaTitle
+- var pageName = page.metaTitle || page.title || metaTitle
+- var pageTitle = page.metaTitle || page.title ? page.title + ' / ' + metaTitle : metaTitle
 - var pageDescription = page.metaDescription || metaDescription
 - var pageImage = page.image || authorImage
 - var pageUrl = url + page.url
@@ -7,7 +8,7 @@ doctype html
 html(lang='en-gb')
   head
     meta(charset='utf-8')
-    title= page.metaTitle || page.title ? page.title + ' / ' + metaTitle : metaTitle
+    title= pageTitle
     meta(name='viewport', content='initial-scale=1')
     style: include ../_css/index.css
     meta(name='description', content=pageDescription)
@@ -23,13 +24,13 @@ html(lang='en-gb')
     <!--[if IE]><link rel='shortcut icon' type='image/x-icon' href='/favicon.ico')<![endif]-->
     meta(name='msapplication-TileColor', content=metaTileColor)
     meta(name='msapplication-TileImage', content='/img/mstile-144x144.png')
-    meta(itemprop='name', content=pageTitle)
+    meta(itemprop='name', content=pageName)
     meta(itemprop='description', content=pageDescription)
     meta(itemprop='image', content=pageImage)
     meta(property='og:url', content=pageUrl)
     meta(property='og:type', content=page.ogtype || 'website')
     meta(property='og:site_name', content=domain)
-    meta(property='og:title', content=pageTitle)
+    meta(property='og:title', content=pageName)
     meta(property='og:description', content=pageDescription)
     meta(property='og:image', content=pageImage)
     meta(property='og:updated_time', content=time.format())
@@ -46,7 +47,7 @@ html(lang='en-gb')
     meta(name='twitter:card', content='summary')
     meta(name='twitter:site', content='@#{authorHandle}')
     meta(name='twitter:domain', content=domain)
-    meta(name='twitter:title', content=pageTitle)
+    meta(name='twitter:title', content=pageName)
     meta(name='twitter:description', content=pageDescription)
     meta(name='twitter:creator', content='@#{authorHandle}')
     meta(name='twitter:image', content=pageImage)
