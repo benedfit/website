@@ -39,7 +39,7 @@
   "devDependencies": {
     "csslint": "^0.10.0",
     "istanbul": "^0.3.10",
-    "jade-lint": "^1.2.13",
+    "jade-lint": "^2.0.0",
     "jscs": "^1.8.1",
     "jshint": "^2.5.10",
     "mocha": "^2.2.5",
