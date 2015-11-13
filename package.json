@@ -9,7 +9,7 @@
     "lintJade": "./node_modules//bin/jade-lint .",
     "lintJs": "./node_modules/.bin/jshint",
     "checkStyle": "./node_modules/.bin/jscs .",
-    "wrap": "rm -f npm-shrinkwrap.json; npm prune && npm install && npm shrinkwrap && pliers cleanShrinkwrap",
+    "wrap": "npm prune && npm shrinkwrap && pliers cleanShrinkwrap",
     "pretest": "npm run lintCss && npm run lintJs && npm run checkStyle && npm run lintJade",
     "test": "./node_modules/.bin/istanbul --include-all-sources cover ./node_modules/.bin/_mocha -- --recursive -R spec",
     "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
