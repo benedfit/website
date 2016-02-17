@@ -10,9 +10,9 @@ mixin date
   - var day = page.date.format('D')
   small
     time(datetime=utc)
-      a(href='/#{year}/#{month}/', rel='directory')= monthName
+      a(href='/#{year}/#{month}/', rel='directory') #[span.hidden View archive for&nbsp;]#{monthName}#[span.hidden &nbsp;#{year}]
       | &nbsp;#{day},&nbsp;
-      a(href='/#{year}/', rel='directory')= year
+      a(href='/#{year}/', rel='directory') #[span.hidden View archive for&nbsp;]#{year}
 
 if full
   h1

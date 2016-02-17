@@ -6,6 +6,19 @@ $vr
   border 0
   border-image linear-gradient($color--gradient) 1 100%
 
+$vhidden =
+  position absolute !important
+  clip rect(0, 0, 0, 0) !important
+  overflow hidden !important
+  height 1px !important
+  width 1px !important
+  padding 0 !important
+  margin -1px !important
+  border 0 !important
+
+.hidden
+  {$vhidden}
+
 .content
   background $color--grey
 
