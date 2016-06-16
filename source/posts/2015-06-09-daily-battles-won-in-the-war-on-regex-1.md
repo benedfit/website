@@ -79,7 +79,7 @@ test
 @require 'kk/**/*'
 ```
 
-## The other-worldly solution from [Kuba Stawiarski](https://github.com/kuba81))
+## The other-worldly solution from [Kuba Stawiarski](https://github.com/kuba81)
 
 ```js
 /\G[^"'\/]*(?:'[^']*'|"[^"]*"|\/\/[^\r\n]+|\/[^*]|(\/\*(?:.|\r|\n)*?\*\/))/g
