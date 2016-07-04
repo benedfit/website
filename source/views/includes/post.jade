@@ -30,6 +30,9 @@ else
     h2
       +title
       +date
-    div!= page.excerpt
-    a.ellipsis(href=page.url)
-      span(aria-hidden='false') Read more of #{page.title}
+    .excerpt
+      != page.excerpt
+      | &nbsp;
+      a(href=page.url)
+        mark Read more 
+          span(aria-hidden='false') of #{page.title}

@@ -62,31 +62,14 @@ small
   a
     color $color--grey-light
 
-.ellipsis
-  border 0
-  display block
-  line-height 1
-  margin 0 0 1.5em
-  text-align center
-  text-decoration none
-  text-shadow $color--grey 1px 1px 0
+.excerpt
+  margin 0 0 2em
 
-  &:before
-    color $color--black
-    content '○○○'
-    font-size 2.25em
-    transition color 0.25s ease-in-out
-
-  &:hover
-  &:active
-  &:focus
-    text-shadow none
-
-    &:before
-      color $color--grey-light
-
-  span
+  mark span
     display none
+
+  p
+    display inline
 
 h3
   font-size 1.375em
