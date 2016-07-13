@@ -21,6 +21,39 @@
       , monthName = page.date.format('MMMM')
 
     pageData['@graph'].push(
+      { '@type': 'NewsArticle'
+      , mainEntityOfPage:
+        { '@type': 'WebPage'
+        , '@id': pageUrl
+        }
+      , headline: pageName
+      , image:
+        { '@type': 'ImageObject'
+        , url: url + '/img/header.jpg'
+        , height: 200
+        , width: 1000
+        }
+      , datePublished: page.date.format()
+      , dateModified: page.date.format()
+      , author:
+        { '@type': 'Person'
+        , name: authorName
+        }
+      , publisher:
+        { '@type': 'Organization'
+        , name: domain
+        , logo:
+          { '@type': 'ImageObject'
+          , url: url + '/img/logo.png'
+          , height: 60
+          , width: 374
+          }
+        }
+      , description: pageDescription
+      }
+    )
+
+    pageData['@graph'].push(
       { '@type': 'BreadcrumbList'
       , itemListElement:
         [ { '@type': 'ListItem'
