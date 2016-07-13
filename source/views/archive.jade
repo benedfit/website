@@ -33,7 +33,7 @@ block append variables
           }
         )
       }
-    } else {
+    } else if (page.ogtype !== 'profile') {
       breadcrumb.push(
         { '@type': 'ListItem'
         , position: 1
