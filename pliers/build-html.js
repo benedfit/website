@@ -122,7 +122,8 @@ function createTask(pliers, config) {
     function createArchive(date, isMonth) {
       var page = JSON.parse(JSON.stringify(archive))
         , year = date.format('YYYY')
-        , month = date.format('M')
+        , month = date.format('MM')
+        , monthName = date.format('MMMM')
 
       page.postsYear = year
       page.permalink = '/' + year + '/'
@@ -130,6 +131,7 @@ function createTask(pliers, config) {
 
       if (isMonth) {
         page.postsMonth = month
+        page.postsMonthName = monthName
         page.permalink = page.permalink + ('0' + month).slice(-2) + '/'
         page.title = date.format(page.titleMonth)
       }

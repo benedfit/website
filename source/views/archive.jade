@@ -1,5 +1,59 @@
 extend default
 
+block append variables
+  -
+    var breadcrumb = []
+      , breacrumbUrl = url
+
+    if (page.postsYear) {
+      breacrumbUrl += '/' + page.postsYear + '/'
+
+      breadcrumb.push(
+        { '@type': 'ListItem'
+        , position: 1
+        , item:
+          { '@id': breacrumbUrl
+          , name: page.postsYear
+          , image: pageImage
+          }
+        }
+      )
+
+      if (page.postsMonth) {
+        breacrumbUrl += page.postsMonth + '/'
+
+        breadcrumb.push(
+          { '@type': 'ListItem'
+          , position: 2
+          , item:
+            { '@id': breacrumbUrl
+            , name: page.postsMonthName
+            , image: pageImage
+            }
+          }
+        )
+      }
+    } else {
+      breadcrumb.push(
+        { '@type': 'ListItem'
+        , position: 1
+        , item:
+          { '@id': pageUrl
+          , name: pageName
+          , image: pageImage
+          }
+        }
+      )
+    }
+
+    if (breadcrumb.length) {
+      pageData['@graph'].push(
+        { '@type': 'BreadcrumbList'
+        , itemListElement: breadcrumb
+        }
+      )
+    }
+
 block contents
   if page.title
     h1= page.title
@@ -9,7 +63,7 @@ block contents
       , postsMonth = page.postsMonth ? page.postsMonth.toString() : ''
       , first = true
   each page in posts
-    if (page.date.format('YYYY') === postsYear || postsYear === '') && (page.date.format('M') === postsMonth || postsMonth === '')
+    if (page.date.format('YYYY') === postsYear || postsYear === '') && (page.date.format('MM') === postsMonth || postsMonth === '')
       if !first
         hr
       include ./includes/post

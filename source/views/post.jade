@@ -3,6 +3,76 @@ ogtype: article
 ---
 extend default
 
+block append variables
+  -
+    var year = page.date.format('YYYY')
+      , month = page.date.format('MM')
+      , monthName = page.date.format('MMMM')
+
+    pageData['@graph'].push(
+      { '@type': 'NewsArticle'
+      , mainEntityOfPage:
+        { '@type': 'WebPage'
+        , '@id': pageUrl
+        }
+      , headline: pageName
+      , image:
+        { '@type': 'ImageObject'
+        , url: url + '/img/header.jpg'
+        , height: 200
+        , width: 1000
+        }
+      , datePublished: page.date.format()
+      , dateModified: page.date.format()
+      , author:
+        { '@type': 'Person'
+        , name: authorName
+        }
+      , publisher:
+        { '@type': 'Organization'
+        , name: domain
+        , logo:
+          { '@type': 'ImageObject'
+          , url: url + '/img/logo.png'
+          , height: 60
+          , width: 374
+          }
+        }
+      , description: pageDescription
+      }
+    )
+
+    pageData['@graph'].push(
+      { '@type': 'BreadcrumbList'
+      , itemListElement:
+        [ { '@type': 'ListItem'
+          , position: 1
+          , item:
+            { '@id': url + '/' + year + '/'
+            , name: year
+            , image: pageImage
+            }
+          }
+        , { '@type': 'ListItem'
+          , position: 2
+          , item:
+            { '@id': url + '/' + year + '/' + month + '/'
+            , name: monthName
+            , image: pageImage
+            }
+          }
+        , { '@type': 'ListItem'
+          , position: 3
+          , item:
+            { '@id': pageUrl
+            , name: pageName
+            , image: pageImage
+            }
+          }
+        ]
+      }
+    )
+
 block contents
   - var full = true
   include ./includes/post
