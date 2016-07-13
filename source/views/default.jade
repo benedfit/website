@@ -1,8 +1,9 @@
-- var pageName = page.metaTitle || page.title || metaTitle
-- var pageTitle = page.metaTitle ? page.metaTitle : (page.title ? page.title + ' / ' + authorName : metaTitle)
-- var pageDescription = page.metaDescription || metaDescription
-- var pageImage = page.image || authorImage
-- var pageUrl = url + page.url
+-
+  var pageName = page.metaTitle || page.title || metaTitle
+    , pageTitle = page.metaTitle ? page.metaTitle : (page.title ? page.title + ' / ' + authorName : metaTitle)
+    , pageDescription = page.metaDescription || metaDescription
+    , pageImage = url + (page.image || authorImage)
+    , pageUrl = url + page.url
 
 doctype html
 html(lang='en-gb')
