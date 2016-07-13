@@ -4,7 +4,7 @@ html(lang='en-gb')
     meta(charset='utf-8')
     title This page has been moved
     link(rel='canonical', href=url + page.redirect)
-    meta(http-equiv='refresh', content='0; url=#{page.redirect}')
+    meta(http-equiv='refresh', content='0; url=' + page.redirect)
   body(onloads='document.body.style.display=\'none\'')
     a(href=page.redirect) Visit the new location of this page.
     script

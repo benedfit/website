@@ -4,9 +4,10 @@ block contents
   if page.title
     h1= page.title
 
-  - var postsYear = page.postsYear ? page.postsYear.toString() : ''
-  - var postsMonth = page.postsMonth ? page.postsMonth.toString() : ''
-  - var first = true
+  -
+    var postsYear = page.postsYear ? page.postsYear.toString() : ''
+      , postsMonth = page.postsMonth ? page.postsMonth.toString() : ''
+      , first = true
   each page in posts
     if (page.date.format('YYYY') === postsYear || postsYear === '') && (page.date.format('M') === postsMonth || postsMonth === '')
       if !first

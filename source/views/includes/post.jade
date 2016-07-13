@@ -3,19 +3,20 @@ mixin title
   | 
 
 mixin date
-  - var utc = page.date.format()
-  - var year = page.date.format('YYYY')
-  - var month = page.date.format('MM')
-  - var monthName = page.date.format('MMMM')
-  - var day = page.date.format('D')
+  -
+    var utc = page.date.format()
+      , year = page.date.format('YYYY')
+      , month = page.date.format('MM')
+      , monthName = page.date.format('MMMM')
+      , day = page.date.format('D')
   small
     time(datetime=utc)
-      a(href='/#{year}/#{month}/', rel='directory')
+      a(href='/' + year + '/' + month + '/', rel='directory')
         span.hidden View archive for&nbsp;
         | #{monthName}
         span.hidden &nbsp;#{year}
       | &nbsp;#{day},&nbsp;
-      a(href='/#{year}/', rel='directory')
+      a(href='/' + year + '/', rel='directory')
         span.hidden View archive for&nbsp;
         | #{year}
 

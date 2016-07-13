@@ -10,10 +10,10 @@
       a(href=page.url)= page.title
       | 
 
-  a(href='mailto:#{authorEmail}', rel='me')= authorEmail
+  a(href='mailto:' + authorEmail, rel='me')= authorEmail
   | 
-  a(href='https://twitter.com/#{authorHandle}', rel='me') Twitter
+  a(href='https://twitter.com/' + authorHandle, rel='me') Twitter
   | 
-  a(href='https://github.com/#{authorHandle}/', rel='me') GitHub
+  a(href='https://github.com/' + authorHandle + '/', rel='me') GitHub
   | 
-  a(href='https://codepen.io/#{authorHandle}/', rel='me') CodePen
+  a(href='https://codepen.io/'+ authorHandle + '/', rel='me') CodePen
