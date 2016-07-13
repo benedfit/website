@@ -4,6 +4,53 @@
     , pageDescription = page.metaDescription || metaDescription
     , pageImage = url + (page.image || authorImage)
     , pageUrl = url + page.url
+    , pageData =
+      { '@context': 'http://schema.org'
+      , '@graph':
+        [ { '@type': 'WebSite'
+          , url: url
+          , name: domain
+          , alternateName: authorName
+          }
+        ]
+      }
+
+  if (page.ogtype === 'article') {
+    var year = page.date.format('YYYY')
+      , month = page.date.format('MM')
+      , monthName = page.date.format('MMMM')
+
+    pageData['@graph'].push(
+      { '@type': 'BreadcrumbList'
+      , itemListElement:
+        [ { '@type': 'ListItem'
+          , position: 1
+          , item:
+            { '@id': url + '/' + year + '/'
+            , name: year
+            , image: pageImage
+            }
+          }
+        , { '@type': 'ListItem'
+          , position: 2
+          , item:
+            { '@id': url + '/' + year + '/' + month + '/'
+            , name: monthName
+            , image: pageImage
+            }
+          }
+        , { '@type': 'ListItem'
+          , position: 3
+          , item:
+            { '@id': pageUrl
+            , name: pageName
+            , image: pageImage
+            }
+          }
+        ]
+      }
+    )
+  }
 
 doctype html
 html(lang='en-gb')
@@ -71,6 +118,7 @@ html(lang='en-gb')
 
     include ./includes/footer
 
+    script(type='application/ld+json')!= JSON.stringify(pageData)
     script
       :uglify-js
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
