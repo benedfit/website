@@ -128,12 +128,14 @@ function createTask(pliers, config) {
       page.postsYear = year
       page.permalink = '/' + year + '/'
       page.title = date.format(page.titleYear)
+      page.metaDescription = date.format(page.metaDescriptionYear)
 
       if (isMonth) {
         page.postsMonth = month
         page.postsMonthName = monthName
         page.permalink = page.permalink + ('0' + month).slice(-2) + '/'
         page.title = date.format(page.titleMonth)
+        page.metaDescription = date.format(page.metaDescriptionMonth)
       }
 
       page.path = setDestination(page.path, page)
