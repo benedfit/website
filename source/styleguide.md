@@ -2,8 +2,8 @@
 layout: default
 permalink: /styleguide/
 title: 'Style guide'
-metaDescription: 'Examples of all the styles in use on my site'
-inmenu: true
+metaDescription: 'All UI components and visual styles used in the construction of this site'
+noindex: true
 ---
 # Style guide
 
