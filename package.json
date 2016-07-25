@@ -14,7 +14,9 @@
     "pretest": "pliers build && npm run lintCss && npm run lintJs && npm run checkStyle && npm run lintPug",
     "test": "./node_modules/.bin/istanbul --include-all-sources cover ./node_modules/.bin/_mocha -- --recursive -R spec",
     "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
-    "postinstall": "pliers build"
+    "postinstall": "pliers build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "any-newer-files": "0.0.4",
@@ -37,7 +39,8 @@
     "rimraf": "^2.2.8",
     "stylus": "^0.49.2",
     "stylus-mixins": "^0.1.6",
-    "stylus-renderer": "^1.1.0"
+    "stylus-renderer": "^1.1.0",
+    "snyk": "^1.17.1"
   },
   "devDependencies": {
     "csslint": "^0.10.0",
@@ -51,5 +54,6 @@
     "pliers-npm-security-check": "^1.0.0",
     "pug-lint": "^2.2.2",
     "pug-lint-config-clock": "^2.0.0"
-  }
+  },
+  "snyk": true
 }
