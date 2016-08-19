@@ -22,7 +22,7 @@
     "autoprefixer-stylus": "^0.4.0",
     "browser-sync": "^2.3.1",
     "clean-css": "^2.2.19",
-    "cloudflare-cli": "0.0.10",
+    "cloudflare-cli": "^1.6.0",
     "configury": "^0.2.0",
     "front-matter": "^0.2.0",
     "fs-extra": "^0.12.0",
