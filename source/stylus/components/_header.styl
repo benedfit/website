@@ -1,10 +1,24 @@
 .header
   background-color $color--black
-  background-image embedurl('img/header.jpg')
-  background-size 100% 100%
+  position relative
+  overflow hidden
+
+  .background
+    background-image embedurl('img/header.jpg')
+    background-size 100% 100%
+    $blur = 5px
+    filter blur($blur)
+    margin -($blur)
+    padding $blur
+    position absolute
+    height 100%
+    width 100%
+    z-index 1
 
   .container
     padding 1em
+    position relative
+    z-index 2
 
   a
     background $color--black
