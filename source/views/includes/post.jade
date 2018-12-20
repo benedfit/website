@@ -23,14 +23,12 @@ mixin date
 if full
   h1
     +title
-    +date
   article
     != contents
 else
   article
     h2
       +title
-      +date
     .excerpt
       != page.excerpt
       | &nbsp;
