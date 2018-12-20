@@ -3,6 +3,10 @@
   "version": "3.0.0",
   "description": "Personal website of Ben Edwards, a Web Designer and Developer",
   "private": true,
+  "engines": {
+    "node": "^10.13.0",
+    "npm": "^6.4.1"
+  },
   "scripts": {
     "start": "pliers go -o",
     "deploy": "bash ./deploy.sh",
