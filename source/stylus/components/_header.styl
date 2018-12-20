@@ -1,15 +1,22 @@
 .header
-  background-color $color--black
+  background-color $color--pink
   position relative
   overflow hidden
 
+  $color = rgba($color--black, 10%)
+  $bg-color = linear-gradient(135deg, $color--gradient)
+  $diameter = 6px
+  $distance = 35px
+
+  $radius = ($diameter / 2)
+  $size = ($distance + $diameter)
+
   .background
-    background-image embedurl('/img/header.jpg')
-    background-size 100% 100%
-    $blur = 5px
-    filter blur($blur)
-    margin -($blur)
-    padding $blur
+    background radial-gradient($color ($radius - 1), transparent $radius)
+      , radial-gradient($color ($radius - 1), transparent $radius)
+      , $bg-color
+    background-position 0 0, ($size / 2) ($size / 2), 0 0
+    background-size $size $size, $size $size, 100% 100%
     position absolute
     height 100%
     width 100%

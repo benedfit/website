@@ -1,21 +1,23 @@
 $bp--wide = 900px
 
-$color--gradient = #cba276, #c9a376, #c3a174, #bea272, #bea473, #bba774, #b3a978, #aca878, #a9a777, #a8a676, #9ca178, #979e74, #8d9975, #859571, #788c70, #738a6e, #65806d, #5e7a6c, #5f7270, #5d6c6f, #56686c, #56676e, #435667, #405165, #445366, #565d6d, #6e6c77, #9b8987, #b89d94, #bca094, #b69a8f, #b5998e, #b2958f
-
-color-stop(index)
-  $stop = $color--gradient[index]
-  $stop[0]
-
 $color--black = #000
 $color--black-light = #222
 $color--blue = #8ea9d7
 $color--green = #93b082
 $color--grey = #333
 $color--grey-light = #bbb
-$color--orange = #fba266
-$color--pink = #f786ad
+$color--orange = #ffa500
+$color--orange-light = #fba266
+$color--pink = #ff1493
+$color--pink-light = #f786ad
 $color--white = #fff
 $color--yellow = #ff7
+
+$color--gradient = $color--pink, $color--orange
+
+color-stop(index)
+  $stop = $color--gradient[index]
+  $stop[0]
 
 $font--base = Arial, sans-serif
 $font--monospace = Consolas, monaco, monospace
