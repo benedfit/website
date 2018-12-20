@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "pliers go -o",
+    "build": "pliers build",
     "deploy": "bash ./deploy.sh",
     "lintCss": "./node_modules/.bin/csslint .",
     "lintPug": "pug-lint .",
@@ -17,8 +18,7 @@
     "wrap": "npm prune && npm shrinkwrap && pliers cleanShrinkwrap",
     "pretest": "pliers build && npm run lintCss && npm run lintJs && npm run lintPug",
     "test": "./node_modules/.bin/istanbul --include-all-sources cover ./node_modules/.bin/_mocha -- --recursive -R spec",
-    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
-    "postinstall": "pliers build"
+    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage"
   },
   "dependencies": {
     "any-newer-files": "0.0.4",

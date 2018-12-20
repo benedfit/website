@@ -8,8 +8,6 @@ env:
         bEe94GcjFtbjWvjGUuaFgY5vTai43kTN3q23cmoNM7yCORuiUXuARgjc81XJRzzr/OBRAYhdpT4GJ8OI9Lt7rHUNIPGb01oIT6d6rol5nSFg7aeQ9zrp4NXCrxjOxuEit9wd+ie9bG494lvzvXYR0hS+P2LrMIOlC1xK3YZyQJ8=
     - secure: >-
         HisnyNgPsFSX9ABENSOi8frLc1BfPjOoGAiaAvNyCy12CVoA6AVxB6nxGx5MAMKeWtXjy8KA0k/zfY4Pg+PBSkDrDYZbT5LrRPmiHsNNOaI/rrfsF6mFcMwFXKd9wIuzWxLxm+6I2eZT/+jXHc4K/0sWXYs/mWbeePooVybQLKs=
-after_success:
-  - npm run deploy
 notifications:
   email:
     on_success: never
