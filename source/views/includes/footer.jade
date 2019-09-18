@@ -3,6 +3,9 @@
   span &copy; #{year}
   | 
   a.p-name.u-url(href=url, rel='me') #{authorName}
+  .hidden
+    img.u-photo(src=authorImage)
+    span.p-note= metaDescription
   | 
 
   each page in pages
