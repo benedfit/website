@@ -1,8 +1,8 @@
 - var year = time.format('YYYY')
-.footer(role='contentinfo')
+.footer.h-card(role='contentinfo')
   span &copy; #{year}
   | 
-  span #{authorName}
+  a.p-name.u-url(href=url, rel=me) #{authorName}
   | 
 
   each page in pages
@@ -10,7 +10,7 @@
       a(href=page.url)= page.title
       | 
 
-  a(href='mailto:' + authorEmail, rel='me')= authorEmail
+  a.u-email(href='mailto:' + authorEmail, rel='me')= authorEmail
   | 
   a(href='https://twitter.com/' + authorHandle, rel='me') Twitter
   | 
