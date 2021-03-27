@@ -25,7 +25,7 @@
     "browser-sync": "2.26.14",
     "clean-css": "2.2.23",
     "cloudflare-cli": "4.1.0",
-    "configury": "0.2.0",
+    "configury": "0.3.0",
     "front-matter": "0.2.3",
     "fs-extra": "9.1.0",
     "glob": "7.1.3",
