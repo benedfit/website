@@ -46,7 +46,7 @@
     "csslint": "0.10.0",
     "istanbul": "0.4.5",
     "jscs": "3.0.7",
-    "jshint": "2.9.7",
+    "jshint": "2.12.0",
     "mocha": "5.2.0",
     "pliers": "1.2.1",
     "pliers-clean-shrinkwrap": "1.0.1",
