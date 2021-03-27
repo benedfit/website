@@ -21,7 +21,7 @@
   "dependencies": {
     "any-newer-files": "0.0.4",
     "async": "0.9.2",
-    "autoprefixer-stylus": "0.4.0",
+    "autoprefixer-stylus": "0.14.0",
     "browser-sync": "2.26.3",
     "clean-css": "2.2.23",
     "cloudflare-cli": "4.1.0",
