@@ -37,7 +37,7 @@
     "moment": "2.23.0",
     "namp": "0.2.25",
     "rfg-api": "0.4.0",
-    "rimraf": "2.6.2",
+    "rimraf": "3.0.2",
     "stylus": "0.54.5",
     "stylus-mixins": "0.1.7",
     "stylus-renderer": "1.1.0"
