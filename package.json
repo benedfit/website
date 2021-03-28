@@ -26,7 +26,7 @@
     "clean-css": "2.2.23",
     "cloudflare-cli": "4.1.0",
     "configury": "0.3.0",
-    "front-matter": "0.2.3",
+    "front-matter": "4.0.2",
     "fs-extra": "9.1.0",
     "glob": "7.1.6",
     "html-minifier": "4.0.0",
