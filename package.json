@@ -38,7 +38,7 @@
     "namp": "0.2.25",
     "rfg-api": "0.4.0",
     "rimraf": "3.0.2",
-    "stylus": "0.54.5",
+    "stylus": "0.54.8",
     "stylus-mixins": "0.4.0",
     "stylus-renderer": "1.1.0"
   },
