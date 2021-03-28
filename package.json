@@ -43,7 +43,7 @@
     "stylus-renderer": "1.1.0"
   },
   "devDependencies": {
-    "csslint": "0.10.0",
+    "csslint": "1.0.5",
     "istanbul": "0.4.5",
     "jscs": "3.0.7",
     "jshint": "2.12.0",
