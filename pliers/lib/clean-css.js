@@ -1,10 +1,11 @@
-module.exports = function() {
+var CleanCSS = require("clean-css");
 
-  return function(style) {
-    style = this || style
-    style.on('end', function (err, css) {
-      return require('clean-css')().minify(css)
-    })
-  }
-
-}
+module.exports = function () {
+  return function (style) {
+    style = this || style;
+    style.on("end", function (err, css) {
+      var output = new CleanCSS().minify(css);
+      return output.styles;
+    });
+  };
+};
