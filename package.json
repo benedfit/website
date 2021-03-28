@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "any-newer-files": "0.0.4",
-    "async": "0.9.2",
+    "async": "3.2.0",
     "autoprefixer-stylus": "1.0.0",
     "browser-sync": "2.26.14",
     "clean-css": "2.2.23",
