@@ -57,9 +57,8 @@ function createTask(pliers, config) {
 
           pages.push(page)
         } else {
-          mkdir(path.dirname(dest), function () {
-            fs.copy(file, dest)
-          })
+          mkdir.sync(path.dirname(dest))
+          fs.copy(file, dest)
         }
 
         callback()
@@ -95,25 +94,25 @@ function createTask(pliers, config) {
           , ext = path.extname(dest)
           , data
 
-        mkdir(path.dirname(dest), function () {
-          options.page = page
+        mkdir.sync(path.dirname(dest))
 
-          if (page.layout) {
-            if (!page.parsed) {
-              options.contents = jade.render(page.contents, options)
-            } else {
-              options.contents = page.contents
-            }
+        options.page = page
 
-            data = jade.renderFile(page.layoutPath, options)
+        if (page.layout) {
+          if (!page.parsed) {
+            options.contents = jade.render(page.contents, options)
           } else {
-            data = jade.render(page.contents, options)
+            options.contents = page.contents
           }
 
-          if (ext !== '.xml') data = minify(data, { collapseWhitespace: ext !== '.txt' })
+          data = jade.renderFile(page.layoutPath, options)
+        } else {
+          data = jade.render(page.contents, options)
+        }
 
-          fs.writeFile(dest, data)
-        })
+        if (ext !== '.xml') data = minify(data, { collapseWhitespace: ext !== '.txt' })
+
+        fs.writeFile(dest, data)
       })
 
       done()

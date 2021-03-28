@@ -20,7 +20,7 @@ function createTask(pliers, config) {
       var src = path.dirname(file)
         , dest = src.replace('stylus', '_css')
 
-      mkdir(dest)
+      mkdir.sync(dest)
 
       renderStylus(file
         , { src: src
