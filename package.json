@@ -32,7 +32,7 @@
     "html-minifier": "3.5.21",
     "jade": "1.11.0",
     "jstransformer-uglify-js": "1.2.0",
-    "lodash.merge": "2.4.1",
+    "lodash.merge": "4.6.2",
     "mkdirp": "0.5.5",
     "moment": "2.23.0",
     "namp": "0.2.25",
