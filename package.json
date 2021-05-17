@@ -24,7 +24,7 @@
     "autoprefixer-stylus": "1.0.0",
     "browser-sync": "2.26.14",
     "clean-css": "5.1.2",
-    "cloudflare-cli": "4.1.0",
+    "cloudflare-cli": "4.2.0",
     "configury": "0.3.0",
     "front-matter": "4.0.2",
     "fs-extra": "10.0.0",
