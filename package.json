@@ -6,13 +6,13 @@
   "scripts": {
     "start": "pliers go -o",
     "build": "pliers build",
-    "lintCss": "./node_modules/.bin/csslint .",
-    "lintPug": "pug-lint .",
-    "lintJs": "./node_modules/.bin/jshint",
-    "checkStyle": "./node_modules/.bin/jscs .",
-    "pretest": "pliers build && npm run lintCss && npm run lintJs && npm run lintPug",
-    "test": "./node_modules/.bin/istanbul --include-all-sources cover ./node_modules/.bin/_mocha -- --recursive -R spec",
-    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage"
+    "lint": "yarn lint:css && yarn lint:js && yarn lint:pug",
+    "lint:css": "csslint . --quiet",
+    "lint:js": "jshint",
+    "lint:pug": "pug-lint .",
+    "pretest": "pliers build && yarn lint",
+    "test": "istanbul --include-all-sources cover mocha -- --recursive -R spec",
+    "posttest": "istanbul check-coverage && rm -rf coverage"
   },
   "dependencies": {
     "any-newer-files": "0.0.4",
@@ -45,7 +45,6 @@
     "csslint": "1.0.5",
     "husky": "7.0.0",
     "istanbul": "0.4.5",
-    "jscs": "3.0.7",
     "jshint": "2.13.0",
     "mocha": "9.0.0",
     "pliers": "1.2.1",
