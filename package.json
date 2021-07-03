@@ -43,7 +43,11 @@
     "stylus-renderer": "1.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "12.1.4",
+    "@newhighsco/commitlint-config": "1.0.13",
+    "@newhighsco/editor-config": "1.1.2",
     "csslint": "1.0.5",
+    "husky": "7.0.0",
     "istanbul": "0.4.5",
     "jscs": "3.0.7",
     "jshint": "2.13.0",
@@ -54,5 +58,26 @@
     "pliers-npm-security-check": "1.0.0",
     "pug-lint": "2.6.0",
     "pug-lint-config-clock": "2.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@newhighsco"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "renovate": {
+    "extends": [
+      "@newhighsco"
+    ],
+    "baseBranches": [
+      "main"
+    ],
+    "reviewers": [
+      "@benedfit"
+    ]
   }
 }

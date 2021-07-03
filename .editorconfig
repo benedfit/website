@@ -1,12 +1,10 @@
 root = true
 
 [*]
-end_of_line = lf
-indent_style = space
-indent_size = 2
+auto_format_on_save = true
 charset = utf-8
-trim_trailing_whitespace = true
+end_of_line = lf
+indent_size = 2
+indent_style = space
 insert_final_newline = true
-
-[*.jade]
-trim_trailing_whitespace = false
+trim_trailing_whitespace = true

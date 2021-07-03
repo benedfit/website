@@ -3,4 +3,4 @@ ID = "benedfit"
 
 [build]
   publish = "_output"
-  command = "npm run build"
+  command = "yarn build"
