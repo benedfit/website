@@ -18,7 +18,7 @@
     "any-newer-files": "0.0.4",
     "async": "3.2.0",
     "autoprefixer-stylus": "1.0.0",
-    "browser-sync": "2.26.14",
+    "browser-sync": "2.27.4",
     "clean-css": "5.1.2",
     "cloudflare-cli": "4.2.0",
     "configury": "0.3.0",
