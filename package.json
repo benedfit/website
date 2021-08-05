@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "any-newer-files": "0.0.4",
-    "async": "3.2.0",
+    "async": "3.2.1",
     "autoprefixer-stylus": "1.0.0",
     "browser-sync": "2.27.5",
     "clean-css": "5.1.5",
