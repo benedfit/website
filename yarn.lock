@@ -154,10 +154,10 @@
   dependencies:
     chalk "^4.0.0"
 
-"@newhighsco/commitlint-config@1.0.14":
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.0.14.tgz#b3229e4b220732fe5989e233a94863904eca65ca"
-  integrity sha512-FUC5zWkIzgyh1M+ggjVwtFq0CtSoNfvGEDrls6fTA1z1RIt26THnXphAXM/lGeml9LricV6zBnnPOOAzCvC+kg==
+"@newhighsco/commitlint-config@1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.0.16.tgz#baf7bb2613adcff18185487984432e9fb56f7340"
+  integrity sha512-oLE6VbtJR//2m+AxxMwsdJROT5FBGxEnUFkz7+4Jb+CQWLBY0K8/JlI1Q5JyW9j6pJ6y/8Ctjh/ILLWw6jwfpA==
 
 "@newhighsco/editor-config@1.1.2":
   version "1.1.2"
