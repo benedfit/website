@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
-    "@newhighsco/commitlint-config": "1.0.14",
+    "@newhighsco/commitlint-config": "1.0.16",
     "@newhighsco/editor-config": "1.1.2",
     "csslint": "1.0.5",
     "husky": "7.0.2",
