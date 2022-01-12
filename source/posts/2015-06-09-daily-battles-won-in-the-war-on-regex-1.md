@@ -79,10 +79,10 @@ test
 @require 'kk/**/*'
 ```
 
-## The other-worldly solution from [Kuba Stawiarski](https://github.com/kuba81)
+## The other-worldly solution from [Ross Patton](https://github.com/rossPatton)
 
 ```js
-/\G[^"'\/]*(?:'[^']*'|"[^"]*"|\/\/[^\r\n]+|\/[^*]|(\/\*(?:.|\r|\n)*?\*\/))/g
+/(\r\n|\n|\r)|(^(\/\*)|([\s'"](\/\*)))(?!\/)(.|[\r\n]|\n)+?\*\/\n?/gm
 ```
 
-[Check out why it works, and what it matches](https://regex101.com/r/zM0xA6/)
+[Check out why it works, and what it matches](https://regex101.com/r/zY7fR9/4)
