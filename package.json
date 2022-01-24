@@ -46,7 +46,7 @@
     "husky": "7.0.4",
     "istanbul": "0.4.5",
     "jshint": "2.13.3",
-    "mocha": "9.1.4",
+    "mocha": "9.2.0",
     "pliers": "1.2.1",
     "pliers-clean-shrinkwrap": "1.0.1",
     "pliers-imagemin": "3.0.2",
