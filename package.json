@@ -19,7 +19,7 @@
     "async": "3.2.3",
     "autoprefixer-stylus": "1.0.0",
     "browser-sync": "2.27.7",
-    "clean-css": "5.2.2",
+    "clean-css": "5.2.3",
     "cloudflare-cli": "4.2.0",
     "configury": "0.3.0",
     "front-matter": "4.0.2",
