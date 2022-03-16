@@ -180,10 +180,10 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@newhighsco/commitlint-config@1.0.23":
-  version "1.0.23"
-  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.0.23.tgz#23e34d2201a8547fab6b44fd9c94f28ddf1a9d64"
-  integrity sha512-oDu8sKpv72VEi75BTjDufqqN8j/FYkl2O7giCJCMVwVoWvUXp9cOtGdT8X8cvS9G/IObZF/VQzWQdJhwszHKTg==
+"@newhighsco/commitlint-config@1.0.24":
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.0.24.tgz#ab9e0d7ae8750b87383595940aa62bbd389b9bab"
+  integrity sha512-uxkAtgAbT2vsntQuuC1fG0Vy/SnykwlzCIyzLoU+DC/e4iRzIDKZ0HqTv8SYScpi9a/PAHm/L9WxZuKTzr3uLQ==
 
 "@newhighsco/editor-config@1.1.2":
   version "1.1.2"
