@@ -180,15 +180,15 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@newhighsco/commitlint-config@1.0.24":
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.0.24.tgz#ab9e0d7ae8750b87383595940aa62bbd389b9bab"
-  integrity sha512-uxkAtgAbT2vsntQuuC1fG0Vy/SnykwlzCIyzLoU+DC/e4iRzIDKZ0HqTv8SYScpi9a/PAHm/L9WxZuKTzr3uLQ==
+"@newhighsco/commitlint-config@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.1.0.tgz#d4060c18045a0699df25bf8e40f6efb466d48a28"
+  integrity sha512-4zc17HdyDMugBgo7X+0OJbvF5TAwJYgPTa7ekwuOCSSKhoAo/3VEDuZ9HYrE+cOUXqbqelTER7cEJfooqspFMg==
 
-"@newhighsco/editor-config@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.1.2.tgz#4f9d24749bf2db72e0af963052e9fa741ed749aa"
-  integrity sha512-MFzblCmgiEOte69Mv8dQTT6+4Rj27e3x6bA7tuxycCPCwo4CsP3vWAfEhcz9hDO3+S5Vs/AIpxWTqzt2m0RJNw==
+"@newhighsco/editor-config@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
+  integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
 "@socket.io/base64-arraybuffer@~1.0.2":
   version "1.0.2"
