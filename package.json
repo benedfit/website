@@ -30,7 +30,7 @@
     "jstransformer-uglify-js": "1.2.0",
     "lodash.merge": "4.6.2",
     "mkdirp": "1.0.4",
-    "moment": "2.29.1",
+    "moment": "2.29.2",
     "namp": "0.2.26",
     "rfg-api": "0.5.2",
     "rimraf": "3.0.2",
