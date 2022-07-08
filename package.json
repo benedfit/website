@@ -45,7 +45,7 @@
     "csslint": "1.0.5",
     "husky": "8.0.1",
     "istanbul": "0.4.5",
-    "jshint": "2.13.4",
+    "jshint": "2.13.5",
     "mocha": "10.0.0",
     "pliers": "1.2.1",
     "pliers-clean-shrinkwrap": "1.0.1",
