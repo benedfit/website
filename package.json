@@ -43,7 +43,7 @@
     "@newhighsco/commitlint-config": "1.1.9",
     "@newhighsco/editor-config": "1.2.0",
     "csslint": "1.0.5",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "istanbul": "0.4.5",
     "jshint": "2.13.5",
     "mocha": "10.1.0",
