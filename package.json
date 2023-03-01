@@ -28,7 +28,7 @@
     "jade": "1.11.0",
     "jstransformer-uglify-js": "1.2.0",
     "lodash.merge": "4.6.2",
-    "mkdirp": "2.1.3",
+    "mkdirp": "2.1.4",
     "moment": "2.29.4",
     "namp": "0.2.26",
     "rfg-api": "0.5.2",
