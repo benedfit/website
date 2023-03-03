@@ -2,7 +2,7 @@ module.exports = createTask
 
 const anyNewerFiles = require('any-newer-files')
 const fs = require('fs')
-const glob = require('glob')
+const { globSync } = require('glob')
 const { join } = require('path')
 const pliersImagemin = require('pliers-imagemin')
 const rfg = require('rfg-api').init()
@@ -56,7 +56,7 @@ function createTask(pliers, config) {
     rfg.generateFavicon(request, src, function (err, data) {
       if (err) return done(err)
 
-      const images = glob.sync(src + '/*.{png,svg}')
+      const images = globSync(src + '/*.{png,svg}')
 
       fs.writeFileSync(dataFile, JSON.stringify(data))
 

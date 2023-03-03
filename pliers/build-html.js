@@ -1,7 +1,6 @@
 module.exports = createTask
 
-const path = require('path')
-const join = path.join
+const { dirname, extname, join } = require('path')
 const async = require('async')
 const mkdir = require('mkdirp')
 const fs = require('fs-extra')
@@ -26,7 +25,7 @@ function createTask(pliers, config) {
       pliers.filesets.pages,
       function (file, callback) {
         const dest = file.replace(config.src, config.dest)
-        const ext = path.extname(file)
+        const ext = extname(file)
         let properties
         const page = {}
 
@@ -57,7 +56,7 @@ function createTask(pliers, config) {
 
             pages.push(page)
           } else {
-            mkdir.sync(path.dirname(dest))
+            mkdir.sync(dirname(dest))
             fs.copy(file, dest)
           }
 
@@ -91,10 +90,10 @@ function createTask(pliers, config) {
 
         async.each(pages, function (page) {
           const dest = page.path
-          const ext = path.extname(dest)
+          const ext = extname(dest)
           let data
 
-          mkdir.sync(path.dirname(dest))
+          mkdir.sync(dirname(dest))
 
           options.page = page
 
@@ -179,7 +178,7 @@ function createTask(pliers, config) {
 
     function setDestination(dest, page) {
       let permalink = page.permalink
-      const ext = path.extname(dest)
+      const ext = extname(dest)
 
       if (permalink) {
         if (permalink.match('/$')) {

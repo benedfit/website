@@ -1,7 +1,6 @@
 module.exports = createTask
 
-const path = require('path')
-const join = path.join
+const { dirname, join } = require('path')
 const async = require('async')
 const mkdir = require('mkdirp')
 const stylus = require('stylus')
@@ -15,7 +14,7 @@ const env = process.env.NODE_ENV || 'development'
 function createTask(pliers, config) {
   pliers('buildCss', function (done) {
     async.each(pliers.filesets.stylesheets, function (file) {
-      const src = path.dirname(file)
+      const src = dirname(file)
       const dest = src.replace('stylus', '_css')
 
       mkdir.sync(dest)
