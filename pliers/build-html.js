@@ -1,128 +1,130 @@
 module.exports = createTask
 
-var path = require('path')
-  , join = path.join
-  , async = require('async')
-  , mkdir = require('mkdirp')
-  , fs = require('fs-extra')
-  , merge = require('lodash.merge')
-  , frontmatter = require('front-matter')
-  , jade = require('jade')
-  , namp = require('namp')
-  , moment = require('moment')
-  , minify = require('html-minifier').minify
+const path = require('path')
+const join = path.join
+const async = require('async')
+const mkdir = require('mkdirp')
+const fs = require('fs-extra')
+const merge = require('lodash.merge')
+const frontmatter = require('front-matter')
+const jade = require('jade')
+const namp = require('namp')
+const moment = require('moment')
+const minify = require('html-minifier').minify
 
 function createTask(pliers, config) {
-
   pliers('buildHtml', function (done) {
-
-    var options = { pretty: false, time: moment.utc() }
-      , pages = []
-      , posts = []
-      , archive
-      , archives = []
+    const options = { pretty: false, time: moment.utc() }
+    const pages = []
+    const posts = []
+    let archive
+    const archives = []
 
     merge(options, config)
 
-    async.each(pliers.filesets.pages, function (file, callback) {
-      var dest = file.replace(config.src, config.dest)
-        , ext = path.extname(file)
-        , properties
-        , page = {}
+    async.each(
+      pliers.filesets.pages,
+      function (file, callback) {
+        const dest = file.replace(config.src, config.dest)
+        const ext = path.extname(file)
+        let properties
+        const page = {}
 
-      fs.readFile(file, 'utf8', function (err, data) {
-        if (err) throw(err)
+        fs.readFile(file, 'utf8', function (err, data) {
+          if (err) throw err
 
-        if (frontmatter.test(data)) {
-          properties = frontmatter(data)
+          if (frontmatter.test(data)) {
+            properties = frontmatter(data)
 
-          merge(page, properties.attributes)
+            merge(page, properties.attributes)
 
-          if (ext === '.md') {
-            page.contents = namp(properties.body).html
-            parseExcerpt(page, properties.body)
-            page.parsed = true
+            if (ext === '.md') {
+              page.contents = namp(properties.body).html
+              parseExcerpt(page, properties.body)
+              page.parsed = true
+            } else {
+              page.contents = properties.body
+            }
+
+            page.path = setDestination(dest, page)
+            page.url = setUrl(page)
+
+            if (page.date) page.date = moment.utc(page.date)
+
+            if (page.layout) {
+              parseLayout(page)
+            }
+
+            pages.push(page)
           } else {
-            page.contents = properties.body
+            mkdir.sync(path.dirname(dest))
+            fs.copy(file, dest)
           }
 
-          page.path = setDestination(dest, page)
-          page.url = setUrl(page)
+          callback()
+        })
+      },
+      function (err) {
+        if (err) throw err
 
-          if (page.date) page.date = moment.utc(page.date)
+        posts.sort(function (a, b) {
+          a = a.date
+          b = b.date
+          return a > b ? -1 : a < b ? 1 : 0
+        })
+
+        if (archive !== null) {
+          async.each(posts, function (post) {
+            createArchive(post.date)
+            createArchive(post.date, true)
+          })
+        }
+
+        pages.sort(function (a, b) {
+          a = a.url
+          b = b.url
+          return a < b ? -1 : a > b ? 1 : 0
+        })
+
+        options.posts = posts
+        options.pages = pages
+
+        async.each(pages, function (page) {
+          const dest = page.path
+          const ext = path.extname(dest)
+          let data
+
+          mkdir.sync(path.dirname(dest))
+
+          options.page = page
 
           if (page.layout) {
-            parseLayout(page)
-          }
+            if (!page.parsed) {
+              options.contents = jade.render(page.contents, options)
+            } else {
+              options.contents = page.contents
+            }
 
-          pages.push(page)
-        } else {
-          mkdir.sync(path.dirname(dest))
-          fs.copy(file, dest)
-        }
-
-        callback()
-      })
-
-    }, function (err) {
-      if (err) throw(err)
-
-      posts.sort(function (a, b) {
-        a = a.date
-        b = b.date
-        return a > b ? -1 : a < b ? 1 : 0
-      })
-
-      if (archive !== null) {
-        async.each(posts, function (post) {
-          createArchive(post.date)
-          createArchive(post.date, true)
-        })
-      }
-
-      pages.sort(function (a, b) {
-        a = a.url
-        b = b.url
-        return a < b ? -1 : a > b ? 1 : 0
-      })
-
-      options.posts = posts
-      options.pages = pages
-
-      async.each(pages, function (page) {
-        var dest = page.path
-          , ext = path.extname(dest)
-          , data
-
-        mkdir.sync(path.dirname(dest))
-
-        options.page = page
-
-        if (page.layout) {
-          if (!page.parsed) {
-            options.contents = jade.render(page.contents, options)
+            data = jade.renderFile(page.layoutPath, options)
           } else {
-            options.contents = page.contents
+            data = jade.render(page.contents, options)
           }
 
-          data = jade.renderFile(page.layoutPath, options)
-        } else {
-          data = jade.render(page.contents, options)
-        }
+          if (ext !== '.xml')
+            data = minify(data, { collapseWhitespace: ext !== '.txt' })
 
-        if (ext !== '.xml') data = minify(data, { collapseWhitespace: ext !== '.txt' })
+          fs.writeFile(dest, data)
+        })
 
-        fs.writeFile(dest, data)
-      })
-
-      done()
-    })
+        done()
+      }
+    )
 
     function createArchive(date, isMonth) {
-      var page = JSON.parse(JSON.stringify(archive))
-        , year = date.format('YYYY')
-        , month = date.format('MM')
-        , monthName = date.format('MMMM')
+      const page = JSON.parse(JSON.stringify(archive))
+      const year = date.format('YYYY')
+      const month = date.format('MM')
+      const monthName = date.format('MMMM')
 
       page.postsYear = year
       page.permalink = '/' + year + '/'
@@ -150,15 +152,21 @@ function createTask(pliers, config) {
       if (page.excerpt) {
         page.excerpt = namp(page.excerpt).html
       } else {
-        page.excerpt = namp(body.split('\n')[ 0 ]).html
+        page.excerpt = namp(body.split('\n')[0]).html
       }
     }
 
     function parseLayout(page) {
-      page.layoutPath = join(__dirname, '..', config.src, 'views', page.layout + '.jade')
+      page.layoutPath = join(
+        __dirname,
+        '..',
+        config.src,
+        'views',
+        page.layout + '.jade'
+      )
 
-      var data = fs.readFileSync(page.layoutPath, 'utf8')
-        , properties
+      const data = fs.readFileSync(page.layoutPath, 'utf8')
+      let properties
 
       if (frontmatter.test(data)) {
         properties = frontmatter(data)
@@ -170,8 +178,8 @@ function createTask(pliers, config) {
     }
 
     function setDestination(dest, page) {
-      var permalink = page.permalink
-        , ext = path.extname(dest)
+      let permalink = page.permalink
+      const ext = path.extname(dest)
 
       if (permalink) {
         if (permalink.match('/$')) {
@@ -191,9 +199,9 @@ function createTask(pliers, config) {
     }
 
     function setUrl(page) {
-      return page.path.replace(join(__dirname, '..', config.dest), '').replace('index.html', '')
+      return page.path
+        .replace(join(__dirname, '..', config.dest), '')
+        .replace('index.html', '')
     }
-
   })
-
 }

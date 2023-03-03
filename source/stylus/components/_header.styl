@@ -12,9 +12,7 @@
   $size = ($distance + $diameter)
 
   .background
-    background radial-gradient($color ($radius - 1), transparent $radius)
-      , radial-gradient($color ($radius - 1), transparent $radius)
-      , $bg-color
+    background radial-gradient($color ($radius - 1), transparent $radius), radial-gradient($color ($radius - 1), transparent $radius), $bg-color
     background-position 0 0, ($size / 2) ($size / 2), 0 0
     background-size $size $size, $size $size, 100% 100%
     position absolute

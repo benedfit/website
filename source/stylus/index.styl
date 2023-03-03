@@ -1,5 +1,5 @@
-@require 'stylus-mixins'
-@require 'utilities/_settings'
+@import 'stylus-mixins'
+@import 'utilities/_settings'
 
 html
   -webkit-text-size-adjust 100%
@@ -21,7 +21,9 @@ a
   text-decoration none
   transition border-color 0.25s ease-in-out
 
-  &:hover, &:active, &:focus
+  &:hover
+  &:active
+  &:focus
     border-color transparent
 
 .container
@@ -30,5 +32,5 @@ a
   padding 2em 1em
   width auto
 
-@require 'components/*'
-@require 'utilities/_print'
+@import 'components/*'
+@import 'utilities/_print'

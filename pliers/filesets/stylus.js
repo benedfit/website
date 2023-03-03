@@ -1,7 +1,10 @@
+const { join } = require('path')
+
 module.exports = createFileset
 
 function createFileset(pliers, config) {
-
-  pliers.filesets('stylus', __dirname + '/../../' + config.src + '/stylus/**/*.styl')
-
+  pliers.filesets(
+    'stylus',
+    join(__dirname, '/../../', config.src, '/stylus/**/*.styl')
+  )
 }

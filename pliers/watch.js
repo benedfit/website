@@ -1,12 +1,10 @@
 module.exports = createTask
 
-var browserSync = require('browser-sync')
+const browserSync = require('browser-sync')
 
 function createTask(pliers, config) {
-
   pliers('watch', function () {
-
-    pliers.watch(pliers.filesets.images, function() {
+    pliers.watch(pliers.filesets.images, function () {
       pliers.run('imagemin', function () {
         browserSync.get(config.title).reload(pliers.filesets.pages)
       })
@@ -23,7 +21,5 @@ function createTask(pliers, config) {
         browserSync.get(config.title).reload(pliers.filesets.pages)
       })
     })
-
   })
-
 }
