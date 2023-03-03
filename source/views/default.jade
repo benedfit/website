@@ -51,7 +51,6 @@ html(lang='en-gb')
     meta(property='og:title', content=pageName)
     meta(property='og:description', content=pageDescription)
     meta(property='og:image', content=pageImage)
-    meta(property='og:updated_time', content=time.format())
     each tag in [ 'admins', 'profile_id' ]
       meta(property='fb:' + tag, content='100001139733853')
     if page.ogtype === 'article'

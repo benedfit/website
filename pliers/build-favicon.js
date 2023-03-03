@@ -1,78 +1,77 @@
-module.exports = createTask;
+module.exports = createTask
 
-var anyNewerFiles = require("any-newer-files"),
-  fs = require("fs"),
-  { globSync } = require("glob"),
-  path = require("path"),
-  pliersImagemin = require("pliers-imagemin"),
-  rfg = require("rfg-api").init();
+const anyNewerFiles = require('any-newer-files')
+const fs = require('fs')
+const { globSync } = require('glob')
+const { join } = require('path')
+const pliersImagemin = require('pliers-imagemin')
+const rfg = require('rfg-api').init()
 
 function createTask(pliers, config) {
-  var apiKey = "b369276b27fde847136ab1453e5953e125d6d0b6";
+  const apiKey = 'b369276b27fde847136ab1453e5953e125d6d0b6'
 
-  pliers("buildFavicon", function (done) {
-    var src = path.resolve(__dirname + "/../" + config.src),
-      dest = src + "/img",
-      sourceFile = dest + "/_favicon.png",
-      dataFile = src + "/_favicon.json",
-      request;
+  pliers('buildFavicon', function (done) {
+    const src = join(__dirname, '/../', config.src)
+    const dest = src + '/img'
+    const sourceFile = dest + '/_favicon.png'
+    const dataFile = src + '/_favicon.json'
 
     if (!anyNewerFiles([sourceFile], [dataFile])) {
-      pliers.logger.warn("No Favicon changes found. No recompile required.");
-      return done();
+      pliers.logger.warn('No Favicon changes found. No recompile required.')
+      return done()
     }
 
-    request = rfg.createRequest({
-      apiKey: apiKey,
+    const request = rfg.createRequest({
+      apiKey,
       masterPicture: sourceFile,
-      iconsPath: "/img/",
+      iconsPath: '/img/',
       design: {
-        ios: { pictureAspect: "noChange" },
+        ios: { pictureAspect: 'noChange' },
         desktopBrowser: {},
         windows: {
-          pictureAspect: "noChange",
+          pictureAspect: 'noChange',
           backgroundColor: config.metaTileColor,
-          onConflict: "override",
+          onConflict: 'override'
         },
         androidChrome: {
-          pictureAspect: "noChange",
+          pictureAspect: 'noChange',
           themeColor: config.metaTileColor,
           manifest: {
             name: config.title,
-            display: "browser",
-            orientation: "notSet",
-            onConflict: "override",
-            declared: true,
-          },
+            display: 'browser',
+            orientation: 'notSet',
+            onConflict: 'override',
+            declared: true
+          }
         },
         safariPinnedTab: {
-          pictureAspect: "blackAndWhite",
+          pictureAspect: 'blackAndWhite',
           threshold: 50,
-          themeColor: config.metaTileColor,
-        },
+          themeColor: config.metaTileColor
+        }
       },
-      settings: { scalingAlgorithm: "Mitchell", errorOnImageTooSmall: false },
-    });
+      settings: { scalingAlgorithm: 'Mitchell', errorOnImageTooSmall: false }
+    })
 
     rfg.generateFavicon(request, src, function (err, data) {
-      if (err) return done(err);
+      if (err) return done(err)
 
-      var images = globSync(src + "/*.{png,svg}");
+      const images = globSync(src + '/*.{png,svg}')
 
-      fs.writeFileSync(dataFile, JSON.stringify(data));
+      fs.writeFileSync(dataFile, JSON.stringify(data))
 
       pliersImagemin(
         pliers,
         images
       )(function (err) {
-        if (err) return done(err);
+        if (err) return done(err)
 
         images.forEach(function (file) {
-          fs.renameSync(file, file.replace(src, dest));
-        });
+          fs.renameSync(file, file.replace(src, dest))
+        })
 
-        done();
-      });
-    });
-  });
+        done()
+      })
+    })
+  })
 }

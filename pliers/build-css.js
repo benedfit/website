@@ -1,46 +1,46 @@
 module.exports = createTask
 
-var path = require('path')
-  , join = path.join
-  , async = require('async')
-  , mkdir = require('mkdirp')
-  , stylus = require('stylus')
-  , renderStylus = require('stylus-renderer')
-  , autoprefixer = require('autoprefixer-stylus')
-  , stylusMixins = require('stylus-mixins')
-  , cleancss = require('./lib/clean-css')
-  , middleware = [ autoprefixer(), stylusMixins(), cleancss() ]
-  , env = process.env.NODE_ENV || 'development'
+const { dirname, join } = require('path')
+const async = require('async')
+const mkdir = require('mkdirp')
+const stylus = require('stylus')
+const renderStylus = require('stylus-renderer')
+const autoprefixer = require('autoprefixer-stylus')
+const stylusMixins = require('stylus-mixins')
+const cleancss = require('./lib/clean-css')
+const middleware = [autoprefixer(), stylusMixins(), cleancss()]
+const env = process.env.NODE_ENV || 'development'
 
 function createTask(pliers, config) {
-
   pliers('buildCss', function (done) {
-
     async.each(pliers.filesets.stylesheets, function (file) {
-      var src = path.dirname(file)
-        , dest = src.replace('stylus', '_css')
+      const src = dirname(file)
+      const dest = src.replace('stylus', '_css')
 
       mkdir.sync(dest)
 
-      renderStylus(file
-        , { src: src
-          , dest: dest
-          , use: middleware
-          , stylusOptions: { compress: false }
-          , define:
-            { $ENV: env
-            , embedurl: stylus.url(
-              { limit: false
-              , paths: [ join(__dirname, '..', config.src) ]
-              })
-            }
+      renderStylus(
+        file,
+        {
+          src,
+          dest,
+          use: middleware,
+          stylusOptions: { compress: false },
+          define: {
+            $ENV: env,
+            embedurl: stylus.url({
+              limit: false,
+              paths: [join(__dirname, '..', config.src)]
+            })
           }
-          , function (err) {
-            if (err) throw(err)
-            done()
-          }).on('log', function (msg, level) { pliers.logger[ level ](msg) })
+        },
+        function (err) {
+          if (err) throw err
+          done()
+        }
+      ).on('log', function (msg, level) {
+        pliers.logger[level](msg)
+      })
     })
-
   })
-
 }

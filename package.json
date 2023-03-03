@@ -4,14 +4,21 @@
   "description": "Personal website of Ben Edwards, a Web Designer and Developer",
   "private": true,
   "scripts": {
+    "prepare": "is-ci || husky install",
     "start": "pliers go -o",
     "build": "pliers build",
-    "lint": "npm-run-all --parallel lint:*",
-    "lint:css": "csslint --quiet .",
-    "lint:js": "jshint",
-    "lint:pug": "pug-lint .",
     "pretest": "npm-run-all build lint",
-    "test": "istanbul cover --report=text-summary mocha"
+    "test": "istanbul cover --report=text-summary mocha",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:js": "yarn lint-staged:js --cache .",
+    "lint:css": "yarn lint-staged:css --cache '**/*.styl'",
+    "lint:pug": "yarn lint-staged:pug .",
+    "lint-staged:js": "eslint --ignore-path .gitignore",
+    "lint-staged:css": "stylelint --ignore-path .gitignore",
+    "lint-staged:pug": "pug-lint",
+    "format": "npm-run-all --parallel format:*",
+    "format:js": "yarn lint:js --fix",
+    "format:css": "yarn lint:css --fix"
   },
   "dependencies": {
     "any-newer-files": "0.0.4",
@@ -19,20 +26,17 @@
     "autoprefixer-stylus": "1.0.0",
     "browser-sync": "2.28.1",
     "clean-css": "5.3.2",
-    "cloudflare-cli": "4.2.0",
     "configury": "0.3.0",
     "front-matter": "4.0.2",
     "fs-extra": "11.1.0",
     "glob": "9.2.1",
     "html-minifier": "4.0.0",
     "jade": "1.11.0",
-    "jstransformer-uglify-js": "1.2.0",
     "lodash.merge": "4.6.2",
     "mkdirp": "2.1.4",
     "moment": "2.29.4",
     "namp": "0.2.26",
     "rfg-api": "0.5.2",
-    "rimraf": "4.1.2",
     "stylus": "0.59.0",
     "stylus-mixins": "0.4.0",
     "stylus-renderer": "1.1.0"
@@ -41,29 +45,41 @@
     "@commitlint/cli": "17.4.4",
     "@newhighsco/commitlint-config": "1.1.15",
     "@newhighsco/editor-config": "1.2.0",
-    "csslint": "1.0.5",
+    "@newhighsco/eslint-config": "4.0.18",
+    "@newhighsco/prettier-config": "2.1.8",
+    "eslint": "8.35.0",
     "husky": "8.0.3",
+    "is-ci": "3.0.1",
     "istanbul": "0.4.5",
-    "jshint": "2.13.6",
+    "lint-staged": "13.1.2",
     "mocha": "10.2.0",
     "npm-run-all": "4.1.5",
     "pliers": "1.2.1",
     "pliers-clean-shrinkwrap": "1.0.1",
     "pliers-imagemin": "3.0.2",
     "pliers-npm-security-check": "1.0.0",
+    "prettier": "2.8.4",
     "pug-lint": "2.6.0",
-    "pug-lint-config-clock": "2.0.0"
+    "pug-lint-config-clock": "2.0.0",
+    "stylelint": "15.2.0",
+    "stylelint-stylus": "0.18.0"
   },
   "commitlint": {
     "extends": [
       "@newhighsco"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "eslintConfig": {
+    "extends": [
+      "@newhighsco"
+    ]
   },
+  "lint-staged": {
+    "*.{js?(on)}": "yarn lint-staged:js --fix",
+    "*.css": "yarn lint-staged:css --fix",
+    "*.pug": "yarn lint-staged:pug"
+  },
+  "prettier": "@newhighsco/prettier-config",
   "renovate": {
     "extends": [
       "@newhighsco"
@@ -73,6 +89,11 @@
     ],
     "reviewers": [
       "@benedfit"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-stylus/standard"
     ]
   }
 }
