@@ -36,7 +36,7 @@
     "mkdirp": "2.1.5",
     "moment": "2.29.4",
     "namp": "0.2.26",
-    "rfg-api": "0.5.2",
+    "rfg-api": "0.5.3",
     "stylus": "0.59.0",
     "stylus-mixins": "0.4.0",
     "stylus-renderer": "1.1.0"
