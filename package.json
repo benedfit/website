@@ -58,7 +58,7 @@
     "pliers-clean-shrinkwrap": "1.0.1",
     "pliers-imagemin": "3.0.2",
     "pliers-npm-security-check": "1.0.0",
-    "prettier": "2.8.4",
+    "prettier": "2.8.6",
     "pug-lint": "2.6.0",
     "pug-lint-config-clock": "2.0.0",
     "stylelint": "15.3.0",
