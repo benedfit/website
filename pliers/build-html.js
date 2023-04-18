@@ -2,7 +2,7 @@ module.exports = createTask
 
 const { dirname, extname, join } = require('path')
 const async = require('async')
-const mkdir = require('mkdirp')
+const { mkdirp } = require('mkdirp')
 const fs = require('fs-extra')
 const merge = require('lodash.merge')
 const frontmatter = require('front-matter')
@@ -56,7 +56,7 @@ function createTask(pliers, config) {
 
             pages.push(page)
           } else {
-            mkdir.sync(dirname(dest))
+            mkdirp.sync(dirname(dest))
             fs.copy(file, dest)
           }
 
@@ -93,7 +93,7 @@ function createTask(pliers, config) {
           const ext = extname(dest)
           let data
 
-          mkdir.sync(dirname(dest))
+          mkdirp.sync(dirname(dest))
 
           options.page = page
 
