@@ -2,7 +2,7 @@ module.exports = createTask
 
 const { dirname, join } = require('path')
 const async = require('async')
-const mkdir = require('mkdirp')
+const { mkdirp } = require('mkdirp')
 const stylus = require('stylus')
 const renderStylus = require('stylus-renderer')
 const autoprefixer = require('autoprefixer-stylus')
@@ -17,7 +17,7 @@ function createTask(pliers, config) {
       const src = dirname(file)
       const dest = src.replace('stylus', '_css')
 
-      mkdir.sync(dest)
+      mkdirp.sync(dest)
 
       renderStylus(
         file,
