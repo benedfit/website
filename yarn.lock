@@ -9098,10 +9098,10 @@ stylelint-config-html@^1.0.0:
   resolved "https://registry.yarnpkg.com/stylelint-config-html/-/stylelint-config-html-1.1.0.tgz#999db19aea713b7ff6dde92ada76e4c1bd812b66"
   integrity sha512-IZv4IVESjKLumUGi+HWeb7skgO6/g4VMuAYrJdlqQFndgbj6WJAXPhaysvBiXefX79upBdQVumgYcdd17gCpjQ==
 
-stylelint-stylus@0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/stylelint-stylus/-/stylelint-stylus-0.18.0.tgz#d6d692fd120e5847f40e45629bdd3e3fb9cfa29a"
-  integrity sha512-n3zjLFLonPOUYY3UIUtSKzZzPB9GQo+BvtmcEQfI+4QHiNsHpfr9QrznkWT8sUB+S11dr3JRCzZ45K9lRQviSg==
+stylelint-stylus@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-stylus/-/stylelint-stylus-1.0.0.tgz#165efe19f781ca9fe2d2e8ed03fb561fe47b358a"
+  integrity sha512-Sd9PY5ndU09PbH61ojs6yZ3HausS9OE7TgWwl8kZfwTQTTbYqCmk4Vy4wIWvDisN+C8jeHr3TBddlCQZg2yGMw==
   dependencies:
     html-tags "^3.1.0"
     lodash "^4.17.15"
@@ -9110,6 +9110,8 @@ stylelint-stylus@0.18.0:
     postcss-media-query-parser "^0.2.3"
     postcss-selector-parser "^6.0.2"
     postcss-styl "^0.12.2"
+    postcss-value-parser "^4.2.0"
+    semver "^7.5.4"
     style-search "^0.1.0"
     stylelint-config-html "^1.0.0"
     svg-tags "^1.0.0"
