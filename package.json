@@ -48,7 +48,7 @@
     "@newhighsco/eslint-config": "4.0.145",
     "@newhighsco/prettier-config": "2.1.22",
     "eslint": "8.56.0",
-    "husky": "9.0.10",
+    "husky": "9.0.11",
     "is-ci": "3.0.1",
     "istanbul": "0.4.5",
     "lint-staged": "15.2.2",
