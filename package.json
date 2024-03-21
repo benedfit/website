@@ -43,9 +43,9 @@
   },
   "devDependencies": {
     "@commitlint/cli": "19.2.1",
-    "@newhighsco/commitlint-config": "1.1.37",
+    "@newhighsco/commitlint-config": "1.1.38",
     "@newhighsco/editor-config": "1.2.0",
-    "@newhighsco/eslint-config": "4.0.154",
+    "@newhighsco/eslint-config": "4.0.155",
     "@newhighsco/prettier-config": "2.1.22",
     "eslint": "8.57.0",
     "husky": "9.0.11",
