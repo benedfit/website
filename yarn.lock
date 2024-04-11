@@ -287,10 +287,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/eslint-config@4.0.158":
-  version "4.0.158"
-  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-4.0.158.tgz#194e680ef81f23aa1a0dc9b92bc150e27045c9b4"
-  integrity sha512-gkaEUw1ZQdVR+t8JzYvQj3xf9OPQJ9KInU8sAlV3916cQ5ic6xTYgmSY74FtO2/qubV7NorofsL+ga4Ao2a6eg==
+"@newhighsco/eslint-config@4.0.159":
+  version "4.0.159"
+  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-4.0.159.tgz#4d8e2e56b22b0c4a27123806de3a85c399f21dec"
+  integrity sha512-qQTcZ9jxLCxMeVt/FHynRmdZPuSPKhA4thkvtOM4WcxM4FCIPJXjf+GRKXf9Y9bLL0bYaSSAJ5I9dXcEB8mLzw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.6.0"
     "@typescript-eslint/parser" "7.6.0"
@@ -304,7 +304,7 @@
     eslint-plugin-json-format "2.0.1"
     eslint-plugin-jsx-a11y "6.8.0"
     eslint-plugin-mdx "3.1.5"
-    eslint-plugin-n "16.6.2"
+    eslint-plugin-n "17.2.0"
     eslint-plugin-prettier "5.1.3"
     eslint-plugin-promise "6.1.1"
     eslint-plugin-react "7.34.1"
@@ -1552,18 +1552,6 @@ buffers@~0.1.1:
   resolved "https://registry.yarnpkg.com/buffers/-/buffers-0.1.1.tgz#b24579c3bed4d6d396aeee6d9a8ae7f5482ab7bb"
   integrity sha1-skV5w77U1tOWru5tmorn9Ugqt7s=
 
-builtin-modules@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.3.0.tgz#cae62812b89801e9656336e46223e030386be7b6"
-  integrity sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==
-
-builtins@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/builtins/-/builtins-5.0.1.tgz#87f6db9ab0458be728564fa81d876d8d74552fa9"
-  integrity sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==
-  dependencies:
-    semver "^7.0.0"
-
 bytes@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
@@ -2747,6 +2735,14 @@ engine.io@~6.1.0:
     engine.io-parser "~5.0.3"
     ws "~8.2.3"
 
+enhanced-resolve@^5.15.0:
+  version "5.16.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.16.0.tgz#65ec88778083056cb32487faa9aef82ed0864787"
+  integrity sha512-O+QWCviPNSSLAD9Ucn8Awv+poAkqn3T1XY5/N7kR7rQO9yfSGWkYZDwpJ+iKF7B8rxaQKWngSqACpgzeapSyoA==
+  dependencies:
+    graceful-fs "^4.2.4"
+    tapable "^2.2.0"
+
 entities@^1.1.1, entities@~1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
@@ -3076,21 +3072,18 @@ eslint-plugin-mdx@3.1.5:
     unified "^11.0.4"
     vfile "^6.0.1"
 
-eslint-plugin-n@16.6.2:
-  version "16.6.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-16.6.2.tgz#6a60a1a376870064c906742272074d5d0b412b0b"
-  integrity sha512-6TyDmZ1HXoFQXnhCTUjVFULReoBPOAjpuiKELMkeP40yffI/1ZRO+d9ug/VC6fqISo2WkuIBk3cvuRPALaWlOQ==
+eslint-plugin-n@17.2.0:
+  version "17.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-17.2.0.tgz#a47baac8e9581c8aeafe2555f6014f2904709de4"
+  integrity sha512-XBkFQxjTFKy9oc925ezHcDoZ8VLdGfxRkdZf0poR4TjC+zvm28pG2Tc7ZZpD1/UxSAzbw6Zz0WpnpUX3KruAAA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.4.0"
-    builtins "^5.0.1"
+    enhanced-resolve "^5.15.0"
     eslint-plugin-es-x "^7.5.0"
     get-tsconfig "^4.7.0"
-    globals "^13.24.0"
+    globals "^14.0.0"
     ignore "^5.2.4"
-    is-builtin-module "^3.2.1"
-    is-core-module "^2.12.1"
-    minimatch "^3.1.2"
-    resolve "^1.22.2"
+    minimatch "^9.0.0"
     semver "^7.5.3"
 
 eslint-plugin-prettier@5.1.3:
@@ -3978,12 +3971,17 @@ global-prefix@^3.0.0:
     kind-of "^6.0.2"
     which "^1.3.1"
 
-globals@^13.19.0, globals@^13.20.0, globals@^13.24.0:
+globals@^13.19.0, globals@^13.20.0:
   version "13.24.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-13.24.0.tgz#8432a19d78ce0c1e833949c36adb345400bb1171"
   integrity sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==
   dependencies:
     type-fest "^0.20.2"
+
+globals@^14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-14.0.0.tgz#898d7413c29babcf6bafe56fcadded858ada724e"
+  integrity sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==
 
 globalthis@^1.0.3:
   version "1.0.3"
@@ -4058,10 +4056,10 @@ got@^5.0.0:
     unzip-response "^1.0.2"
     url-parse-lax "^1.0.0"
 
-graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
-  integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
+graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
+  version "4.2.11"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
+  integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
 "graceful-readlink@>= 1.0.0":
   version "1.0.1"
@@ -4601,13 +4599,6 @@ is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-is-builtin-module@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-3.2.1.tgz#f03271717d8654cfcaf07ab0463faa3571581169"
-  integrity sha512-BSLE3HnV2syZ0FK0iMA/yUGplUeMmNz4AW5fnTunbCIqZi4vG3WjJT9FHMy5D69xmAYBHXQhJdALdpwVxV501A==
-  dependencies:
-    builtin-modules "^3.3.0"
-
 is-bzip2@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-bzip2/-/is-bzip2-1.0.0.tgz#5ee58eaa5a2e9c80e21407bedf23ae5ac091b3fc"
@@ -4625,7 +4616,7 @@ is-ci@3.0.1:
   dependencies:
     ci-info "^3.2.0"
 
-is-core-module@^2.12.1, is-core-module@^2.13.0, is-core-module@^2.13.1:
+is-core-module@^2.13.0, is-core-module@^2.13.1:
   version "2.13.1"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.13.1.tgz#ad0d7532c6fea9da1ebdc82742d74525c6273384"
   integrity sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==
@@ -7915,7 +7906,7 @@ resolve@1.1.x:
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
   integrity sha1-IDEU2CrSxe2ejgQRs5ModeiJ6Xs=
 
-resolve@^1.1.7, resolve@^1.10.0, resolve@^1.22.2, resolve@^1.22.4:
+resolve@^1.1.7, resolve@^1.10.0, resolve@^1.22.4:
   version "1.22.8"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.8.tgz#b6c87a9f2aa06dfab52e3d70ac8cde321fa5a48d"
   integrity sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==
@@ -8107,7 +8098,7 @@ semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.0.0, semver@^7.3.5, semver@^7.3.7, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0:
+semver@^7.3.5, semver@^7.3.7, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d"
   integrity sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==
@@ -9007,6 +8998,11 @@ table@^6.8.1:
     slice-ansi "^4.0.0"
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
+
+tapable@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
+  integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
 tar-stream@^1.1.1:
   version "1.6.2"
