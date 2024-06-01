@@ -287,10 +287,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/eslint-config@4.0.185":
-  version "4.0.185"
-  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-4.0.185.tgz#6f288a1da8431f4fbedbee3b59d984fc770009b6"
-  integrity sha512-44GbHG6rEVbE12ZGli9SLisGnT5S6dqv4TFVgeJdBJ1jYoAz5hN+gAOGKvlFgVSPdkh/gmmuD4WPNPR8Tlp52g==
+"@newhighsco/eslint-config@4.0.186":
+  version "4.0.186"
+  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-4.0.186.tgz#4fece6a2208880f20d0eedcc0eb791e58807f142"
+  integrity sha512-fha1komeZZDJA7DVWkPaBfeDxNflT/+6EiMNijdduLRtuu+qusK6lC5jn8pHNJYKGN8wmj30eZPZs/dke9tMQA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.11.0"
     "@typescript-eslint/parser" "7.11.0"
@@ -314,10 +314,10 @@
     eslint-plugin-testing-library "6.2.2"
     eslint-plugin-tsc "2.0.0"
 
-"@newhighsco/prettier-config@2.1.22":
-  version "2.1.22"
-  resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.1.22.tgz#df8ff8a50c84f41101659a04dc7c2319c68cfdd5"
-  integrity sha512-/1YzXv+HnU5B51PrgIxCkUfjtuNBd2+kM2SlSyECabYmVzt6zIog5IWAX9BIWdCdAVZEzRvp6JD9KWOWAvP0Yw==
+"@newhighsco/prettier-config@2.1.23":
+  version "2.1.23"
+  resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.1.23.tgz#e9edaa233b488e8cc8866d511cb031c676374142"
+  integrity sha512-ZM5hBhUva6K/dCSs3UwnANl9LSY5qnTgMBoJHwiRYWsABpVpRgfQCalpSy3eMkgFd7dIAOLYbzbOP3Q4akfBXw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
