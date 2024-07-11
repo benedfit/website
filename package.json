@@ -29,7 +29,7 @@
     "configury": "0.3.0",
     "front-matter": "4.0.2",
     "fs-extra": "11.2.0",
-    "glob": "10.4.3",
+    "glob": "10.4.5",
     "html-minifier": "4.0.0",
     "jade": "1.11.0",
     "lodash.merge": "4.6.2",
