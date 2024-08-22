@@ -13,7 +13,7 @@
     "authorName": "Ben Edwards",
     "authorEmail": "hello@%domain%",
     "authorHandle": "benedfit",
-    "authorUrl": "https://plus.google.com/+%authorHandle%",
+    "authorUrl": "%url%",
     "authorImage": "/img/ben-edwards.jpg"
   }
 }
