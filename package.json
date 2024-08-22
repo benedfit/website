@@ -82,7 +82,7 @@
   "prettier": "@newhighsco/prettier-config",
   "renovate": {
     "extends": [
-      "@newhighsco"
+      "local>newhighsco/.github:renovate-config"
     ],
     "baseBranches": [
       "main"
