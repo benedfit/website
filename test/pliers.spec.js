@@ -8,8 +8,6 @@ let pliers
 
 describe('pliers', function () {
   beforeEach(function (done) {
-    this.timeout(0)
-
     pliers = createPliers()
 
     require(join(__dirname, '/../pliers'))(pliers, config)
