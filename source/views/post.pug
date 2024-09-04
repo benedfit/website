@@ -1,10 +1,9 @@
----
-ogtype: article
----
 extend default
 
 block append variables
   -
+    page.ogtype = 'article'
+
     var year = page.date.format('YYYY')
       , month = page.date.format('MM')
       , monthName = page.date.format('MMMM')
