@@ -78,6 +78,14 @@
     "*.pug": "yarn lint-staged:pug"
   },
   "prettier": "@newhighsco/prettier-config",
+  "pugLintConfig": {
+    "extends": "clock",
+    "validateExtensions": null,
+    "requireSpaceAfterCodeOperator": [
+      "=",
+      "!="
+    ]
+  },
   "renovate": {
     "extends": [
       "local>newhighsco/.github:renovate-config"
