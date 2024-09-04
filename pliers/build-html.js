@@ -6,7 +6,7 @@ const { mkdirp } = require('mkdirp')
 const fs = require('fs-extra')
 const merge = require('lodash.merge')
 const frontmatter = require('front-matter')
-const jade = require('jade')
+const pug = require('pug')
 const namp = require('namp')
 const moment = require('moment')
 const minify = require('html-minifier').minify
@@ -99,14 +99,14 @@ function createTask(pliers, config) {
 
           if (page.layout) {
             if (!page.parsed) {
-              options.contents = jade.render(page.contents, options)
+              options.contents = pug.render(page.contents, options)
             } else {
               options.contents = page.contents
             }
 
-            data = jade.renderFile(page.layoutPath, options)
+            data = pug.renderFile(page.layoutPath, options)
           } else {
-            data = jade.render(page.contents, options)
+            data = pug.render(page.contents, options)
           }
 
           if (ext !== '.xml')
@@ -161,7 +161,7 @@ function createTask(pliers, config) {
         '..',
         config.src,
         'views',
-        page.layout + '.jade'
+        page.layout + '.pug'
       )
 
       const data = fs.readFileSync(page.layoutPath, 'utf8')
@@ -191,7 +191,7 @@ function createTask(pliers, config) {
       if (ext === '.md') {
         dest = dest.replace(ext, '.html')
       } else {
-        dest = dest.replace('.jade', '')
+        dest = dest.replace('.pug', '')
       }
 
       return dest

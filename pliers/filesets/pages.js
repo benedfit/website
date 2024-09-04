@@ -9,6 +9,6 @@ function createFileset(pliers, config) {
     join(path, '_**/**'),
     join(path, '**/_*'),
     join(path, 'stylus/**/*.styl'),
-    join(path, 'views/**/*.jade')
+    join(path, 'views/**/*.pug')
   ])
 }

@@ -21,7 +21,7 @@ describe('pliers', function () {
       true
     )
     assert.equal(
-      Object.prototype.hasOwnProperty.call(pliers.filesets, 'jade'),
+      Object.prototype.hasOwnProperty.call(pliers.filesets, 'pug'),
       true
     )
     assert.equal(
