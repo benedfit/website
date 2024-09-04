@@ -111,7 +111,7 @@ p q r s t u v w x y z { | } ~</pre>
 
 `<div class="example">This is what inline code looks like.</div>`
 
-```
+```html
 <script>
   // This is what a highlighted code block looks like
   // Sample script

@@ -10,6 +10,7 @@ const pug = require('pug')
 const namp = require('namp')
 const moment = require('moment')
 const minify = require('html-minifier').minify
+const { highlight } = require('highlight.js')
 
 function createTask(pliers, config) {
   pliers('buildHtml', function (done) {
@@ -38,7 +39,7 @@ function createTask(pliers, config) {
             merge(page, properties.attributes)
 
             if (ext === '.md') {
-              page.contents = namp(properties.body).html
+              page.contents = parseMarkdown(properties.body)
               parseExcerpt(page, properties.body)
               page.parsed = true
             } else {
@@ -147,11 +148,17 @@ function createTask(pliers, config) {
       }
     }
 
+    function parseMarkdown(markdown) {
+      return namp(markdown, {
+        highlight: (code, language) => highlight(code, { language }).value
+      }).html
+    }
+
     function parseExcerpt(page, body) {
       if (page.excerpt) {
-        page.excerpt = namp(page.excerpt).html
+        page.excerpt = parseMarkdown(page.excerpt)
       } else {
-        page.excerpt = namp(body.split('\n')[0]).html
+        page.excerpt = parseMarkdown(body.split('\n')[0])
       }
     }
 
