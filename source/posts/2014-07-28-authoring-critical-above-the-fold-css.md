@@ -38,7 +38,7 @@ Armed with the results of the inspection process I now need to modify my HTML to
 
 Let's imagine that one of my HTML documents was as follows:
 
-```
+```html
 <html>
   <head>
     <link rel="stylesheet" href="things.css">
@@ -57,14 +57,14 @@ Let's imagine that one of my HTML documents was as follows:
 
 And that `things.css` contained the following:
 
-```
+```css
 .thing1 { color: red; }
 .thing2 { background: green; }
 ```
 
 Using the results of the inspection process I can now in-line the critical, above-the-fold, portion of my CSS in the `head` like so:
 
-```
+```html
 <html>
   <head>
     <style>
@@ -80,7 +80,7 @@ Using the results of the inspection process I can now in-line the critical, abov
 
 Pair this with [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS) and I can asynchronously load the remaining below-the-fold CSS like this:
 
-```
+```html
     ...
     <div class="thing2">
       Hey, I'm totally below-the-fold
