@@ -47,7 +47,7 @@
     "@commitlint/cli": "19.5.0",
     "@newhighsco/commitlint-config": "1.1.43",
     "@newhighsco/editor-config": "1.2.0",
-    "@newhighsco/eslint-config": "4.0.219",
+    "@newhighsco/eslint-config": "4.0.220",
     "@newhighsco/prettier-config": "2.1.26",
     "concurrently": "9.0.1",
     "eslint": "8.57.1",
