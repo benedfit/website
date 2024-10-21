@@ -39,7 +39,7 @@
     "namp": "0.2.26",
     "pug": "3.0.3",
     "rfg-api": "0.5.3",
-    "stylus": "0.63.0",
+    "stylus": "0.64.0",
     "stylus-mixins": "0.4.0",
     "stylus-renderer": "1.1.0"
   },
