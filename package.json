@@ -21,6 +21,8 @@
     "format:css": "yarn lint:css --fix"
   },
   "dependencies": {
+    "@realfavicongenerator/generate-favicon": "0.4.16",
+    "@realfavicongenerator/image-adapter-node": "0.4.16",
     "any-newer-files": "0.0.4",
     "async": "3.2.6",
     "autoprefixer-stylus": "1.0.0",
@@ -37,7 +39,6 @@
     "moment": "2.30.1",
     "namp": "0.2.26",
     "pug": "3.0.3",
-    "rfg-api": "0.5.3",
     "stylus": "0.64.0",
     "stylus-mixins": "0.4.0",
     "stylus-renderer": "1.1.0"
