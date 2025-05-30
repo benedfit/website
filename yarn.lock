@@ -6329,11 +6329,6 @@ jstransformer-uglify-js@1.2.0:
   dependencies:
     uglify-js "^2.8.10"
 
-jstransformer-verbatim@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/jstransformer-verbatim/-/jstransformer-verbatim-1.1.1.tgz#8cda3f804146ac5f0f70bcc5b60a0cc79f8c4d94"
-  integrity sha512-UbvK0GYRQmw3UU1KZ83XpaflwiyM7Mo+AxmWVIdp/ZNi5AX3WKkkE//1NXLq8TFJjjIZRks8rUWLqugfVVq8IA==
-
 jstransformer@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/jstransformer/-/jstransformer-1.0.0.tgz#ed8bf0921e2f3f1ed4d5c1a44f68709ed24722c3"
