@@ -5,73 +5,67 @@ const fs = require('fs')
 const { globSync } = require('glob')
 const { join } = require('path')
 const pliersImagemin = require('pliers-imagemin')
-const rfg = require('rfg-api').init()
+const {
+  generateFaviconFiles,
+  generateFaviconHtml
+} = require('@realfavicongenerator/generate-favicon')
+const {
+  getNodeImageAdapter,
+  loadAndConvertToSvg
+} = require('@realfavicongenerator/image-adapter-node')
 
 function createTask(pliers, config) {
-  const apiKey = 'b369276b27fde847136ab1453e5953e125d6d0b6'
-
-  pliers('buildFavicon', function (done) {
+  pliers('buildFavicon', async function (done) {
     const src = join(__dirname, '/../', config.src)
     const dest = src + '/img'
     const sourceFile = dest + '/_favicon.png'
-    const dataFile = src + '/_favicon.json'
+    const dataFile = src + '/_favicon.html'
 
     if (!anyNewerFiles([sourceFile], [dataFile])) {
       pliers.logger.warn('No Favicon changes found. No recompile required.')
       return done()
     }
 
-    const request = rfg.createRequest({
-      apiKey,
-      masterPicture: sourceFile,
-      iconsPath: '/img/',
-      design: {
-        ios: { pictureAspect: 'noChange' },
-        desktopBrowser: {},
-        windows: {
-          pictureAspect: 'noChange',
+    const masterIcon = { icon: await loadAndConvertToSvg(sourceFile) }
+    const imageAdapter = await getNodeImageAdapter()
+    const transformation = { type: 'none' }
+    const settings = {
+      icon: {
+        desktop: {
+          regularIconTransformation: transformation,
+          darkIconType: 'none'
+        },
+        touch: { transformation, appTitle: config.title },
+        webAppManifest: {
+          transformation,
           backgroundColor: config.metaTileColor,
-          onConflict: 'override'
-        },
-        androidChrome: {
-          pictureAspect: 'noChange',
           themeColor: config.metaTileColor,
-          manifest: {
-            name: config.title,
-            display: 'browser',
-            orientation: 'notSet',
-            onConflict: 'override',
-            declared: true
-          }
-        },
-        safariPinnedTab: {
-          pictureAspect: 'blackAndWhite',
-          threshold: 50,
-          themeColor: config.metaTileColor
+          name: config.title,
+          shortName: config.title
         }
       },
-      settings: { scalingAlgorithm: 'Mitchell', errorOnImageTooSmall: false }
+      path: '/img/'
+    }
+    const icons = await generateFaviconFiles(masterIcon, settings, imageAdapter)
+    const { markups } = generateFaviconHtml(settings)
+
+    fs.writeFileSync(dataFile, markups.join('\n'))
+
+    Object.entries(icons).forEach(([file, data]) => {
+      fs.writeFileSync(join(src, file), data)
     })
 
-    rfg.generateFavicon(request, src, function (err, data) {
+    const images = globSync(src + '/*.{png,svg}')
+
+    pliersImagemin(
+      pliers,
+      images
+    )(err => {
       if (err) return done(err)
 
-      const images = globSync(src + '/*.{png,svg}')
+      images.forEach(file => fs.renameSync(file, file.replace(src, dest)))
 
-      fs.writeFileSync(dataFile, JSON.stringify(data))
-
-      pliersImagemin(
-        pliers,
-        images
-      )(function (err) {
-        if (err) return done(err)
-
-        images.forEach(function (file) {
-          fs.renameSync(file, file.replace(src, dest))
-        })
-
-        done()
-      })
+      done()
     })
   })
 }
