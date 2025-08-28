@@ -90,9 +90,6 @@
     "extends": [
       "local>newhighsco/.github:renovate-config"
     ],
-    "baseBranches": [
-      "main"
-    ],
     "reviewers": [
       "@benedfit"
     ]
