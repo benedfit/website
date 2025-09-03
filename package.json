@@ -86,14 +86,6 @@
       "!="
     ]
   },
-  "renovate": {
-    "extends": [
-      "local>newhighsco/.github:renovate-config"
-    ],
-    "reviewers": [
-      "@benedfit"
-    ]
-  },
   "stylelint": {
     "extends": [
       "stylelint-stylus/standard"
