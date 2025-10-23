@@ -12,9 +12,7 @@ function createTask(pliers, config) {
   }
 
   const browserSyncConfig = {
-    server: {
-      baseDir: config.dest
-    },
+    server: { baseDir: config.dest },
     open: openBrowser
   }
 

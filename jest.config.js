@@ -1,3 +1,1 @@
-module.exports = {
-  coverageReporters: ['json', 'text-summary']
-}
+module.exports = { coverageReporters: ['json', 'text-summary'] }
