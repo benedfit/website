@@ -13,7 +13,7 @@
     "lint:js": "yarn lint-staged:js --cache .",
     "lint:css": "yarn lint-staged:css --cache '**/*.styl'",
     "lint:pug": "yarn lint-staged:pug .",
-    "lint-staged:js": "eslint --ignore-path .gitignore",
+    "lint-staged:js": "eslint",
     "lint-staged:css": "stylelint --ignore-path .gitignore",
     "lint-staged:pug": "pug-lint",
     "format": "concurrently yarn:format:*",
@@ -47,10 +47,10 @@
     "@commitlint/cli": "20.1.0",
     "@newhighsco/commitlint-config": "1.1.46",
     "@newhighsco/editor-config": "1.2.0",
-    "@newhighsco/eslint-config": "4.2.9",
-    "@newhighsco/prettier-config": "2.1.32",
+    "@newhighsco/eslint-config": "5.1.1",
+    "@newhighsco/prettier-config": "2.3.0",
     "concurrently": "9.2.1",
-    "eslint": "8.57.1",
+    "eslint": "9.38.0",
     "husky": "9.1.7",
     "jest": "30.2.0",
     "lint-staged": "16.2.5",
@@ -63,11 +63,6 @@
     "stylelint-stylus": "1.0.0"
   },
   "commitlint": {
-    "extends": [
-      "@newhighsco"
-    ]
-  },
-  "eslintConfig": {
     "extends": [
       "@newhighsco"
     ]
