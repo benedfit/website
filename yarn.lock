@@ -1060,26 +1060,19 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.2.9.tgz#d229a7b7f9dac167a156992ef23c7f023653f53b"
   integrity sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==
 
-"@realfavicongenerator/generate-favicon@0.5.0":
+"@realfavicongenerator/generate-favicon@0.5.0", "@realfavicongenerator/generate-favicon@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@realfavicongenerator/generate-favicon/-/generate-favicon-0.5.0.tgz#905d989e8b7e80de246c8def54414dd32580b78b"
   integrity sha512-wyzpjaYGaofYEvJLJJDm4GZ8kBDAlO6oclJXQ2GAhaZaBhWqpFgWrzHktneL0ws/QK6iPZao09Yt83HNPLpkrA==
   dependencies:
     "@svgdotjs/svg.js" "^3.2.0"
 
-"@realfavicongenerator/generate-favicon@^0.4.16":
-  version "0.4.16"
-  resolved "https://registry.yarnpkg.com/@realfavicongenerator/generate-favicon/-/generate-favicon-0.4.16.tgz#9dfaf79b6ae2c9d4794a9c23371a9e8226e69f89"
-  integrity sha512-HqRJwYLkBW63wA1IUzFwyYGMR37L4Sn2dW28AQ7QCIDYGP5Vh67A77vJhvZFIoKx2/uos53ugTTQ4CAlzNeVrg==
+"@realfavicongenerator/image-adapter-node@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@realfavicongenerator/image-adapter-node/-/image-adapter-node-0.5.0.tgz#b374f6a50751e10b2d0d0209863aac6b713fed12"
+  integrity sha512-mOa79b0OJuoBKHaksc/CuF88MK6+5E1G1O1SioIJP7YVN8c6pJlixAuoghEyDuOQdTrKL6OKdnnermLbRNeQJA==
   dependencies:
-    "@svgdotjs/svg.js" "^3.2.0"
-
-"@realfavicongenerator/image-adapter-node@0.4.16":
-  version "0.4.16"
-  resolved "https://registry.yarnpkg.com/@realfavicongenerator/image-adapter-node/-/image-adapter-node-0.4.16.tgz#20e0657610f12a03b59af6f10c200e1b0b394521"
-  integrity sha512-0ypY1NVIF0RVPU59Z3mQbbLEUyU/WkEOpTcmHVrdhP6Rg6tSkQEjWN7iYaJfYvGzX1E7I4OnssQgK1uFiSa6aA==
-  dependencies:
-    "@realfavicongenerator/generate-favicon" "^0.4.16"
+    "@realfavicongenerator/generate-favicon" "^0.5.0"
     "@svgdotjs/svg.js" "^3.2.0"
     sharp "^0.32.6"
     svgdom "^0.1.19"
