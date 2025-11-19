@@ -31,7 +31,7 @@
     "configury": "0.3.0",
     "front-matter": "4.0.2",
     "fs-extra": "11.3.2",
-    "glob": "12.0.0",
+    "glob": "13.0.0",
     "html-minifier": "4.0.0",
     "jstransformer-uglify-js": "1.2.0",
     "lodash.merge": "4.6.2",
