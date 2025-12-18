@@ -30,7 +30,7 @@
     "clean-css": "5.3.3",
     "configury": "0.3.0",
     "front-matter": "4.0.2",
-    "fs-extra": "11.3.2",
+    "fs-extra": "11.3.3",
     "glob": "13.0.0",
     "html-minifier": "4.0.0",
     "jstransformer-uglify-js": "1.2.0",
