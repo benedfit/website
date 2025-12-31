@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@realfavicongenerator/generate-favicon": "0.6.0",
-    "@realfavicongenerator/image-adapter-node": "0.5.0",
+    "@realfavicongenerator/image-adapter-node": "0.6.0",
     "any-newer-files": "0.0.4",
     "async": "3.2.6",
     "autoprefixer-stylus": "1.0.0",
