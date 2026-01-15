@@ -1,10 +1,8 @@
-// stylelint-disable-next-line stylus/selector-type-no-unknown
-$hr
+$hr =
   border 0
   border-image linear-gradient(90deg, $color--gradient) 100% 1
 
-// stylelint-disable-next-line stylus/selector-type-no-unknown
-$vr
+$vr =
   border 0
   border-image linear-gradient($color--gradient) 1 100%
 
@@ -28,7 +26,7 @@ p
   margin 0 0 1.5em
 
 h1
-  @extend $hr
+  {$hr}
   border-bottom 5px solid
   border-color $color--grey-light
   border-color rgba($color--grey-light, 0.5)
@@ -92,7 +90,7 @@ h6
     line-height 1.2
 
 hr
-  @extend $hr
+  {$hr}
   border-bottom 1px solid
   border-color $color--grey-light
   border-color rgba($color--grey-light, 0.5)
@@ -150,7 +148,7 @@ ol
     list-style decimal
 
 blockquote
-  @extend $vr
+  {$vr}
   border-left 1px solid
   border-color $color--grey-light
   border-color rgba($color--grey-light, 0.5)
