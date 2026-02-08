@@ -21,7 +21,7 @@
     "format:css": "yarn lint:css --fix"
   },
   "dependencies": {
-    "@realfavicongenerator/generate-favicon": "0.6.0",
+    "@realfavicongenerator/generate-favicon": "0.6.2",
     "@realfavicongenerator/image-adapter-node": "0.6.1",
     "any-newer-files": "0.0.4",
     "async": "3.2.6",
