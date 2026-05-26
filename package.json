@@ -9,14 +9,11 @@
     "build": "pliers build",
     "pretest": "yarn lint",
     "test": "jest --coverage",
-    "lint": "concurrently yarn:lint:*",
-    "lint:js": "yarn lint-staged:js --cache .",
-    "lint:css": "yarn lint-staged:css --cache '**/*.styl'",
-    "lint:pug": "yarn lint-staged:pug .",
-    "lint-staged:js": "eslint",
-    "lint-staged:css": "stylelint --ignore-path .gitignore",
-    "lint-staged:pug": "pug-lint",
-    "format": "concurrently yarn:format:*",
+    "lint": "concurrently 'yarn:lint:*'",
+    "lint:js": "eslint --cache .",
+    "lint:css": "stylelint --ignore-path .gitignore --cache '**/*.styl'",
+    "lint:pug": "pug-lint .",
+    "format": "concurrently 'yarn:format:*'",
     "format:js": "yarn lint:js --fix",
     "format:css": "yarn lint:css --fix"
   },
@@ -45,9 +42,10 @@
   },
   "devDependencies": {
     "@commitlint/cli": "21.0.1",
-    "@newhighsco/commitlint-config": "1.2.0",
+    "@newhighsco/commitlint-config": "1.3.0",
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/eslint-config": "7.1.2",
+    "@newhighsco/lint-staged-config": "1.1.0",
     "@newhighsco/prettier-config": "2.3.5",
     "concurrently": "9.2.1",
     "eslint": "10.4.0",
@@ -66,11 +64,6 @@
     "extends": [
       "@newhighsco"
     ]
-  },
-  "lint-staged": {
-    "*.{js?(on)}": "yarn lint-staged:js --fix",
-    "*.css": "yarn lint-staged:css --fix",
-    "*.pug": "yarn lint-staged:pug"
   },
   "prettier": "@newhighsco/prettier-config",
   "pugLintConfig": {
