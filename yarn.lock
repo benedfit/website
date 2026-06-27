@@ -1107,10 +1107,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/lint-staged-config/-/lint-staged-config-1.1.0.tgz#7e5da82f11e68319825296c26b080404920edfb1"
   integrity sha512-x4z0IwG7LGePcCas4Ht/VKzEG0beHHBsU5WG91EICKF/eP/6Ckxvdz/l+30HKCKkTayRCZIQ425J4s43HGBxcg==
 
-"@newhighsco/prettier-config@2.3.7":
-  version "2.3.7"
-  resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.3.7.tgz#3924955be02d995e41e45af6f6ff2704338fb4f5"
-  integrity sha512-muFRWjl1vqTW8UMULdJSQK57rvQjeBDoLt2ff9rvxDbg8pMZuIcbJ/7iPncej5ftICDXFopoj1Q/y/WikiQPuQ==
+"@newhighsco/prettier-config@2.3.8":
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.3.8.tgz#7b1a49cc44171ed97962e2da7c8bc3fdefa2edfb"
+  integrity sha512-Y2Ns97aW0Akfr6KB4zC7EO/ZNglNGtQ8aXeRB6El9N/FTMkpqFAzGp6/rah74b4RcpTaTYz8/MlRbMh2vQw6/Q==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
