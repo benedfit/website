@@ -41,7 +41,7 @@
     "stylus-renderer": "1.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "21.1.0",
+    "@commitlint/cli": "21.2.0",
     "@newhighsco/commitlint-config": "1.3.3",
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/eslint-config": "7.1.16",
