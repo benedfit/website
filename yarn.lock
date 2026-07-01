@@ -567,13 +567,13 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-10.0.1.tgz#1e8a876f50117af8ab67e47d5ad94d38d6622583"
   integrity sha512-zeR9k5pd4gxjZ0abRoIaxdc7I3nDktoXZk2qOv9gCNWx3mVwEn32VRhyLaRsDiJjTs0xq/T8mfPtyuXu7GWBcA==
 
-"@eslint/json@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@eslint/json/-/json-2.0.0.tgz#3e6eb59de8d89f449bb1707a2e0187a47edd15c9"
-  integrity sha512-P32ZJMIopNWQd1SFhd0tgjfA/hgzUuVSqHmMi2273QaLWHWimXq6V+qL4DNKnjGzO/aNECtYW+rEJ/pWB6uP+w==
+"@eslint/json@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@eslint/json/-/json-2.0.1.tgz#90dce53fe51996bd7e3abfe96aaa755381ea02ea"
+  integrity sha512-Thz2j92ceUF3Bq/0TuWb3MWn3Z+Cwc8k5ptF0fakl2D4Mp8mSx07Xr1aQM4R5NoihzarWUdxfOmQ8DesGy4jOg==
   dependencies:
     "@eslint/core" "^1.2.1"
-    "@eslint/plugin-kit" "^0.7.1"
+    "@eslint/plugin-kit" "^0.7.2"
     "@humanwhocodes/momoa" "^3.3.10"
     natural-compare "^1.4.0"
 
@@ -582,7 +582,7 @@
   resolved "https://registry.yarnpkg.com/@eslint/object-schema/-/object-schema-3.0.5.tgz#88e9bf4d11d2b19c082e78ebe7ce88724a5eb091"
   integrity sha512-vqTaUEgxzm+YDSdElad6PiRoX4t8VGDjCtt05zn4nU810UIx/uNEV7/lZJ6KwFThKZOzOxzXy48da+No7HZaMw==
 
-"@eslint/plugin-kit@^0.7.1", "@eslint/plugin-kit@^0.7.2":
+"@eslint/plugin-kit@^0.7.2":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@eslint/plugin-kit/-/plugin-kit-0.7.2.tgz#4b0962f3f2c7ce8bc98b3ecfe34525c09d2cb729"
   integrity sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==
@@ -1086,14 +1086,14 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/eslint-config@7.1.16":
-  version "7.1.16"
-  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-7.1.16.tgz#b29e9622f59d0571c401c65c26cc569e5c170ef0"
-  integrity sha512-BFQaq9Wo1QykcsP9ZJ7smctTE8sMTFinOigLSxq8V4F3fvv/VJ78mN4d+6G0sUOvz8U//pb4ZD04ho+oxAD5rQ==
+"@newhighsco/eslint-config@7.1.17":
+  version "7.1.17"
+  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-7.1.17.tgz#4f9ab72ff1faacd492539b26e262554b2db6e1a6"
+  integrity sha512-wIAA7zrCccpVU0+Pf7yE9cl9qTA/DuB84EoVfgnIScttcGYmWeSbfKnf1FnRnogcm7tzNYXwGhNJ+jQhj4GD/Q==
   dependencies:
     "@eslint/compat" "2.1.0"
     "@eslint/js" "10.0.1"
-    "@eslint/json" "2.0.0"
+    "@eslint/json" "2.0.1"
     eslint-config-prettier "10.1.8"
     eslint-plugin-cypress "6.4.2"
     eslint-plugin-import "2.32.0"
