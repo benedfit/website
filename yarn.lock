@@ -1107,10 +1107,10 @@
     find-up "8.0.0"
     typescript-eslint "8.64.0"
 
-"@newhighsco/lint-staged-config@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@newhighsco/lint-staged-config/-/lint-staged-config-1.1.0.tgz#7e5da82f11e68319825296c26b080404920edfb1"
-  integrity sha512-x4z0IwG7LGePcCas4Ht/VKzEG0beHHBsU5WG91EICKF/eP/6Ckxvdz/l+30HKCKkTayRCZIQ425J4s43HGBxcg==
+"@newhighsco/lint-staged-config@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@newhighsco/lint-staged-config/-/lint-staged-config-1.1.1.tgz#8e93c36e99717fa1fb5557c4906c4ababf4de7da"
+  integrity sha512-9AqiyiCcl5AtAoQ1H0V/in+WDJTeDoGbjepnF9jBddpueyxGmY316k8UaYnFdWKWgvfsfr7McQ4hFKehfM5hlQ==
 
 "@newhighsco/prettier-config@2.3.12":
   version "2.3.12"
