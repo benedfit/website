@@ -51,7 +51,7 @@
     "eslint": "10.7.0",
     "husky": "9.1.7",
     "jest": "30.4.2",
-    "lint-staged": "17.1.1",
+    "lint-staged": "17.2.0",
     "pliers": "1.2.1",
     "pliers-imagemin": "3.0.2",
     "prettier": "3.9.6",
