@@ -1074,10 +1074,10 @@
   dependencies:
     "@tybys/wasm-util" "^0.10.3"
 
-"@newhighsco/commitlint-config@1.3.4":
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.3.4.tgz#cf0d7d7f48f4b85e6b6cb8767f5ff93c9aa2867e"
-  integrity sha512-5rKSKFl9TLSRcObfY0G2zYJIMm7FiG9xLdQliKA+zjSMicY9J94VelNuouw3YzlbVAGj/790Bm3kmRQ0EM0RHQ==
+"@newhighsco/commitlint-config@1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.3.5.tgz#1b194b887fa2fc60384160fabc608db3623ee291"
+  integrity sha512-zHQNPLBvK2c4kiJpO0VpY8aWnGb8pnCM2bCN6QxC5dlkMCA+N7cmLW67+z+Ru4drC0Xzf353W2Z1/1n4ZI9zyg==
   dependencies:
     "@commitlint/config-conventional" "21.2.0"
 
@@ -1107,15 +1107,15 @@
     find-up "8.0.0"
     typescript-eslint "8.65.0"
 
-"@newhighsco/lint-staged-config@1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@newhighsco/lint-staged-config/-/lint-staged-config-1.1.3.tgz#63a3f8d445fe1783dd43fd6b0c25582074584e9b"
-  integrity sha512-uvTpN5GJLYalGH2UZPSam6CRQITfK8DjK3b4niAqSHi/f8TBcSl1+ajv5vzNDopVGJf3sYOMPxlmFLzOdDKGYg==
+"@newhighsco/lint-staged-config@1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@newhighsco/lint-staged-config/-/lint-staged-config-1.1.4.tgz#980c83a8320dc322b5f7cc46a2889cc56c5bb647"
+  integrity sha512-z6gd4sFKwJ8tceg7iceU7xU2UaXERfYzJIXm2bGNpQi53CMdv3nyBHSzCMeW9Nj4cB8t84ZB5Y+Y+PwBODzhjA==
 
-"@newhighsco/prettier-config@2.3.13":
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.3.13.tgz#34e03528766f3fc7ffa4048e3f8621f801ea951c"
-  integrity sha512-r6s+jtWugp4IFJd5AnDMJ59NJ+JtSoEN3RRclN6+n2FQfdOVXXPxF2GqYB/67ApG6PEgapzexnKvtDJYS8V5SQ==
+"@newhighsco/prettier-config@2.3.14":
+  version "2.3.14"
+  resolved "https://registry.yarnpkg.com/@newhighsco/prettier-config/-/prettier-config-2.3.14.tgz#d84557f92f9330d5f36aea6e20fabb3e3ae7aee8"
+  integrity sha512-BQaDJ0BhFhahgOFDsvJlOme3ueWeOjZbF6yNgoBiXTAoePxF2XqVhv6bPxH4J/FmDm0JxkyP9lLIjafTuff7wQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
