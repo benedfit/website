@@ -307,15 +307,7 @@
     tinyexec "^1.0.0"
     yargs "^18.0.0"
 
-"@commitlint/config-conventional@21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-21.2.0.tgz#9ce2b1f5a24e94883ed1e4c5530fb1b8c1d531eb"
-  integrity sha512-Qf8WRDVcyVd14if6VTWenebxFbKnVnbzPUJjlzjkyJGeHK2xCGd63Dr1XZzj0plXKQb9P0BfOxoc1HVeCo2BWQ==
-  dependencies:
-    "@commitlint/types" "^21.2.0"
-    conventional-changelog-conventionalcommits "^10.0.0"
-
-"@commitlint/config-conventional@^21.2.2":
+"@commitlint/config-conventional@21.2.2", "@commitlint/config-conventional@^21.2.2":
   version "21.2.2"
   resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-21.2.2.tgz#c8902f3ea1e741f55ec0fc7c177bcdf28ffd0082"
   integrity sha512-NxA37SZviusFUEYOQZ5hNnZ1h7O/KiemPkxjOlpzKJNnWxThiwc6/SaZhaPa8fyLvfRBAywhQhJJk8XESHWlpQ==
@@ -1082,12 +1074,12 @@
   dependencies:
     "@tybys/wasm-util" "^0.10.3"
 
-"@newhighsco/commitlint-config@1.3.5":
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.3.5.tgz#1b194b887fa2fc60384160fabc608db3623ee291"
-  integrity sha512-zHQNPLBvK2c4kiJpO0VpY8aWnGb8pnCM2bCN6QxC5dlkMCA+N7cmLW67+z+Ru4drC0Xzf353W2Z1/1n4ZI9zyg==
+"@newhighsco/commitlint-config@1.3.6":
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.3.6.tgz#2c2d3097ec2274611aee05328a3dec9c40d795fa"
+  integrity sha512-BPY8YZTbf77rXgJzY0hZWCgvvPdBbCLE9oyF+8OSENzDDX/AtopqbeOOdM5xqcFCNtPnaWCMu93Yps6o1xxv9A==
   dependencies:
-    "@commitlint/config-conventional" "21.2.0"
+    "@commitlint/config-conventional" "21.2.2"
 
 "@newhighsco/editor-config@1.2.0":
   version "1.2.0"
