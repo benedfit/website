@@ -1086,10 +1086,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/eslint-config@7.1.38":
-  version "7.1.38"
-  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-7.1.38.tgz#89afbc4c7af8b83ff268c9209b5acde8100bcef5"
-  integrity sha512-4Hl7htCXa7DxMysXxvQMnQGDI1m0kGrWjK3u3XGO0/2GIpQ+RqHKCM30QZB2kikbvkUb7PlxAlmOSbsPt+p31w==
+"@newhighsco/eslint-config@7.1.39":
+  version "7.1.39"
+  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-7.1.39.tgz#9db86ce56e4c60723364a3533937f85d333b54be"
+  integrity sha512-zZMkBdpY64+Zgt+8HQjRDngmRsDkP8Lyofgycdvjb52IUfA3UqGCG7oiu+cEAFxBjkAvAXztKqdJygqcN2IY3g==
   dependencies:
     "@eslint/compat" "2.1.0"
     "@eslint/js" "10.0.1"
@@ -1102,7 +1102,7 @@
     eslint-plugin-react "7.37.5"
     eslint-plugin-react-hooks "7.1.1"
     eslint-plugin-simple-import-sort "14.0.0"
-    eslint-plugin-storybook "10.5.9"
+    eslint-plugin-storybook "10.5.10"
     eslint-plugin-testing-library "7.16.2"
     find-up "8.0.0"
     typescript-eslint "8.67.0"
@@ -3695,10 +3695,10 @@ eslint-plugin-simple-import-sort@14.0.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-14.0.0.tgz#a07d4aa63ebf043e8d55497b4e2a3035bf800849"
   integrity sha512-NUJO0+XFCkk+o5EsAJruTgnfMEpeWrPWeJS15UVF60GgXmqz1BJ9/3hzlvG7lkL8Bubzos5cCLptThbFfPnSMQ==
 
-eslint-plugin-storybook@10.5.9:
-  version "10.5.9"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-10.5.9.tgz#5ea8bfa0e6bc78613f77d4a9f01e8dd28d854bcf"
-  integrity sha512-4Hrqccy/zttV0S/32TSUbqtizzj4sbkgYvv7UzHveH58v96PhrO+fSpOFAqYvzNDzdOU6smKwObFtzX+RZqj4w==
+eslint-plugin-storybook@10.5.10:
+  version "10.5.10"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-10.5.10.tgz#f39999b6f714a29cb31d0c99488d4d157dc16644"
+  integrity sha512-NeOu3axmhNZfRuHRciFH0a/OVgvtAJLRHAwiJjcGkPAcElNmwEPp+pqoiwxytx7kHInz7mVVoBfPwVc8kPmOLw==
   dependencies:
     "@typescript-eslint/types" "^8.60.0"
     "@typescript-eslint/utils" "^8.60.0"
