@@ -48,7 +48,7 @@
     "@newhighsco/lint-staged-config": "1.1.4",
     "@newhighsco/prettier-config": "2.3.14",
     "concurrently": "10.0.5",
-    "eslint": "10.8.1",
+    "eslint": "10.9.0",
     "husky": "9.1.7",
     "jest": "30.4.2",
     "lint-staged": "17.3.0",
