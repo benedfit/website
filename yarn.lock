@@ -1242,10 +1242,10 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.3.6.tgz#3569708bd4be4d8870ba32bf1c456dac81600d97"
   integrity sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==
 
-"@realfavicongenerator/generate-favicon@0.8.4", "@realfavicongenerator/generate-favicon@^0.8.4":
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/@realfavicongenerator/generate-favicon/-/generate-favicon-0.8.4.tgz#ece9bbbee05d19d2eb8c47c485257a0119cfd75d"
-  integrity sha512-Q9BPn+AxFDlxplzig8cIvQQyMi20xU9xohRMA/obj2dhuT0P4HtVA2V6VvYT4kre//PA4ZqkkORSV/DGgcTjYA==
+"@realfavicongenerator/generate-favicon@0.8.6", "@realfavicongenerator/generate-favicon@^0.8.4":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@realfavicongenerator/generate-favicon/-/generate-favicon-0.8.6.tgz#d74e5751142c2981552ac72b79bc785c980afadf"
+  integrity sha512-FMPR/lHv+XRYsqKgNg7UChbhDCzZcd+lJ5KFHxQtid31cOzxT//IuGJxp3KyBxCs7P5d5zrl5r3AnihgIgujCQ==
   dependencies:
     "@svgdotjs/svg.js" "^3.2.0"
 
