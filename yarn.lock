@@ -532,10 +532,10 @@
   resolved "https://registry.yarnpkg.com/@eslint-community/regexpp/-/regexpp-4.12.2.tgz#bccdf615bcf7b6e8db830ec0b8d21c9a25de597b"
   integrity sha512-EriSTlt5OC9/7SXkRSCAhfSxxoSUgBm33OH+IkwbdpgoqsSsUg7y3uh+IICI/Qg4BBWr3U2i39RpmycbxMq4ew==
 
-"@eslint/compat@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@eslint/compat/-/compat-2.1.0.tgz#8c66110f95cf0fdd864b76ae4d534042dea7bb7f"
-  integrity sha512-LgaSCymEpw7tF53xvDw9SNsraPb1IBHxpdABIOM0hW8UAlP8znrjYtuxfR58FSJ3L9BhwD+FaPRFQpZq84Nh6g==
+"@eslint/compat@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@eslint/compat/-/compat-2.1.1.tgz#0284d648b62c44f7653804d615d2b4b3b8eaeef1"
+  integrity sha512-rMcy8GSrwNzcISX/BlTDY/GLB4eCopEuy9woIls3To+15OLxykZrxxq+WUcylCPCQ6F4MujjBM1DX5V1aqI3Vw==
   dependencies:
     "@eslint/core" "^1.2.1"
 
@@ -1097,12 +1097,12 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/eslint-config@7.1.46":
-  version "7.1.46"
-  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-7.1.46.tgz#4f1f7bbeaf7a57206668655d04ae7d7f59f709b5"
-  integrity sha512-JCUDGPVejmKHXRir1fTbs1aiONBv54rf5rzml2q3HLt0tH8fDUsST+uoNrCK4XPepQH+cA0twV4sUQ+nflqJOA==
+"@newhighsco/eslint-config@7.1.47":
+  version "7.1.47"
+  resolved "https://registry.yarnpkg.com/@newhighsco/eslint-config/-/eslint-config-7.1.47.tgz#d01bff46e56181594f99c13c741bc0577c0c640b"
+  integrity sha512-iQ608aoEMQGcdxz8ok/PeNsWYx5+8lrO+7AmSh8huWHXqIWaLEKs5feaJIbiydb24qI1YYc3onCp/zAPEizSCg==
   dependencies:
-    "@eslint/compat" "2.1.0"
+    "@eslint/compat" "2.1.1"
     "@eslint/js" "10.0.1"
     "@eslint/json" "2.1.0"
     eslint-config-prettier "10.1.8"
