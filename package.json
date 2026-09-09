@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "Personal website of Ben Edwards, a Web Designer and Developer",
   "private": true,
+  "packageManager": "yarn@4.18.0",
   "scripts": {
     "prepare": "husky",
     "start": "pliers go -o",
@@ -47,6 +48,7 @@
     "@newhighsco/eslint-config": "7.1.49",
     "@newhighsco/lint-staged-config": "1.1.4",
     "@newhighsco/prettier-config": "2.3.14",
+    "@newhighsco/yarn-plugin-preset": "1.1.4",
     "concurrently": "10.0.5",
     "eslint": "10.10.0",
     "husky": "9.1.7",
