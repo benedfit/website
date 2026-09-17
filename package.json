@@ -56,7 +56,7 @@
     "lint-staged": "17.5.1",
     "pliers": "1.2.1",
     "pliers-imagemin": "3.0.2",
-    "prettier": "3.9.7",
+    "prettier": "3.9.8",
     "pug-lint": "2.7.0",
     "pug-lint-config-clock": "2.0.0",
     "stylelint": "17.15.0",
