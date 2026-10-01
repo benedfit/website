@@ -59,7 +59,7 @@
     "prettier": "3.9.9",
     "pug-lint": "2.7.0",
     "pug-lint-config-clock": "2.0.0",
-    "stylelint": "17.15.0",
+    "stylelint": "17.16.0",
     "stylelint-stylus": "1.0.0"
   },
   "commitlint": {
