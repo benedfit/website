@@ -9,7 +9,6 @@ const frontmatter = require('front-matter')
 const pug = require('pug')
 const namp = require('namp')
 const moment = require('moment')
-const minify = require('html-minifier').minify
 const { highlight } = require('highlight.js')
 
 function createTask(pliers, config) {
@@ -89,7 +88,7 @@ function createTask(pliers, config) {
         options.posts = posts
         options.pages = pages
 
-        async.each(pages, function (page) {
+        async.each(pages, async function (page) {
           const dest = page.path
           const ext = extname(dest)
           let data
@@ -110,8 +109,11 @@ function createTask(pliers, config) {
             data = pug.render(page.contents, options)
           }
 
-          if (ext !== '.xml')
-            data = minify(data, { collapseWhitespace: ext !== '.txt' })
+          if (ext !== '.xml') {
+            const { minify } = await import('html-minifier')
+
+            data = await minify(data, { collapseWhitespace: ext !== '.txt' })
+          }
 
           fs.writeFile(dest, data)
         })
