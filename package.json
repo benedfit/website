@@ -29,7 +29,7 @@
     "configury": "0.3.0",
     "front-matter": "4.0.2",
     "fs-extra": "11.4.1",
-    "glob": "14.0.4",
+    "glob": "14.0.5",
     "html-minifier": "5.0.4",
     "jstransformer-uglify-js": "1.2.0",
     "lodash.merge": "4.6.2",
