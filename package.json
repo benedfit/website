@@ -30,7 +30,7 @@
     "front-matter": "4.0.2",
     "fs-extra": "11.4.1",
     "glob": "14.0.5",
-    "html-minifier": "5.0.4",
+    "html-minifier": "5.1.0",
     "jstransformer-uglify-js": "1.2.0",
     "lodash.merge": "4.6.2",
     "mkdirp": "3.0.1",
