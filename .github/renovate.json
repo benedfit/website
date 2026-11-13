@@ -1,4 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>benedfit/.github:renovate-config"]
+  "extends": ["local>benedfit/.github:renovate-config"],
+  "packageRules": [
+    {
+      "description": "Pin stylelint to v17",
+      "matchPackageNames": ["stylelint"],
+      "allowedVersions": "<18"
+    }
+  ]
 }
