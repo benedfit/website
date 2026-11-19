@@ -3291,7 +3291,7 @@ __metadata:
     front-matter: "npm:4.0.2"
     fs-extra: "npm:11.4.1"
     glob: "npm:14.0.6"
-    html-minifier: "npm:5.3.0"
+    html-minifier: "npm:5.3.1"
     husky: "npm:9.1.7"
     jest: "npm:30.5.2"
     jstransformer-uglify-js: "npm:1.2.0"
@@ -6961,9 +6961,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-minifier@npm:5.3.0":
-  version: 5.3.0
-  resolution: "html-minifier@npm:5.3.0"
+"html-minifier@npm:5.3.1":
+  version: 5.3.1
+  resolution: "html-minifier@npm:5.3.1"
   dependencies:
     commander: "npm:^15.1.0"
     entities: "npm:^9.0.0"
@@ -6978,7 +6978,7 @@ __metadata:
   bin:
     hm: cli.js
     html-minifier: cli.js
-  checksum: 10c0/8471c23f8aa7fd2b2e73602883fa3b449ac97b3d1307435f04fecc793bb7bde12f34c01489cbebb455700bd9d5a1f7dd46ab1f950897531e2918e67c180fa69e
+  checksum: 10c0/f8295caf0cab34a552089bd938376498bab10736cce2a2ea3132fd6ac1682880bc9f45ba9a3bae03e576707e15f7ef84af5bad42de20fa807ac42d4744253440
   languageName: node
   linkType: hard
 
