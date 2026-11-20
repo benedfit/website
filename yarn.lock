@@ -3291,7 +3291,7 @@ __metadata:
     front-matter: "npm:4.0.2"
     fs-extra: "npm:11.4.1"
     glob: "npm:14.0.6"
-    html-minifier: "npm:5.3.1"
+    html-minifier: "npm:5.4.0"
     husky: "npm:9.1.7"
     jest: "npm:30.5.2"
     jstransformer-uglify-js: "npm:1.2.0"
@@ -6961,15 +6961,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-minifier@npm:5.3.1":
-  version: 5.3.1
-  resolution: "html-minifier@npm:5.3.1"
+"html-minifier@npm:5.4.0":
+  version: 5.4.0
+  resolution: "html-minifier@npm:5.4.0"
   dependencies:
     commander: "npm:^15.1.0"
     entities: "npm:^9.0.0"
     lightningcss: "npm:^1.33.0"
     svgo: "npm:^4.1.0"
-    terser: "npm:^5.51.2"
+    terser: "npm:^5.51.3"
   peerDependencies:
     "@swc/core": ^1.15.7
   peerDependenciesMeta:
@@ -6978,7 +6978,7 @@ __metadata:
   bin:
     hm: cli.js
     html-minifier: cli.js
-  checksum: 10c0/f8295caf0cab34a552089bd938376498bab10736cce2a2ea3132fd6ac1682880bc9f45ba9a3bae03e576707e15f7ef84af5bad42de20fa807ac42d4744253440
+  checksum: 10c0/e30209614b07c0a00de63fd4102f1324b1f41f9ebd807ec5e0a58aadc0102d8d817141b25e42ebcd928c9cc66d68c0f37c049bd0ad731e011417feaa9bd27b83
   languageName: node
   linkType: hard
 
@@ -12838,9 +12838,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"terser@npm:^5.51.2":
-  version: 5.51.2
-  resolution: "terser@npm:5.51.2"
+"terser@npm:^5.51.3":
+  version: 5.51.3
+  resolution: "terser@npm:5.51.3"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.15.0"
@@ -12848,7 +12848,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10c0/e6dd3d9152ad51b5a990e55bf0647701278970193d2ce2359a401623e65827a27a1803f5d58593a1f0b5e10ff3fa316a8d014d4f88a28d98ea94fb69359aeae5
+  checksum: 10c0/bc945b5134499d78188e24ae26e732241bdb53e5d68cf8d8201a01413d8dd7aa5a69d2fb6fbda4eab35ac1d6a426ecd8ecf9991f3ad82e5107b0644222caacc8
   languageName: node
   linkType: hard
 
